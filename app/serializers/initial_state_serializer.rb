@@ -32,6 +32,8 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:expand_spoilers] = object.current_account.user.setting_expand_spoilers
       store[:reduce_motion]   = object.current_account.user.setting_reduce_motion
       store[:advanced_layout] = object.current_account.user.setting_advanced_layout
+      store[:notif_sound]     = object.current_account.user.settings.notification_sounds['setting_notif_sound']
+      store[:notif_volume]    = object.current_account.user.settings.notification_sounds['setting_notif_volume']
       store[:is_staff]        = object.current_account.user.staff?
     end
 

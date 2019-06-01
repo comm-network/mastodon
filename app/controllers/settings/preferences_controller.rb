@@ -51,6 +51,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_show_application,
       :setting_advanced_layout,
       notification_emails: %i(follow follow_request reblog favourite mention digest report pending_account),
+      notification_sounds: %i(setting_notif_volume setting_notif_sound),
       interactions: %i(must_be_follower must_be_following)
     )
   end
