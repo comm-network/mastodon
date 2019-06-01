@@ -1,15 +1,15 @@
 ![Mastodon](https://i.imgur.com/NhZc40l.png)
 ========
 
-[![GitHub release](https://img.shields.io/github/release/lfuelling/mastodon.svg)][releases]
-[![Build Status](https://img.shields.io/circleci/project/github/lfuelling/mastodon.svg)][circleci]
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/lfuelling/mastodon.svg)][code_climate]
+[![GitHub release](https://img.shields.io/github/release/comm-network/mastodon.svg)][releases]
+[![Build Status](https://img.shields.io/circleci/project/github/comm-network/mastodon.svg)][circleci]
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/comm-network/mastodon.svg)][code_climate]
 [![Translation status](https://weblate.joinmastodon.org/widgets/mastodon/-/svg-badge.svg)][weblate]
 [![Docker Pulls](https://img.shields.io/docker/pulls/lerk/mastodon.svg)][docker]
 
-[releases]: https://github.com/lfuelling/mastodon/releases
-[circleci]: https://circleci.com/gh/lfuelling/mastodon
-[code_climate]: https://codeclimate.com/github/lfuelling/mastodon
+[releases]: https://github.com/comm-network/mastodon/releases
+[circleci]: https://circleci.com/gh/comm-network/mastodon
+[code_climate]: https://codeclimate.com/github/comm-network/mastodon
 [weblate]: https://weblate.joinmastodon.org/engage/mastodon/
 [docker]: https://hub.docker.com/r/lerk/mastodon/
 

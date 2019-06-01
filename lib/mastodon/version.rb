@@ -33,7 +33,7 @@ module Mastodon
     end
 
     def repository
-      ENV.fetch('GITHUB_REPOSITORY') { 'lfuelling/mastodon' }
+      ENV.fetch('GITHUB_REPOSITORY') { 'comm-network/mastodon' }
     end
 
     def source_base_url

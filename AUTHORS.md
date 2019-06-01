@@ -1,7 +1,7 @@
 Authors
 =======
 
-Mastodon is available on [GitHub](https://github.com/lfuelling/mastodon)
+Mastodon is available on [GitHub](https://github.com/comm-network/mastodon)
 and provided thanks to the work of the following contributors:
 
 * [Gargron](https://github.com/Gargron)
@@ -601,7 +601,7 @@ and provided thanks to the work of the following contributors:
 * [西小倉宏信](mailto:nishiko@mindia.jp)
 * [雨宮美羽](mailto:k737566@gmail.com)
 
-This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/lfuelling/mastodon/graphs/contributors) instead.
+This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/comm-network/mastodon/graphs/contributors) instead.
 
 ## Translators
 

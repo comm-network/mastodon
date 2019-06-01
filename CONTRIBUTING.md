@@ -14,7 +14,7 @@ If your contributions are accepted into Mastodon, you can request to be paid thr
 
 ## Bug reports
 
-Bug reports and feature suggestions can be submitted to [GitHub Issues](https://github.com/lfuelling/mastodon/issues). Please make sure that you are not submitting duplicates, and that a similar report or request has not already been resolved or rejected in the past using the search function. Please also use descriptive, concise titles.
+Bug reports and feature suggestions can be submitted to [GitHub Issues](https://github.com/comm-network/mastodon/issues). Please make sure that you are not submitting duplicates, and that a similar report or request has not already been resolved or rejected in the past using the search function. Please also use descriptive, concise titles.
 
 ## Translations
 
