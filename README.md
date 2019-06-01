@@ -5,13 +5,13 @@
 [![Build Status](https://img.shields.io/circleci/project/github/lfuelling/mastodon.svg)][circleci]
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/lfuelling/mastodon.svg)][code_climate]
 [![Translation status](https://weblate.joinmastodon.org/widgets/mastodon/-/svg-badge.svg)][weblate]
-[![Docker Pulls](https://img.shields.io/docker/pulls/lfuelling/mastodon.svg)][docker]
+[![Docker Pulls](https://img.shields.io/docker/pulls/lerk/mastodon.svg)][docker]
 
 [releases]: https://github.com/lfuelling/mastodon/releases
 [circleci]: https://circleci.com/gh/lfuelling/mastodon
 [code_climate]: https://codeclimate.com/github/lfuelling/mastodon
 [weblate]: https://weblate.joinmastodon.org/engage/mastodon/
-[docker]: https://hub.docker.com/r/lfuelling/mastodon/
+[docker]: https://hub.docker.com/r/lerk/mastodon/
 
 Mastodon is a **free, open-source social network server** based on ActivityPub. Follow friends and discover new ones. Publish anything you want: links, pictures, text, video. All servers of Mastodon are interoperable as a federated network, i.e. users on one server can seamlessly communicate with users from another one. This includes non-Mastodon software that also implements ActivityPub!
 
