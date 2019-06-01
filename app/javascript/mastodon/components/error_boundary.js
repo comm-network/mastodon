@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import illustration from '../../images/elephant_ui_disappointed.svg';
+import illustration from '../../images/oops.gif';
 
 export default class ErrorBoundary extends React.PureComponent {
 

@@ -21,7 +21,7 @@ module Mastodon
     end
 
     def flags
-      ''
+      '-vapor'
     end
 
     def to_a
@@ -33,7 +33,7 @@ module Mastodon
     end
 
     def repository
-      ENV.fetch('GITHUB_REPOSITORY') { 'tootsuite/mastodon' }
+      ENV.fetch('GITHUB_REPOSITORY') { 'lfuelling/mastodon' }
     end
 
     def source_base_url

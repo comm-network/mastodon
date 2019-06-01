@@ -78,6 +78,7 @@ module.exports = merge(sharedConfig, {
           '**/*.svg',
           '**/*.mp3',
           '**/*.ogg',
+          '**/*.gif',
         ],
       },
       externals: [

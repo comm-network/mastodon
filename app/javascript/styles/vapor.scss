@@ -1,11 +1,3 @@
-/// Stroke font-character
-/// @param  {Integer} $stroke - Stroke width
-/// @param  {Color}   $color  - Stroke color
-/// @return {Style}           - text-shadow
-@mixin stroke($stroke, $color) {
-  text-shadow: stroke($stroke, $color);
-}
-
 /// Shake animation
 @keyframes shake {
   10%, 90% {
@@ -417,7 +409,6 @@ div.autosuggest-textarea > div.autosuggest-textarea__suggestions {
 div.account-grid-card > div.account-grid-card__header > div.controls > a.icon-button,
 a.button.button-alternative {
   color: white;
-  @include stroke(1px, #000);
 }
 
 div.h-feed > data.p-name > div.activity-stream-tabs > a {

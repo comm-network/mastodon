@@ -109,6 +109,7 @@ en:
         setting_notif_sound: Enable notification sound
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reduce motion in animations
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_show_application: Disclose application used to send toots
         setting_system_font_ui: Use system's default font
         setting_theme: Site theme

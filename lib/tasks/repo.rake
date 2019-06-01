@@ -8,12 +8,12 @@ namespace :repo do
       Authors
       =======
 
-      Mastodon is available on [GitHub](https://github.com/tootsuite/mastodon)
+      Mastodon is available on [GitHub](https://github.com/lfuelling/mastodon)
       and provided thanks to the work of the following contributors:
 
     HEADER
 
-    url = 'https://api.github.com/repos/tootsuite/mastodon/contributors?anon=1'
+    url = 'https://api.github.com/repos/lfuelling/mastodon/contributors?anon=1'
     HttpLog.config.compact_log = true
     while url.present?
       response = HTTP.get(url)
@@ -27,7 +27,7 @@ namespace :repo do
 
     file << <<~FOOTER
 
-      This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/tootsuite/mastodon/graphs/contributors) instead.
+      This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/lfuelling/mastodon/graphs/contributors) instead.
     FOOTER
   end
 
@@ -47,7 +47,7 @@ namespace :repo do
               response = nil
 
               loop do
-                response = HTTP.headers('Authorization' => "token #{ENV['GITHUB_API_TOKEN']}").get("https://api.github.com/repos/tootsuite/mastodon/pulls/#{pull_request_number}")
+                response = HTTP.headers('Authorization' => "token #{ENV['GITHUB_API_TOKEN']}").get("https://api.github.com/repos/lfuelling/mastodon/pulls/#{pull_request_number}")
 
                 if response.code == 403
                   sleep_for = (response.headers['X-RateLimit-Reset'].to_i - Time.now.to_i).abs

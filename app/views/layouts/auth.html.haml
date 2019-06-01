@@ -6,7 +6,7 @@
     .logo-container
       %h1
         = link_to root_path do
-          = image_pack_tag 'logo_full.svg', alt: 'Mastodon'
+          = image_pack_tag %w(logo_full_alt.gif logo_full.gif).sample, alt: 'Mastodon'
 
     .form-container
       = render 'flashes'

@@ -43,6 +43,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_display_media,
       :setting_expand_spoilers,
       :setting_reduce_motion,
+      :setting_enable_ui_tweaks,
       :setting_system_font_ui,
       :setting_noindex,
       :setting_theme,

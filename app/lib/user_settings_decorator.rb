@@ -27,6 +27,7 @@ class UserSettingsDecorator
     user.settings['display_media']       = display_media_preference if change?('setting_display_media')
     user.settings['expand_spoilers']     = expand_spoilers_preference if change?('setting_expand_spoilers')
     user.settings['reduce_motion']       = reduce_motion_preference if change?('setting_reduce_motion')
+    user.settings['enable_ui_tweaks']    = enable_ui_tweaks_preference if change?('setting_enable_ui_tweaks')
     user.settings['system_font_ui']      = system_font_ui_preference if change?('setting_system_font_ui')
     user.settings['noindex']             = noindex_preference if change?('setting_noindex')
     user.settings['notification_sounds'] = merged_notification_sounds if change?('notification_sounds')
@@ -87,6 +88,10 @@ class UserSettingsDecorator
 
   def reduce_motion_preference
     boolean_cast_setting 'setting_reduce_motion'
+  end
+
+  def enable_ui_tweaks_preference
+    boolean_cast_setting 'setting_enable_ui_tweaks'
   end
 
   def noindex_preference

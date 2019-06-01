@@ -51,6 +51,9 @@ elasticsearch
 # Ignore npm debug log
 npm-debug.log
 
+# Ignore package-lock
+package-lock.json
+
 # Ignore yarn log files
 yarn-error.log
 yarn-debug.log

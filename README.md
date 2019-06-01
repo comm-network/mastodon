@@ -1,17 +1,17 @@
 ![Mastodon](https://i.imgur.com/NhZc40l.png)
 ========
 
-[![GitHub release](https://img.shields.io/github/release/tootsuite/mastodon.svg)][releases]
-[![Build Status](https://img.shields.io/circleci/project/github/tootsuite/mastodon.svg)][circleci]
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/tootsuite/mastodon.svg)][code_climate]
+[![GitHub release](https://img.shields.io/github/release/lfuelling/mastodon.svg)][releases]
+[![Build Status](https://img.shields.io/circleci/project/github/lfuelling/mastodon.svg)][circleci]
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/lfuelling/mastodon.svg)][code_climate]
 [![Translation status](https://weblate.joinmastodon.org/widgets/mastodon/-/svg-badge.svg)][weblate]
-[![Docker Pulls](https://img.shields.io/docker/pulls/tootsuite/mastodon.svg)][docker]
+[![Docker Pulls](https://img.shields.io/docker/pulls/lfuelling/mastodon.svg)][docker]
 
-[releases]: https://github.com/tootsuite/mastodon/releases
-[circleci]: https://circleci.com/gh/tootsuite/mastodon
-[code_climate]: https://codeclimate.com/github/tootsuite/mastodon
+[releases]: https://github.com/lfuelling/mastodon/releases
+[circleci]: https://circleci.com/gh/lfuelling/mastodon
+[code_climate]: https://codeclimate.com/github/lfuelling/mastodon
 [weblate]: https://weblate.joinmastodon.org/engage/mastodon/
-[docker]: https://hub.docker.com/r/tootsuite/mastodon/
+[docker]: https://hub.docker.com/r/lfuelling/mastodon/
 
 Mastodon is a **free, open-source social network server** based on ActivityPub. Follow friends and discover new ones. Publish anything you want: links, pictures, text, video. All servers of Mastodon are interoperable as a federated network, i.e. users on one server can seamlessly communicate with users from another one. This includes non-Mastodon software that also implements ActivityPub!
 

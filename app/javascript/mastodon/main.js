@@ -3,6 +3,7 @@ import { default as Mastodon, store } from './containers/mastodon';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ready from './ready';
+import { enableUiTweaks } from './initial_state';
 
 const perf = require('./performance');
 
@@ -20,6 +21,10 @@ function main() {
   ready(() => {
     const mountNode = document.getElementById('mastodon');
     const props = JSON.parse(mountNode.getAttribute('data-props'));
+
+    if(enableUiTweaks === true){
+      document.body.classList.add('experimental');
+    }
 
     ReactDOM.render(<Mastodon {...props} />, mountNode);
     if (process.env.NODE_ENV === 'production') {

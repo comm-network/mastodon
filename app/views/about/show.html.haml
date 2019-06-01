@@ -8,7 +8,7 @@
 .landing
   .landing__brand
     = link_to root_url, class: 'brand' do
-      = image_pack_tag 'logo_full.svg', alt: 'Mastodon'
+      = image_pack_tag %w(logo_full_alt.gif logo_full.gif).sample, alt: 'Mastodon'
       %span.brand__tagline=t 'about.tagline'
 
   .landing__grid
