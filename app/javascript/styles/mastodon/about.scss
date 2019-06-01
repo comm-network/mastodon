@@ -833,6 +833,11 @@ $small-breakpoint: 960px;
 .brand {
   position: relative;
   text-decoration: none;
+
+  img {
+    width: 100px;
+    height: auto;
+  }
 }
 
 .brand__tagline {
