@@ -682,7 +682,8 @@ uk:
     title: Умови використання та Політика приватності %{instance}
   themes:
     contrast: Висока контрасність
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (світла)
   time:
     formats:

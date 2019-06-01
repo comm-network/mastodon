@@ -650,7 +650,8 @@ fi:
   terms:
     title: "%{instance}, käyttöehdot ja tietosuojakäytäntö"
   themes:
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
   time:
     formats:
       default: "%d.%m.%Y klo %H.%M"

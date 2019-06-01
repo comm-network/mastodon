@@ -915,7 +915,8 @@ eo:
     title: Uzkondiĉoj kaj privateca politiko de %{instance}
   themes:
     contrast: Mastodon (Forta kontrasto)
-    default: Mastodon (Malluma)
+    default: Vapor
+    mastodon-dark: Mastodon (Malluma)
     mastodon-light: Mastodon (Luma)
   time:
     formats:

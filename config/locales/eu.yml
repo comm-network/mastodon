@@ -909,7 +909,8 @@ eu:
     title: "%{instance} instantziaren erabilera baldintzak eta pribatutasun politika"
   themes:
     contrast: Mastodon (Kontraste altua)
-    default: Mastodon (Iluna)
+    default: Vapor
+    mastodon-dark: Mastodon (Iluna)
     mastodon-light: Mastodon (Argia)
   time:
     formats:

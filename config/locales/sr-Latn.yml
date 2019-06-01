@@ -548,7 +548,8 @@ sr-Latn:
   terms:
     title: Uslovi korišćenja i politika privatnosti instance %{instance}
   themes:
-    default: Mastodont
+    default: Vapor
+    mastodon-dark: Mastodont
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

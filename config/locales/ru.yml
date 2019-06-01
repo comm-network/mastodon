@@ -1031,7 +1031,8 @@ ru:
     title: Условия обслуживания и политика конфиденциальности %{instance}
   themes:
     contrast: Mastodon (высококонтрастная)
-    default: Mastodon (тёмная)
+    default: Vapor
+    mastodon-dark: Mastodon (тёмная)
     mastodon-light: Mastodon (светлая)
   time:
     formats:

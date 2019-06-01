@@ -1021,7 +1021,8 @@ cs:
     title: Podmínky používání a zásady soukromí %{instance}
   themes:
     contrast: Mastodon (vysoký kontrast)
-    default: Mastodon (tmavý)
+    default: Vapor
+    mastodon-dark: Mastodon (tmavý)
     mastodon-light: Mastodon (světlý)
   time:
     formats:

@@ -721,7 +721,8 @@ sv:
     title: "%{instance} Användarvillkor och Sekretesspolicy"
   themes:
     contrast: Hög kontrast
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (ljust)
   time:
     formats:

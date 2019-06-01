@@ -906,7 +906,8 @@ sq:
     title: Kushte Shërbimi dhe Rregulla Privatësie te %{instance}
   themes:
     contrast: Mastodon (Me shumë kontrast)
-    default: Mastodon (I errët)
+    default: Vapor
+    mastodon-dark: Mastodon (I errët)
     mastodon-light: Mastodon (I çelët)
   time:
     formats:

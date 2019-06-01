@@ -1006,7 +1006,8 @@ fr:
     title: "%{instance} Conditions d’utilisation et politique de confidentialité"
   themes:
     contrast: Mastodon (Contraste élevé)
-    default: Mastodon (Sombre)
+    default: Vapor
+    mastodon-dark: Mastodon (Sombre)
     mastodon-light: Mastodon (Clair)
   time:
     formats:

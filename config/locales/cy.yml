@@ -946,7 +946,8 @@ cy:
     title: "%{instance} Termau Gwasanaeth a Polisi Preifatrwydd"
   themes:
     contrast: Cyferbyniad uchel
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (golau)
   time:
     formats:

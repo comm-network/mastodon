@@ -1007,7 +1007,8 @@ de:
     title: "%{instance} Nutzungsbedingungen und Datenschutzerklärung"
   themes:
     contrast: Mastodon (Hoher Kontrast)
-    default: Mastodon (Dunkel)
+    default: Vapor
+    mastodon-dark: Mastodon (Dunkel)
     mastodon-light: Mastodon (Hell)
   time:
     formats:

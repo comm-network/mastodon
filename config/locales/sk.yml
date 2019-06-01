@@ -924,7 +924,8 @@ sk:
     title: Podmienky užívania, a pravidlá súkromia pre %{instance}
   themes:
     contrast: Mastodon (vysoký kontrast)
-    default: Mastodon (tmavý)
+    default: Vapor
+    mastodon-dark: Mastodon (tmavý)
     mastodon-light: Mastodon (svetlý)
   time:
     formats:

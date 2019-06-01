@@ -1006,7 +1006,8 @@ ca:
     title: "%{instance} Condicions del servei i política de privadesa"
   themes:
     contrast: Mastodon (Alt contrast)
-    default: Mastodon (Fosc)
+    default: Vapor
+    mastodon-dark: Mastodon (Fosc)
     mastodon-light: Mastodon (Clar)
   time:
     formats:

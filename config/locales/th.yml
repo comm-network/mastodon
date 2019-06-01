@@ -625,7 +625,8 @@ th:
     sensitive_content: เนื้อหาที่ละเอียดอ่อน
   themes:
     contrast: Mastodon (ความคมชัดสูง)
-    default: Mastodon (มืด)
+    default: Vapor
+    mastodon-dark: Mastodon (มืด)
     mastodon-light: Mastodon (สว่าง)
   time:
     formats:

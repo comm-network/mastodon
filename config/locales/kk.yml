@@ -924,7 +924,8 @@ kk:
     title: "%{instance} Қызмет көрсету шарттары және Құпиялылық саясаты"
   themes:
     contrast: Mastodon (Жоғары контраст)
-    default: Mastodon (Қою)
+    default: Vapor
+    mastodon-dark: Mastodon (Қою)
     mastodon-light: Mastodon (Ашық)
   time:
     formats:

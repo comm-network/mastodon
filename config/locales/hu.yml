@@ -558,7 +558,8 @@ hu:
   terms:
     title: "%{instance} Felhasználási feltételek és Adatkezelési nyilatkozat"
   themes:
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
   time:
     formats:
       default: "%Y %b %d, %H:%M"

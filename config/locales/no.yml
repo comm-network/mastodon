@@ -558,7 +558,8 @@
   terms:
     title: "%{instance} Personvern og villkår for bruk av nettstedet"
   themes:
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
   time:
     formats:
       default: "%-d. %b %Y, %H:%M"

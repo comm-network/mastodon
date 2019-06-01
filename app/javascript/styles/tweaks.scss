@@ -1,0 +1,86 @@
+// experimental stuff, only enabled when the user is okay with it.
+body.experimental {
+
+  /* anti clickjacking script by flussence (https://gitlab.com/flussence/masto-css/raw/stable/feed-noclick.user.css) */
+  #mastodon .status__action-bar {
+    opacity: 0;
+  }
+
+  #mastodon .status__action-bar:hover {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+  }
+
+  #mastodon .status__action-bar:hover button {
+    animation: dontclickthis 1000ms step-end;
+  }
+
+  @keyframes dontclickthis {
+    from {
+      pointer-events: none;
+    }
+    to {
+      pointer-events: auto;
+    }
+  }
+
+  /*
+    Add a line break between display name and account handle:
+    - this allows user/display names to expand more by default.
+    - it also makes names look better in general.
+    author: trwnh
+    license: Public Domain
+  */
+  .display-name__html {
+    display: block;
+  }
+
+  /*
+  * Rounded avatars:
+  * - adjust the border radius around all avatar elements.
+  * - default override is 50% (i.e. turn squares into circles),
+  *   but you can set it to whatever you want.
+  *
+  * author: trwnh
+  * license: Public Domain
+  */
+  .card .avatar img,
+  .activity-stream .status.light .status__avatar img,
+  .account__avatar,
+  .account__avatar-overlay-base,
+  .account__avatar-overlay-overlay {
+    border-radius: 50%;
+  }
+
+  /*
+    Emoji hover zoom:
+    - makes emoji grow in size when moused over
+
+    author: noiob
+    license: CC0 - Public Domain
+    source: https://userstyles.org/styles/150165
+  */
+  :not(.emoji-picker-dropdown .emoji-button) .emojione:hover {
+    width: 50px !important;
+    /* set the width and height of the expanded emojo here */
+    height: 50px !important;
+    transition: all 0.3s ease-in-out !important;
+    /* the 0.3s is the animation time for growing the emojo, it can be set to 0 */;
+  }
+
+  .emojione {
+    transition: all 0.2s ease-in-out;
+    /* the 0.2s is the animation time for shrinking the emojo, it can be set to 0 */;
+  }
+
+  /*
+    Fade out faved/boosted toots in notifications:
+    - for "x favourited your toot" / "x boosted your toot",
+      make the faved/boosted toot half-transparent.
+    author: trwnh
+    license: Public Domain
+  */
+  .status.muted {
+    opacity: 0.5;
+  }
+}

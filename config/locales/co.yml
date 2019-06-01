@@ -1006,7 +1006,8 @@ co:
     title: Termini d’usu è di cunfidenzialità per %{instance}
   themes:
     contrast: Mastodon (Cuntrastu altu)
-    default: Mastodon (Scuru)
+    default: Vapor
+    mastodon-dark: Mastodon (Scuru)
     mastodon-light: Mastodon (Chjaru)
   time:
     formats:

@@ -1005,7 +1005,8 @@ pt-BR:
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
     contrast: Mastodon  (Alto contraste)
-    default: Mastodon (Escuro)
+    default: Vapor
+    mastodon-dark: Mastodon (Escuro)
     mastodon-light: Mastodon (claro)
   time:
     formats:

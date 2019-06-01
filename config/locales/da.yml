@@ -742,7 +742,8 @@ da:
     title: Vilkår og privatlivpolitik for %{instance}
   themes:
     contrast: Mastodon (Høj kontrast)
-    default: Mastodont (Mørk)
+    default: Vapor
+    mastodon-dark: Mastodont (Mørk)
     mastodon-light: Mastodon (Lys)
   time:
     formats:

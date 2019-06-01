@@ -923,7 +923,8 @@ lt:
     title: "%{instance} Naudojimosi Sąlygos ir Privatumo Politika"
   themes:
     contrast: Mastodon (Didelio Kontrasto)
-    default: Mastodon (Tamsus)
+    default: Vapor
+    mastodon-dark: Mastodon (Tamsus)
     mastodon-light: Mastodon (Šviesus)
   time:
     formats:

@@ -746,7 +746,8 @@ es:
     title: Términos del Servicio y Políticas de Privacidad de %{instance}
   themes:
     contrast: Alto contraste
-    default: Mastodon
+    default: Vapor
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (claro)
   time:
     formats:
