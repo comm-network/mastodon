@@ -1,3 +1,5 @@
+.column, .drawer { flex: 1 1 auto; max-width: none; }
+
 // experimental stuff, only enabled when the user is okay with it.
 body.experimental {
 
