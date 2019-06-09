@@ -40,7 +40,8 @@ div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-tex
 div.modal-root__modal.report-modal,
 div.modal-root__modal.mute-modal,
 div.modal-root__modal.onboarding-modal,
-div.modal-root__modal.embed-modal {
+div.modal-root__modal.embed-modal,
+div.compose-form > div.autosuggest-textarea__suggestions {
   background-image: linear-gradient($vapor-pink, $vapor-blue);
 }
 
@@ -236,8 +237,19 @@ div.public-layout > div.container > div.page-header,
 .statuses-grid .statuses-grid__item .detailed-status.compact,
 section.emoji-mart > .emoji-mart-scroll .emoji-mart-category,
 section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-category-label span,
-.drawer .compose-form .compose-form__modifiers {
+.drawer .compose-form .compose-form__modifiers,
+.compose-panel .compose-form .compose-form__autosuggest-wrapper,
+.compose-panel .compose-form .compose-form__uploads-wrapper,
+.columns-area .column-inline-form .setting-text {
   background: rgba(217, 225, 232, 0.2);
+}
+
+.compose-panel .compose-form .compose-form__modifiers {
+  background-color: transparent;
+}
+
+.columns-area__panels__pane .columns-area__panels__pane__inner .navigation-panel hr {
+  visibility: hidden;
 }
 
 div.account-timeline__header > div.account__header {
@@ -259,6 +271,10 @@ div.public-layout > div.container > nav.header {
   > div.nav-right {
     z-index: 1;
   }
+}
+
+div.public-layout > div.container > nav.header a.brand > img {
+  width: 128px;
 }
 
 @keyframes gridMove {
