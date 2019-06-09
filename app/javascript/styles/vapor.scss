@@ -235,7 +235,8 @@ div.public-layout > div.container > div.page-header,
 .compose-form__poll-wrapper .poll__footer select,
 .statuses-grid .statuses-grid__item .detailed-status.compact,
 section.emoji-mart > .emoji-mart-scroll .emoji-mart-category,
-section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-category-label span {
+section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-category-label span,
+.drawer .compose-form .compose-form__modifiers {
   background: rgba(217, 225, 232, 0.2);
 }
 
