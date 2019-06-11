@@ -5,15 +5,14 @@ import classNames from 'classnames';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { closeOnboarding } from '../../actions/onboarding';
-import screenHello from '../../../images/screen_hello.svg';
 import screenFederation from '../../../images/screen_federation.svg';
 import screenInteractions from '../../../images/screen_interactions.svg';
-import logoTransparent from '../../../images/logo_full.gif';
+import logoTransparent from '../../../images/aliens.png';
 
 const FrameWelcome = ({ domain, onNext }) => (
   <div className='introduction__frame'>
     <div className='introduction__illustration' style={{ background: `url(${logoTransparent}) no-repeat center center / auto 80%` }}>
-      <img src={screenHello} alt='' />
+      &nbsp;
     </div>
 
     <div className='introduction__text introduction__text--centered'>
