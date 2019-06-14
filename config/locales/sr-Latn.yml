@@ -329,7 +329,7 @@ sr-Latn:
     '403': Nemate dozvola da vidite ovu stranu.
     '404': Strana koju ste tražili ne postoji.
     '410': Strana koju ste tražili više ne postoji.
-    '422':
+    '422': 
     '429': Uspored
     '500':
       content: Izvinjavamo se, nešto je pošlo po zlu sa ove strane.
