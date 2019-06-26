@@ -23,5 +23,6 @@ export const isStaff = getMeta('is_staff');
 export const forceSingleColumn = !getMeta('advanced_layout');
 export const lowerNotificationSoundVolume = getMeta('notif_volume');
 export const notificationSoundEnabled = getMeta('notif_sound');
+export const useBlurhash = getMeta('use_blurhash');
 
 export default initialState;
