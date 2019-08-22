@@ -692,7 +692,9 @@ div.item-list > article > div.account,
 .new_form_account_batch .batch-table .batch-table__body .batch-table__row,
 .new_form_account_batch .batch-table,
 .account__header .account__header__bar .avatar .account__avatar,
-.account__header__tabs__buttons .button.logo-button {
+.account__header__tabs__buttons .button.logo-button,
+.simple_form__overlay-area textarea#user_invite_request_attributes_text,
+.simple_form__overlay-area textarea#user_invite_request_attributes_text:focus {
   border-color: $vapor-highlight;
 }
 
