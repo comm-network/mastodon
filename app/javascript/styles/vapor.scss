@@ -241,7 +241,8 @@ section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-categor
 .compose-panel .compose-form .compose-form__autosuggest-wrapper,
 .compose-panel .compose-form .compose-form__uploads-wrapper,
 .columns-area .column-inline-form .setting-text,
-.public-layout .box-widget div.simple_form__overlay-area > div.simple_form__overlay-area__overlay {
+.public-layout .box-widget div.simple_form__overlay-area > div.simple_form__overlay-area__overlay,
+.simple_form__overlay-area #user_invite_request_attributes_text {
   background: rgba(217, 225, 232, 0.2);
 }
 
@@ -414,7 +415,9 @@ form div.input {
   input[type=text]:focus,
   input[type=number]:focus,
   input[type=password]:focus,
-  input[type=email]:focus {
+  input[type=email]:focus,
+  .simple_form__overlay-area textarea#user_invite_request_attributes_text,
+  .simple_form__overlay-area textarea#user_invite_request_attributes_text:focus {
     background: transparent;
     border-color: $vapor-highlight;
   }
