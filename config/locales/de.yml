@@ -49,8 +49,8 @@ de:
     featured_tags_hint: Du kannst spezifische Hashtags, die hier angezeigt werden, angeben.
     follow: Folgen
     followers:
-      one: Folger_innen
-      other: Folger_innen
+      one: Folgende
+      other: Folgende
     following: Folgt
     joined: Beigetreten am %{date}
     last_active: zuletzt aktiv
@@ -113,8 +113,8 @@ de:
       enable: Freischalten
       enabled: Freigegeben
       feed_url: Feed-URL
-      followers: Folger_innen
-      followers_url: URL der Folger_innen
+      followers: Folgende
+      followers_url: URL der Folgende
       follows: Folgt
       header: Titelbild
       inbox_url: Posteingangs-URL
@@ -333,7 +333,7 @@ de:
       title: E-Mail-Domain-Blockade
     followers:
       back_to_account: Zurück zum Konto
-      title: "%{acct}'s Folger_innen"
+      title: "%{acct}'s Folgende"
     instances:
       by_domain: Domain
       delivery_available: Zustellung funktioniert
@@ -630,7 +630,7 @@ de:
   directories:
     directory: Profilverzeichnis
     enabled: Du bist gerade in dem Verzeichnis gelistet.
-    enabled_but_waiting: Du bist damit einverstanden im Verzeichnis aufgelistet zu werden, aber du hast noch nicht genug Folger_innen (%{min_followers}).
+    enabled_but_waiting: Du bist damit einverstanden im Verzeichnis aufgelistet zu werden, aber du hast noch nicht genug Folgende (%{min_followers}).
     explanation: Entdecke Benutzer_innen basierend auf deren Interessen
     explore_mastodon: Entdecke %{title}
     how_to_enable: Du hast dich gerade nicht dazu entschieden im Verzeichnis gelistet zu werden. Du kannst dich unten dafür eintragen. Benutze Hashtags in deiner Profilbeschreibung, um unter spezifischen Hashtags gelistet zu werden!
@@ -949,7 +949,7 @@ de:
     notifications: Benachrichtigungen
     preferences: Einstellungen
     profile: Profil
-    relationships: Folger_innen und Gefolgte
+    relationships: Folgende und Gefolgte
     two_factor_authentication: Zwei-Faktor-Auth
   spam_check:
     spam_detected_and_silenced: Dies ist ein automatisierter Bericht. Spam wurde erkannt und der Absender wurde automatisch stummgeschaltet. Wenn dies ein Fehler ist, schalte dieses Konto bitte wieder frei.
@@ -984,8 +984,8 @@ de:
     sign_in_to_participate: Melde dich an, um an der Konversation teilzuhaben
     title: '%{name}: "%{quote}"'
     visibilities:
-      private: Nur für Folger_innen
-      private_long: Nur für Folger_innen sichtbar
+      private: Nur für Folgende
+      private_long: Nur für Folgende sichtbar
       public: Öffentlich
       public_long: Für alle sichtbar
       unlisted: Nicht gelistet
