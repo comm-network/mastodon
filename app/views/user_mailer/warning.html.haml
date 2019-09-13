@@ -42,11 +42,11 @@
                               - unless @warning.text.blank?
                                 = Formatter.instance.linkify(@warning.text)
 
-                              - unless @statuses.empty?
+                              - if !@statuses.nil? && !@statuses.empty?
                                 %p
                                   %strong= t('user_mailer.warning.statuses')
 
-- unless @statuses.empty?
+- if !@statuses.nil? && !@statuses.empty?
   - @statuses.each_with_index do |status, i|
     = render 'notification_mailer/status', status: status, i: i + 1, highlighted: true
 
@@ -58,7 +58,7 @@
           %table.content-section{ cellspacing: 0, cellpadding: 0 }
             %tbody
               %tr
-                %td.content-cell{ class: @statuses.empty? ? '' : 'content-start' }
+                %td.content-cell{ class: @statuses.nil? || @statuses.empty? ? '' : 'content-start' }
                   %table.column{ cellspacing: 0, cellpadding: 0 }
                     %tbody
                       %tr
