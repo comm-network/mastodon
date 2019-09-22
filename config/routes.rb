@@ -41,6 +41,7 @@ Rails.application.routes.draw do
 
     namespace :auth do
       resource :setup, only: [:show, :update], controller: :setup
+      resource :challenge, only: [:create], controller: :challenges
     end
   end
 
@@ -133,8 +134,14 @@ Rails.application.routes.draw do
     end
 
     resource :delete, only: [:show, :destroy]
-    resource :migration, only: [:show, :update]
 
+    resource :migration, only: [:show, :create] do
+      collection do
+        post :cancel
+      end
+    end
+
+    resources :aliases, only: [:index, :create, :destroy]
     resources :sessions, only: [:destroy]
     resources :featured_tags, only: [:index, :create, :destroy]
   end
@@ -311,8 +318,6 @@ Rails.application.routes.draw do
         end
       end
 
-      get '/search', to: 'search#index', as: :search
-
       resources :media,        only: [:create, :update]
       resources :blocks,       only: [:index]
       resources :mutes,        only: [:index]
@@ -442,7 +447,6 @@ Rails.application.routes.draw do
 
   get '/about',        to: 'about#show'
   get '/about/more',   to: 'about#more'
-  get '/about/blocks', to: 'about#blocks'
   get '/terms',        to: 'about#terms'
 
   match '/', via: [:post, :put, :patch, :delete], to: 'application#raise_not_found', format: false
