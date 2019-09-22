@@ -78,12 +78,6 @@ body {
   color: white;
 }
 
-.status-card .status-card__content {
-  strong, span {
-    color: $primary-text-color;
-  }
-}
-
 html {
   scrollbar-color: rgb(109, 160, 217) rgb(221, 183, 255);
   overflow: hidden;
@@ -242,8 +236,19 @@ section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-categor
 .compose-panel .compose-form .compose-form__uploads-wrapper,
 .columns-area .column-inline-form .setting-text,
 .public-layout .box-widget div.simple_form__overlay-area > div.simple_form__overlay-area__overlay,
-.simple_form__overlay-area #user_invite_request_attributes_text {
+.simple_form__overlay-area #user_invite_request_attributes_text,
+.tabs-bar__wrapper,
+#tabs-bar__portal > button.column-back-button,
+.public-layout ul.table-of-contents {
   background: rgba(217, 225, 232, 0.2);
+}
+
+.status-card .status-card__content strong,
+.status-card .status-card__content span,
+#tabs-bar__portal > button.column-back-button,
+.placeholder-widget a,
+.back-link a {
+  color: $primary-text-color;
 }
 
 .compose-panel .compose-form .compose-form__modifiers {
@@ -694,7 +699,11 @@ div.item-list > article > div.account,
 .account__header .account__header__bar .avatar .account__avatar,
 .account__header__tabs__buttons .button.logo-button,
 .simple_form__overlay-area textarea#user_invite_request_attributes_text,
-.simple_form__overlay-area textarea#user_invite_request_attributes_text:focus {
+.simple_form__overlay-area textarea#user_invite_request_attributes_text:focus,
+.batch-table .nothing-here,
+.batch-table .batch-table__body,
+.batch-table .batch-table__row,
+.batch-table .batch-table__toolbar {
   border-color: $vapor-highlight;
 }
 
