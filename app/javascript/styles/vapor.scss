@@ -236,10 +236,11 @@ section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-categor
 .compose-panel .compose-form .compose-form__uploads-wrapper,
 .columns-area .column-inline-form .setting-text,
 .public-layout .box-widget div.simple_form__overlay-area > div.simple_form__overlay-area__overlay,
-.simple_form__overlay-area #user_invite_request_attributes_text,
+.fields-group .input.text.user_invite_request_text textarea#user_invite_request_attributes_text.text,
 .tabs-bar__wrapper,
 #tabs-bar__portal > button.column-back-button,
-.public-layout ul.table-of-contents {
+.public-layout ul.table-of-contents,
+.directory__card .directory__card__bar {
   background: rgba(217, 225, 232, 0.2);
 }
 
@@ -703,7 +704,9 @@ div.item-list > article > div.account,
 .batch-table .nothing-here,
 .batch-table .batch-table__body,
 .batch-table .batch-table__row,
-.batch-table .batch-table__toolbar {
+.batch-table .batch-table__toolbar,
+.directory__card .directory__card__extra .account__header__content,
+.public-layout ul.table-of-contents li > a {
   border-color: $vapor-highlight;
 }
 
@@ -825,4 +828,12 @@ div.public-layout > div.grid-3 > div.column-3 > div.box-widget a {
 
 section.emoji-mart-category > .emoji-mart-category-label {
   backdrop-filter: blur(5px);
+}
+
+label.radio-button > span.radio-button__input {
+  border-color: $vapor-highlight;
+
+  &.checked {
+    background-color: $vapor-highlight;
+  }
 }
