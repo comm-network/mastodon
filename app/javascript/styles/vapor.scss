@@ -706,7 +706,8 @@ div.item-list > article > div.account,
 .batch-table .batch-table__row,
 .batch-table .batch-table__toolbar,
 .directory__card .directory__card__extra .account__header__content,
-.public-layout ul.table-of-contents li > a {
+.public-layout ul.table-of-contents li > a,
+.simple_form__overlay-area .fields-group .input textarea#registration_user_invite_request_attributes_text {
   border-color: $vapor-highlight;
 }
 
