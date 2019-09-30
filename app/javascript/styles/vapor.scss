@@ -710,7 +710,8 @@ div.item-list > article > div.account,
 .public-layout ul.table-of-contents li > a,
 .simple_form__overlay-area .fields-group .input textarea#registration_user_invite_request_attributes_text,
 .item-list article .conversation.focusable.muted,
-.batch-table .batch-table__form.simple_form {
+.batch-table .batch-table__form.simple_form,
+.batch-table .input.select select#form_custom_emoji_batch_category_id {
   border-color: $vapor-highlight;
 }
 
