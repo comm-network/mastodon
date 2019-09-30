@@ -240,7 +240,8 @@ section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-categor
 .tabs-bar__wrapper,
 #tabs-bar__portal > button.column-back-button,
 .public-layout ul.table-of-contents,
-.directory__card .directory__card__bar {
+.directory__card .directory__card__bar,
+.batch-table .input.select select#form_custom_emoji_batch_category_id {
   background: rgba(217, 225, 232, 0.2) !important;
 }
 
@@ -707,7 +708,9 @@ div.item-list > article > div.account,
 .batch-table .batch-table__toolbar,
 .directory__card .directory__card__extra .account__header__content,
 .public-layout ul.table-of-contents li > a,
-.simple_form__overlay-area .fields-group .input textarea#registration_user_invite_request_attributes_text {
+.simple_form__overlay-area .fields-group .input textarea#registration_user_invite_request_attributes_text,
+.item-list article .conversation.focusable.muted,
+.batch-table .batch-table__form.simple_form {
   border-color: $vapor-highlight;
 }
 
