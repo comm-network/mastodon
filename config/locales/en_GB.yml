@@ -982,8 +982,9 @@ en_GB:
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
-    win95: Windows 95 (Broken)
+    win95: Windows 95 (Buggy)
     ocean: Ocean
+    ocean-blur: Ocean (Blurred)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
