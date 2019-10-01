@@ -1,0 +1,128 @@
+div.detailed-status .status-card,
+div.status .status-card,
+div.public-account-header > div.public-account-header__image,
+div.public-account-header > div.public-account-header__image > img,
+div.account-timeline__header > div.account__moved-note,
+div.content div.input-copy,
+div.content div.label_input textarea.text,
+div.content textarea.text,
+.content .simple_form select.select,
+div.report-card__summary > div.report-card__summary__item,
+.landing-page .separator-or::before,
+div > div.status.status-direct,
+.landing-page .separator-or span,
+div.account-authorize__wrapper > div.account--panel,
+div.endorsements-widget > div.account,
+div.item-list > article > div.account,
+.status.status-direct,
+.focusable:focus .status.status-direct,
+.status.status-direct:not(.read),
+.focusable:focus .status.status-direct:not(.read),
+.status__wrapper > .status .status-card,
+.status__wrapper > .status .status-card.compact,
+.directory .accounts-table tbody td,
+.compose-form__poll-wrapper ul li .poll__text.editable input,
+.compose-form__poll-wrapper ul li .poll__text.editable .poll__input,
+.compose-form__poll-wrapper .poll__footer select,
+.compose-form .compose-form__poll-wrapper,
+.compose-form .compose-form__poll-wrapper .poll__footer,
+.detailed-status .attachment-list,
+.detailed-status .attachment-list .attachment-list__icon,
+.detailed-status .attachment-list .attachment-list__list,
+.emoji-picker-dropdown__menu section.emoji-mart,
+.new_form_account_batch .batch-table .batch-table__toolbar,
+.new_form_account_batch .batch-table .batch-table__body,
+.new_form_account_batch .batch-table .batch-table__body .batch-table__row,
+.new_form_account_batch .batch-table,
+.account__header .account__header__bar .avatar .account__avatar,
+.account__header__tabs__buttons .button.logo-button,
+.simple_form__overlay-area textarea#user_invite_request_attributes_text,
+.simple_form__overlay-area textarea#user_invite_request_attributes_text:focus,
+.batch-table .nothing-here,
+.batch-table .batch-table__body,
+.batch-table .batch-table__row,
+.batch-table .batch-table__toolbar,
+.directory__card .directory__card__extra .account__header__content,
+.public-layout ul.table-of-contents li > a,
+.simple_form__overlay-area .fields-group .input textarea#registration_user_invite_request_attributes_text,
+.item-list article .conversation.focusable.muted,
+.batch-table .batch-table__form.simple_form,
+.batch-table .input.select select#form_custom_emoji_batch_category_id,
+.admin-wrapper .content table.inline-table tbody tr th,
+.admin-wrapper .content table.inline-table tbody tr td {
+  border-color: $vapor-highlight;
+}
+
+div.status.status-public,
+div.status.status-private,
+div.status.status-unlisted,
+div.search-results__section > h5,
+div.item-list > div.public-timeline__section-headline,
+div.item-list > div.public-timeline__section-headline > a.active::after,
+div.column > div > div.public-timeline__section-headline,
+div.column > div > div.public-timeline__section-headline > a.active::after,
+div.item-list > div.community-timeline__section-headline,
+div.item-list > div.community-timeline__section-headline > a.active::after,
+div.column > div > div.community-timeline__section-headline,
+div.column > div > div.community-timeline__section-headline > a.active::after,
+button.load-more.load-gap,
+div.account-timeline__header > div.account__section-headline > a.active::after,
+div.account-timeline__header > div.account__section-headline,
+div.account-timeline__header > div > div.account__action-bar,
+div.notification.notification-follow > div.account,
+div.account__header__fields > dl,
+div.account__header__fields,
+div.activity-stream div.entry div.status.light,
+div.activity-stream div.entry div.detailed-status.light,
+div.activity-stream-tabs,
+div.admin-wrapper div.content h4,
+div.detailed-status__action-bar,
+nav.tabs-bar > a.tabs-bar__link.active,
+div.h-feed div.account__section-headline,
+div.h-feed div.account__section-headline > a.active:before,
+div.activity-stream > div.entry > div.status,
+div > div.status_wrapper > div.status.status-direct,
+div > div.status_wrapper > div.status.status-direct.status-reply,
+div.activity-stream > div.entry > a.load-more.load-gap,
+div.admin-wrapper div.content-wrapper > div.content h2,
+.search-results__section > div,
+.notification__filter-bar > button,
+.notification__filter-bar > button.active,
+.notification__filter-bar > button.active::after,
+.notification__filter-bar,
+div.account__header div.account__header__bar {
+  border-bottom-color: $vapor-highlight;
+}
+
+body.admin .content hr {
+  border-bottom-color: #AD8CFF;
+}
+
+nav.tabs-bar > a.tabs-bar__link,
+div.followers > div.account,
+div.public-layout div.card-grid > div {
+  border-bottom-color: rgba(41, 169, 240, 0.2);
+}
+
+a.account__action-bar__tab,
+div.public-account-header__tabs__tabs > div.details-counters > div.counter {
+  border-right-color: $vapor-highlight;
+}
+
+div.account-timeline__header > div > div.account__action-bar,
+div.account__header > div > div.account__header__fields,
+div.account__header > div > div.account__header__fields > dl,
+div.bio > div.account__header__fields > dl,
+div.bio > div.account__header__fields,
+div.account__header__bio div.account__header__fields,
+div.detailed-status__action-bar,
+div.account-timeline__header > div > div.account__disclaimer,
+div.entry > div.status,
+div.account__header__extra div.public-account-bio > div.account__header__fields {
+  border-top-color: $vapor-highlight;
+}
+
+div.account-timeline__header > div > div.account__action-bar > div.account__action-bar-links > a.account__action-bar__tab,
+div.account__header__fields > dl > dd {
+  border-left-color: $vapor-highlight;
+}

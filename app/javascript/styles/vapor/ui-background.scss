@@ -1,0 +1,42 @@
+div.ui,
+body.about-body > div.landing-page,
+body.no-reduce-motion,
+body.error,
+div.emoji-picker-dropdown__menu,
+div.emoji-mart-scroll,
+section.emoji-mart,
+section.emoji-mart > .emoji-mart-bar,
+body.app-body.no-reduce-motion > div.dropdown-menu,
+div.search-popout,
+div.drawer__inner.darker,
+div.search-results,
+div.confirmation-modal__container,
+body.app-body > div.privacy-dropdown__dropdown,
+div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible,
+div.modal-root__modal.report-modal,
+div.modal-root__modal.mute-modal,
+div.modal-root__modal.onboarding-modal,
+div.modal-root__modal.embed-modal,
+div.compose-form > div.autosuggest-textarea__suggestions {
+  background-image: linear-gradient($vapor-pink, $vapor-blue);
+}
+
+div.confirmation-modal__action-bar,
+div.onboarding-modal__paginator {
+  background-image: linear-gradient($vapor-blue, $vapor-pink);
+}
+
+body.admin > div.admin-wrapper,
+body.embed,
+body.app-body,
+body div.introduction,
+body {
+  background-image: linear-gradient($vapor-pink, $vapor-blue) !important;
+  background-color: transparent !important;
+  background-position-x: unset;
+  background-position-y: unset;
+  background-size: cover !important;
+  background-attachment: fixed;
+  background-origin: unset;
+  background-clip: unset;
+}
