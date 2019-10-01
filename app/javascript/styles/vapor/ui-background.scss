@@ -12,14 +12,13 @@ div.search-popout,
 div.drawer__inner.darker,
 div.search-results,
 div.confirmation-modal__container,
-body.app-body > div.privacy-dropdown__dropdown,
-div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible,
+body.app-body > div.privacy-dropdown__dropdown,div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible,
+div.compose-form > div.autosuggest-textarea__suggestions,
+.compose-form .autosuggest-textarea__suggestions-wrapper .autosuggest-textarea__suggestions,
 div.modal-root__modal.report-modal,
 div.modal-root__modal.mute-modal,
 div.modal-root__modal.onboarding-modal,
-div.modal-root__modal.embed-modal,
-div.compose-form > div.autosuggest-textarea__suggestions,
-.compose-form .autosuggest-textarea__suggestions-wrapper .autosuggest-textarea__suggestions {
+div.modal-root__modal.embed-modal {
   background-image: linear-gradient($vapor-pink, $vapor-blue);
 }
 

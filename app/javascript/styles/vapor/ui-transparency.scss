@@ -194,7 +194,8 @@ div.content div.label_input textarea.text,
 div.content textarea.text,
 div.content div.input-copy,
 div.content div.input-copy input,
-nav.header div.nav-left a.brand:focus {
+nav.header div.nav-left a.brand:focus,
+div.account__header > div {
   background-color: transparent;
 }
 

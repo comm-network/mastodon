@@ -92,7 +92,8 @@ div.admin-wrapper div.content-wrapper > div.content h2,
 .notification__filter-bar > button.active,
 .notification__filter-bar > button.active::after,
 .notification__filter-bar,
-div.account__header div.account__header__bar {
+div.account__header div.account__header__bar,
+ul li.dropdown-menu__separator{
   border-bottom-color: $vapor-highlight;
 }
 

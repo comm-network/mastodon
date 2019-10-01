@@ -26,3 +26,28 @@ button.load-more:hover {
 div.ui .column .getting-started {
   overflow: hidden;
 }
+
+body.about-body > div.landing-page,
+body.no-reduce-motion,
+body.error,
+div.emoji-picker-dropdown__menu,
+div.emoji-mart-scroll,
+section.emoji-mart,
+section.emoji-mart > .emoji-mart-bar,
+body.app-body.no-reduce-motion > div.dropdown-menu,
+div.search-popout,
+div.drawer__inner.darker,
+div.search-results,
+div.confirmation-modal__container,
+body.app-body > div.privacy-dropdown__dropdown,div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible,
+div.compose-form > div.autosuggest-textarea__suggestions,
+.compose-form .autosuggest-textarea__suggestions-wrapper .autosuggest-textarea__suggestions,
+div.modal-root__modal.report-modal,
+div.modal-root__modal.mute-modal,
+div.modal-root__modal.onboarding-modal,
+div.modal-root__modal.embed-modal,
+button.status__content__spoiler-link.status__content__spoiler-link--show-more,
+button.status__content__spoiler-link.status__content__spoiler-link--show-less {
+  background: rgba(231, 200, 255, 0.9);
+  backdrop-filter: blur(50px);
+}
