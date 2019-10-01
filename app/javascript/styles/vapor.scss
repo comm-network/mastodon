@@ -58,7 +58,7 @@ body {
 }
 
 html {
-  scrollbar-color: rgb(109, 160, 217) rgb(221, 183, 255);
+  scrollbar-color: rgba(110, 110, 217, 0.3) rgba(217, 225, 232, 0.2);
   overflow: hidden;
 }
 
@@ -67,7 +67,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(43, 144, 217, 0.3);
+  background-color: rgba(217, 217, 217, 0.3);
 }
 
 .status-card .status-card__content strong,
