@@ -1,6 +1,7 @@
 default: styles/vapor.scss
+ocean: styles/ocean.scss
 mastodon-dark: styles/application.scss
-contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+contrast: styles/contrast.scss
 fairy-floss: styles/fairy-floss.scss
 win95: styles/win95.scss

@@ -1,0 +1,28 @@
+@import 'vapor';
+
+div.ui,
+body.admin > div.admin-wrapper {
+  background-color: rgba(100, 100, 200, 0.3);
+}
+
+body.app-body.theme-ocean,
+body.admin.theme-ocean {
+  background-image: url("../images/ocean.gif") !important;
+}
+
+button.column-header__button.active:hover,
+a.column-link:hover,
+div.column-player > button.column-player__toggle:hover,
+a.button.button-alternative-2.webapp-btn:hover,
+nav.drawer__header > a.drawer__tab:hover,
+button.load-more:hover {
+  animation: shake 10s cubic-bezier(.36, .07, .19, .97) both;
+  animation-iteration-count: infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+div.ui .column .getting-started {
+  overflow: hidden;
+}
