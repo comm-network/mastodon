@@ -1,3 +1,5 @@
+@import 'variables';
+
 nav.drawer__header,
 h1.column-header,
 button.column-header__button,
@@ -128,7 +130,10 @@ section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-categor
 .content .admin-account-bio .account__header__content,
 .content .admin-account-bio .account__header__fields,
 div.landing-page__forms > a.button.button-alternative-2.webapp-btn:hover,
-div.emoji-mart-scroll > div.emoji-mart-category .emoji-mart-emoji:hover::before {
+div.emoji-mart-scroll > div.emoji-mart-category .emoji-mart-emoji:hover::before,
+.compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item.selected,
+.compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item:hover,
+.compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item:active {
   background: rgba(217, 225, 232, 0.2) !important;
 }
 

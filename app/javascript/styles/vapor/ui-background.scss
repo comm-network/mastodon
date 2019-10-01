@@ -1,3 +1,5 @@
+@import 'variables';
+
 div.ui,
 body.about-body > div.landing-page,
 body.no-reduce-motion,
@@ -17,7 +19,8 @@ div.modal-root__modal.report-modal,
 div.modal-root__modal.mute-modal,
 div.modal-root__modal.onboarding-modal,
 div.modal-root__modal.embed-modal,
-div.compose-form > div.autosuggest-textarea__suggestions {
+div.compose-form > div.autosuggest-textarea__suggestions,
+.compose-form .autosuggest-textarea__suggestions-wrapper .autosuggest-textarea__suggestions {
   background-image: linear-gradient($vapor-pink, $vapor-blue);
 }
 
