@@ -1944,14 +1944,14 @@ body.admin {
 }
 
 .admin-wrapper .content-wrapper {
-  flex: 1 1 auto;
-  width: calc(100% - 20px);
+  height: 90vh;
+  min-height: 90vh;
+  overflow: scroll;
   @include win95-border-outset();
   position: relative;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 40px;
-  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .admin-wrapper .content {
@@ -1994,7 +1994,7 @@ body.admin {
   & > li {
     display: inline-block;
 
-    &#settings,
+    &#preferences,
     &#admin {
       padding: 2px;
       border: 0px solid transparent;
