@@ -133,7 +133,11 @@ div.landing-page__forms > a.button.button-alternative-2.webapp-btn:hover,
 div.emoji-mart-scroll > div.emoji-mart-category .emoji-mart-emoji:hover::before,
 .compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item.selected,
 .compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item:hover,
-.compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item:active {
+.compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item:active,
+.admin-wrapper .sidebar .sidebar__toggle,
+.admin-wrapper .sidebar .sidebar__toggle a:hover,
+.admin-wrapper .sidebar .sidebar__toggle a:focus,
+.admin-wrapper .sidebar .sidebar__toggle a:active {
   background: rgba(217, 225, 232, 0.2) !important;
 }
 

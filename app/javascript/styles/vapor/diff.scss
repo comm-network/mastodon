@@ -231,3 +231,19 @@
     }
   }
 }
+
+.admin-wrapper .sidebar__toggle__logo svg {
+  display: none;
+}
+
+@media all and (max-width: 600px) and (min-width: 250px) {
+  .sidebar-wrapper .sidebar a:first-child {
+    display: block;
+
+    img.logo {
+      position: fixed;
+      top: -32px;
+      left: 16px;
+    }
+  }
+}
