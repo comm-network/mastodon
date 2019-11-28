@@ -10,6 +10,7 @@ body.admin.theme-ocean,
 body.app-body.theme-ocean-blur,
 body.admin.theme-ocean-blur {
   background-image: url("../images/ocean.gif") !important;
+  background-size: 100vw 100vh !important;
 }
 
 button.column-header__button.active:hover,
