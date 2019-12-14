@@ -22,8 +22,8 @@ de:
         current_password: Aus Sicherheitsgründen gib bitte das Passwort des aktuellen Kontos ein
         current_username: Um das zu bestätigen, gib den Benutzernamen des aktuellen Kontos ein
         digest: Wenn du eine lange Zeit inaktiv bist, wird dir eine Zusammenfassung von Erwähnungen zugeschickt, die du in deiner Abwesenheit empfangen hast
-        discoverable_html: Das <a href="%{path}" target="_blank">Verzeichnis</a> erlaubt es dein Profil durch deine Hashtags und deine Aktivitäten zu entdecken. Voraussetzung ist allerdings mindestens %{min_followers} Folgende
         discoverable: Das Profilverzeichnis ist eine andere Möglichkeit, mit der dein Konto ein größeres Publikum erreichen kann
+        discoverable_html: Das <a href="%{path}" target="_blank">Verzeichnis</a> erlaubt es dein Profil durch deine Hashtags und deine Aktivitäten zu entdecken. Voraussetzung ist allerdings mindestens %{min_followers} Folgende
         email: Du wirst eine Bestätigungs-E-Mail erhalten
         fields: Du kannst bis zu 4 Elemente auf deinem Profil anzeigen lassen, die als Tabelle dargestellt werden
         header: PNG, GIF oder JPG. Maximal %{size}. Wird auf %{dimensions} px herunterskaliert
