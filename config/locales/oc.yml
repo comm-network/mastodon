@@ -33,6 +33,7 @@ oc:
     terms: Condicions d’utilizacion
     unavailable_content: Contengut pas disponible
     unavailable_content_description:
+      domain: Servidor
       reason: 'Motiu :'
     user_count_after:
       one: utilizaire
@@ -382,9 +383,6 @@ oc:
       created_msg: Nòta de moderacion corrèctament creada !
       destroyed_msg: Nòta de moderacion corrèctament suprimida !
     reports:
-      account:
-        note: nòta
-        report: rapòrt
       action_taken_by: Mesura menada per
       are_you_sure: Es segur ?
       assign_to_self: Me l’assignar
@@ -936,6 +934,7 @@ oc:
   settings:
     account: Compte
     account_settings: Paramètres de compte
+    aliases: Alias de compte
     appearance: Aparéncia
     authorized_apps: Aplicacions autorizadas
     back: Tornar a Mastodon
