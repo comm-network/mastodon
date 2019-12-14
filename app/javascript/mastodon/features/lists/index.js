@@ -13,6 +13,9 @@ import ColumnSubheading from '../ui/components/column_subheading';
 import NewListForm from './components/new_list_form';
 import { createSelector } from 'reselect';
 import ScrollableList from '../../components/scrollable_list';
+import Icon from 'mastodon/components/icon';
+import ColumnHeader from '../../components/column_header';
+import {fetchFavourites} from "../../actions/interactions";
 
 const messages = defineMessages({
   heading: { id: 'column.lists', defaultMessage: 'Lists' },
@@ -62,7 +65,10 @@ class Lists extends ImmutablePureComponent {
 
     return (
       <Column bindToDocument={!multiColumn} icon='list-ul' heading={intl.formatMessage(messages.heading)}>
-        <ColumnBackButtonSlim />
+        <ColumnHeader
+          showBackButton
+          multiColumn={multiColumn}
+        />
 
         <NewListForm />
 
