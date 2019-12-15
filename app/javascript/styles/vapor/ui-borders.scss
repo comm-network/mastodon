@@ -55,6 +55,11 @@ div.item-list > article > div.account,
   border-color: $vapor-highlight;
 }
 
+div.keyboard-shortcuts > table > tbody > tr > td > kbd {
+  border-radius: 5px;
+  border-color: rgba($vapor-highlight, 0.6);
+}
+
 div.status.status-public,
 div.status.status-private,
 div.status.status-unlisted,
