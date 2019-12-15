@@ -157,7 +157,8 @@ div.activity-stream > div.entry > a.load-more.load-gap:hover,
 .flash-container .flash-message input.oauth-code:focus,
 .directory > .directory__tag a:hover,
 .focusable.detailed-status__wrapper:focus,
-.batch-table .batch-table__body .batch-table__row:nth-child(2n):hover {
+.batch-table .batch-table__body .batch-table__row:nth-child(2n):hover,
+form.simple_form div.input span.hint code {
   background-color: rgba(211, 211, 211, 0.3);
 }
 
