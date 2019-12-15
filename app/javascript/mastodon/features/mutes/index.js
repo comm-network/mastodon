@@ -7,10 +7,10 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { debounce } from 'lodash';
 import LoadingIndicator from '../../components/loading_indicator';
 import Column from '../ui/components/column';
-import ColumnBackButtonSlim from '../../components/column_back_button_slim';
 import AccountContainer from '../../containers/account_container';
 import { fetchMutes, expandMutes } from '../../actions/mutes';
 import ScrollableList from '../../components/scrollable_list';
+import ColumnHeader from '../../components/column_header';
 
 const messages = defineMessages({
   heading: { id: 'column.mutes', defaultMessage: 'Muted users' },
@@ -58,7 +58,10 @@ class Mutes extends ImmutablePureComponent {
 
     return (
       <Column bindToDocument={!multiColumn} icon='volume-off' heading={intl.formatMessage(messages.heading)}>
-        <ColumnBackButtonSlim />
+        <ColumnHeader
+          showBackButton
+          multiColumn={multiColumn}
+        />
         <ScrollableList
           scrollKey='mutes'
           onLoadMore={this.handleLoadMore}
@@ -68,7 +71,7 @@ class Mutes extends ImmutablePureComponent {
           bindToDocument={!multiColumn}
         >
           {accountIds.map(id =>
-            <AccountContainer key={id} id={id} />
+            <AccountContainer key={id} id={id} />,
           )}
         </ScrollableList>
       </Column>
