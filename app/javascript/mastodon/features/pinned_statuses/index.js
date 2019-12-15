@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { fetchPinnedStatuses } from '../../actions/pin_statuses';
 import Column from '../ui/components/column';
-import ColumnBackButtonSlim from '../../components/column_back_button_slim';
 import StatusList from '../../components/status_list';
 import { defineMessages, injectIntl } from 'react-intl';
 import ImmutablePureComponent from 'react-immutable-pure-component';
+import ColumnHeader from '../../components/column_header';
 
 const messages = defineMessages({
   heading: { id: 'column.pins', defaultMessage: 'Pinned toot' },
@@ -48,7 +48,10 @@ class PinnedStatuses extends ImmutablePureComponent {
 
     return (
       <Column bindToDocument={!multiColumn} icon='thumb-tack' heading={intl.formatMessage(messages.heading)} ref={this.setRef}>
-        <ColumnBackButtonSlim />
+        <ColumnHeader
+          showBackButton
+          multiColumn={multiColumn}
+        />
         <StatusList
           statusIds={statusIds}
           scrollKey='pinned_statuses'
