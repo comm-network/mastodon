@@ -137,8 +137,19 @@ div.emoji-mart-scroll > div.emoji-mart-category .emoji-mart-emoji:hover::before,
 .admin-wrapper .sidebar .sidebar__toggle,
 .admin-wrapper .sidebar .sidebar__toggle a:hover,
 .admin-wrapper .sidebar .sidebar__toggle a:focus,
-.admin-wrapper .sidebar .sidebar__toggle a:active {
+.admin-wrapper .sidebar .sidebar__toggle a:active,
+form.simple_form div.input span.hint code,
+div.content div.label_input textarea.text,
+form div.input input[type="text"],
+form div.input input[type="email"],
+form div.input input[type="password"],
+div.content div.input-copy input,
+div.content textarea.text {
   background: rgba(217, 225, 232, 0.2) !important;
+}
+
+div.content form.simple_form select.select {
+  background: rgba(217, 225, 232, 0.2) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='#2b90d9'/></svg>") no-repeat right 8px center/auto 16px !important;
 }
 
 body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:not(.active):hover,
@@ -157,8 +168,7 @@ div.activity-stream > div.entry > a.load-more.load-gap:hover,
 .flash-container .flash-message input.oauth-code:focus,
 .directory > .directory__tag a:hover,
 .focusable.detailed-status__wrapper:focus,
-.batch-table .batch-table__body .batch-table__row:nth-child(2n):hover,
-form.simple_form div.input span.hint code {
+.batch-table .batch-table__body .batch-table__row:nth-child(2n):hover {
   background-color: rgba(211, 211, 211, 0.3);
 }
 
@@ -195,10 +205,7 @@ button.status__content__spoiler-link.status__content__spoiler-link--show-more:ho
 button.status__content__spoiler-link.status__content__spoiler-link--show-less:hover,
 div.status a.status__content__spoiler-link:hover,
 div.getting-started__wrapper div.column-player > button.column-player__toggle:hover,
-div.content div.label_input textarea.text,
-div.content textarea.text,
 div.content div.input-copy,
-div.content div.input-copy input,
 nav.header div.nav-left a.brand:focus,
 div.account__header > div {
   background-color: transparent;
