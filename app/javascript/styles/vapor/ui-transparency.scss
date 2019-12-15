@@ -144,7 +144,9 @@ form div.input input[type="text"],
 form div.input input[type="email"],
 form div.input input[type="password"],
 div.content div.input-copy input,
-div.content textarea.text {
+div.content textarea.text,
+.item-list article .conversation.focusable.muted,
+.item-list article .conversation.focusable.muted.conversation--unread {
   background: rgba(217, 225, 232, 0.2) !important;
 }
 
