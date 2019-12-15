@@ -24,7 +24,7 @@ gl:
         digest: Enviar só tras un longo período de inactividade e só si recibeu algunha mensaxe persoal na súa ausencia
         discoverable: O directorio de perfil é outro xeito para que a túa conta alcance unha maior audiencia
         email: Enviaráselle un correo-e de confirmación
-        fields: Pode ter ate 4 elementos no seu perfil mostrados como unha táboa
+        fields: Pode ter ate 8 elementos no seu perfil mostrados como unha táboa
         header: PNG, GIF ou JPG. Máximo %{size}. Será reducida a %{dimensions}px
         inbox_url: Copiar o URL desde a páxina de inicio do repetidor que queres utilizar
         irreversible: Os toots filtrados desaparecerán de xeito irreversible, incluso si despois se elimina o filtro

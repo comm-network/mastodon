@@ -16,7 +16,7 @@ eo:
         context: Unu ol pluraj kuntekstoj kie la filtrilo devus agi
         digest: Sendita nur post longa tempo de neaktiveco, kaj nur se vi ricevis personan mesaĝon en via foresto
         email: Vi ricevos konfirman retmesaĝon
-        fields: Vi povas havi ĝis 4 tabelajn elementojn en via profilo
+        fields: Vi povas havi ĝis 8 tabelajn elementojn en via profilo
         header: Formato PNG, GIF aŭ JPG. Ĝis %{size}. Estos malgrandigita al %{dimensions}px
         inbox_url: Kopiu la URL de la ĉefpaĝo de la ripetilo, kiun vi volas uzi
         irreversible: Elfiltritaj mesaĝoj malaperos por ĉiam, eĉ se la filtrilo estas poste forigita

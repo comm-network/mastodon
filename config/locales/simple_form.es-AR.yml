@@ -24,7 +24,7 @@ es-AR:
         digest: Sólo enviado tras un largo periodo de inactividad, y sólo si has recibiste mensajes personales en tu ausencia
         discoverable: El directorio del perfil es otra forma en la que tu cuenta puede llegar a un público más amplio
         email: Se te enviará un correo electrónico de confirmación
-        fields: Podés tener hasta 4 elementos mostrados en una tabla en tu perfil
+        fields: Podés tener hasta 8 elementos mostrados en una tabla en tu perfil
         header: 'PNG, GIF o JPG. Máximo: %{size}. Será subescalado a %{dimensions} píxeles.'
         inbox_url: Copiá la dirección web desde la página principal del relé que querés usar
         irreversible: Los toots filtrados desaparecerán irreversiblemente, incluso si este filtro es eliminado después

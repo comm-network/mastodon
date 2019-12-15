@@ -25,7 +25,7 @@ de:
         discoverable: Das Profilverzeichnis ist eine andere Möglichkeit, mit der dein Konto ein größeres Publikum erreichen kann
         discoverable_html: Das <a href="%{path}" target="_blank">Verzeichnis</a> erlaubt es dein Profil durch deine Hashtags und deine Aktivitäten zu entdecken. Voraussetzung ist allerdings mindestens %{min_followers} Folgende
         email: Du wirst eine Bestätigungs-E-Mail erhalten
-        fields: Du kannst bis zu 4 Elemente auf deinem Profil anzeigen lassen, die als Tabelle dargestellt werden
+        fields: Du kannst bis zu 8 Elemente auf deinem Profil anzeigen lassen, die als Tabelle dargestellt werden, allerdings sehen mehr als 6 ein bisschen komisch aus.
         header: PNG, GIF oder JPG. Maximal %{size}. Wird auf %{dimensions} px herunterskaliert
         inbox_url: Kopiere die URL von der Startseite des gewünschten Relays
         irreversible: Gefilterte Beiträge werden unwiderruflich gelöscht, selbst wenn der Filter später entfernt wird

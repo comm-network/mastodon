@@ -24,7 +24,7 @@ tr:
         digest: Yalnızca uzun süre kullanılmadığında ve yalnızca yokluğunda kişisel mesajlar aldıysanız gönderilir
         discoverable: Profil dizini, hesabınızın daha geniş bir kitleye ulaşmasının başka bir yoludur
         email: Onay e-postası gönderilecek
-        fields: Profilinizde tablo olarak görüntülenen en fazla 4 ögeye sahip olabilirsiniz
+        fields: Profilinizde tablo olarak görüntülenen en fazla 8 ögeye sahip olabilirsiniz
         header: En fazla %{size} olacak şekilde PNG, GIF veya JPG formatında yükleyiniz. %{dimensions}px büyüklüğüne indirgenecektir.
         inbox_url: Kullanmak istediğiniz aktarıcının ön sayfasından URL'yi kopyalayın
         irreversible: Filtre uygulanmış tootlar, filtre daha sonra çıkartılsa bile geri dönüşümsüz biçimde kaybolur

@@ -22,7 +22,7 @@ pt-PT:
         current_password: Para fins de segurança, por favor, digite a senha da conta atual
         digest: Enviado após um longo período de inatividade e apenas se foste mencionado na tua ausência
         email: Será enviado um e-mail de confirmação
-        fields: Podes ter até 4 itens expostos, em forma de tabela, no teu perfil
+        fields: Podes ter até 8 itens expostos, em forma de tabela, no teu perfil
         header: PNG, GIF or JPG. Arquivos até %{size}. Vão ser reduzidos para %{dimensions}px
         inbox_url: Copia a URL da página inicial do repetidor que queres usar
         irreversible: Publicações filtradas irão desaparecer irremediavelmente, mesmo que o filtro seja removido posteriormente
