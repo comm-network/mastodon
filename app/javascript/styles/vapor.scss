@@ -463,3 +463,7 @@ label.radio-button > span.radio-button__input {
 section.emoji-mart > .emoji-mart-scroll .emoji-mart-emoji:hover::before {
   background-color: $vapor-highlight;
 }
+
+div.columns-area > div.column > div.getting-started {
+  overflow: hidden;
+}
