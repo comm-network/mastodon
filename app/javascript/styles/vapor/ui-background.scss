@@ -18,7 +18,8 @@ div.compose-form > div.autosuggest-textarea__suggestions,
 div.modal-root__modal.report-modal,
 div.modal-root__modal.mute-modal,
 div.modal-root__modal.onboarding-modal,
-div.modal-root__modal.embed-modal {
+div.modal-root__modal.embed-modal,
+div.modal-root__modal.list-adder {
   background-image: linear-gradient($vapor-pink, $vapor-blue);
 }
 

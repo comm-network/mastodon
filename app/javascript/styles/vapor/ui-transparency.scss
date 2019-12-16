@@ -122,6 +122,7 @@ section.emoji-mart > .emoji-mart-scroll .emoji-mart-category .emoji-mart-categor
 .columns-area .column-inline-form .setting-text,
 .public-layout .box-widget div.simple_form__overlay-area > div.simple_form__overlay-area__overlay,
 .simple_form__overlay-area .fields-group .input textarea#registration_user_invite_request_attributes_text,
+form#new_user .fields-group .input textarea#user_invite_request_attributes_text,
 .tabs-bar__wrapper,
 #tabs-bar__portal > button.column-back-button,
 .public-layout ul.table-of-contents,
@@ -145,6 +146,10 @@ form div.input input[type="email"],
 form div.input input[type="password"],
 div.content div.input-copy input,
 div.content textarea.text,
+.report-modal .report-modal__comment textarea.setting-text,
+.list-adder .list-adder__lists,
+.list-adder .list-adder__account,
+.list-adder form.column-inline-form input.setting-text,
 .item-list article .conversation.focusable.muted,
 .item-list article .conversation.focusable.muted.conversation--unread {
   background: rgba(217, 225, 232, 0.2) !important;

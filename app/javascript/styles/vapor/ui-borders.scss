@@ -52,7 +52,14 @@ div.item-list > article > div.account,
 .batch-table .batch-table__form.simple_form,
 .batch-table .input.select select#form_custom_emoji_batch_category_id,
 .admin-wrapper .content table.inline-table tbody tr th,
-.admin-wrapper .content table.inline-table tbody tr td {
+.admin-wrapper .content table.inline-table tbody tr td,
+form#new_user .fields-group .input textarea#user_invite_request_attributes_text,
+.report-modal .report-modal__container,
+.report-modal .report-modal__comment,
+.report-modal .report-modal__comment textarea.setting-text,
+.report-modal .report-modal__statuses .status-check-box,
+.list-adder .list-adder__account div.account,
+.list-adder .list-adder__lists div.list {
   border-color: $vapor-highlight;
 }
 
@@ -135,4 +142,15 @@ div.account__header__extra div.public-account-bio > div.account__header__fields 
 div.account-timeline__header > div > div.account__action-bar > div.account__action-bar-links > a.account__action-bar__tab,
 div.account__header__fields > dl > dd {
   border-left-color: $vapor-highlight;
+}
+
+div.modal-root__modal.report-modal,
+div.modal-root__modal.list-adder,
+body.app-body.no-reduce-motion > div.dropdown-menu,
+.list-adder form.column-inline-form input.setting-text {
+  border: 1px solid $vapor-highlight;
+}
+
+.report-modal .report-modal__statuses .status-check-box:last-child {
+  border-bottom: none;
 }

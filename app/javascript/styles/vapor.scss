@@ -78,6 +78,18 @@ html {
   color: $primary-text-color;
 }
 
+div.navigation-panel a.column-link.active {
+  color: lighten($vapor-highlight, 15%);
+}
+
+div.compose__action-bar div.compose__action-bar-dropdown button.icon-button {
+  color: lighten($vapor-highlight, 15%);
+
+  &.disabled {
+    color: #555;
+  }
+}
+
 .compose-panel .compose-form .compose-form__modifiers {
   background-color: transparent;
 }
@@ -350,8 +362,8 @@ div.admin-wrapper div.content-wrapper > div.content h2 {
 }
 
 
-
-.compose-form__poll-wrapper ul li .icon-button {
+.compose-form__poll-wrapper ul li .icon-button,
+.list-adder button.icon-button {
   color: $vapor-highlight;
 
   &.disabled {
@@ -393,6 +405,10 @@ form.simple-form div.warning {
   & a {
     color: white;
   }
+}
+
+body .warning-hint, .admin-wrapper .content .warning-hint {
+  color: $hint-warning-color;
 }
 
 div.onboarding-modal__paginator button.onboarding-modal__nav.onboarding-modal__next:focus,
