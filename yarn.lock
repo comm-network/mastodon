@@ -1119,13 +1119,6 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@types/react@16.4.6":
-  version "16.4.6"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.6.tgz#5024957c6bcef4f02823accf5974faba2e54fada"
-  integrity sha512-9LDZdhsuKSc+DjY65SjBkA958oBWcTWSVWAd2cD9XqKBjhGw1KzAkRhWRw2eIsXvaIE/TOTjjKMFVC+JA1iU4g==
-  dependencies:
-    csstype "^2.2.0"
-
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
@@ -3045,7 +3038,7 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.2.0, csstype@^2.5.7:
+csstype@^2.5.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.7.tgz#20b0024c20b6718f4eda3853a1f5a1cce7f5e4a5"
   integrity sha512-9Mcn9sFbGBAdmimWb2gLVDtFJzeKtDGIr76TUqmjZrw9LFXBMSU70lcs+C0/7fyCd6iBDqmksUcCOUIkisPHsQ==
@@ -8369,12 +8362,10 @@ react-immutable-proptypes@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-immutable-proptypes/-/react-immutable-proptypes-2.1.0.tgz#023d6f39bb15c97c071e9e60d00d136eac5fa0b4"
   integrity sha1-Aj1vObsVyXwHHp5g0A0TbqxfoLQ=
 
-react-immutable-pure-component@^1.1.1:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/react-immutable-pure-component/-/react-immutable-pure-component-1.2.3.tgz#fa33638df68cfe9f73ccbee1d5861c17f3053f86"
-  integrity sha512-kNy2A/fDrSuR8TKwB+4ynmItmp1vgF87tWxxfmadwDYo2J3ANipHqTjDIBvJvJ7libvuh76jIbvmK0krjtKH1g==
-  optionalDependencies:
-    "@types/react" "16.4.6"
+react-immutable-pure-component@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-immutable-pure-component/-/react-immutable-pure-component-2.2.2.tgz#3014d3e20cd5a7a4db73b81f1f1464f4d351684b"
+  integrity sha512-vkgoMJUDqHZfXXnjVlG3keCxSO/U6WeDQ5/Sl0GK2cH8TOxEzQ5jXqDXHEL/jqk6fsNxV05oH5kD7VNMUE2k+A==
 
 react-infinite-scroller@^1.0.12:
   version "1.2.4"
