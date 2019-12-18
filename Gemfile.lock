@@ -234,9 +234,9 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.10.0)
-    fog-core (2.1.0)
+    fog-core (2.2.0)
       builder
-      excon (~> 0.58)
+      excon (~> 0.71)
       formatador (~> 0.2)
       mime-types
     fog-json (1.2.0)
@@ -710,7 +710,7 @@ DEPENDENCIES
   faker (~> 2.9)
   fast_blank (~> 1.0)
   fastimage
-  fog-core (<= 2.1.0)
+  fog-core (<= 2.3.0)
   fog-openstack (~> 1.0)
   fuubar (~> 2.5)
   goldfinger (~> 2.1)
