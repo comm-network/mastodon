@@ -4269,10 +4269,10 @@ file-loader@^5.0.2:
     loader-utils "^1.2.3"
     schema-utils "^2.5.0"
 
-file-type@^12.3.0:
-  version "12.4.0"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.0.tgz#a9a399459e1940d9f34b3973039958f1f36a565e"
-  integrity sha512-WTvyKq8yjtNmUtVAD8LGcTkvtCdJglM6ks2HTqEClm6+65XTqM6MoZYA1Vtra50DLRWLiM38fEs1y56f5VhnUA==
+file-type@^12.4.1:
+  version "12.4.2"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.2.tgz#a344ea5664a1d01447ee7fb1b635f72feb6169d9"
+  integrity sha512-UssQP5ZgIOKelfsaB5CuGAL+Y+q7EmONuiwF3N5HAH0t27rvrttgi6Ra9k/+DVaY9UF6+ybxu5pOXLUdA8N7Vg==
 
 file-uri-to-path@1.0.0:
   version "1.0.0"
@@ -9943,25 +9943,25 @@ terser@^4.1.2, terser@^4.4.3:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
-tesseract.js-core@^2.0.0-beta.13:
-  version "2.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/tesseract.js-core/-/tesseract.js-core-2.0.0-beta.13.tgz#a21d798e88098898a9bdd935d0553215e03274f8"
-  integrity sha512-GboWV/aV5h+Whito6L6Q3WCFZ2+lgxZGgjY84wSpWbTLEkkZgHsU+dz1or+3rWSABH/nuzHDco1bZRk5+f94mw==
+tesseract.js-core@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tesseract.js-core/-/tesseract.js-core-2.0.0.tgz#1d4073ab4d0234d4c231de06ddd8c55043ac2b1a"
+  integrity sha512-Oi+V/0iuDQarM9OaLRso6y8U0lPZy9dDaLBoSWNd9c5FSsvgL6OoIDRS+Pum/noAQw7Q3V8vetlf+SgQNRdorA==
 
-tesseract.js@^2.0.0-alpha.16:
-  version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/tesseract.js/-/tesseract.js-2.0.0-beta.2.tgz#a05b998279fe6b45baae87f032bc9c5366f9c0dd"
-  integrity sha512-vbBqWOzr2UNrac8vhtwvsMABumwhLw8ILdWRp0XqcwVYrc8Ay6IDG9/riq16XQF0uETwcbuACSv3JEj2bYfDhA==
+tesseract.js@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tesseract.js/-/tesseract.js-2.0.0.tgz#3c788865afbaa3f397eb9eaa79c8f1943fb2ab99"
+  integrity sha512-s3Idg+oOt9P2y2FGxxFS8XDsAVX7hUexU6J0yyDXb86ANa3gKneQg60hxi9TR/yAw8yh3DO9Zebj2NtP+DDGlA==
   dependencies:
     axios "^0.18.0"
     bmp-js "^0.1.0"
-    file-type "^12.3.0"
+    file-type "^12.4.1"
     idb-keyval "^3.2.0"
     is-url "1.2.2"
     opencollective-postinstall "^2.0.2"
     regenerator-runtime "^0.13.3"
     resolve-url "^0.2.1"
-    tesseract.js-core "^2.0.0-beta.13"
+    tesseract.js-core "^2.0.0"
     zlibjs "^0.3.1"
 
 test-exclude@^5.2.3:
