@@ -772,7 +772,7 @@ DEPENDENCIES
   rqrcode (~> 1.1)
   rspec-rails (~> 3.9)
   rspec-sidekiq (~> 3.0)
-  rubocop (~> 0.77)
+  rubocop (~> 0.78)
   rubocop-rails (~> 2.4)
   ruby-progressbar (~> 1.10)
   sanitize (~> 5.1)
