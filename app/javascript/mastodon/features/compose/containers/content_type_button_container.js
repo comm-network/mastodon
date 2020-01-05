@@ -6,7 +6,7 @@ import ContentTypeDropdown from '../components/content_type_dropdown';
 
 const mapStateToProps = state => ({
   isModalOpen: state.get('modal').modalType === 'ACTIONS',
-  value: state.getIn(['compose', 'privacy']),
+  value: state.getIn(['compose', 'content_type']),
 });
 
 const mapDispatchToProps = dispatch => ({

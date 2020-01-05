@@ -9,6 +9,7 @@ export default class IconButton extends React.PureComponent {
     className: PropTypes.string,
     title: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
+    brandsIcon: PropTypes.bool,
     onClick: PropTypes.func,
     onMouseDown: PropTypes.func,
     onKeyDown: PropTypes.func,
@@ -97,6 +98,7 @@ export default class IconButton extends React.PureComponent {
       pressed,
       tabIndex,
       title,
+      brandsIcon,
     } = this.props;
 
     const {
@@ -128,7 +130,7 @@ export default class IconButton extends React.PureComponent {
         tabIndex={tabIndex}
         disabled={disabled}
       >
-        <Icon id={icon} fixedWidth aria-hidden='true' />
+        <Icon brandsIcon={brandsIcon} id={icon} fixedWidth aria-hidden='true' />
       </button>
     );
   }

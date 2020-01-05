@@ -144,26 +144,32 @@ class ContentTypeDropdownMenu extends React.PureComponent {
     const { style, items, placement, value } = this.props;
 
     return (
-      <Motion defaultStyle={{ opacity: 0, scaleX: 0.85, scaleY: 0.75 }} style={{
+      <Motion
+        defaultStyle={{ opacity: 0, scaleX: 0.85, scaleY: 0.75 }} style={{
         opacity: spring(1, { damping: 35, stiffness: 400 }),
         scaleX: spring(1, { damping: 35, stiffness: 400 }),
         scaleY: spring(1, { damping: 35, stiffness: 400 }),
-      }}>
+      }}
+      >
         {({ opacity, scaleX, scaleY }) => (
           // It should not be transformed when mounting because the resulting
           // size will be used to determine the coordinate of the menu by
           // react-overlays
-          <div className={`content-type-dropdown__dropdown ${placement}`} style={{
+          <div
+            className={`content-type-dropdown__dropdown ${placement}`} style={{
             ...style,
             opacity: opacity,
             transform: mounted ? `scale(${scaleX}, ${scaleY})` : null,
             zIndex: 2,
-          }} role='listbox' ref={this.setRef}>
+          }} role='listbox' ref={this.setRef}
+          >
             {items.map(item => (
-              <div role='option' tabIndex='0' key={item.value} data-index={item.value} onKeyDown={this.handleKeyDown}
-                   onClick={this.handleClick}
-                   className={classNames('content-type-dropdown__option', { active: item.value === value })}
-                   aria-selected={item.value === value} ref={item.value === value ? this.setFocusRef : null}>
+              <div
+                role='option' tabIndex='0' key={item.value} data-index={item.value} onKeyDown={this.handleKeyDown}
+                onClick={this.handleClick}
+                className={classNames('content-type-dropdown__option', { active: item.value === value })}
+                aria-selected={item.value === value} ref={item.value === value ? this.setFocusRef : null}
+              >
                 <div className='content-type-dropdown__option__icon'>
                   <Icon id={item.icon} fixedWidth/>
                 </div>
@@ -271,37 +277,44 @@ class ContentTypeDropdown extends React.PureComponent {
   }
 
   render() {
-    const { intl, contentType } = this.props;
+    const { intl, value } = this.props;
     const { open, placement } = this.state;
 
     const contentTypeItems = [
       {
         icon: 'align-left',
-        name: 'text/plain',
+        value: 'text/plain',
+        brandsIcon: false,
+        name: 'text',
         text: <FormattedMessage {...messages.plain} />,
       }, {
         icon: 'code',
-        name: 'text/html',
+        value: 'text/html',
+        brandsIcon: false,
+        name: 'html',
         text: <FormattedMessage {...messages.html} />,
       }, {
         icon: 'arrow-circle-down',
-        name: 'text/markdown',
+        name: 'markdown',
+        brandsIcon: false,
+        value: 'text/markdown',
         text: <FormattedMessage {...messages.markdown} />,
       },
     ];
-
-    let currentContentType = contentTypeItems.find(item => item.name === contentType);
+    let currentContentType = contentTypeItems.find(item => item.value === value);
     return (
       <div className={classNames('content-type-dropdown', placement, { active: open })} onKeyDown={this.handleKeyDown}>
         <div
-          className={classNames('content-type-dropdown__value', { active: (placement === 'bottom' ? 0 : (this.options.length - 1)) })}>
+          className={classNames('content-type-dropdown__value', { active: (placement === 'bottom' ? 0 : (this.options.length - 1)) })}
+        >
           {
             <IconButton
               className='content-type-dropdown__value-icon'
-              icon={(currentContentType!==undefined) ? currentContentType.icon : 'align-left'}
+              icon={(currentContentType !== undefined) ? currentContentType.icon : 'align-left'}
               title={intl.formatMessage(messages.content_type)}
               size={18}
               expanded={open}
+              brandsIcon={currentContentType !== undefined ? currentContentType.brandsIcon : false}
               active={open}
               inverted
               onClick={this.handleToggle}
@@ -315,7 +328,7 @@ class ContentTypeDropdown extends React.PureComponent {
         <Overlay show={open} placement={placement} target={this}>
           <ContentTypeDropdownMenu
             items={contentTypeItems}
-            value={contentType}
+            value={value}
             onClose={this.handleClose}
             onChange={this.handleChange}
             placement={placement}
