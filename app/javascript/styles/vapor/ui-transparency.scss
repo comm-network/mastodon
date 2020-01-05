@@ -55,7 +55,9 @@ div.account__header__fields > dl > dt,
 div > div.status.status-direct,
 div.alert.flash-message,
 body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option.active,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option.active,
 div.privacy-dropdown.active > div.privacy-dropdown__value.active,
+div.content-type-dropdown.active > div.content-type-dropdown__value.active,
 ul > li.dropdown-menu__item > a:focus,
 ul > li.dropdown-menu__item:focus > a,
 nav.tabs-bar,
@@ -160,6 +162,7 @@ div.content form.simple_form select.select {
 }
 
 body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:not(.active):hover,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option:not(.active):hover,
 ul > li.dropdown-menu__item:hover > a,
 div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible > div:hover,
 div.detailed-status .status-card:hover,

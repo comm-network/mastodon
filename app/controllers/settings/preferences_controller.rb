@@ -54,6 +54,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_hide_network,
       :setting_aggregate_reblogs,
       :setting_show_application,
+      :setting_default_content_type,
       :setting_advanced_layout,
       :setting_use_blurhash,
       :setting_use_pending_items,

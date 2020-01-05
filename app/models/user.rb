@@ -107,7 +107,7 @@ class User < ApplicationRecord
 
   delegate :auto_play_gif, :default_sensitive, :unfollow_modal, :boost_modal, :delete_modal,
            :reduce_motion, :enable_ui_tweaks, :system_font_ui, :noindex, :theme, :display_media, :hide_network,
-           :expand_spoilers, :default_language, :aggregate_reblogs, :show_application,
+           :expand_spoilers, :default_language, :aggregate_reblogs, :show_application, :default_content_type,
            :advanced_layout, :use_blurhash, :use_pending_items, :trends, :crop_images,
            to: :settings, prefix: :setting, allow_nil: false
 

@@ -8,6 +8,7 @@ import {
   selectComposeSuggestion,
   changeComposeSpoilerText,
   insertEmojiCompose,
+  changeComposeContentType,
   uploadCompose,
 } from '../../../actions/compose';
 
@@ -25,6 +26,7 @@ const mapStateToProps = state => ({
   isUploading: state.getIn(['compose', 'is_uploading']),
   showSearch: state.getIn(['search', 'submitted']) && !state.getIn(['search', 'hidden']),
   anyMedia: state.getIn(['compose', 'media_attachments']).size > 0,
+  contentType: state.getIn(['compose', 'content_type']),
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -55,6 +57,10 @@ const mapDispatchToProps = (dispatch) => ({
 
   onPaste (files) {
     dispatch(uploadCompose(files));
+  },
+
+  onChangeContentType(value) {
+    dispatch(changeComposeContentType(value));
   },
 
   onPickEmoji (position, data, needsSpace) {

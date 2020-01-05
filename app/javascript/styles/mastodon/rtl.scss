@@ -189,7 +189,17 @@ body.rtl {
     margin-right: 40px;
   }
 
+  .content-type-dropdown__dropdown {
+    margin-left: 0;
+    margin-right: 40px;
+  }
+
   .privacy-dropdown__option__icon {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .content-type-dropdown__option__icon {
     margin-left: 10px;
     margin-right: 0;
   }

@@ -3,6 +3,28 @@
 require 'singleton'
 require_relative './sanitize_config'
 
+class HTMLRenderer < Redcarpet::Render::HTML
+  def block_code(code, language)
+    "<pre><code>#{encode(code).gsub("\n", '<br/>')}</code></pre>"
+  end
+
+  def autolink(link, link_type)
+    return link if link_type == :email
+    Formatter.instance.link_url(link)
+  end
+
+  private
+
+  def html_entities
+    @html_entities ||= HTMLEntities.new
+  end
+
+  def encode(html)
+    html_entities.encode(html)
+  end
+
+end
+
 class Formatter
   include Singleton
   include RoutingHelper
@@ -12,7 +34,7 @@ class Formatter
   def format(status, **options)
     if status.reblog?
       prepend_reblog = status.reblog.account.acct
-      status         = status.proper
+      status = status.proper
     else
       prepend_reblog = false
     end
@@ -36,12 +58,20 @@ class Formatter
 
     html = raw_content
     html = "RT @#{prepend_reblog} #{html}" if prepend_reblog
-    html = encode_and_link_urls(html, linkable_accounts)
+    html = format_markdown(html) if status.content_type == 'text/markdown'
+    html = encode_and_link_urls(html, linkable_accounts, keep_html: %w(text/markdown text/html).include?(status.content_type))
     html = encode_custom_emojis(html, status.emojis, options[:autoplay]) if options[:custom_emojify]
-    html = simple_format(html, {}, sanitize: false)
-    html = html.delete("\n")
+    unless %w(text/markdown text/html).include?(status.content_type)
+      html = simple_format(html, {}, sanitize: false)
+      html = html.delete("\n")
+    end
 
     html.html_safe # rubocop:disable Rails/OutputSafety
+  end
+
+  def format_markdown(html)
+    html = reformat(markdown_formatter.render(html))
+    html.delete("\r").delete("\n")
   end
 
   def reformat(html)
@@ -97,7 +127,41 @@ class Formatter
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
 
+  def link_url(url)
+    "<a href=\"#{encode(url)}\" target=\"blank\" rel=\"nofollow noopener\">#{link_html(url)}</a>"
+  end
+
   private
+
+  def markdown_formatter
+    return @markdown_formatter if defined?(@markdown_formatter)
+
+    extensions = {
+        autolink: true,
+        no_intra_emphasis: true,
+        fenced_code_blocks: true,
+        disable_indented_code_blocks: true,
+        strikethrough: true,
+        lax_spacing: true,
+        space_after_headers: true,
+        superscript: true,
+        underline: true,
+        highlight: true,
+        footnotes: false,
+    }
+
+    renderer = HTMLRenderer.new(
+                                  filter_html: false,
+                                  escape_html: false,
+                                  no_images: true,
+                                  no_styles: true,
+                                  safe_links_only: true,
+                                  hard_wrap: true,
+                                  link_attributes: { target: '_blank', rel: 'nofollow noopener' },
+                                )
+
+    @markdown_formatter = Redcarpet::Markdown.new(renderer, extensions)
+  end
 
   def html_entities
     @html_entities ||= HTMLEntities.new
@@ -108,14 +172,14 @@ class Formatter
   end
 
   def encode_and_link_urls(html, accounts = nil, options = {})
-    entities = utf8_friendly_extractor(html, extract_url_without_protocol: false)
-
     if accounts.is_a?(Hash)
-      options  = accounts
+      options = accounts
       accounts = nil
     end
 
-    rewrite(html.dup, entities) do |entity|
+    entities = options[:keep_html] ? html_friendly_extractor(html) : utf8_friendly_extractor(html, extract_url_without_protocol: false)
+
+    rewrite(html.dup, entities, options[:keep_html]) do |entity|
       if entity[:url]
         link_to_url(entity, options)
       elsif entity[:hashtag]
@@ -127,9 +191,12 @@ class Formatter
   end
 
   def count_tag_nesting(tag)
-    if tag[1] == '/' then -1
-    elsif tag[-2] == '/' then 0
-    else 1
+    if tag[1] == '/' then
+      -1
+    elsif tag[-2] == '/' then
+      0
+    else
+      1
     end
   end
 
@@ -138,31 +205,31 @@ class Formatter
 
     emoji_map = emojis.each_with_object({}) { |e, h| h[e.shortcode] = [full_asset_url(e.image.url), full_asset_url(e.image.url(:static))] }
 
-    i                     = -1
-    tag_open_index        = nil
-    inside_shortname      = false
+    i = -1
+    tag_open_index = nil
+    inside_shortname = false
     shortname_start_index = -1
-    invisible_depth       = 0
+    invisible_depth = 0
 
     while i + 1 < html.size
       i += 1
 
       if invisible_depth.zero? && inside_shortname && html[i] == ':'
         shortcode = html[shortname_start_index + 1..i - 1]
-        emoji     = emoji_map[shortcode]
+        emoji = emoji_map[shortcode]
 
         if emoji
           original_url, static_url = emoji
           replacement = begin
-            if animate
-              "<img draggable=\"false\" class=\"emojione\" alt=\":#{encode(shortcode)}:\" title=\":#{encode(shortcode)}:\" src=\"#{encode(original_url)}\" />"
-            else
-              "<img draggable=\"false\" class=\"emojione custom-emoji\" alt=\":#{encode(shortcode)}:\" title=\":#{encode(shortcode)}:\" src=\"#{encode(static_url)}\" data-original=\"#{original_url}\" data-static=\"#{static_url}\" />"
-            end
-          end
+                          if animate
+                            "<img draggable=\"false\" class=\"emojione\" alt=\":#{encode(shortcode)}:\" title=\":#{encode(shortcode)}:\" src=\"#{encode(original_url)}\" />"
+                          else
+                            "<img draggable=\"false\" class=\"emojione custom-emoji\" alt=\":#{encode(shortcode)}:\" title=\":#{encode(shortcode)}:\" src=\"#{encode(static_url)}\" data-original=\"#{original_url}\" data-static=\"#{static_url}\" />"
+                          end
+                        end
           before_html = shortname_start_index.positive? ? html[0..shortname_start_index - 1] : ''
-          html        = before_html + replacement + html[i + 1..-1]
-          i          += replacement.size - (shortcode.size + 2) - 1
+          html = before_html + replacement + html[i + 1..-1]
+          i += replacement.size - (shortcode.size + 2) - 1
         else
           i -= 1
         end
@@ -177,10 +244,10 @@ class Formatter
           invisible_depth = 1
         end
       elsif html[i] == '<'
-        tag_open_index   = i
+        tag_open_index = i
         inside_shortname = false
       elsif !tag_open_index && html[i] == ':'
-        inside_shortname      = true
+        inside_shortname = true
         shortname_start_index = i
       end
     end
@@ -188,7 +255,7 @@ class Formatter
     html
   end
 
-  def rewrite(text, entities)
+  def rewrite(text, entities, keep_html = false)
     text = text.to_s
 
     # Sort by start index
@@ -201,29 +268,29 @@ class Formatter
 
     last_index = entities.reduce(0) do |index, entity|
       indices = entity.respond_to?(:indices) ? entity.indices : entity[:indices]
-      result << encode(text[index...indices.first])
+      result << (keep_html ? text[index...indices.first] : encode(text[index...indices.first]))
       result << yield(entity)
       indices.last
     end
 
-    result << encode(text[last_index..-1])
+    result << (keep_html ? text[last_index..-1] : encode(text[last_index..-1]))
 
     result.flatten.join
   end
 
-  UNICODE_ESCAPE_BLACKLIST_RE = /\p{Z}|\p{P}/
+  UNICODE_ESCAPE_BLACKLIST_RE = /\p{Z}|\p{P}/.freeze
 
   def utf8_friendly_extractor(text, options = {})
     old_to_new_index = [0]
 
     escaped = text.chars.map do |c|
       output = begin
-        if c.ord.to_s(16).length > 2 && UNICODE_ESCAPE_BLACKLIST_RE.match(c).nil?
-          CGI.escape(c)
-        else
-          c
-        end
-      end
+                 if c.ord.to_s(16).length > 2 && UNICODE_ESCAPE_BLACKLIST_RE.match(c).nil?
+                   CGI.escape(c)
+                 else
+                   c
+                 end
+               end
 
       old_to_new_index << old_to_new_index.last + output.length
 
@@ -234,13 +301,13 @@ class Formatter
     # for mention so this requires additional check
     special = Extractor.extract_urls_with_indices(escaped, options).map do |extract|
       new_indices = [
-        old_to_new_index.find_index(extract[:indices].first),
-        old_to_new_index.find_index(extract[:indices].last),
+          old_to_new_index.find_index(extract[:indices].first),
+          old_to_new_index.find_index(extract[:indices].last),
       ]
 
       next extract.merge(
-        indices: new_indices,
-        url: text[new_indices.first..new_indices.last - 1]
+          indices: new_indices,
+          url: text[new_indices.first..new_indices.last - 1]
       )
     end
 
@@ -249,9 +316,32 @@ class Formatter
     Extractor.remove_overlapping_entities(special + standard)
   end
 
+  def html_friendly_extractor(html, options = {})
+    gaps = []
+    total_offset = 0
+
+    escaped = html.gsub(/<[^>]*>/) do |match|
+      total_offset += match.length - 1
+      end_offset = Regexp.last_match.end(0)
+      gaps << [end_offset - total_offset, total_offset]
+      "\u200b"
+    end
+
+    entities = Extractor.extract_hashtags_with_indices(escaped, check_url_overlap: false) +
+        Extractor.extract_mentions_or_lists_with_indices(escaped)
+    Extractor.remove_overlapping_entities(entities).map do |extract|
+      pos = extract[:indices].first
+      offset_idx = gaps.rindex { |gap| gap.first <= pos }
+      offset = offset_idx.nil? ? 0 : gaps[offset_idx].last
+      next extract.merge(
+          indices: [extract[:indices].first + offset, extract[:indices].last + offset]
+      )
+    end
+  end
+
   def link_to_url(entity, options = {})
-    url        = Addressable::URI.parse(entity[:url])
-    html_attrs = { target: '_blank', rel: 'nofollow noopener noreferrer' }
+    url = Addressable::URI.parse(entity[:url])
+    html_attrs = {target: '_blank', rel: 'nofollow noopener noreferrer'}
 
     html_attrs[:rel] = "me #{html_attrs[:rel]}" if options[:me]
 
@@ -272,7 +362,7 @@ class Formatter
   def link_to_account(acct)
     username, domain = acct.split('@')
 
-    domain  = nil if TagManager.instance.local_domain?(domain)
+    domain = nil if TagManager.instance.local_domain?(domain)
     account = EntityCache.instance.mention(username, domain)
 
     account ? mention_html(account) : "@#{encode(acct)}"
@@ -283,9 +373,9 @@ class Formatter
   end
 
   def link_html(url)
-    url    = Addressable::URI.parse(url).to_s
+    url = Addressable::URI.parse(url).to_s
     prefix = url.match(/\Ahttps?:\/\/(www\.)?/).to_s
-    text   = url[prefix.length, 30]
+    text = url[prefix.length, 30]
     suffix = url[prefix.length + 30..-1]
     cutoff = url[prefix.length..-1].length > 30
 

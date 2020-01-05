@@ -289,6 +289,10 @@ html {
   color: $white;
 }
 
+.content-type-dropdown.active .content-type-dropdown__value.active .icon-button {
+  color: $white;
+}
+
 .account-gallery__item a {
   background-color: $ui-base-color;
 }
@@ -330,6 +334,12 @@ html {
 .privacy-dropdown__option.active .privacy-dropdown__option__content strong,
 .privacy-dropdown__option:hover .privacy-dropdown__option__content,
 .privacy-dropdown__option:hover .privacy-dropdown__option__content strong,
+.content-type-dropdown__option.active,
+.content-type-dropdown__option:hover,
+.content-type-dropdown__option.active .content-type-dropdown__option__content,
+.content-type-dropdown__option.active .content-type-dropdown__option__content strong,
+.content-type-dropdown__option:hover .content-type-dropdown__option__content,
+.content-type-dropdown__option:hover .content-type-dropdown__option__content strong,
 .dropdown-menu__item a:active,
 .dropdown-menu__item a:focus,
 .dropdown-menu__item a:hover,

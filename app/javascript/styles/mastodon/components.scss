@@ -4054,6 +4054,23 @@ a.status-card.compact:hover {
   }
 }
 
+.content-type-dropdown__dropdown {
+  position: absolute;
+  background: $simple-background-color;
+  box-shadow: 2px 4px 15px rgba($base-shadow-color, 0.4);
+  border-radius: 4px;
+  margin-left: 40px;
+  overflow: hidden;
+
+  &.top {
+    transform-origin: 50% 100%;
+  }
+
+  &.bottom {
+    transform-origin: 50% 0;
+  }
+}
+
 .privacy-dropdown__option {
   color: $inverted-text-color;
   padding: 10px;
@@ -4080,7 +4097,40 @@ a.status-card.compact:hover {
   }
 }
 
+.content-type-dropdown__option {
+  color: $inverted-text-color;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+
+  &:hover,
+  &.active {
+    background: $ui-highlight-color;
+    color: $primary-text-color;
+    outline: 0;
+
+    .content-type-dropdown__option__content {
+      color: $primary-text-color;
+
+      strong {
+        color: $primary-text-color;
+      }
+    }
+  }
+
+  &.active:hover {
+    background: lighten($ui-highlight-color, 4%);
+  }
+}
+
 .privacy-dropdown__option__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.content-type-dropdown__option__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4104,8 +4154,25 @@ a.status-card.compact:hover {
   }
 }
 
-.privacy-dropdown.active {
-  .privacy-dropdown__value {
+.content-type-dropdown__option__content {
+  flex: 1 1 auto;
+  color: $lighter-text-color;
+
+  strong {
+    font-weight: 500;
+    display: block;
+    color: $inverted-text-color;
+
+    @each $lang in $cjk-langs {
+      &:lang(#{$lang}) {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.privacy-dropdown.active, .content-type-dropdown.active {
+  .privacy-dropdown__value, .content-type-dropdown__value {
     background: $simple-background-color;
     border-radius: 4px 4px 0 0;
     box-shadow: 0 -4px 4px rgba($base-shadow-color, 0.1);
@@ -4123,11 +4190,13 @@ a.status-card.compact:hover {
     }
   }
 
-  &.top .privacy-dropdown__value {
+  &.top .privacy-dropdown__value,
+  &.top .content-type-dropdown__value {
     border-radius: 0 0 4px 4px;
   }
 
-  .privacy-dropdown__dropdown {
+  .privacy-dropdown__dropdown,
+  .content-type-dropdown__dropdown {
     display: block;
     box-shadow: 2px 4px 6px rgba($base-shadow-color, 0.1);
   }

@@ -34,7 +34,7 @@ const mapStateToProps = (state, ownProps) => ({
   showSearch: ownProps.multiColumn ? state.getIn(['search', 'submitted']) && !state.getIn(['search', 'hidden']) : ownProps.isSearchPage,
 });
 
-export default @connect(mapStateToProps)
+export default @connect(mapStateToProps, mapDispatchToProps)
 @injectIntl
 class Compose extends React.PureComponent {
 

@@ -200,6 +200,10 @@ body.admin {
   z-index:2;
 }
 
+.content-type-dropdown__dropdown {
+  z-index:2;
+}
+
 .column > .scrollable {
   background: $win95-bg;
   @include win95-border-outset();
@@ -995,6 +999,7 @@ body.admin {
 }
 
 .privacy-dropdown.active .privacy-dropdown__value.active,
+.content-type-dropdown.active .content-type-dropdown__value.active,
 .advanced-options-dropdown.open .advanced-options-dropdown__value {
   background: $win95-bg;
 }
@@ -1003,8 +1008,16 @@ body.admin {
   color: $win95-dark-grey;
 }
 
-.privacy-dropdown.active
-.privacy-dropdown__value {
+.content-type-dropdown.active .content-type-dropdown__value.active .icon-button {
+  color: $win95-dark-grey;
+}
+
+.privacy-dropdown.active .privacy-dropdown__value {
+  background: $win95-bg;
+  box-shadow:unset;
+}
+
+.content-type-dropdown.active .content-type-dropdown__value {
   background: $win95-bg;
   box-shadow:unset;
 }
@@ -1014,8 +1027,14 @@ body.admin {
   background:$win95-window-header;
 }
 
+.content-type-dropdown__option.active, .content-type-dropdown__option:hover,
+.content-type-dropdown__option.active:hover {
+  background:$win95-window-header;
+}
+
 .privacy-dropdown__dropdown,
 .privacy-dropdown.active .privacy-dropdown__dropdown,
+.content-type-dropdown.active .content-type-dropdown__dropdown,
 .advanced-options-dropdown__dropdown,
 .advanced-options-dropdown.open .advanced-options-dropdown__dropdown
 {
@@ -1030,6 +1049,14 @@ body.admin {
 }
 
 .privacy-dropdown__option__content strong {
+  font-weight:bold;
+}
+
+.content-type-dropdown__option__content {
+  color:black;
+}
+
+.content-type-dropdown__option__content strong {
   font-weight:bold;
 }
 
