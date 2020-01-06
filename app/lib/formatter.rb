@@ -151,14 +151,14 @@ class Formatter
     }
 
     renderer = HTMLRenderer.new(
-                                  filter_html: false,
-                                  escape_html: false,
-                                  no_images: true,
-                                  no_styles: true,
-                                  safe_links_only: true,
-                                  hard_wrap: true,
-                                  link_attributes: { target: '_blank', rel: 'nofollow noopener' },
-                                )
+        filter_html: false,
+        escape_html: false,
+        no_images: true,
+        no_styles: true,
+        safe_links_only: true,
+        hard_wrap: true,
+        link_attributes: {target: '_blank', rel: 'nofollow noopener'},
+    )
 
     @markdown_formatter = Redcarpet::Markdown.new(renderer, extensions)
   end
