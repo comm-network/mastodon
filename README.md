@@ -16,6 +16,7 @@ Modifications include (incomplete list):
     - round profile pictures
     - action buttons hidden to prevent accidental clicks
 - options to lower the notification sound volume
+- Markdown/HTML support in posts
 - ... and more
 
 ## About
