@@ -652,6 +652,13 @@
     .compose-form__buttons {
       display: flex;
 
+      button.icon-button.octicon {
+        display: flex;
+        height: 27px;
+        justify-content: center;
+        align-items: center;
+      }
+
       .compose-form__upload-button-icon {
         line-height: 27px;
       }
@@ -808,7 +815,7 @@
     &:hover {
       text-decoration: underline;
 
-      .fa {
+      .fa, .octicon {
         color: lighten($dark-text-color, 7%);
       }
     }
@@ -823,7 +830,7 @@
       }
     }
 
-    .fa {
+    .fa, .octicon {
       color: $dark-text-color;
     }
   }
@@ -1568,7 +1575,7 @@ a.account__display-name {
   line-height: 22px;
   position: relative;
 
-  .fa {
+  .fa, .octicon {
     color: $highlight-text-color;
   }
 
@@ -2093,7 +2100,7 @@ a.account__display-name {
   transition: all 50ms linear;
   transition-property: border-bottom, background, color;
 
-  .fa {
+  .fa, .octicon {
     font-weight: 400;
     font-size: 16px;
   }
@@ -3050,7 +3057,7 @@ a.status-card {
   background: lighten($ui-base-color, 8%);
   position: relative;
 
-  & > .fa {
+  & > .fa, .octicon {
     font-size: 21px;
     position: absolute;
     transform-origin: 50% 50%;
@@ -3963,7 +3970,7 @@ a.status-card.compact:hover {
   overflow: hidden;
   display: flex;
 
-  .fa {
+  .fa, .octicon {
     font-size: 34px;
     margin-right: 10px;
   }
@@ -4248,7 +4255,7 @@ a.status-card.compact:hover {
     outline: 0 !important;
   }
 
-  .fa {
+  .fa, .octicon {
     position: absolute;
     top: 16px;
     right: 10px;
@@ -4303,7 +4310,7 @@ a.status-card.compact:hover {
   font-size: 16px;
   cursor: default;
 
-  .fa {
+  .fa, .octicon {
     display: inline-block;
     margin-right: 5px;
   }
@@ -4322,7 +4329,7 @@ a.status-card.compact:hover {
     font-size: 16px;
     color: $dark-text-color;
 
-    .fa {
+    .fa, .octicon {
       display: inline-block;
       margin-right: 5px;
     }
@@ -5100,7 +5107,7 @@ a.status-card.compact:hover {
     justify-content: center;
     font-size: 26px;
 
-    .fa {
+    .fa, .octicon {
       display: block;
     }
   }
@@ -5138,7 +5145,7 @@ a.status-card.compact:hover {
       display: block;
     }
 
-    .fa {
+    .fa, .octicon {
       color: $dark-text-color;
     }
   }
@@ -6496,7 +6503,7 @@ noscript {
     font-size: 16px;
     cursor: default;
 
-    .fa {
+    .fa, .octicon {
       display: inline-block;
       margin-right: 5px;
     }

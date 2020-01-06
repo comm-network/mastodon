@@ -8,6 +8,7 @@ import spring from 'react-motion/lib/spring';
 import detectPassiveEvents from 'detect-passive-events';
 import classNames from 'classnames';
 import Icon from 'mastodon/components/icon';
+import Octicon, { getIconByName, Markdown } from '@primer/octicons-react';
 
 const messages = defineMessages({
   content_type: {
@@ -163,23 +164,31 @@ class ContentTypeDropdownMenu extends React.PureComponent {
             zIndex: 2,
           }} role='listbox' ref={this.setRef}
           >
-            {items.map(item => (
-              <div
-                role='option' tabIndex='0' key={item.value} data-index={item.value} onKeyDown={this.handleKeyDown}
-                onClick={this.handleClick}
-                className={classNames('content-type-dropdown__option', { active: item.value === value })}
-                aria-selected={item.value === value} ref={item.value === value ? this.setFocusRef : null}
-              >
-                <div className='content-type-dropdown__option__icon'>
-                  <Icon id={item.icon} fixedWidth/>
-                </div>
+            {items.map(item => {
+              let resIcon;
+              if (item.octicon) {
+                resIcon = <Octicon icon={item.octicon} aria-hidden='true' />;
+              } else {
+                resIcon = <Icon brandsIcon={item.brandsIcon} id={item.icon} fixedWidth aria-hidden='true' />;
+              }
+              return (
+                <div
+                  role='option' tabIndex='0' key={item.value} data-index={item.value} onKeyDown={this.handleKeyDown}
+                  onClick={this.handleClick}
+                  className={classNames('content-type-dropdown__option', { active: item.value === value })}
+                  aria-selected={item.value === value} ref={item.value === value ? this.setFocusRef : null}
+                >
+                  <div className='content-type-dropdown__option__icon'>
+                    {resIcon}
+                  </div>
 
-                <div className='content-type-dropdown__option__content'>
-                  <strong>{item.text}</strong>
-                  {item.meta}
+                  <div className='content-type-dropdown__option__content'>
+                    <strong>{item.text}</strong>
+                    {item.meta}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </Motion>
@@ -284,19 +293,19 @@ class ContentTypeDropdown extends React.PureComponent {
       {
         icon: 'align-left',
         value: 'text/plain',
-        brandsIcon: false,
+        octicon: undefined,
         name: 'text',
         text: <FormattedMessage {...messages.plain} />,
       }, {
         icon: 'code',
         value: 'text/html',
-        brandsIcon: false,
+        octicon: undefined,
         name: 'html',
         text: <FormattedMessage {...messages.html} />,
       }, {
-        icon: 'arrow-circle-down',
+        icon: '',
         name: 'markdown',
-        brandsIcon: false,
+        octicon: Markdown,
         value: 'text/markdown',
         text: <FormattedMessage {...messages.markdown} />,
       },
@@ -314,7 +323,7 @@ class ContentTypeDropdown extends React.PureComponent {
               title={intl.formatMessage(messages.content_type)}
               size={18}
               expanded={open}
-              brandsIcon={currentContentType !== undefined ? currentContentType.brandsIcon : false}
+              octicon={(currentContentType && currentContentType.octicon)}
               active={open}
               inverted
               onClick={this.handleToggle}

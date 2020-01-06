@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Icon from 'mastodon/components/icon';
+import Octicon from '@primer/octicons-react';
 
 export default class IconButton extends React.PureComponent {
 
@@ -25,6 +26,7 @@ export default class IconButton extends React.PureComponent {
     animate: PropTypes.bool,
     overlay: PropTypes.bool,
     tabIndex: PropTypes.string,
+    octicon: PropTypes.object,
   };
 
   static defaultProps = {
@@ -39,9 +41,9 @@ export default class IconButton extends React.PureComponent {
   state = {
     activate: false,
     deactivate: false,
-  }
+  };
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (!nextProps.animate) return;
 
     if (this.props.active && !nextProps.active) {
@@ -51,33 +53,33 @@ export default class IconButton extends React.PureComponent {
     }
   }
 
-  handleClick = (e) =>  {
+  handleClick = (e) => {
     e.preventDefault();
 
     if (!this.props.disabled) {
       this.props.onClick(e);
     }
-  }
+  };
 
   handleKeyPress = (e) => {
     if (this.props.onKeyPress && !this.props.disabled) {
       this.props.onKeyPress(e);
     }
-  }
+  };
 
   handleMouseDown = (e) => {
     if (!this.props.disabled && this.props.onMouseDown) {
       this.props.onMouseDown(e);
     }
-  }
+  };
 
   handleKeyDown = (e) => {
     if (!this.props.disabled && this.props.onKeyDown) {
       this.props.onKeyDown(e);
     }
-  }
+  };
 
-  render () {
+  render() {
     const style = {
       fontSize: `${this.props.size}px`,
       width: `${this.props.size * 1.28571429}px`,
@@ -99,6 +101,7 @@ export default class IconButton extends React.PureComponent {
       tabIndex,
       title,
       brandsIcon,
+      octicon,
     } = this.props;
 
     const {
@@ -113,7 +116,15 @@ export default class IconButton extends React.PureComponent {
       activate,
       deactivate,
       overlayed: overlay,
+      octicon,
     });
+
+    let resIcon;
+    if (octicon) {
+      resIcon = <Octicon icon={octicon} aria-hidden='true' />;
+    } else {
+      resIcon = <Icon brandsIcon={brandsIcon} id={icon} fixedWidth aria-hidden='true' />;
+    }
 
     return (
       <button
@@ -130,7 +141,7 @@ export default class IconButton extends React.PureComponent {
         tabIndex={tabIndex}
         disabled={disabled}
       >
-        <Icon brandsIcon={brandsIcon} id={icon} fixedWidth aria-hidden='true' />
+        {resIcon}
       </button>
     );
   }

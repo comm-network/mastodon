@@ -71,13 +71,13 @@ class ComposeForm extends ImmutablePureComponent {
 
   handleChange = (e) => {
     this.props.onChange(e.target.value);
-  }
+  };
 
   handleKeyDown = (e) => {
     if (e.keyCode === 13 && (e.ctrlKey || e.metaKey)) {
       this.handleSubmit();
     }
-  }
+  };
 
   handleSubmit = () => {
     if (this.props.text !== this.autosuggestTextarea.textarea.value) {
@@ -90,32 +90,33 @@ class ComposeForm extends ImmutablePureComponent {
     const { isSubmitting, isChangingUpload, isUploading, anyMedia } = this.props;
     const fulltext = [this.props.spoilerText, countableText(this.props.text)].join('');
 
-    if (isSubmitting || isUploading || isChangingUpload || length(fulltext) > 10000 || (fulltext.length !== 0 && fulltext.trim().length === 0 && !anyMedia)) {
+    if (isSubmitting || isUploading || isChangingUpload || length(fulltext) > 10000 ||
+      (fulltext.length !== 0 && fulltext.trim().length === 0 && !anyMedia)) {
       return;
     }
 
     this.props.onSubmit(this.context.router ? this.context.router.history : null);
-  }
+  };
 
   onSuggestionsClearRequested = () => {
     this.props.onClearSuggestions();
-  }
+  };
 
   onSuggestionsFetchRequested = (token) => {
     this.props.onFetchSuggestions(token);
-  }
+  };
 
   onSuggestionSelected = (tokenStart, token, value) => {
     this.props.onSuggestionSelected(tokenStart, token, value, ['text']);
-  }
+  };
 
   onSpoilerSuggestionSelected = (tokenStart, token, value) => {
     this.props.onSuggestionSelected(tokenStart, token, value, ['spoiler_text']);
-  }
+  };
 
   handleChangeSpoilerText = (e) => {
     this.props.onChangeSpoilerText(e.target.value);
-  }
+  };
 
   handleFocus = () => {
     if (this.composeForm && !this.props.singleColumn) {
@@ -124,9 +125,9 @@ class ComposeForm extends ImmutablePureComponent {
         this.composeForm.scrollIntoView();
       }
     }
-  }
+  };
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate(prevProps) {
     // This statement does several things:
     // - If we're beginning a reply, and,
     //     - Replying to zero or one users, places the cursor at the end of the textbox.
@@ -136,19 +137,19 @@ class ComposeForm extends ImmutablePureComponent {
       let selectionEnd, selectionStart;
 
       if (this.props.preselectDate !== prevProps.preselectDate) {
-        selectionEnd   = this.props.text.length;
+        selectionEnd = this.props.text.length;
         selectionStart = this.props.text.search(/\s/) + 1;
       } else if (typeof this.props.caretPosition === 'number') {
         selectionStart = this.props.caretPosition;
-        selectionEnd   = this.props.caretPosition;
+        selectionEnd = this.props.caretPosition;
       } else {
-        selectionEnd   = this.props.text.length;
+        selectionEnd = this.props.text.length;
         selectionStart = selectionEnd;
       }
 
       this.autosuggestTextarea.textarea.setSelectionRange(selectionStart, selectionEnd);
       this.autosuggestTextarea.textarea.focus();
-    } else if(prevProps.isSubmitting && !this.props.isSubmitting) {
+    } else if (prevProps.isSubmitting && !this.props.isSubmitting) {
       this.autosuggestTextarea.textarea.focus();
     } else if (this.props.spoiler !== prevProps.spoiler) {
       if (this.props.spoiler) {
@@ -161,42 +162,43 @@ class ComposeForm extends ImmutablePureComponent {
 
   setAutosuggestTextarea = (c) => {
     this.autosuggestTextarea = c;
-  }
+  };
 
   setSpoilerText = (c) => {
     this.spoilerText = c;
-  }
+  };
 
   setRef = c => {
     this.composeForm = c;
   };
 
   handleEmojiPick = (data) => {
-    const { text }     = this.props;
-    const position     = this.autosuggestTextarea.textarea.selectionStart;
-    const needsSpace   = data.custom && position > 0 && !allowedAroundShortCode.includes(text[position - 1]);
+    const { text } = this.props;
+    const position = this.autosuggestTextarea.textarea.selectionStart;
+    const needsSpace = data.custom && position > 0 && !allowedAroundShortCode.includes(text[position - 1]);
 
     this.props.onPickEmoji(position, data, needsSpace);
-  }
+  };
 
-  render () {
+  render() {
     const { intl, onPaste, showSearch, anyMedia } = this.props;
     const disabled = this.props.isSubmitting;
-    const text     = [this.props.spoilerText, countableText(this.props.text)].join('');
+    const text = [this.props.spoilerText, countableText(this.props.text)].join('');
     const disabledButton = disabled || this.props.isUploading || this.props.isChangingUpload || length(text) > 10000 || (text.length !== 0 && text.trim().length === 0 && !anyMedia);
     let publishText = '';
 
     if (this.props.privacy === 'private' || this.props.privacy === 'direct') {
-      publishText = <span className='compose-form__publish-private'><Icon id='lock' /> {intl.formatMessage(messages.publish)}</span>;
+      publishText =
+        <span className='compose-form__publish-private'><Icon id='lock'/> {intl.formatMessage(messages.publish)}</span>;
     } else {
       publishText = this.props.privacy !== 'unlisted' ? intl.formatMessage(messages.publishLoud, { publish: intl.formatMessage(messages.publish) }) : intl.formatMessage(messages.publish);
     }
 
     return (
       <div className='compose-form'>
-        <WarningContainer />
+        <WarningContainer/>
 
-        <ReplyIndicatorContainer />
+        <ReplyIndicatorContainer/>
 
         <div className={`spoiler-input ${this.props.spoiler ? 'spoiler-input--visible' : ''}`} ref={this.setRef}>
           <AutosuggestInput
@@ -231,26 +233,27 @@ class ComposeForm extends ImmutablePureComponent {
           onPaste={onPaste}
           autoFocus={!showSearch && !isMobile(window.innerWidth)}
         >
-          <EmojiPickerDropdown onPickEmoji={this.handleEmojiPick} />
+          <EmojiPickerDropdown onPickEmoji={this.handleEmojiPick}/>
           <div className='compose-form__modifiers'>
-            <UploadFormContainer />
-            <PollFormContainer />
+            <UploadFormContainer/>
+            <PollFormContainer/>
           </div>
         </AutosuggestTextarea>
 
         <div className='compose-form__buttons-wrapper'>
           <div className='compose-form__buttons'>
-            <UploadButtonContainer />
-            <PollButtonContainer />
-            <PrivacyDropdownContainer />
-            <ContentTypeButtonContainer />
-            <SpoilerButtonContainer />
+            <UploadButtonContainer/>
+            <PollButtonContainer/>
+            <PrivacyDropdownContainer/>
+            <ContentTypeButtonContainer/>
+            <SpoilerButtonContainer/>
           </div>
-          <div className='character-counter__wrapper'><CharacterCounter max={10000} text={text} /></div>
+          <div className='character-counter__wrapper'><CharacterCounter max={10000} text={text}/></div>
         </div>
 
         <div className='compose-form__publish'>
-          <div className='compose-form__publish-button-wrapper'><Button text={publishText} onClick={this.handleSubmit} disabled={disabledButton} block /></div>
+          <div className='compose-form__publish-button-wrapper'><Button text={publishText} onClick={this.handleSubmit}
+                                                                        disabled={disabledButton} block/></div>
         </div>
       </div>
     );

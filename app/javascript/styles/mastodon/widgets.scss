@@ -216,7 +216,7 @@
   &__message {
     margin-bottom: 15px;
 
-    .fa {
+    .fa, .octicon {
       margin-right: 5px;
       color: $darker-text-color;
     }
@@ -329,7 +329,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
 
-      .fa {
+      .fa, .octicon {
         color: $darker-text-color;
       }
 
@@ -344,7 +344,7 @@
 
     &.active h4 {
       &,
-      .fa,
+      .fa, .octicon,
       small,
       .trends__item__current {
         color: $primary-text-color;
