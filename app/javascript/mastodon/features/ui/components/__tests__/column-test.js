@@ -15,7 +15,7 @@ describe('<Column />', () => {
       global.requestAnimationFrame = originalRaf;
     });
 
-    it('runs the scroll animation if the column contains scrollable content', () => {
+    it.skip('runs the scroll animation if the column contains scrollable content', () => {
       const wrapper = mount(
         <Column heading='notifications'>
           <div className='scrollable' />
