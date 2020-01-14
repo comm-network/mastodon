@@ -57,8 +57,6 @@ class Formatter
     html = raw_content
     html = "RT @#{prepend_reblog} #{html}" if prepend_reblog
     html = format_markdown(html) if status.content_type == 'text/markdown'
-    Rails.logger.info("Status type: " + status.content_type)
-    Rails.logger.info("Status html: " + html)
     html = encode_and_link_urls(html, linkable_accounts, keep_html: %w(text/markdown text/html).include?(status.content_type))
     html = encode_custom_emojis(html, status.emojis, options[:autoplay]) if options[:custom_emojify]
     unless %w(text/markdown text/html).include?(status.content_type)
@@ -75,9 +73,7 @@ class Formatter
   end
 
   def reformat(html)
-    Rails.logger.info("Pre Reformat: " + html)
     html = sanitize(html, Sanitize::Config::MASTODON_STRICT)
-    Rails.logger.info("Post Reformat: " + html)
     return html
   end
 
