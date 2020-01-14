@@ -868,7 +868,7 @@
       font-weight: bold;
     }
 
-    a {
+    a.status-link.unhandled-link {
       &:after {
         content: '◳';
         font-size: 9px;
