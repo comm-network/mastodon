@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '>= 2.4.0', '< 2.7.0'
+ruby '>= 2.4.0', '< 3.0.0'
 
 gem 'pkg-config', '~> 1.4'
 
@@ -9,6 +9,9 @@ gem 'puma', '~> 4.3'
 gem 'rails', '~> 5.2.4'
 gem 'sprockets', '~> 4.0.0'
 gem 'thor', '~> 0.20'
+
+gem 'thwait', '~> 0.1.0'
+gem 'e2mmap', '~> 0.1.0'
 
 gem 'hamlit-rails', '~> 0.2'
 gem 'pg', '~> 1.2'
@@ -53,7 +56,7 @@ gem 'hiredis', '~> 0.6'
 gem 'redis-namespace', '~> 1.7'
 gem 'health_check', git: 'https://github.com/ianheggie/health_check', ref: '0b799ead604f900ed50685e9b2d469cd2befba5b'
 gem 'htmlentities', '~> 4.3'
-gem 'http', '~> 3.3'
+gem 'http', '~> 4.3'
 gem 'http_accept_language', '~> 2.1'
 gem 'http_parser.rb', '~> 0.6', git: 'https://github.com/tmm1/http_parser.rb', ref: '54b17ba8c7d8d20a16dfc65d1775241833219cf2', submodules: true
 gem 'httplog', '~> 1.3'
@@ -65,7 +68,6 @@ gem 'nilsimsa', git: 'https://github.com/witgo/nilsimsa', ref: 'fd184883048b922b
 gem 'nokogiri', '~> 1.10'
 gem 'nsa', '~> 0.2'
 gem 'oj', '~> 3.10'
-gem 'ostatus2', '~> 2.0'
 gem 'ox', '~> 2.12'
 gem 'parslet'
 gem 'parallel', '~> 1.19'
@@ -98,7 +100,7 @@ gem 'webpacker', '~> 4.2'
 gem 'webpush'
 
 gem 'json-ld'
-gem 'json-ld-preloaded', '~> 3.1'
+gem 'json-ld-preloaded', '~> 3.0'
 gem 'rdf-normalize', '~> 0.4'
 
 gem 'redcarpet', '~> 3.4'
@@ -137,7 +139,7 @@ group :development do
   gem 'letter_opener', '~> 1.7'
   gem 'letter_opener_web', '~> 1.3'
   gem 'memory_profiler'
-  gem 'rubocop', '~> 0.78', require: false
+  gem 'rubocop', '~> 0.79', require: false
   gem 'rubocop-rails', '~> 2.4', require: false
   gem 'brakeman', '~> 4.7', require: false
   gem 'bundler-audit', '~> 0.6', require: false
@@ -147,7 +149,6 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'capistrano-yarn', '~> 2.0'
 
-  gem 'derailed_benchmarks'
   gem 'stackprof'
 end
 
