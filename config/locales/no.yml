@@ -1029,9 +1029,9 @@
       <p>Opprinnelig modifisert utifra <a href="https://github.com/discourse/discourse">Discourse sine privatlivsretningslinjer</a>.</p>
     title: "%{instance} Personvern og villkår for bruk av nettstedet"
   themes:
+    contrast: Mastodon (Høykontrast)
     default: Vapor
     mastodon-dark: Mastodon
-    contrast: Mastodon (Høykontrast)
     mastodon-light: Mastodon (Lyst)
   time:
     formats:
