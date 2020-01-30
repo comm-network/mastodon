@@ -128,9 +128,7 @@ class User < ApplicationRecord
   end
 
   def disable!
-    update!(disabled: true,
-            last_sign_in_at: current_sign_in_at,
-            current_sign_in_at: nil)
+    update!(disabled: true)
   end
 
   def enable!
@@ -247,7 +245,7 @@ class User < ApplicationRecord
                                  ip: request.remote_ip).session_id
   end
 
-  def exclusive_session(id)
+  def clear_other_sessions(id)
     session_activations.exclusive(id)
   end
 
@@ -301,7 +299,7 @@ class User < ApplicationRecord
       arr << [current_sign_in_at, current_sign_in_ip] if current_sign_in_ip.present?
       arr << [last_sign_in_at, last_sign_in_ip] if last_sign_in_ip.present?
 
-      arr.sort_by(&:first).uniq(&:last).reverse!
+      arr.sort_by { |pair| pair.first || Time.now.utc }.uniq(&:last).reverse!
     end
   end
 
