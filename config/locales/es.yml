@@ -1189,7 +1189,7 @@ es:
   themes:
     contrast: Alto contraste
     default: Vapor
-    mastodon-dark: Mastodonte (Oscuro)
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (claro)
   time:
     formats:
