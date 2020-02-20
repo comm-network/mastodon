@@ -5,8 +5,8 @@
 #
 #  id             :bigint(8)        not null, primary key
 #  tag_id         :bigint(8)        not null
-#  accounts_count :bigint(8)        default(0), not null
-#  hidden         :boolean          default(FALSE), not null
+#  accounts_count :bigint(8)        default("0"), not null
+#  hidden         :boolean          default("false"), not null
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #

@@ -8,7 +8,7 @@
 #  follow_activity_id :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
-#  state              :integer          default("idle"), not null
+#  state              :integer          default("0"), not null
 #
 
 class Relay < ApplicationRecord

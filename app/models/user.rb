@@ -11,12 +11,12 @@
 #  reset_password_token      :string
 #  reset_password_sent_at    :datetime
 #  remember_created_at       :datetime
-#  sign_in_count             :integer          default(0), not null
+#  sign_in_count             :integer          default("0"), not null
 #  current_sign_in_at        :datetime
 #  last_sign_in_at           :datetime
 #  current_sign_in_ip        :inet
 #  last_sign_in_ip           :inet
-#  admin                     :boolean          default(FALSE), not null
+#  admin                     :boolean          default("false"), not null
 #  confirmation_token        :string
 #  confirmed_at              :datetime
 #  confirmation_sent_at      :datetime
@@ -26,18 +26,18 @@
 #  encrypted_otp_secret_iv   :string
 #  encrypted_otp_secret_salt :string
 #  consumed_timestep         :integer
-#  otp_required_for_login    :boolean          default(FALSE), not null
+#  otp_required_for_login    :boolean          default("false"), not null
 #  last_emailed_at           :datetime
 #  otp_backup_codes          :string           is an Array
-#  filtered_languages        :string           default([]), not null, is an Array
+#  filtered_languages        :string           default("{}"), not null, is an Array
 #  account_id                :bigint(8)        not null
-#  disabled                  :boolean          default(FALSE), not null
-#  moderator                 :boolean          default(FALSE), not null
+#  disabled                  :boolean          default("false"), not null
+#  moderator                 :boolean          default("false"), not null
 #  invite_id                 :bigint(8)
 #  remember_token            :string
 #  chosen_languages          :string           is an Array
 #  created_by_application_id :bigint(8)
-#  approved                  :boolean          default(TRUE), not null
+#  approved                  :boolean          default("true"), not null
 #
 
 class User < ApplicationRecord

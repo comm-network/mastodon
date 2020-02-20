@@ -13,7 +13,7 @@
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
 #  shortcode           :string
-#  type                :integer          default("image"), not null
+#  type                :integer          default("0"), not null
 #  file_meta           :json
 #  account_id          :bigint(8)
 #  description         :text

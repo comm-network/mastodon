@@ -8,7 +8,7 @@
 #  updated_at        :datetime         not null
 #  account_id        :bigint(8)        not null
 #  target_account_id :bigint(8)        not null
-#  show_reblogs      :boolean          default(TRUE), not null
+#  show_reblogs      :boolean          default("true"), not null
 #  uri               :string
 #
 

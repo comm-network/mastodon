@@ -8,8 +8,8 @@
 #  provider          :string           default(""), not null
 #  provider_username :string           default(""), not null
 #  token             :text             default(""), not null
-#  verified          :boolean          default(FALSE), not null
-#  live              :boolean          default(FALSE), not null
+#  verified          :boolean          default("false"), not null
+#  live              :boolean          default("false"), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #

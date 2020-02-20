@@ -6,8 +6,8 @@
 #
 #  id           :bigint(8)        not null, primary key
 #  text         :text             default(""), not null
-#  published    :boolean          default(FALSE), not null
-#  all_day      :boolean          default(FALSE), not null
+#  published    :boolean          default("false"), not null
+#  all_day      :boolean          default("false"), not null
 #  scheduled_at :datetime
 #  starts_at    :datetime
 #  ends_at      :datetime

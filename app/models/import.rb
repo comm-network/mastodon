@@ -5,7 +5,7 @@
 #
 #  id                :bigint(8)        not null, primary key
 #  type              :integer          not null
-#  approved          :boolean          default(FALSE), not null
+#  approved          :boolean          default("false"), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #  data_file_name    :string
@@ -13,7 +13,7 @@
 #  data_file_size    :integer
 #  data_updated_at   :datetime
 #  account_id        :bigint(8)        not null
-#  overwrite         :boolean          default(FALSE), not null
+#  overwrite         :boolean          default("false"), not null
 #
 
 class Import < ApplicationRecord
