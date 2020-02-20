@@ -73,8 +73,9 @@ class Formatter
   end
 
   def reformat(html)
-    html = sanitize(html, Sanitize::Config::MASTODON_STRICT)
-    return html
+    sanitize(html, Sanitize::Config::MASTODON_STRICT)
+  rescue ArgumentError
+    ''
   end
 
   def plaintext(status)
