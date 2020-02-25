@@ -116,7 +116,7 @@ GEM
       debug_inspector (>= 0.0.1)
     blurhash (0.1.4)
       ffi (~> 1.10.0)
-    bootsnap (1.4.5)
+    bootsnap (1.4.6)
       msgpack (~> 1.0)
     brakeman (4.8.0)
     browser (3.0.3)
