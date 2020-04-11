@@ -153,7 +153,8 @@ div.content textarea.text,
 .list-adder .list-adder__account,
 .list-adder form.column-inline-form input.setting-text,
 .item-list article .conversation.focusable.muted,
-.item-list article .conversation.focusable.muted.conversation--unread {
+.item-list article .conversation.focusable.muted.conversation--unread,
+.admin-wrapper .content div.flash-message {
   background: rgba(217, 225, 232, 0.2) !important;
 }
 

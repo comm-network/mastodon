@@ -107,7 +107,8 @@ div.admin-wrapper div.content-wrapper > div.content h2,
 .notification__filter-bar,
 div.account__header div.account__header__bar,
 ul li.dropdown-menu__separator,
-.admin-wrapper .sidebar li a {
+.admin-wrapper .sidebar li a,
+.admin-wrapper div.content-heading {
   border-bottom-color: $vapor-highlight;
 }
 
