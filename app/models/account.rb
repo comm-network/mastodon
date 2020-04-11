@@ -28,15 +28,15 @@
 #  header_updated_at       :datetime
 #  avatar_remote_url       :string
 #  subscription_expires_at :datetime
-#  locked                  :boolean          default("false"), not null
+#  locked                  :boolean          default(FALSE), not null
 #  header_remote_url       :string           default(""), not null
 #  last_webfingered_at     :datetime
 #  inbox_url               :string           default(""), not null
 #  outbox_url              :string           default(""), not null
 #  shared_inbox_url        :string           default(""), not null
 #  followers_url           :string           default(""), not null
-#  protocol                :integer          default("0"), not null
-#  memorial                :boolean          default("false"), not null
+#  protocol                :integer          default("ostatus"), not null
+#  memorial                :boolean          default(FALSE), not null
 #  moved_to_account_id     :bigint(8)
 #  featured_collection_url :string
 #  fields                  :jsonb

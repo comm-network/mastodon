@@ -8,7 +8,7 @@
 #  dump_file_name    :string
 #  dump_content_type :string
 #  dump_updated_at   :datetime
-#  processed         :boolean          default("false"), not null
+#  processed         :boolean          default(FALSE), not null
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #  dump_file_size    :bigint(8)

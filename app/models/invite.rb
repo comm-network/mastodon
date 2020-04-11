@@ -8,10 +8,10 @@
 #  code       :string           default(""), not null
 #  expires_at :datetime
 #  max_uses   :integer
-#  uses       :integer          default("0"), not null
+#  uses       :integer          default(0), not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  autofollow :boolean          default("false"), not null
+#  autofollow :boolean          default(FALSE), not null
 #  comment    :text
 #
 

@@ -11,10 +11,10 @@
 #  in_reply_to_id         :bigint(8)
 #  reblog_of_id           :bigint(8)
 #  url                    :string
-#  sensitive              :boolean          default("false"), not null
-#  visibility             :integer          default("0"), not null
+#  sensitive              :boolean          default(FALSE), not null
+#  visibility             :integer          default("public"), not null
 #  spoiler_text           :text             default(""), not null
-#  reply                  :boolean          default("false"), not null
+#  reply                  :boolean          default(FALSE), not null
 #  language               :string
 #  conversation_id        :bigint(8)
 #  local                  :boolean

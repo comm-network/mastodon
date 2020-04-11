@@ -4,9 +4,9 @@
 # Table name: reports
 #
 #  id                         :bigint(8)        not null, primary key
-#  status_ids                 :bigint(8)        default("{}"), not null, is an Array
+#  status_ids                 :bigint(8)        default([]), not null, is an Array
 #  comment                    :text             default(""), not null
-#  action_taken               :boolean          default("false"), not null
+#  action_taken               :boolean          default(FALSE), not null
 #  created_at                 :datetime         not null
 #  updated_at                 :datetime         not null
 #  account_id                 :bigint(8)        not null

@@ -7,9 +7,9 @@
 #  domain          :string           default(""), not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
-#  severity        :integer          default("0")
-#  reject_media    :boolean          default("false"), not null
-#  reject_reports  :boolean          default("false"), not null
+#  severity        :integer          default("silence")
+#  reject_media    :boolean          default(FALSE), not null
+#  reject_reports  :boolean          default(FALSE), not null
 #  private_comment :text
 #  public_comment  :text
 #

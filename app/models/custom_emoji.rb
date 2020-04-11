@@ -12,10 +12,10 @@
 #  image_updated_at   :datetime
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
-#  disabled           :boolean          default("false"), not null
+#  disabled           :boolean          default(FALSE), not null
 #  uri                :string
 #  image_remote_url   :string
-#  visible_in_picker  :boolean          default("true"), not null
+#  visible_in_picker  :boolean          default(TRUE), not null
 #  category_id        :bigint(8)
 #
 
