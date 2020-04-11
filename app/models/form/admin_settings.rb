@@ -47,6 +47,7 @@ class Form::AdminSettings
     show_known_fediverse_at_about_page
     preview_sensitive_media
     profile_directory
+    require_join_reason
     spam_check_enabled
     trends
     trendable_by_default
