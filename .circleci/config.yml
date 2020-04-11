@@ -141,9 +141,10 @@ jobs:
     docker:
       - image: circleci/ruby:2.7-buster-node
         environment: *ruby_environment
-      - image: circleci/postgres:10.6-alpine
+      - image: circleci/postgres:12.2
         environment:
           POSTGRES_USER: root
+          POSTGRES_HOST_AUTH_METHOD: trust
       - image: circleci/redis:5-alpine
     steps:
       - *attach_workspace
@@ -160,9 +161,10 @@ jobs:
     docker:
       - image: circleci/ruby:2.7-buster-node
         environment: *ruby_environment
-      - image: circleci/postgres:10.6-alpine
+      - image: circleci/postgres:12.2
         environment:
           POSTGRES_USER: root
+          POSTGRES_HOST_AUTH_METHOD: trust
       - image: circleci/redis:5-alpine
     <<: *test_steps
 
@@ -171,9 +173,10 @@ jobs:
     docker:
       - image: circleci/ruby:2.6-buster-node
         environment: *ruby_environment
-      - image: circleci/postgres:10.6-alpine
+      - image: circleci/postgres:12.2
         environment:
           POSTGRES_USER: root
+          POSTGRES_HOST_AUTH_METHOD: trust
       - image: circleci/redis:5-alpine
     <<: *test_steps
 
@@ -182,9 +185,10 @@ jobs:
     docker:
       - image: circleci/ruby:2.5-buster-node
         environment: *ruby_environment
-      - image: circleci/postgres:10.6-alpine
+      - image: circleci/postgres:12.2
         environment:
           POSTGRES_USER: root
+          POSTGRES_HOST_AUTH_METHOD: trust
       - image: circleci/redis:5-alpine
     <<: *test_steps
 

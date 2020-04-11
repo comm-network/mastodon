@@ -14,15 +14,17 @@ module Paperclip
       end
     end
 
-    def reprocess_original!
-      old_original_path = path(:original)
-      reprocess!(:original)
-      new_original_path = path(:original)
+    def variant?(other_filename)
+      return true  if original_filename == other_filename
+      return false if original_filename.nil?
 
-      if new_original_path != old_original_path
-        @queued_for_delete << old_original_path
-        flush_deletes
-      end
+      formats = styles.values.map(&:format).compact
+
+      return false if formats.empty?
+
+      other_extension = File.extname(other_filename)
+
+      formats.include?(other_extension.delete('.')) && File.basename(other_filename, other_extension) == File.basename(original_filename, File.extname(original_filename))
     end
   end
 end
