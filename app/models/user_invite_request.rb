@@ -13,5 +13,10 @@
 
 class UserInviteRequest < ApplicationRecord
   belongs_to :user, inverse_of: :invite_request
-  validates :text, presence: true, length: { maximum: 420, minimum: Setting.require_join_reason && Setting.registrations_mode == 'approved' ? 10 : 0 }
+
+  def self.determine_min_length
+    Setting.require_join_reason && Setting.registrations_mode == 'approved' ? 10 : 0
+  end
+
+  validates :text, presence: true, length: { in: determine_min_length..500 }, allow_blank: Setting.require_join_reason == false
 end
