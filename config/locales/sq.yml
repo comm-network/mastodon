@@ -4,26 +4,58 @@ sq:
     about_hashtag_html: Këto janë mesazhe publike të etiketuar me <strong>#%{hashtag}</strong>. Mundeni të ndërveproni me ta, nëse keni një llogari kudo qoftë në fediverse.
     about_mastodon_html: Mastodon-i është një rrjet shoqëror i bazuar në protokolle web të hapur dhe në software të lirë, me burim të hapur. Është i decentralizuar, si email-ii.
     about_this: Mbi
+    active_count_after: active
+    active_footnote: Monthly Active Users (MAU)
     administered_by: 'Administruar nga:'
+    api: API
     apps: Aplikacione për celular
+    apps_platforms: Use Mastodon from iOS, Android and other platforms
+    browse_directory: Browse a profile directory and filter by interests
+    browse_local_posts: Browse a live stream of public posts from this server
+    browse_public_posts: Browse a live stream of public posts on Mastodon
     contact: Kontakt
     contact_missing: I parregulluar
+    contact_unavailable: N/A
+    discover_users: Discover users
     documentation: Dokumentim
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
+    federation_hint_html: With an account on %{instance} you'll be able to follow people on any Mastodon server and beyond.
+    generic_description: "%{domain} is one server in the network"
+    get_apps: Try a mobile app
     hosted_on: Mastodon i strehuar në %{domain}
+    instance_actor_flash: |
+      This account is a virtual actor used to represent the server itself and not any individual user.
+      It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
     learn_more: Mësoni më tepër
     privacy_policy: Rregulla privatësie
+    see_whats_happening: See what's happening
+    server_stats: 'Server stats:'
     source_code: Kod burim
     status_count_after:
       one: gjendje
       other: gjendje
     status_count_before: Cili krijoi
+    tagline: Follow friends and discover new ones
     terms: Kushte shërbimi
+    unavailable_content: Unavailable content
+    unavailable_content_description:
+      domain: Server
+      reason: Reason
+      rejecting_media: 'Media files from these servers will not be processed or stored, and no thumbnails will be displayed, requiring manual click-through to the original file:'
+      silenced: 'Posts from these servers will be hidden in public timelines and conversations, and no notifications will be generated from their users'' interactions, unless you are following them:'
+      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
+    unavailable_content_html: Mastodon generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
     user_count_after:
       one: përdorues
       other: përdorues
+    user_count_before: Home to
     what_is_mastodon: Ç’është Mastodon-i?
   accounts:
     choices_html: 'Zgjedhje të %{name}:'
+    endorsements_hint: You can endorse people you follow from the web interface, and they will show up here.
+    featured_tags_hint: You can feature specific hashtags that will be displayed here.
     follow: Ndiqeni
     followers:
       one: Ndjekës
@@ -32,8 +64,10 @@ sq:
     joined: U bë pjesë më %{date}
     last_active: aktiv së fundi
     link_verified_on: Pronësia e kësaj lidhjeje qe kontrolluar më %{date}
+    media: Media
     moved_html: "%{name} ka kaluar te %{new_profile_link}:"
     network_hidden: Këto të dhëna nuk mund të kihen
+    never_active: Never
     nothing_here: S’ka gjë këtu!
     people_followed_by: Persona të ndjekur nga %{name}
     people_who_follow: Persona që ndjekin %{name}
@@ -47,6 +81,10 @@ sq:
     reserved_username: Emri i përdoruesit është i ruajtur për dikë
     roles:
       admin: Përgjegjës
+      bot: Bot
+      group: Group
+      moderator: Mod
+    unavailable: Profile unavailable
     unfollow: Resht së ndjekuri
   admin:
     account_actions:
@@ -58,7 +96,11 @@ sq:
       delete: Fshije
       destroyed_msg: Shënimi i moderimit u asgjësua me sukses!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
+      approve: Approve
+      approve_all: Approve all
       are_you_sure: A jeni i sigurt?
+      avatar: Avatar
       by_domain: Përkatësi
       change_email:
         changed_msg: Email-i i llogarisë u ndryshua me sukses!
@@ -78,6 +120,7 @@ sq:
       display_name: Emër në ekran
       domain: Përkatësi
       edit: Përpunojeni
+      email: Email
       email_status: Gjendje email-i
       enable: Aktivizoje
       enabled: E aktivizuar
@@ -86,6 +129,7 @@ sq:
       header: Krye
       inbox_url: URL Mesazhesh të Marrë
       invited_by: Ftuar nga
+      ip: IP
       joined: U bë pjesë
       location:
         all: Krejt
@@ -98,20 +142,25 @@ sq:
       moderation:
         active: Aktiv
         all: Krejt
+        pending: Pending
         silenced: U heshtua
         suspended: Të pezulluara
         title: Moderim
       moderation_notes: Shënime moderimesh
       most_recent_activity: Veprimtaria më e freskët
       most_recent_ip: IP-ja më e freskët
+      no_account_selected: No accounts were changed as none were selected
       no_limits_imposed: Pa imponim kufijsh
       not_subscribed: Jo i pajtuar
+      pending: Pending review
       perform_full_suspension: Pezulloje
       promote: Promovojeni
       protocol: Protokoll
       public: Publike
       push_subscription_expires: Pajtimi PuSH skadon më
       redownload: Rifresko profilin
+      reject: Reject
+      reject_all: Reject all
       remove_avatar: Hiqe avatarin
       remove_header: Hiqe kryen
       resend_confirmation:
@@ -124,9 +173,12 @@ sq:
       role: Leje
       roles:
         admin: Përgjegjës
+        moderator: Moderator
         staff: Staf
         user: Përdorues
       search: Kërkoni
+      search_same_email_domain: Other users with the same e-mail domain
+      search_same_ip: Other users with the same IP
       shared_inbox_url: URL kutie të përbashkët mesazesh
       show:
         created_reports: Ka bërë raportime
@@ -136,6 +188,7 @@ sq:
       statuses: Gjendje
       subscribe: Pajtomë
       suspended: Të pezulluara
+      time_in_queue: Waiting in queue %{time}
       title: Llogari
       unconfirmed_email: Email i paripohuar
       undo_silenced: Zhbëje heshtjen
@@ -143,17 +196,59 @@ sq:
       unsubscribe: Shpajtohuni
       username: Emër përdoruesi
       warn: Sinjalizoje
+      web: Web
+      whitelisted: Whitelisted
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} ia kaloi raportimin %{target} në ngarkim vetvetes"
         change_email_user: "%{name} ndryshoi adresën email të përdoruesit %{target}"
         confirm_user: "%{name} ripohoi adresën email të përdoruesit %{target}"
         create_account_warning: "%{name} dërgoi një sinjalizim për %{target}"
+        create_announcement: "%{name} created new announcement %{target}"
         create_custom_emoji: "%{name} ngarkoi emotikon të ri %{target}"
+        create_domain_allow: "%{name} whitelisted domain %{target}"
         create_domain_block: "%{name} bllokoi përkatësinë %{target}"
         create_email_domain_block: "%{name} e shtoi në listë bllokimesh përkatësinë %{target}"
         demote_user: "%{name} zhgradoi përdoruesin %{target}"
+        destroy_announcement: "%{name} deleted announcement %{target}"
         destroy_custom_emoji: "%{name} asgjësoi emotikonin %{target}"
+        destroy_domain_allow: "%{name} removed domain %{target} from whitelist"
         destroy_domain_block: "%{name} zhbllokoi përkatësinë %{target}"
         destroy_email_domain_block: "%{name} e shtoi në listë të lejuarash përkatësinë %{target}"
         destroy_status: "%{name} hoqi gjendje nga %{target}"
@@ -173,24 +268,50 @@ sq:
         unassigned_report: "%{name} rihapi raportimin %{target}"
         unsilence_account: "%{name} hoqi heshtimin për llogarinë %{target}"
         unsuspend_account: "%{name} hoqi pezullimin për llogarinë e %{target}"
+        update_announcement: "%{name} updated announcement %{target}"
         update_custom_emoji: "%{name} përditësoi emotikonin %{target}"
         update_status: "%{name} përditësoi gjendjen me %{target}"
       deleted_status: "(fshiu gjendjen)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Auditim regjistri
+    announcements:
+      destroyed_msg: Announcement successfully deleted!
+      edit:
+        title: Edit announcement
+      empty: No announcements found.
+      live: Live
+      new:
+        create: Create announcement
+        title: New announcement
+      publish: Publish
+      published_msg: Announcement successfully published!
+      scheduled_for: Scheduled for %{time}
+      scheduled_msg: Announcement scheduled for publication!
+      title: Announcements
+      unpublish: Unpublish
+      unpublished_msg: Announcement successfully unpublished!
+      updated_msg: Announcement successfully updated!
     custom_emojis:
+      assign_category: Assign category
       by_domain: Përkatësi
       copied_msg: Kopja vendore e emotikonëve u krijua me sukses
       copy: Kopjoje
       copy_failed_msg: S’u bë dot një kopje vendore e emotikoneve
+      create_new_category: Create new category
       created_msg: Emotikoni u krijua me sukses!
       delete: Fshije
       destroyed_msg: Emotikoni u asgjësua me sukses!
       disable: Çaktivizoje
+      disabled: Disabled
       disabled_msg: Ai emotikon u çaktivizua me sukses
       emoji: Emotikon
       enable: Aktivizoje
+      enabled: Enabled
       enabled_msg: Ai emotikon u aktivizua me sukses
       image_hint: PNG deri 50KB
+      list: List
       listed: Në listë
       new:
         title: Shtoni emotikon të ri vetjak
@@ -198,11 +319,14 @@ sq:
       shortcode: Kod i shkurtër
       shortcode_hint: Të paktën 2 shenja, vetëm shenja alfanumerike dhe nënvija
       title: Emotikone vetjake
+      uncategorized: Uncategorized
+      unlist: Unlist
       unlisted: Hequr prej liste
       update_failed_msg: S’u përditësua dot ai emotikon
       updated_msg: Emotikoni u përditësua me sukses!
       upload: Ngarkoje
     dashboard:
+      authorized_fetch_mode: Secure mode
       backlog: punë të prapambetura
       config: Formësim
       feature_deletions: Fshirje llogarish
@@ -210,12 +334,17 @@ sq:
       feature_profile_directory: Drejtori profilesh
       feature_registrations: Regjistrime
       feature_relay: Rele federimi
+      feature_spam_check: Anti-spam
+      feature_timeline_preview: Timeline preview
       features: Veçori
       hidden_service: Federim me shërbime të fshehura
       open_reports: raportime të hapur
+      pending_tags: hashtags waiting for review
+      pending_users: users waiting for review
       recent_users: Përdorues së fundi
       search: Kërko tekstin e plotë
       single_user_mode: Mënyrë me përdorues të vetëm
+      software: Software
       space: Përdorim hapësire
       title: Pult
       total_users: përdorues gjithsej
@@ -223,11 +352,19 @@ sq:
       week_interactions: ndërveprime këtë javë
       week_users_active: aktivë këtë javë
       week_users_new: përdorues këtë javë
+      whitelist_mode: Whitelist mode
+    domain_allows:
+      add_new: Whitelist domain
+      created_msg: Domain has been successfully whitelisted
+      destroyed_msg: Domain has been removed from the whitelist
+      undo: Remove from whitelist
     domain_blocks:
       add_new: Shtoni bllokim të ri përkatësie
       created_msg: Bllokimi i përkatësisë tani po përpunohet
       destroyed_msg: Bllokimi i përkatësisë u hoq
       domain: Përkatësi
+      edit: Edit domain block
+      existing_domain_block_html: You have already imposed stricter limits on %{name}, you need to <a href="%{unblock_url}">unblock it</a> first.
       new:
         create: Krijoni bllokim
         hint: Bllokimi i përkatësisë nuk do të pengojë krijim zërash llogarie te baza e të dhënave, por do të aplikojë në mënyrë retroaktive dhe të vetvetishme metoda specifike moderimi mbi këto llogari.
@@ -237,6 +374,10 @@ sq:
           silence: Heshtoji
           suspend: Pezulloje
         title: Bllokim i ri përkatësie
+      private_comment: Private comment
+      private_comment_hint: Comment about this domain limitation for internal use by the moderators.
+      public_comment: Public comment
+      public_comment_hint: Comment about this domain limitation for the general public, if advertising the list of domain limitations is enabled.
       reject_media: Mos prano kartela media
       reject_media_hint: Heq kartela media të depozituara lokalisht dhe nuk pranon të shkarkohen të tilla në të ardhmen. Pa peshë për pezullimet
       reject_reports: Hidh tej raportimet
@@ -256,17 +397,24 @@ sq:
         title: Zhbëje bllokimin e përkatësisë për %{domain}
         undo: Zhbëje
       undo: Zhbëje bllokimin e përkatësisë
+      view: View domain block
     email_domain_blocks:
       add_new: Shtoni të ri
       created_msg: Përkatësia email u shtua me sukses te lista e bllokimeve
       delete: Fshije
       destroyed_msg: Përkatësia email u fshi me sukses nga lista e bllokimeve
       domain: Përkatësi
+      empty: No e-mail domains currently blacklisted.
+      from_html: from %{domain}
       new:
         create: Shtoni përkatësi
         title: Zë i ri email në listë bllokimesh
       title: Listë bllokimesh email-esh
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
+      by_domain: Domain
       delivery_available: Ka shpërndarje të mundshme
       known_accounts:
         one: "%{count} llogari e njohur"
@@ -275,6 +423,8 @@ sq:
         all: Krejt
         limited: E kufizuar
         title: Moderim
+      private_comment: Private comment
+      public_comment: Public comment
       title: Federim
       total_blocked_by_us: Bllokuar nga ne
       total_followed_by_them: Ndjekur prej tyre
@@ -289,6 +439,10 @@ sq:
         expired: I skaduar
         title: Filtër
       title: Ftesa
+    pending_accounts:
+      title: Pending accounts (%{count})
+    relationships:
+      title: "%{acct}'s relationships"
     relays:
       add_new: Shtoni rele të re
       delete: Fshije
@@ -302,16 +456,27 @@ sq:
       pending: Në pritje të miratimit të relesë
       save_and_enable: Ruaje dhe aktivizoje
       setup: Ujdisni një lidhje releje
+      signatures_not_enabled: Relays will not work correctly while secure mode or whitelist mode is enabled
       status: Gjendje
       title: Rele
     report_notes:
       created_msg: Shënimi i raportimit u krijua me sukses!
       destroyed_msg: Shënimi i raportimit u fshi me sukses!
     reports:
+      account:
+        note: note
+        notes:
+          one: "%{count} note"
+          other: "%{count} notes"
+        report: report
+        reports:
+          one: "%{count} report"
+          other: "%{count} reports"
       action_taken_by: Veprimi i ndërmarrë nga
       are_you_sure: A jeni i sigurt?
       assign_to_self: Caktojani vetes
       assigned: Iu caktua moderator
+      by_target_domain: Domain of reported account
       comment:
         none: Asnjë
       created_at: Raportuar më
@@ -347,6 +512,18 @@ sq:
       custom_css:
         desc_html: Modifikojeni pamjen me CSS të nagrkuar në çdo faqe
         title: CSS Vetjake
+      default_noindex:
+        desc_html: Affects all users who have not changed this setting themselves
+        title: Opt users out of search engine indexing by default
+      domain_blocks:
+        all: To everyone
+        disabled: To no one
+        title: Show domain blocks
+        users: To logged-in local users
+      domain_blocks_rationale:
+        title: Show rationale
+      enable_bootstrap_timeline_accounts:
+        title: Enable default follows for new users
       hero:
         desc_html: E shfaqur në faqen ballore. Këshillohet të paktën 600x100px. Kur nuk caktohet gjë, përdoret miniaturë e shërbyesit
         title: Figurë heroi
@@ -372,6 +549,15 @@ sq:
         min_invite_role:
           disabled: Asnjë
           title: Lejo vetëm me ftesa
+      registrations_mode:
+        modes:
+          approved: Approval required for sign up
+          none: Nobody can sign up
+          open: Anyone can sign up
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
+        title: Registrations mode
       show_known_fediverse_at_about_page:
         desc_html: Kur përdoret, do të shfaqë mesazhe prej krejt fediversit të njohur, si paraparje. Përndryshe do të shfaqë vetëm mesazhe vendore.
         title: Shfaq te paraparja e rrjedhës kohore fedivers të njohur
@@ -391,6 +577,9 @@ sq:
         desc_html: Mund të shkruani rregullat tuaja të privatësisë, kushtet e shërbimit ose gjëra të tjera ligjore. Mund të përdorni etiketa HTML
         title: Kushte vetjake shërbimi
       site_title: Emër shërbyesi
+      spam_check_enabled:
+        desc_html: Mastodon can auto-report accounts that send repeated unsolicited messages. There may be false positives.
+        title: Anti-spam automation
       thumbnail:
         desc_html: I përdorur për paraparje përmes OpenGraph-it dhe API-t. Këshillohet 1200x630px
         title: Miniaturë shërbyesi
@@ -398,30 +587,95 @@ sq:
         desc_html: Shfaqni rrjedhë kohore publike te faqja ardhjesh
         title: Paraparje rrjedhe kohore
       title: Rregullime sajti
+      trendable_by_default:
+        desc_html: Affects hashtags that have not been previously disallowed
+        title: Allow hashtags to trend without prior review
+      trends:
+        desc_html: Publicly display previously reviewed hashtags that are currently trending
+        title: Trending hashtags
+    site_uploads:
+      delete: Delete uploaded file
+      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Mbrapsht te faqja e llogarisë
       batch:
         delete: Fshije
         nsfw_off: Vëri shenjë si jo rezervat
         nsfw_on: Vëri shenjë si rezervat
+      deleted: Deleted
       failed_to_execute: S’u arrit të përmbushej
+      media:
+        title: Media
       no_media: S’ka media
       no_status_selected: S’u ndryshua ndonjë gjendje, ngaqë s’u përzgjodh ndonjë e tillë
       title: Gjendje llogarish
       with_media: Me media
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
+      accounts_today: Unique uses today
+      accounts_week: Unique uses this week
+      breakdown: Breakdown of today's usage by source
+      context: Context
+      directory: In directory
+      hidden: Hidden
+      hide: Hide from directory
+      in_directory: "%{count} in directory"
+      last_active: Last active
+      most_popular: Most popular
+      most_recent: Most recent
+      name: Hashtag
+      review: Review status
+      reviewed: Reviewed
       title: Hashtage
+      trending_right_now: Trending right now
+      unhide: Show in directory
+      unique_uses_today: "%{count} posting today"
+      unreviewed: Not reviewed
+      updated_msg: Hashtag settings updated successfully
+      visible: Visible
     title: Administrim
     warning_presets:
       add_new: Shtoni të ri
       delete: Fshije
       edit_preset: Përpunoni sinjalizim të paracaktuar
+      empty: Empty
       title: Administroni sinjalizime të paracaktuara
   admin_mailer:
+    new_pending_account:
+      body: The details of the new account are below. You can approve or reject this application.
+      subject: New account up for review on %{instance} (%{username})
     new_report:
       body: "%{reporter} ka raportuar %{target}"
       body_remote: Dikush nga %{domain} ka raportuar %{target}
       subject: Raport i ri për %{instance} (#%{id})
+    new_trending_tag:
+      body: 'The hashtag #%{name} is trending today, but has not been previously reviewed. It will not be displayed publicly unless you allow it to, or just save the form as it is to never hear about it again.'
+      subject: New hashtag up for review on %{instance} (#%{name})
+  aliases:
+    add_new: Create alias
+    created_msg: Successfully created a new alias. You can now initiate the move from the old account.
+    deleted_msg: Successfully remove the alias. Moving from that account to this one will no longer be possible.
+    hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
+    remove: Unlink alias
+  appearance:
+    advanced_web_interface: Advanced web interface
+    advanced_web_interface_hint: 'If you want to make use of your entire screen width, the advanced web interface allows you to configure many different columns to see as much information at the same time as you want: Home, notifications, federated timeline, any number of lists and hashtags.'
+    animations_and_accessibility: Animations and accessibility
+    confirmation_dialogs: Confirmation dialogs
+    discovery: Discovery
+    localization:
+      body: Mastodon is translated by volunteers.
+      guide_link: https://crowdin.com/project/mastodon
+      guide_link_text: Everyone can contribute.
+    sensitive_content: Sensitive content
+    toot_layout: Toot layout
   application_mailer:
     notification_preferences: Ndryshoni parapëlqime email-i
     settings: 'Ndryshoni parapëlqime email-i: %{link}'
@@ -437,9 +691,17 @@ sq:
     warning: Hapni sytë me ato të dhëna. Mos ia jepni kurrë njeriu!
     your_token: Token-i juaj për hyrje
   auth:
+    apply_for_account: Request an invite
     change_password: Fjalëkalim
+    checkbox_agreement_html: I agree to the <a href="%{rules_path}" target="_blank">server rules</a> and <a href="%{terms_path}" target="_blank">terms of service</a>
+    checkbox_agreement_without_rules_html: I agree to the <a href="%{terms_path}" target="_blank">terms of service</a>
+    confirm_email: Confirm email
     delete_account: Fshije llogarinë
     delete_account_html: Nëse dëshironi të fshihni llogarinë tuaj, mund <a href="%{path}">ta bëni që këtu</a>. Do t’ju kërkohet ta ripohoni.
+    description:
+      prefix_invited_by_user: "@%{name} invites you to join this server of Mastodon!"
+      prefix_sign_up: Sign up on Mastodon today!
+      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any Mastodon server and more!
     didnt_get_confirmation: S’morët udhëzime ripohimi?
     forgot_password: Harruat fjalëkalimin tuaj?
     invalid_reset_password_token: Token-i i ricaktimit të fjalëkalimit është i pavlefshëm ose ka skaduar. Ju lutemi, kërkoni një të ri.
@@ -449,12 +711,25 @@ sq:
     migrate_account_html: Nëse doni ta ridrejtoni këtë llogari te një tjetër, këtë mund <a href="%{path}">ta formësoni këtu</a>.
     or_log_in_with: Ose bëni hyrjen me
     register: Regjistrohuni
+    registration_closed: "%{instance} is not accepting new members"
     resend_confirmation: Ridërgo udhëzime ripohimi
     reset_password: Ricaktoni fjalëkalimin
     security: Siguri
     set_new_password: Caktoni fjalëkalim të ri
+    setup:
+      email_below_hint_html: If the below e-mail address is incorrect, you can change it here and receive a new confirmation e-mail.
+      email_settings_hint_html: The confirmation e-mail was sent to %{email}. If that e-mail address is not correct, you can change it in account settings.
+      title: Setup
+    status:
+      account_status: Account status
+      confirming: Waiting for e-mail confirmation to be completed.
+      functional: Your account is fully operational.
+      pending: Your application is pending review by our staff. This may take some time. You will receive an e-mail if your application is approved.
+      redirecting_to: Your account is inactive because it is currently redirecting to %{acct}.
+    trouble_logging_in: Trouble logging in?
   authorize_follow:
     already_following: E ndiqni tashmë këtë llogari
+    already_requested: You have already sent a follow request to that account
     error: Mjerisht, pati një gabim gjatë kërkimit të llogarisë së largët
     follow: Ndiqeni
     follow_request: 'Keni dërguar një kërkesë ndjekjeje te:'
@@ -464,6 +739,11 @@ sq:
       return: Shfaq profilin e përdoruesit
       web: Kalo në web
     title: Ndiq %{acct}
+  challenge:
+    confirm: Continue
+    hint_html: "<strong>Tip:</strong> We won't ask you for your password again for the next hour."
+    invalid_password: Invalid password
+    prompt: Confirm password to continue
   datetime:
     distance_in_words:
       about_x_hours: "%{count}o"
@@ -475,13 +755,38 @@ sq:
       over_x_years: "%{count}v"
       x_months: "%{count}mj"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
+    challenge_not_passed: The information you entered was not correct
     confirm_password: Jepni fjalëkalimin tuaj të tanishëm që të verifikohet identiteti juaj
+    confirm_username: Enter your username to confirm the procedure
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Fshini llogarinë
     success_msg: Llogaria juaj u fshi me sukses
+    warning:
+      before: 'Before proceeding, please read these notes carefully:'
+      caches: Content that has been cached by other servers may persist
+      data_removal: Your posts and other data will be permanently removed
+      email_change_html: You can <a href="%{path}">change your e-mail address</a> without deleting your account
+      email_contact_html: If it still doesn't arrive, you can e-mail <a href="mailto:%{email}">%{email}</a> for help
+      email_reconfirmation_html: If you are not receiving the confirmation e-mail, you can <a href="%{path}">request it again</a>
+      irreversible: You will not be able to restore or reactivate your account
+      more_details_html: For more details, see the <a href="%{terms_path}">privacy policy</a>.
+      username_available: Your username will become available again
+      username_unavailable: Your username will remain unavailable
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Drejtori profilesh
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Zbuloni përdorues bazuar në interesat e tyre
     explore_mastodon: Eksploroni %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
+  domain_validator:
+    invalid_domain: is not a valid domain name
   errors:
     '400': The request you submitted was invalid or malformed.
     '403': S’keni leje të shihni këtë faqe.
@@ -497,6 +802,9 @@ sq:
       title: Kjo faqe s’është e saktë
     '503': The page could not be served due to a temporary server failure.
     noscript_html: Që të përdorni aplikacionin web Mastodon, ju lutemi, aktivizoni JavaScript-in. Ndryshe, provoni për Mastodon-in një nga <a href="%{apps_path}">aplikacionet e brendshëm</a> të platformës tuaj.
+  existing_username_validator:
+    not_found: could not find a local user with that username
+    not_found_multiple: could not find %{usernames}
   exports:
     archive_takeout:
       date: Datë
@@ -506,7 +814,9 @@ sq:
       request: Kërkoni arkivin tuaj
       size: Madhësi
     blocks: Bllokoni
+    csv: CSV
     domain_blocks: Bllokime përkatësish
+    follows: You follow
     lists: Lista
     mutes: Heshtoni
     storage: Depozitim për media
@@ -514,8 +824,10 @@ sq:
     add_new: Shtoni të re
     errors:
       limit: Keni përdorur tashmë si të zgjedhur sasinë maksimum të hashtagëve
+    hint_html: "<strong>What are featured hashtags?</strong> They are displayed prominently on your public profile and allow people to browse your public posts specifically under those hashtags. They are a great tool for keeping track of creative works or long-term projects."
   filters:
     contexts:
+      account: Profiles
       home: Rrjedhë kohore vetjake
       notifications: Njoftime
       public: Rrjedha publike kohore
@@ -527,6 +839,7 @@ sq:
       invalid_irreversible: Filtrim i pakthyeshëm funksionon vetëm me kontekste <em>home</em> ose njoftimesh
     index:
       delete: Fshije
+      empty: You have no filters.
       title: Filtra
     new:
       title: Shtoni filtër të ri
@@ -534,13 +847,38 @@ sq:
     developers: Zhvillues
     more: Më tepër…
     resources: Burime
+    trending_now: Trending now
   generic:
+    all: All
     changes_saved_msg: Ndryshimet u ruajtën me sukses!
     copy: Kopjoje
+    delete: Delete
+    no_batch_actions_available: No batch actions available on this page
+    order_by: Order by
     save_changes: Ruaji ndryshimet
     validation_errors:
       one: Diçka s’është ende si duhet! Ju lutemi, shqyrtoni gabimin më poshtë
       other: Diçka s’është ende si duhet! Ju lutemi, shqyrtoni %{count} gabimet më poshtë
+  html_validator:
+    invalid_markup: 'contains invalid HTML markup: %{error}'
+  identity_proofs:
+    active: Active
+    authorize: Yes, authorize
+    authorize_connection_prompt: Authorize this cryptographic connection?
+    errors:
+      failed: The cryptographic connection failed. Please try again from %{provider}.
+      keybase:
+        invalid_token: Keybase tokens are hashes of signatures and must be 66 hex characters
+        verification_failed: Keybase does not recognize this token as a signature of Keybase user %{kb_username}. Please retry from Keybase.
+      wrong_user: Cannot create a proof for %{proving} while logged in as %{current}. Log in as %{proving} and try again.
+    explanation_html: Here you can cryptographically connect your other identities, such as a Keybase profile. This lets other people send you encrypted messages and trust content you send them.
+    i_am_html: I am %{username} on %{service}.
+    identity: Identity
+    inactive: Inactive
+    publicize_checkbox: 'And toot this:'
+    publicize_toot: 'It is proven! I am %{username} on %{service}: %{url}'
+    status: Verification status
+    view_proof: View proof
   imports:
     modes:
       merge: Përzieji
@@ -555,6 +893,7 @@ sq:
       following: Listë ndjekjesh
       muting: Listë heshtimesh
     upload: Ngarkoje
+  in_memoriam_html: In Memoriam.
   invites:
     delete: Çaktivizoje
     expired: Ka skaduar
@@ -583,9 +922,41 @@ sq:
   media_attachments:
     validations:
       images_and_video: S’mund të bashkëngjitet video te një gjendje që përmban figura tashmë
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: S’mund të bashkëngjiten më shumë se 4 kartela
   migrations:
     acct: emërpërdoruesi@përkatësi e llogarisë së re
+    cancel: Cancel redirect
+    cancel_explanation: Cancelling the redirect will re-activate your current account, but will not bring back followers that have been moved to that account.
+    cancelled_msg: Successfully cancelled the redirect.
+    currently_redirecting: 'Your profile is set to redirect to:'
+    errors:
+      already_moved: is the same account you have already moved to
+      missing_also_known_as: is not back-referencing this account
+      move_to_self: cannot be current account
+      not_found: could not be found
+      on_cooldown: You are on cooldown
+    followers_count: Followers at time of move
+    incoming_migrations: Moving from a different account
+    incoming_migrations_html: To move from another account to this one, first you need to <a href="%{path}">create an account alias</a>.
+    moved_msg: Your account is now redirecting to %{acct} and your followers are being moved over.
+    not_redirecting: Your account is not redirecting to any other account currently.
+    on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
+    past_migrations: Past migrations
+    proceed: Save
+    proceed_with_move: Move followers
+    redirecting_to: Your account is redirecting to %{acct}.
+    set_redirect: Set redirect
+    updated_msg: Your account migration setting successfully updated!
+    warning:
+      backreference_required: The new account must first be configured to back-reference this one
+      before: 'Before proceeding, please read these notes carefully:'
+      cooldown: After moving there is a cooldown period during which you will not be able to move again
+      disabled_account: Your current account will not be fully usable afterwards. However, you will have access to data export as well as re-activation.
+      followers: This action will move all followers from the current account to the new account
+      only_redirect_html: Alternatively, you can <a href="%{path}">only put up a redirect on your profile</a>.
+      other_data: No other data will be moved automatically
+      redirect: Your current account's profile will be updated with a redirect notice and be excluded from searches
   moderation:
     title: Moderim
   notification_mailer:
@@ -622,6 +993,10 @@ sq:
       body: 'Gjendja juaj u përforcua nga %{name}:'
       subject: "%{name} përforcoi gjendjen tuaj"
       title: Përforcim i ri
+  notifications:
+    email_events: Events for e-mail notifications
+    email_events_hint: 'Select events that you want to receive notifications for:'
+    other_settings: Other notifications settings
   number:
     human:
       decimal_units:
@@ -632,8 +1007,41 @@ sq:
     next: Pasuesi
     older: Më të vjetër
     prev: I mëparshmi
+  polls:
+    errors:
+      already_voted: You have already voted on this poll
+      duplicate_options: contain duplicate items
+      duration_too_long: is too far into the future
+      duration_too_short: is too soon
+      expired: The poll has already ended
+      invalid_choice: The chosen vote option does not exist
+      over_character_limit: cannot be longer than %{max} characters each
+      too_few_options: must have more than one item
+      too_many_options: can't contain more than %{max} items
   preferences:
     other: Tjetër
+    posting_defaults: Posting defaults
+    public_timelines: Public timelines
+  reactions:
+    errors:
+      limit_reached: Limit of different reactions reached
+      unrecognized_emoji: is not a recognized emoji
+  relationships:
+    activity: Account activity
+    dormant: Dormant
+    followers: Followers
+    following: Following
+    invited: Invited
+    last_active: Last active
+    most_recent: Most recent
+    moved: Moved
+    mutual: Mutual
+    primary: Primary
+    relationship: Relationship
+    remove_selected_domains: Remove all followers from the selected domains
+    remove_selected_followers: Remove selected followers
+    remove_selected_follows: Unfollow selected users
+    status: Account status
   remote_follow:
     acct: Jepni çiftin tuaj emërpërdoruesi@përkatësi prej të cilit doni që të veprohet
     missing_resource: S’u gjet dot URL-ja e domosdoshme e ridrejtimit për llogarinë tuaj
@@ -651,6 +1059,10 @@ sq:
     reply:
       proceed: Ripohoni përgjigjen
       prompt: 'Doni t’i përgjigjeni këtij mesazhi:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Keni tejkaluar kufirin e %{limit} mesazheve të planifikuara për atë ditë
     over_total_limit: Keni tejkaluar kufirin prej %{limit} mesazhesh të planifikuara
@@ -664,12 +1076,17 @@ sq:
     current_session: Sesioni i tanishëm
     description: "%{browser} në %{platform}"
     explanation: Këta janë shfletuesit e futur në këtë çast te llogaria juaj Mastodon.
+    ip: IP
     platforms:
       other: platformë e panjohur
     revoke: Shfuqizoje
     revoke_success: Sesioni u shfuqizua me sukses
     title: Sesione
   settings:
+    account: Account
+    account_settings: Account settings
+    aliases: Account aliases
+    appearance: Appearance
     authorized_apps: Aplikacione të autorizuara
     back: Mbrapsht te Mastodon
     delete: Fshirje llogarie
@@ -677,22 +1094,33 @@ sq:
     edit_profile: Përpunoni profilin
     export: Eksportim të dhënash
     featured_tags: Hashtagë të zgjedhur
+    identity_proofs: Identity proofs
     import: Importo
+    import_and_export: Import and export
     migrate: Migrim llogarie
     notifications: Njoftime
     preferences: Parapëlqime
+    profile: Profile
+    relationships: Follows and followers
     two_factor_authentication: Mirëfilltësim Dyfaktorësh
+  spam_check:
+    spam_detected: This is an automated report. Spam has been detected.
   statuses:
     attached:
       description: 'Bashkëngjitur: %{attached}'
       image:
         one: "%{count} figurë"
         other: "%{count} figura"
+      video:
+        one: "%{count} video"
+        other: "%{count} videos"
     boosted_from_html: Përforcuar nga %{acct_link}
     content_warning: 'Sinjalizim lënde: %{warning}'
     disallowed_hashtags:
       one: 'përmbante një hashtag të palejuar: %{tags}'
       other: 'përmbante hashtagët e palejuar: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Zbulo gjuhë vetvetiu
     open_in_web: Hape në internet
     over_character_limit: u tejkalua kufi shenjash prej %{max}
@@ -701,8 +1129,18 @@ sq:
       ownership: S’mund të fiksohen mesazhet e të tjerëve
       private: S’mund të fiksohet mesazh jopublik
       reblog: S’mund të fiksohet një përforcim
+    poll:
+      total_people:
+        one: "%{count} person"
+        other: "%{count} people"
+      total_votes:
+        one: "%{count} vote"
+        other: "%{count} votes"
+      vote: Vote
     show_more: Shfaq më tepër
+    show_thread: Show thread
     sign_in_to_participate: Bëni hyrjen, që të merrni pjesë te biseda
+    title: '%{name}: "%{quote}"'
     visibilities:
       private: Vetëm ndjekësve
       private_long: Shfaqua vetëm ndjekësve
@@ -714,6 +1152,8 @@ sq:
     pinned: Mesazh i fiksuar
     reblogged: të përforcuara
     sensitive_content: Lëndë me spec
+  tags:
+    does_not_match_previous_name: does not match the previous name
   terms:
     body_html: |
       <h2>Rregulla Privatësie</h2>
@@ -800,8 +1240,12 @@ sq:
   themes:
     contrast: Mastodon (Me shumë kontrast)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (I errët)
     mastodon-light: Mastodon (I çelët)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d %b, %Y, %H:%M"
@@ -831,7 +1275,9 @@ sq:
         disable: Kur llogaria juaj është e ngrirë, të dhënat në llogarinë tuaj mbeten të paprekura, por s’mund të kryeni ndonjë veprim, para se të shkyçet.
         silence: Kur llogaria juaj është e kufizuar, mesazhet tuaj në këtë shërbyes do t’i shohin vetëm personat që ju ndjekin tashmë. dhe mund të liheni jashtë nga lista të ndryshme publike. Megjithatë, të tjerët prapë mund t’ju ndjekin dorazi.
         suspend: Llogaria juaj është pezulluar, dhe krejt mesazhet tuaja dhe kartelat media të ngarkuara janë hequr në mënyrë të pakthyeshme nga ky shërbyes, dhe nga shërbyesit te të cilët kishit ndjekës.
+      get_in_touch: You can reply to this e-mail to get in touch with the staff of %{instance}.
       review_server_policies: Shqyrtoni rregullat e shërbyesit
+      statuses: 'Specifically, for:'
       subject:
         disable: Llogaria juaj %{acct} është ngrirë
         none: Sinjalizim për %{acct}

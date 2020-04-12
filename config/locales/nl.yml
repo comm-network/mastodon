@@ -18,7 +18,11 @@ nl:
     contact_unavailable: n.v.t
     discover_users: Gebruikers ontdekken
     documentation: Documentatie
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Met een account op %{instance} ben je in staat om mensen die zich op andere Mastodonservers (en op andere plekken) bevinden te volgen.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Mobiele apps
     hosted_on: Mastodon op %{domain}
     instance_actor_flash: 'Dit account is een virtuel actor die wordt gebruikt om de server zelf te vertegenwoordigen en is geen individuele gebruiker. Het wordt voor federatiedoeleinden gebruikt en moet niet worden geblokkeerd, tenzij je de hele server wil blokkeren. In zo''n geval dien je echter een domeinblokkade te gebruiken.
@@ -92,6 +96,7 @@ nl:
       delete: Verwijderen
       destroyed_msg: Verwijderen van opmerking voor moderatoren geslaagd!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: Goedkeuren
       approve_all: Alles goedkeuren
       are_you_sure: Weet je het zeker?
@@ -172,6 +177,7 @@ nl:
         staff: Medewerkers
         user: Gebruiker
       search: Zoeken
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Andere gebruikers met hetzelfde IP-adres
       shared_inbox_url: Gedeelde inbox-URL
       show:
@@ -193,6 +199,42 @@ nl:
       web: Webapp
       whitelisted: Op de witte lijst
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} heeft rapportage %{target} aan zichzelf toegewezen"
         change_email_user: "%{name} veranderde het e-mailadres van gebruiker %{target}"
@@ -230,6 +272,9 @@ nl:
         update_custom_emoji: Emoji %{target} is door %{name} bijgewerkt
         update_status: De toots van %{target} zijn door %{name} bijgewerkt
       deleted_status: "(verwijderde toot}"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Auditlog
     announcements:
       destroyed_msg: Verwijderen van mededeling geslaagd!
@@ -240,10 +285,12 @@ nl:
       new:
         create: Mededeling aanmaken
         title: Nieuwe mededeling
+      publish: Publish
       published_msg: Publiceren van mededeling geslaagd!
       scheduled_for: Ingepland voor %{time}
       scheduled_msg: Mededeling staat ingepland voor publicatie!
       title: Mededelingen
+      unpublish: Unpublish
       unpublished_msg: Ongedaan maken van gepubliceerde mededeling geslaagd!
       updated_msg: Bijwerken van mededeling geslaagd!
     custom_emojis:
@@ -358,10 +405,14 @@ nl:
       destroyed_msg: Deblokkeren e-maildomein geslaagd
       domain: Domein
       empty: Momenteel staan er geen e-maildomeinen op de zwarte lijst.
+      from_html: from %{domain}
       new:
         create: Blokkeren
         title: Nieuw e-maildomein blokkeren
       title: E-maildomeinen blokkeren
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domein
       delivery_available: Bezorging is mogelijk
@@ -413,9 +464,11 @@ nl:
       destroyed_msg: Opmerking bij rapportage succesvol verwijderd!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} opmerking"
           other: "%{count} opmerkingen"
+        report: report
         reports:
           one: "%{count} rapportage"
           other: "%{count} rapportages"
@@ -501,6 +554,9 @@ nl:
           approved: Goedkeuring vereist om te kunnen registreren
           none: Niemand kan zich registreren
           open: Iedereen kan zich registreren
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Registratiemodus
       show_known_fediverse_at_about_page:
         desc_html: Wanneer ingeschakeld wordt de globale tijdlijn op de voorpagina getoond en wanneer uitgeschakeld de lokale tijdlijn
@@ -554,12 +610,22 @@ nl:
       no_status_selected: Er werden geen toots gewijzigd, omdat er geen enkele werd geselecteerd
       title: Toots van account
       with_media: Met media
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Aantal verschillende keren vandaag gebruikt
       accounts_week: Aantal verschillende keren deze week gebruikt
       breakdown: Uitsplitsing van het gebruik van vandaag naar bron
       context: Context
       directory: In de gebruikersgids
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} keer in de gebruikersgids"
       last_active: Laatst actief
       most_popular: Meest populair
@@ -569,14 +635,17 @@ nl:
       reviewed: Beoordeeld
       title: Hashtags
       trending_right_now: Op dit moment trending
+      unhide: Show in directory
       unique_uses_today: "%{count} keer vandaag gebruikt"
       unreviewed: Niet beoordeeld
       updated_msg: Instellingen hashtag succesvol bijgewerkt
+      visible: Visible
     title: Beheer
     warning_presets:
       add_new: Nieuwe toevoegen
       delete: Verwijderen
       edit_preset: Voorinstelling van waarschuwing bewerken
+      empty: Empty
       title: Voorinstellingen van waarschuwingen beheren
   admin_mailer:
     new_pending_account:
@@ -627,6 +696,7 @@ nl:
     change_password: Wachtwoord
     checkbox_agreement_html: Ik ga akkoord met de <a href="%{rules_path}" target="_blank">regels van deze server</a> en de <a href="%{terms_path}" target="_blank">gebruiksvoorwaarden</a>
     checkbox_agreement_without_rules_html: Ik ga akkoord met de <a href="%{terms_path}" target="_blank">gebruiksvoorwaarden</a>
+    confirm_email: Confirm email
     delete_account: Account verwijderen
     delete_account_html: Wanneer je jouw account graag wilt verwijderen, kun je dat <a href="%{path}">hier doen</a>. We vragen jou daar om een bevestiging.
     description:
@@ -696,9 +766,11 @@ nl:
       x_months: "%{count}ma"
       x_seconds: "%{count}s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: De informatie die u hebt ingevoerd is ongeldig
     confirm_password: Voer jouw huidige wachtwoord in om jouw identiteit te bevestigen
     confirm_username: Voer uw gebruikersnaam in om de procedure te bevestigen
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Account verwijderen
     success_msg: Jouw account is succesvol verwijderd
     warning:
@@ -712,10 +784,18 @@ nl:
       more_details_html: Zie het <a href="%{terms_path}">privacybeleid</a> voor meer informatie.
       username_available: Jouw gebruikersnaam zal weer beschikbaar komen
       username_unavailable: Jouw gebruikersnaam zal onbeschikbaar blijven
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Gebruikersgids
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Ontdek gebruikers aan de hand van hun interesses
     explore_mastodon: "%{title} verkennen"
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: is een ongeldige domeinnaam
   errors:
@@ -747,6 +827,7 @@ nl:
     blocks: Jij blokkeert
     csv: CSV
     domain_blocks: Domeinblokkades
+    follows: You follow
     lists: Lijsten
     mutes: Jij negeert
     storage: Mediaopslag
@@ -852,12 +933,14 @@ nl:
   media_attachments:
     validations:
       images_and_video: Een video kan niet aan een toot met afbeeldingen worden gekoppeld
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Er kunnen niet meer dan 4 afbeeldingen toegevoegd worden
   migrations:
     acct: Verhuisd naar
     cancel: Doorverwijzing annuleren
     cancel_explanation: Het annuleren van de doorverwijzing zal jouw huidige account opnieuw activeren, maar brengt geen volgers terug die naar het andere account zijn verhuisd.
     cancelled_msg: De doorverwijzing is succesvol geannuleerd.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: is hetzelfde account waarnaar je al naar toe bent verhuisd
       missing_also_known_as: verwijst niet terug naar dit account
@@ -871,9 +954,11 @@ nl:
     not_redirecting: Jouw account wordt momenteel niet naar een ander account doorverwezen.
     on_cooldown: Je hebt recentelijk jouw account verhuisd. Deze mogelijkheid is weer beschikbaar over %{count} dagen.
     past_migrations: Vorige migraties
+    proceed: Save
     proceed_with_move: Volgers verhuizen
     redirecting_to: Jouw account wordt nu naar %{acct} doorverwezen.
     set_redirect: Doorverwijzing instellen
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Het nieuwe account moet eerst worden ingesteld om naar dit account te kunnen terugverwijzen
       before: 'Lees eerst goed deze tekst, alvorens verder te gaan:'
@@ -991,6 +1076,10 @@ nl:
     reply:
       proceed: Doorgaan met reageren
       prompt: 'Je wilt op de volgende toot reageren:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Je hebt de limiet van %{limit} in te plannen toots voor die dag overschreden
     over_total_limit: Je hebt de limiet van %{limit} in te plannen toots overschreden
@@ -1073,6 +1162,8 @@ nl:
     disallowed_hashtags:
       one: 'bevatte een niet toegestane hashtag: %{tags}'
       other: 'bevatte niet toegestane hashtags: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Taal automatisch detecteren
     open_in_web: In de webapp openen
     over_character_limit: Limiet van %{max} tekens overschreden
@@ -1192,8 +1283,12 @@ nl:
   themes:
     contrast: Mastodon (hoog contrast)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (donker)
     mastodon-light: Mastodon (licht)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d %B %Y om %H:%M"

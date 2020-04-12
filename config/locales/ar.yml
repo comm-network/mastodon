@@ -18,9 +18,16 @@ ar:
     contact_unavailable: غير متوفر
     discover_users: اكتشف مستخدِمين
     documentation: الدليل
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: بواسطة حساب في %{instance} ستتمكن من تتبع أناس في أي خادم ماستدون وأكثر.
+    generic_description: "%{domain} is one server in the network"
     get_apps: جرّب تطبيقا على الموبايل
     hosted_on: ماستدون مُستضاف على %{domain}
+    instance_actor_flash: |
+      This account is a virtual actor used to represent the server itself and not any individual user.
+      It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
     learn_more: تعلم المزيد
     privacy_policy: سياسة الخصوصية
     see_whats_happening: اطّلع على ما يجري
@@ -40,7 +47,9 @@ ar:
     unavailable_content_description:
       domain: الخادم
       reason: السبب
+      rejecting_media: 'Media files from these servers will not be processed or stored, and no thumbnails will be displayed, requiring manual click-through to the original file:'
       silenced: 'سيتم إخفاء المنشورات القادمة من هذه الخوادم في الخيوط الزمنية والمحادثات العامة، ولن يتم إنشاء أي إخطارات من جراء تفاعلات مستخدميها، ما لم تُتَابعهم:'
+      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
     unavailable_content_html: يسمح لك ماستدون عموماً بعرض محتوى المستخدمين القادم من أي خادم آخر في الفديفرس والتفاعل معهم. وهذه هي الاستثناءات التي وضعت على هذا الخادوم بالذات.
     user_count_after:
       few: مستخدمين
@@ -103,6 +112,7 @@ ar:
       delete: حذف
       destroyed_msg: تم تدمير ملاحظة الإشراف بنجاح!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: صادِق عليه
       approve_all: الموافقة على الكل
       are_you_sure: متأكد ؟
@@ -183,6 +193,7 @@ ar:
         staff: الفريق
         user: مستخدِم
       search: البحث
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: مستخدِمون آخرون بنفس الـ IP
       shared_inbox_url: رابط الصندوق المُشترَك للبريد الوارد
       show:
@@ -211,8 +222,16 @@ ar:
         create_account_warning: إنشاء تحذير
         create_announcement: إنشاء إعلان
         create_custom_emoji: إنشاء إيموجي مخصص
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
         destroy_announcement: احذف الإعلان
         destroy_custom_emoji: احذف الإيموجي المخصص
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
         disable_2fa_user: تعطيل 2FA
         disable_custom_emoji: تعطيل الإيموجي المخصص
         disable_user: تعطيل المستخدم
@@ -282,10 +301,12 @@ ar:
       new:
         create: إنشاء إعلان
         title: إعلان جديد
+      publish: Publish
       published_msg: تم نشر الإعلان بنجاح!
       scheduled_for: بُرمِج على %{time}
       scheduled_msg: تمت جدولة نشر الإعلان!
       title: الإعلانات
+      unpublish: Unpublish
       unpublished_msg: تم إلغاء نشر الإعلان بنجاح!
       updated_msg: تم تحديث الإعلان بنجاح!
     custom_emojis:
@@ -359,6 +380,7 @@ ar:
       destroyed_msg: تم إلغاء الحجب المفروض على النطاق
       domain: النطاق
       edit: تحرير النطاق المحظور
+      existing_domain_block_html: You have already imposed stricter limits on %{name}, you need to <a href="%{unblock_url}">unblock it</a> first.
       new:
         create: إنشاء حظر
         hint: لن تمنع كتلة المجال إنشاء إدخالات حساب في قاعدة البيانات ، ولكنها ستطبق طرق الإشراف المحددة بأثر رجعي وتلقائي على هذه الحسابات.
@@ -369,10 +391,15 @@ ar:
           suspend: تعليق
         title: حجب نطاق جديد
       private_comment: تعليق خاص
+      private_comment_hint: Comment about this domain limitation for internal use by the moderators.
       public_comment: تعليق للعلن
+      public_comment_hint: Comment about this domain limitation for the general public, if advertising the list of domain limitations is enabled.
       reject_media: رفض ملفات الوسائط
       reject_media_hint: يزيل ملفات الوسائط المخزنة محليًا ويرفض تنزيل أي ملفات في المستقبل. غير ذي صلة للتعليق
       reject_reports: رفض التقارير
+      reject_reports_hint: Ignore all reports coming from this domain. Irrelevant for suspensions
+      rejecting_media: rejecting media files
+      rejecting_reports: rejecting reports
       severity:
         silence: تم كتمه
         suspend: تم تعليقه
@@ -390,6 +417,7 @@ ar:
         title: رفع حظر النطاق عن %{domain}
         undo: إلغاء
       undo: إلغاء حجب النطاق
+      view: View domain block
     email_domain_blocks:
       add_new: إضافة
       created_msg: لقد دخل حظر نطاق البريد الإلكتروني حيّز الخدمة
@@ -402,6 +430,9 @@ ar:
         create: إضافة نطاق
         title: إضافة نطاق بريد جديد إلى اللائحة السوداء
       title: القائمة السوداء للبريد الإلكتروني
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: النطاق
       delivery_available: التسليم متوفر
@@ -439,6 +470,7 @@ ar:
     relays:
       add_new: إضافة مُرحّل جديد
       delete: حذف
+      description_html: A <strong>federation relay</strong> is an intermediary server that exchanges large volumes of public toots between servers that subscribe and publish to it. <strong>It can help small and medium servers discover content from the fediverse</strong>, which would otherwise require local users manually following other people on remote servers.
       disable: تعطيل
       disabled: مُعطَّل
       enable: تشغيل
@@ -456,6 +488,7 @@ ar:
       destroyed_msg: تم حذف ملاحظة الشكوى بنجاح!
     reports:
       account:
+        note: note
         notes:
           few: "%{count} ملاحظات"
           many: "%{count} ملاحظات"
@@ -463,6 +496,7 @@ ar:
           other: "%{count} ملاحظات"
           two: "%{count} ملاحظتَيْن"
           zero: "%{count} ملاحظات"
+        report: report
         reports:
           few: "%{count} تقارير"
           many: "%{count} تقارير"
@@ -511,6 +545,7 @@ ar:
         desc_html: يقوم بتغيير المظهر بواسطة سي أس أس يُحمَّل على كافة الصفحات
         title: سي أس أس مخصص
       default_noindex:
+        desc_html: Affects all users who have not changed this setting themselves
         title: عدم السماح مبدئيا لمحركات البحث بفهرسة الملفات التعريفية للمستخدمين
       domain_blocks:
         all: للجميع
@@ -525,6 +560,7 @@ ar:
         desc_html: معروض على الصفحة الأولى. لا يقل عن 600 × 100 بكسل. عند عدم التعيين ، تعود الصورة إلى النسخة المصغرة على سبيل المثال
         title: الصورة الرأسية
       mascot:
+        desc_html: Displayed on multiple pages. At least 293×205px recommended. When not set, falls back to default mascot
         title: صورة الماسكوت
       peers_api_enabled:
         desc_html: أسماء النطاقات التي التقى بها مثيل الخادوم على البيئة الموحَّدة فديفرس
@@ -550,8 +586,12 @@ ar:
           approved: طلب الموافقة لازم عند إنشاء حساب
           none: لا أحد يمكنه إنشاء حساب
           open: يمكن للجميع إنشاء حساب
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: طريقة إنشاء الحسابات
       show_known_fediverse_at_about_page:
+        desc_html: When disabled, restricts the public timeline linked from the landing page to showing only local content
         title: إظهار الفديفرس الموحَّد في خيط المُعايَنة
       show_staff_badge:
         desc_html: عرض شارة الموظفين على صفحة المستخدم
@@ -570,6 +610,7 @@ ar:
         title: شروط الخدمة المخصصة
       site_title: اسم مثيل الخادم
       spam_check_enabled:
+        desc_html: Mastodon can auto-report accounts that send repeated unsolicited messages. There may be false positives.
         title: مكافحة البريد المزعج
       thumbnail:
         desc_html: يستخدم للعروض السابقة عبر Open Graph و API. 1200x630px موصى به
@@ -579,8 +620,10 @@ ar:
         title: مُعاينة الخيط العام
       title: إعدادات الموقع
       trendable_by_default:
+        desc_html: Affects hashtags that have not been previously disallowed
         title: السماح للوسوم بالظهور على المتداوَلة بدون مراجعة مسبقة
       trends:
+        desc_html: Publicly display previously reviewed hashtags that are currently trending
         title: الوسوم المتداولة
     site_uploads:
       delete: احذف الملف الذي تم تحميله
@@ -599,11 +642,22 @@ ar:
       no_status_selected: لم يطرأ أي تغيير على أي منشور بما أنه لم يتم اختيار أي واحد
       title: منشورات الحساب
       with_media: تحتوي على وسائط
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: استخدامات هذا اليوم
       accounts_week: استخدامات هذا الأسبوع
+      breakdown: Breakdown of today's usage by source
       context: السياق
       directory: في دليل حسابات المستخدمين
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} في سجل حسابات المستخدمين"
       last_active: آخر نشاط
       most_popular: الأكثر شعبية
@@ -613,25 +667,34 @@ ar:
       reviewed: مُراجَع
       title: الوسوم
       trending_right_now: متداول اللحظة
+      unhide: Show in directory
       unique_uses_today: "%{count} منشورات اليوم"
       unreviewed: غير مُراجَع
       updated_msg: تم تحديث إعدادات الوسوم بنجاح
+      visible: Visible
     title: الإدارة
     warning_presets:
       add_new: إضافة واحد جديد
       delete: حذف
       edit_preset: تعديل نموذج التحذير
+      empty: Empty
       title: إدارة نماذج التحذير
   admin_mailer:
     new_pending_account:
+      body: The details of the new account are below. You can approve or reject this application.
       subject: حساب جديد في انتظار مراجعة على %{instance} (%{username})
     new_report:
       body: قام %{reporter} بالإبلاغ عن %{target}
       body_remote: أبلغ شخص ما من %{domain} عن %{target}
       subject: تقرير جديد ل%{instance} (#%{id})
+    new_trending_tag:
+      body: 'The hashtag #%{name} is trending today, but has not been previously reviewed. It will not be displayed publicly unless you allow it to, or just save the form as it is to never hear about it again.'
+      subject: New hashtag up for review on %{instance} (#%{name})
   aliases:
     add_new: أنشئ كُنية
     created_msg: تم إنشاء الكُنية الجديدة بنجاح. يمكنكم الآن الشروع في الإنتقال مِن حسابكم القديم.
+    deleted_msg: Successfully remove the alias. Moving from that account to this one will no longer be possible.
+    hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: إلغاء ربط الكنية
   appearance:
     advanced_web_interface: واجهة الويب المتقدمة
@@ -665,6 +728,7 @@ ar:
     change_password: الكلمة السرية
     checkbox_agreement_html: أوافق على <a href="%{rules_path}" target="_blank">قواعد الخادم</a> و <a href="%{terms_path}" target="_blank">شروط الخدمة</a>
     checkbox_agreement_without_rules_html: أوافق على <a href="%{terms_path}" target="_blank">شروط الخدمة</a>
+    confirm_email: Confirm email
     delete_account: حذف حساب
     delete_account_html: إن كنت ترغب في حذف حسابك يُمكنك <a href="%{path}">المواصلة هنا</a>. سوف يُطلَبُ منك التأكيد قبل الحذف.
     description:
@@ -696,6 +760,7 @@ ar:
       account_status: حالة الحساب
       confirming: في انتظار اكتمال تأكيد البريد الإلكتروني.
       functional: حسابك جاهز.
+      pending: Your application is pending review by our staff. This may take some time. You will receive an e-mail if your application is approved.
       redirecting_to: حسابك غير نشط لأنه تم تحويله حاليا إلى %{acct}.
     trouble_logging_in: هل صادفتكم مشكلة في الولوج؟
   authorize_follow:
@@ -733,13 +798,16 @@ ar:
       x_months: "%{count} شه"
       x_seconds: "%{count}ث"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: المعلومات التي أدخلتها لم تكن صحيحة
     confirm_password: قم بإدخال كلمتك السرية الحالية للتحقق من هويتك
     confirm_username: ادخل اسم المستخدم الخاص بك لتأكيد الإجراء
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: حذف حساب
     success_msg: تم حذف حسابك بنجاح
     warning:
       before: 'يرجى قراءة هذه الملاحظات بتأنّي قبل المواصلة:'
+      caches: Content that has been cached by other servers may persist
       data_removal: سوف تُحذَف منشوراتك والبيانات الأخرى نهائيا
       email_change_html: بإمكانك <a href="%{path}">تغيير عنوان بريدك الإلكتروني</a> دون أن يُحذف حسابك
       email_contact_html: إن لم تتلقّ أي شيء ، يمكنك مراسلة <a href="mailto:%{email}">%{email}</a> لطلب المساعدة
@@ -748,10 +816,18 @@ ar:
       more_details_html: للمزيد مِن التفاصيل ، يرجى الإطلاع على <a href="%{terms_path}">سياسة الخصوصية</a>.
       username_available: سيصبح اسم مستخدمك متوفرا ثانية
       username_unavailable: سيبقى اسم المستخدم الخاص بك غير متوفر
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: سِجلّ الصفحات التعريفية
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: استكشف مستخدِمين آخرين حسب المواضيع التي تهمهم
     explore_mastodon: استكشف %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: ليس بإسم نطاق صالح
   errors:
@@ -783,11 +859,15 @@ ar:
     blocks: قمت بحظر
     csv: CSV
     domain_blocks: النطاقات المحظورة
+    follows: You follow
     lists: القوائم
     mutes: قُمتَ بكتم
     storage: ذاكرة التخزين
   featured_tags:
     add_new: أضف واحدًا جديدا
+    errors:
+      limit: You have already featured the maximum amount of hashtags
+    hint_html: "<strong>What are featured hashtags?</strong> They are displayed prominently on your public profile and allow people to browse your public posts specifically under those hashtags. They are a great tool for keeping track of creative works or long-term projects."
   filters:
     contexts:
       account: الملفات التعريفية
@@ -816,6 +896,7 @@ ar:
     changes_saved_msg: تم حفظ التعديلات بنجاح!
     copy: نسخ
     delete: احذف
+    no_batch_actions_available: No batch actions available on this page
     order_by: ترتيب بحسب
     save_changes: حفظ التغييرات
     validation_errors:
@@ -825,10 +906,19 @@ ar:
       other: هناك شيء ما ليس على ما يرام! يُرجى مراجعة الأخطاء الـ %{count} أدناه
       two: هناك شيء ما ليس على ما يرام! يُرجى مراجعة الأخطاء الـ %{count} أدناه
       zero: هناك شيء ما ليس على ما يرام! يُرجى مراجعة الأخطاء الـ %{count} أدناه
+  html_validator:
+    invalid_markup: 'contains invalid HTML markup: %{error}'
   identity_proofs:
     active: نشط
     authorize: نعم ، قم بترخيصه
     authorize_connection_prompt: هل تريد ترخيص هذا الاتصال المشفّر؟
+    errors:
+      failed: The cryptographic connection failed. Please try again from %{provider}.
+      keybase:
+        invalid_token: Keybase tokens are hashes of signatures and must be 66 hex characters
+        verification_failed: Keybase does not recognize this token as a signature of Keybase user %{kb_username}. Please retry from Keybase.
+      wrong_user: Cannot create a proof for %{proving} while logged in as %{current}. Log in as %{proving} and try again.
+    explanation_html: Here you can cryptographically connect your other identities, such as a Keybase profile. This lets other people send you encrypted messages and trust content you send them.
     i_am_html: أنا %{username} على %{service}.
     identity: الهوية
     inactive: ليس نشطا
@@ -883,28 +973,41 @@ ar:
   media_attachments:
     validations:
       images_and_video: ليس بالإمكان إرفاق فيديو في منشور يحتوي مسبقا على صور
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: لا يمكن إرفاق أكثر من 4 ملفات
   migrations:
     acct: انتقل إلى
     cancel: ألغِ التوجيه
+    cancel_explanation: Cancelling the redirect will re-activate your current account, but will not bring back followers that have been moved to that account.
     cancelled_msg: تم إلغاء التوجيه بنجاح.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: هو نفسه نفس الحساب الذي قمت بالإنتقال إليه
+      missing_also_known_as: is not back-referencing this account
       move_to_self: لا يمكنه أن يكون الحساب الحالي
       not_found: تعذر العثور عليه
       on_cooldown: إنّك في مرحلة الجمود
     followers_count: المتابِعين عند الإنتقال
     incoming_migrations: الانتقال مِن حساب آخر
     incoming_migrations_html: قصد الإنتقال من حساب آخَر إلى هذا يجب عليك أوّلًا <a href="%{path}">إنشاء كُنية حساب</a>.
+    moved_msg: Your account is now redirecting to %{acct} and your followers are being moved over.
     not_redirecting: حاليا ، حسابك لا يقوم بالتحويل إلى أي حساب آخر.
+    on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
     past_migrations: التهجيرات السابقة
+    proceed: Save
     proceed_with_move: انقل مشارِكيك
     redirecting_to: حسابك موجَّه إلى %{acct}.
     set_redirect: تعين إعادة التوجيه
+    updated_msg: Your account migration setting successfully updated!
     warning:
+      backreference_required: The new account must first be configured to back-reference this one
       before: 'يرجى قراءة هذه الملاحظات بتأنّي قبل المواصلة:'
+      cooldown: After moving there is a cooldown period during which you will not be able to move again
+      disabled_account: Your current account will not be fully usable afterwards. However, you will have access to data export as well as re-activation.
       followers: تقوم هذه العملية بنقل كافة المُتابِعين مِن الحساب الحالي إلى الحساب الجديد
+      only_redirect_html: Alternatively, you can <a href="%{path}">only put up a redirect on your profile</a>.
       other_data: لن يتم نقل أية بيانات أخرى تلقائيا
+      redirect: Your current account's profile will be updated with a redirect notice and be excluded from searches
   moderation:
     title: الإشراف
   notification_mailer:
@@ -977,6 +1080,8 @@ ar:
       duration_too_short: مبكّر جدا
       expired: لقد انتهى استطلاع الرأي
       invalid_choice: خيار التصويت الذي قُمتَ يتحديده غير موجود
+      over_character_limit: cannot be longer than %{max} characters each
+      too_few_options: must have more than one item
       too_many_options: لا يمكنه أن يحتوي أكثر مِن %{max} عناصر
   preferences:
     other: إعدادات أخرى
@@ -984,6 +1089,7 @@ ar:
     public_timelines: الخيوط الزمنية العامة
   reactions:
     errors:
+      limit_reached: Limit of different reactions reached
       unrecognized_emoji: لم يتم التعرف على أنه إيموجي
   relationships:
     activity: نشاط الحساب
@@ -1007,6 +1113,7 @@ ar:
     no_account_html: أليس عندك حساب بعدُ ؟ يُمْكنك <a href='%{sign_up_path}' target='_blank'>التسجيل مِن هنا</a>
     proceed: أكمل المتابعة
     prompt: 'إنك بصدد متابعة:'
+    reason_html: "<strong>Why is this step necessary?</strong> <code>%{instance}</code> might not be the server where you are registered, so we need to redirect you to your home server first."
   remote_interaction:
     favourite:
       proceed: المواصلة إلى المفضلة
@@ -1017,7 +1124,12 @@ ar:
     reply:
       proceed: المواصلة إلى الرد
       prompt: 'ترغب في الرد على هذا التبويق:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
+    over_daily_limit: You have exceeded the limit of %{limit} scheduled toots for that day
     over_total_limit: لقد بلغت حد الـ %{limit} مِن التبويقات المبرمَجة
     too_soon: يجب أن يكون تاريخ البرمجة في المستقبَل
   sessions:
@@ -1110,6 +1222,8 @@ ar:
       other: 'يحتوي على وسوم غير مسموح بها: %{tags}'
       two: 'يحتوي على وسوم غير مسموح بها: %{tags}'
       zero: 'يحتوي على وسوم غير مسموح بها: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: اكتشاف اللغة تلقائيا
     open_in_web: افتح في الويب
     over_character_limit: تم تجاوز حد الـ %{max} حرف المسموح بها
@@ -1156,7 +1270,12 @@ ar:
   themes:
     contrast: ماستدون (تباين عالٍ)
     default: ماستدون (داكن)
+    fairy-floss: Fairy Floss (Pastel dark)
+    mastodon-dark: Mastodon (Dark)
     mastodon-light: ماستدون (فاتح)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
@@ -1174,6 +1293,7 @@ ar:
     manual_instructions: 'في حالة تعذّر مسح رمز الكيو آر أو طُلب منك إدخال يدوي، يُمْكِنك إدخال هذا النص السري على التطبيق:'
     recovery_codes: النسخ الاحتياطي لرموز الاسترجاع
     recovery_codes_regenerated: تم إعادة توليد رموز الاسترجاع الاحتياطية بنجاح
+    recovery_instructions_html: If you ever lose access to your phone, you can use one of the recovery codes below to regain access to your account. <strong>Keep the recovery codes safe</strong>. For example, you may print them and store them with other important documents.
     setup: تنشيط
     wrong_code: الرمز الذي أدخلته غير صالح! تحقق من صحة الوقت على الخادم و الجهاز؟
   user_mailer:
@@ -1182,6 +1302,10 @@ ar:
       subject: نسخة بيانات حسابك جاهزة للتنزيل
       title: المغادرة بأرشيف الحساب
     warning:
+      explanation:
+        disable: While your account is frozen, your account data remains intact, but you cannot perform any actions until it is unlocked.
+        silence: While your account is limited, only people who are already following you will see your toots on this server, and you may be excluded from various public listings. However, others may still manually follow you.
+        suspend: Your account has been suspended, and all of your toots and your uploaded media files have been irreversibly removed from this server, and servers where you had followers.
       get_in_touch: يمكنك الرد على هذا البريد الإلكتروني للاتصال بفريق %{instance}.
       review_server_policies: مراجعة شروط السيرفر
       statuses: 'خصيصا لـ:'
@@ -1222,4 +1346,5 @@ ar:
     seamless_external_login: لقد قمت بتسجيل الدخول عبر خدمة خارجية، إنّ إعدادات الكلمة السرية و البريد الإلكتروني غير متوفرة.
     signed_in_as: 'تم تسجيل دخولك بصفة:'
   verification:
+    explanation_html: 'You can <strong>verify yourself as the owner of the links in your profile metadata</strong>. For that, the linked website must contain a link back to your Mastodon profile. The link back <strong>must</strong> have a <code>rel="me"</code> attribute. The text content of the link does not matter. Here is an example:'
     verification: التحقق

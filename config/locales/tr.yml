@@ -18,7 +18,11 @@ tr:
     contact_unavailable: Yok
     discover_users: Kullanıcıları keşfet
     documentation: Belgeler
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: "%{instance} hesabınızla, herhangi bir Mastodon sunucusundaki ve haricindeki kişileri takip edebilirsiniz."
+    generic_description: "%{domain} is one server in the network"
     get_apps: Bir mobil uygulamayı deneyin
     hosted_on: Mastodon %{domain} üzerinde barındırılıyor
     instance_actor_flash: |
@@ -92,6 +96,7 @@ tr:
       delete: Sil
       destroyed_msg: Denetim notu başarıyla yok edildi!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: Onayla
       approve_all: Tümünü onayla
       are_you_sure: Emin misiniz?
@@ -172,6 +177,7 @@ tr:
         staff: Personel
         user: Kullanıcı
       search: Ara
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Aynı IP adresine sahip diğer kullanıcılar
       shared_inbox_url: Paylaşılan gelen kutusu bağlantısı
       show:
@@ -193,6 +199,42 @@ tr:
       web: Web
       whitelisted: Beyaz listede
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} kendilerine %{target} adlı raporu verdi"
         change_email_user: "%{name}, %{target} kullanıcısının e-posta adresini değiştirdi"
@@ -230,6 +272,9 @@ tr:
         update_custom_emoji: "%{name} %{target} emojiyi güncelledi"
         update_status: "%{name}, %{target} kullanıcısının durumunu güncelledi"
       deleted_status: "(silinmiş durum)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Denetim günlüğü
     announcements:
       destroyed_msg: Duyuru başarıyla silindi!
@@ -240,10 +285,12 @@ tr:
       new:
         create: Duyuru oluştur
         title: Yeni duyuru
+      publish: Publish
       published_msg: Duyuru başarıyla yayınlandı!
       scheduled_for: "%{time} için zamanlandı"
       scheduled_msg: Duyuru yayınlanmak üzere planlandı!
       title: Duyurular
+      unpublish: Unpublish
       unpublished_msg: Duyuru başarıyla yayından kaldırıldı!
       updated_msg: Duyuru başarıyla güncellendi!
     custom_emojis:
@@ -358,10 +405,14 @@ tr:
       destroyed_msg: E-posta alan adı kara listeden başarıyla silindi
       domain: Alan adı
       empty: Şu anda hiçbir e-posta alan adı kara listeye alınmadı.
+      from_html: from %{domain}
       new:
         create: Alan adı ekle
         title: Yeni e-posta kara liste girişi
       title: E-posta kara listesi
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Alan adı
       delivery_available: Teslimat mevcut
@@ -413,9 +464,11 @@ tr:
       destroyed_msg: Şikayet notu başarıyla silindi!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} not"
           other: "%{count} not"
+        report: report
         reports:
           one: "%{count} şikayet"
           other: "%{count} şikayet"
@@ -501,6 +554,9 @@ tr:
           approved: Kayıt için onay gerekli
           none: Hiç kimse kayıt olamaz
           open: Herkes kaydolabilir
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Kayıt modu
       show_known_fediverse_at_about_page:
         desc_html: Değiştirildiğinde, bilinen bütün fediverse'lerden gönderileri ön izlemede gösterir. Diğer türlü sadece yerel gönderileri gösterecektir.
@@ -537,6 +593,9 @@ tr:
       trends:
         desc_html: Şu anda trend olan ve daha önce incelenen etiketleri herkese açık olarak göster
         title: Trend etiketler
+    site_uploads:
+      delete: Delete uploaded file
+      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Hesap sayfasına geri dön
       batch:
@@ -551,12 +610,22 @@ tr:
       no_status_selected: Hiçbiri seçilmediğinden hiçbir durum değiştirilmedi
       title: Hesap durumları
       with_media: Medya ile
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Bugünkü eşsiz kullanımlar
       accounts_week: Bu haftaki eşsiz kullanımlar
       breakdown: Bugünkü kullanımın kaynağa göre dağılımı
       context: İçerik
       directory: Dizinde
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: Dizinde %{count}
       last_active: Son aktivite
       most_popular: En popüler
@@ -566,14 +635,17 @@ tr:
       reviewed: Gözden geçirildi
       title: Etiketler
       trending_right_now: Şu anda trend
+      unhide: Show in directory
       unique_uses_today: bugün %{count} gönderi
       unreviewed: Gözden geçirilmedi
       updated_msg: Etiket ayarları başarıyla güncellendi
+      visible: Visible
     title: Yönetim
     warning_presets:
       add_new: Yeni ekle
       delete: Sil
       edit_preset: Uyarı ön-ayarını düzenle
+      empty: Empty
       title: Uyarı ön-ayarlarını yönet
   admin_mailer:
     new_pending_account:
@@ -624,6 +696,7 @@ tr:
     change_password: Parola
     checkbox_agreement_html: <a href="%{rules_path}" target="_blank">sunucu kuralları</a> ve<a href="%{terms_path}" target="_blank">hizmet şartlarını</a> kabul ediyorum
     checkbox_agreement_without_rules_html: <a href="%{terms_path}" target="_blank">Hizmet şartlarını</a> kabul ediyorum
+    confirm_email: Confirm email
     delete_account: Hesabı sil
     delete_account_html: Hesabınızı silmek isterseniz, <a href="%{path}">buradan devam edebilirsiniz</a>. Sizden onay istenecektir.
     description:
@@ -660,6 +733,7 @@ tr:
     trouble_logging_in: Oturum açarken sorun mu yaşıyorsunuz?
   authorize_follow:
     already_following: Bu hesabı zaten takip ediyorsunuz
+    already_requested: You have already sent a follow request to that account
     error: Uzak hesap aranırken bir hata oluştu
     follow: Takip et
     follow_request: 'Şuna takip isteği gönderdiniz:'
@@ -692,9 +766,11 @@ tr:
       x_months: "%{count}ay"
       x_seconds: "%{count}sn"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Girdiğiniz bilgi doğru değildi
     confirm_password: Kimliğinizi doğrulamak için mevcut parolanızı girin
     confirm_username: Prosedürü doğrulamak için kullanıcı adınızı girin
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Hesabı sil
     success_msg: Hesabınız başarıyla silindi
     warning:
@@ -708,10 +784,18 @@ tr:
       more_details_html: Daha fazla ayrıntı için, <a href="%{terms_path}">gizlilik politikası</a>na göz atın.
       username_available: Kullanıcı adınız tekrar kullanılabilir olacaktır
       username_unavailable: Kullanıcı adınız kullanılamaz kalacaktır
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Profil dizini
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Kullanıcıları ilgi alanlarına göre keşfedin
     explore_mastodon: "%{title} sunucusunu keşfet"
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: geçerli bir alan adı değil
   errors:
@@ -743,6 +827,7 @@ tr:
     blocks: Engelledikleriniz
     csv: CSV
     domain_blocks: Alan adı blokları
+    follows: You follow
     lists: Listeler
     mutes: Susturduklarınız
     storage: Ortam deposu
@@ -848,12 +933,14 @@ tr:
   media_attachments:
     validations:
       images_and_video: Halihazırda görsel içeren bir gönderiye video ekleyemezsiniz
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: 4'ten fazla dosya ekleyemezsiniz
   migrations:
     acct: Taşındı
     cancel: Yönlendirmeyi iptal et
     cancel_explanation: Yönlendirmeyi iptal etmek, mevcut hesabınızı yeniden etkinleştirecek, ancak söz konusu hesaba taşınan takipçileri geri getirmeyecektir.
     cancelled_msg: Yönlendirme başarıyla iptal edildi.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: zaten taşındığınızla aynı hesap
       missing_also_known_as: bu hesaba geri referans yapmamaktadır
@@ -867,9 +954,11 @@ tr:
     not_redirecting: Hesabınız şu anda başka bir hesaba yönlendirilmemektedir.
     on_cooldown: Son zamanlarda hesabınızı taşıdınız. Bu işlev %{count} gün içinde tekrar kullanılabilir olacaktır.
     past_migrations: Geçmiş taşınmalar
+    proceed: Save
     proceed_with_move: Takipçileri taşı
     redirecting_to: Hesabınız %{acct} hesabına yönlendirilmektedir.
     set_redirect: Yönlendirme ayarla
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Öncelikle, yeni hesap bu hesabı geri referans edecek şekilde yapılandırılmalıdır
       before: 'Devam etmeden önce, lütfen bu notları dikkatlice okuyun:'
@@ -987,6 +1076,10 @@ tr:
     reply:
       proceed: Cevap vermek için ilerle
       prompt: 'Bu toota cevap vermek istiyorsunuz:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: O gün için %{limit} zamanlanmış toot sınırını aştınız
     over_total_limit: "%{limit} zamanlanmış toot sınırını aştınız"
@@ -1069,6 +1162,8 @@ tr:
     disallowed_hashtags:
       one: 'izin verilmeyen bir etiket içeriyordu: %{tags}'
       other: 'izin verilmeyen hashtag''leri içeriyordu: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Dili otomatik olarak algıla
     open_in_web: Web sayfasında aç
     over_character_limit: "%{max} karakter limiti aşıldı"
@@ -1188,7 +1283,12 @@ tr:
   themes:
     contrast: Mastodon (Yüksek karşıtlık)
     default: Mastodon (Karanlık)
+    fairy-floss: Fairy Floss (Pastel dark)
+    mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Açık)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

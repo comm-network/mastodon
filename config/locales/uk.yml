@@ -18,7 +18,11 @@ uk:
     contact_unavailable: Недоступно
     discover_users: Знайдіть цікавих користувачів
     documentation: Документація
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: З обліковим записом на %{instance} ви зможете слідкувати за людьми на будь-якому сервері Mastodon та поза ним.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Спробуйте мобільний додаток
     hosted_on: Mastodon розміщено на %{domain}
     instance_actor_flash: 'Цей обліковий запис є віртуальною особою, яка використовується для представлення самого сервера, а не певного користувача. Він використовується для потреб федерації і не повинен бути заблокований, якщо тільки ви не хочете заблокувати весь сервер, у цьому випадку ви повинні скористатися блокуванням домену.
@@ -100,6 +104,7 @@ uk:
       delete: Видалити
       destroyed_msg: Нотатку модератора успішно видалено!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: Схвалити
       approve_all: Схвалити всіх
       are_you_sure: Ви впевнені?
@@ -180,6 +185,7 @@ uk:
         staff: Персонал
         user: Користувач
       search: Пошук
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Інші користувачі з тим самим IP
       shared_inbox_url: URL спільного вхідного кошика
       show:
@@ -201,6 +207,42 @@ uk:
       web: Веб
       whitelisted: У білому списку
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} призначив(-ла) скаргу %{target} на себе"
         change_email_user: "%{name} змінив(-ла) поштову адресу користувача %{target}"
@@ -238,6 +280,9 @@ uk:
         update_custom_emoji: "%{name} оновив(-ла) емодзі %{target}"
         update_status: "%{name} змінив(-ла) статус користуача %{target}"
       deleted_status: "(видалений статус)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Журнал подій
     announcements:
       destroyed_msg: Оголошення успішно видалено!
@@ -248,10 +293,12 @@ uk:
       new:
         create: Створити оголошення
         title: Нове оголошення
+      publish: Publish
       published_msg: Оголошення успішно опубліковано!
       scheduled_for: Заплановано на %{time}
       scheduled_msg: Оголошення додано в чергу публікації!
       title: Оголошення
+      unpublish: Unpublish
       unpublished_msg: Оголошення успішно приховано!
       updated_msg: Оголошення успішно оновлено!
     custom_emojis:
@@ -368,10 +415,14 @@ uk:
       destroyed_msg: Успішно видалено поштовий домен з чорного списку
       domain: Домен
       empty: Ніякі e-mail домени не блокуються.
+      from_html: from %{domain}
       new:
         create: Додати домен
         title: Нове блокування поштового домену
       title: Чорний список поштових доменів
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Домен
       delivery_available: Доставлення доступне
@@ -425,11 +476,13 @@ uk:
       destroyed_msg: Скарга успішно видалена!
     reports:
       account:
+        note: note
         notes:
           few: "%{count} приміток"
           many: "%{count} приміток"
           one: "%{count} примітка"
           other: "%{count} приміток"
+        report: report
         reports:
           few: "%{count} скарги"
           many: "%{count} скарг"
@@ -517,6 +570,9 @@ uk:
           approved: Для входу потрібне схвалення
           none: Ніхто не може увійти
           open: Будь-хто може увійти
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Режим реєстрації
       show_known_fediverse_at_about_page:
         desc_html: Коли увімкнено, будуть показані пости з усього відомого федисвіту у передпоказі. Інакше будуть показані лише локальні дмухи.
@@ -555,6 +611,9 @@ uk:
       trends:
         desc_html: Відображати розглянуті хештеґи, які популярні зараз
         title: Популярні хештеги
+    site_uploads:
+      delete: Delete uploaded file
+      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Назад до сторінки облікового запису
       batch:
@@ -569,12 +628,22 @@ uk:
       no_status_selected: Жодного статуса не було змінено, оскільки жодного не було вибрано
       title: Статуси облікових записів
       with_media: З медіа
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Унікальних використань за сьогодні
       accounts_week: Унікальних використань за тиждень
       breakdown: Аналіз використання за сьогодні за джерелом
       context: Контекст
       directory: У каталозі
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} у каталозі"
       last_active: За активністю
       most_popular: За популярністю
@@ -584,14 +653,17 @@ uk:
       reviewed: Переглянуто
       title: Хештеґи
       trending_right_now: Популярні саме зараз
+      unhide: Show in directory
       unique_uses_today: "%{count} постять сьогодні"
       unreviewed: Не переглянуто
       updated_msg: Параметри хештеґів успішно оновлені
+      visible: Visible
     title: Адміністрування
     warning_presets:
       add_new: Додати новий
       delete: Видалити
       edit_preset: Редагувати шаблон попередження
+      empty: Empty
       title: Управління шаблонами попереджень
   admin_mailer:
     new_pending_account:
@@ -642,6 +714,7 @@ uk:
     change_password: Пароль
     checkbox_agreement_html: Я погоджуюсь з <a href="%{rules_path}" target="_blank">правилами сервера</a> та <a href="%{terms_path}" target="_blank">умовами використання</a>
     checkbox_agreement_without_rules_html: Я погоджуюся з <a href="%{terms_path}" target="_blank">умовами використання</a>
+    confirm_email: Confirm email
     delete_account: Видалити обліковий запис
     delete_account_html: Якщо ви хочете видалити свій обліковий запис, ви можете <a href="%{path}">перейти сюди</a>. Вас попросять підтвердити дію.
     description:
@@ -678,6 +751,7 @@ uk:
     trouble_logging_in: Проблема під час входу?
   authorize_follow:
     already_following: Ви вже слідкуєте за цим обліковим записом
+    already_requested: You have already sent a follow request to that account
     error: На жаль, під час пошуку віддаленого облікового запису сталася помилка
     follow: Підписатися
     follow_request: 'Вам надіслали запит на підписку:'
@@ -710,9 +784,11 @@ uk:
       x_months: "%{count}міс"
       x_seconds: "%{count}сек"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Невірна інформація
     confirm_password: Введіть актуальний пароль, щоб перевірити що ви це ви
     confirm_username: Введіть ваше ім'я користувача, щоб підтвердити процедуру
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Видалити обліковий запис
     success_msg: Ваш обліковий запис було успішно видалено
     warning:
@@ -726,10 +802,18 @@ uk:
       more_details_html: Подробиці за посиланням <a href="%{terms_path}">політика конфіденційності</a>.
       username_available: Ваше ім'я користувача стане доступним для використання
       username_unavailable: Ваше ім'я користувача залишиться недоступним для використання
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Каталог профілів
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Шукайте користувачів за їх інтересами
     explore_mastodon: Досліджуйте %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: не є допустимим ім'ям домену
   errors:
@@ -761,6 +845,7 @@ uk:
     blocks: Список блокувань
     csv: CSV
     domain_blocks: Блокування доменів
+    follows: You follow
     lists: Списки
     mutes: Список глушення
     storage: Ваш медіаконтент
@@ -870,12 +955,14 @@ uk:
   media_attachments:
     validations:
       images_and_video: Не можна додати відео до статусу з зображеннями
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Не можна додати більше 4 файлів
   migrations:
     acct: username@domain нового облікового запису
     cancel: Скасувати перенаправлення
     cancel_explanation: Скасування перенаправлення реактивує ваш поточний обліковий запис, але не поверне підписників, які були переміщені в інший обліковий запис.
     cancelled_msg: Перенаправлення успішно скасовано.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: той самий обліковий запис, до якого ви вже переміщені
       missing_also_known_as: не є зворотнім посиланням на цей обліковий запис
@@ -889,9 +976,11 @@ uk:
     not_redirecting: Наразі ваш обліковий запис не перенаправлений до іншого облікового запису.
     on_cooldown: Нещодавно ви вже перенесли ваш обліковий запис. Функція переносу стане доступною знову через %{count} днів.
     past_migrations: Попередні міграції
+    proceed: Save
     proceed_with_move: Перемістити підписників
     redirecting_to: Ваш обліковий запис перенаправляється до %{acct}.
     set_redirect: Встановити перенаправлення
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Спочатку має бути налаштовано зворотне посилання поточного облікового запису на новий обліковий запис
       before: 'Перш ніж продовжити, уважно прочитайте ці нотатки:'
@@ -1013,6 +1102,10 @@ uk:
     reply:
       proceed: Перейти до відповіді
       prompt: 'Ви хочете відповісти на цей дмух:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Ви перевищили ліміт в %{limit} запланованих дмухів на сьогодні
     over_total_limit: Ви перевищили ліміт в %{limit} запланованих дмухів
@@ -1101,6 +1194,8 @@ uk:
       many: 'заборонених хештеґів: %{tags}'
       one: 'заборонений хештеґ: %{tags}'
       other: 'заборонених хештеґів: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Автоматично визначати мову
     open_in_web: Відкрити у вебі
     over_character_limit: перевищено ліміт символів (%{max})
@@ -1144,8 +1239,12 @@ uk:
   themes:
     contrast: Висока контрасність
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon
     mastodon-light: Mastodon (світла)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

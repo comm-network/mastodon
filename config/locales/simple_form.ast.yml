@@ -2,17 +2,66 @@
 ast:
   simple_form:
     hints:
+      account_alias:
+        acct: Specify the username@domain of the account you want to move from
+      account_migration:
+        acct: Specify the username@domain of the account you want to move to
+      account_warning_preset:
+        text: You can use toot syntax, such as URLs, hashtags and mentions
+        title: Optional. Not visible to the recipient
+      admin_account_action:
+        include_statuses: The user will see which toots have caused the moderation action or warning
+        send_email_notification: The user will receive an explanation of what happened with their account
+        text_html: Optional. You can use toot syntax. You can <a href="%{path}">add warning presets</a> to save time
+        type_html: Choose what to do with <strong>%{acct}</strong>
+        warning_preset_id: Optional. You can still add custom text to end of the preset
+      announcement:
+        all_day: When checked, only the dates of the time range will be displayed
+        ends_at: Optional. Announcement will be automatically unpublished at this time
+        scheduled_at: Leave blank to publish the announcement immediately
+        starts_at: Optional. In case your announcement is bound to a specific time range
+        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: La xente que se rexistre pente la invitación va siguite automáticamente
+        avatar: PNG, GIF or JPG. At most %{size}. Will be downscaled to %{dimensions}px
         bot: Esta cuenta fai principalmente aiciones automatizaes y podría nun supervisase
+        context: One or multiple contexts where the filter should apply
+        current_password: For security purposes please enter the password of the current account
+        current_username: To confirm, please enter the username of the current account
         digest: Namái s'unvia dempués d'un periodu llargu d'inactividá y namái si recibiesti cualesquier mensaxe personal na to ausencia
         discoverable: El direutoru de perfiles ye otru mou de facer qu'una cuenta llegué a una audiencia más amplia
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Vamos unviate un corréu de confirmación
+        fields: You can have up to 8 items displayed as a table on your profile, although you should keep in mind that more than 6 will look a bit ridiculous.
+        header: PNG, GIF or JPG. At most %{size}. Will be downscaled to %{dimensions}px
+        inbox_url: Copy the URL from the frontpage of the relay you want to use
         irreversible: Los barritos peñeraos van desapaecer de mou irreversible, magar que se desanicie la peñera dempués
+        locale: The language of the user interface, e-mails and push notifications
+        locked: Requires you to manually approve followers
         password: Usa 8 caráuteres polo menos
+        phrase: Will be matched regardless of casing in text or content warning of a toot
+        scopes: Which APIs the application will be allowed to access. If you select a top-level scope, you don't need to select individual ones.
+        setting_aggregate_reblogs: Do not show new boosts for toots that have been recently boosted (only affects newly-received boosts)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
+        setting_default_sensitive: Sensitive media is hidden by default and can be revealed with a click
+        setting_display_media_default: Hide media marked as sensitive
+        setting_display_media_hide_all: Always hide media
+        setting_display_media_show_all: Always show media
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: La xente que sigas y teas siguiendo nun va amosase nel perfil
+        setting_noindex: Affects your public profile and status pages
         setting_show_application: L'aplicación qu'uses pa barritar va amosase na vista detallada d'ellos
+        setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
+        setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: El nome d'usuariu va ser únicu en %{domain}
+        whole_word: When the keyword or phrase is alphanumeric only, it will only be applied if it matches the whole word
+      domain_allow:
+        domain: This domain will be able to fetch data from this server and incoming data from it will be processed and stored
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Quiciabes quieras usar unu d''estos:'
       form_challenge:
@@ -23,25 +72,47 @@ ast:
         text: Esto va ayudanos a revisar la to aplicación
       sessions:
         otp: 'Introduz el códigu de dos pasos xeneráu pola aplicación autenticadora o usa unu de los códigos de recuperación:'
+      tag:
+        name: You can only change the casing of the letters, for example, to make it more readable
+      user:
+        chosen_languages: When checked, only toots in selected languages will be displayed in public timelines
     labels:
       account:
         fields:
           name: Etiqueta
           value: Conteníu
+      account_alias:
+        acct: Handle of the old account
+      account_migration:
+        acct: Handle of the new account
       account_warning_preset:
+        text: Preset text
         title: Títulu
       admin_account_action:
+        include_statuses: Include reported toots in the e-mail
+        send_email_notification: Notify the user per e-mail
+        text: Custom warning
         type: Aición
         types:
+          disable: Disable login
           none: Nun facer nada
+          silence: Silence
+          suspend: Suspend and irreversibly delete account data
+        warning_preset_id: Use a warning preset
       announcement:
+        all_day: All-day event
+        ends_at: End of event
+        scheduled_at: Schedule publication
+        starts_at: Start of event
         text: Anunciu
       defaults:
+        autofollow: Invite to follow your account
         avatar: Avatar
         bot: Esta cuenta ye d'un robó
         chosen_languages: Peñera de llingües
         confirm_new_password: Confirmación de la contraseña nueva
         confirm_password: Confirmación de la contraseña
+        context: Filter contexts
         current_password: Contraseña actual
         data: Datos
         discoverable: Llistar esta cuenta nel direutoriu
@@ -50,6 +121,7 @@ ast:
         expires_in: Caduca dempués de
         fields: Metadatos del perfil
         header: Testera
+        inbox_url: URL of the relay inbox
         irreversible: Escartar en cuentes d'anubrir
         locale: Llingua de la interfaz
         locked: Bloquiar la cuenta
@@ -60,39 +132,68 @@ ast:
         password: Contraseña
         phrase: Pallabra clave o fras
         setting_advanced_layout: Activar la interfaz web avanzada
+        setting_aggregate_reblogs: Group boosts in timelines
         setting_auto_play_gif: Reproducir GIFs automáticamente
         setting_boost_modal: Amosar el diálogu de confirmación enantes de compartir un barritu
+        setting_crop_images: Crop images in non-expanded toots to 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Llingua de los espublizamientos
         setting_default_privacy: Privacidá de los espublizamientos
+        setting_default_sensitive: Always mark media as sensitive
         setting_delete_modal: Amosar el diálogu de confirmación enantes de desaniciar un barritu
+        setting_display_media: Media display
+        setting_display_media_default: Default
+        setting_display_media_hide_all: Hide all
+        setting_display_media_show_all: Show all
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
+        setting_expand_spoilers: Always expand toots marked with content warnings
+        setting_hide_network: Hide your network
         setting_noindex: Nun apaecer nos índices de los motores de gueta
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
+        setting_reduce_motion: Reduce motion in animations
         setting_show_application: Dicir les aplicaciones que s'usen pa barritar
         setting_system_font_ui: Usar la fonte predeterminada del sistema
         setting_theme: Estilu del sitiu
         setting_trends: Amosar les tendencies de güei
         setting_unfollow_modal: Amosar el diálogu de confirmación enantes de dexar de siguir a daquién
+        setting_use_blurhash: Show colorful gradients for hidden media
         setting_use_pending_items: Mou lentu
         severity: Severidá
         type: Triba de la importación
         username: Nome d'usuariu
         username_or_email: Nome d'usuariu o corréu
         whole_word: La pallabra entera
+      email_domain_block:
+        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Etiqueta
       interactions:
         must_be_follower: Bloquiar los avisos de persones que nun son siguidores
         must_be_following: Bloquiar los avisos de persones que nun sigues
         must_be_following_dm: Bloquiar los mensaxes direutos de persones que nun sigues
+      invite:
+        comment: Comment
       invite_request:
         text: "¿Por qué quies xunite?"
       notification_emails:
+        digest: Send digest e-mails
         favourite: Daquién marcó como favoritu un estáu de to
         follow: Daquién te sigue
         follow_request: Daquién solicitó siguite
         mention: Daquién te mentó
+        pending_account: New account needs review
         reblog: Daquién compartió dalgún estáu de to
+        report: New report is submitted
+        trending_tag: An unreviewed hashtag is trending
       tag:
+        listable: Allow this hashtag to appear in searches and on the profile directory
         name: Etiqueta
+        trendable: Allow this hashtag to appear under trends
+        usable: Allow toots to use this hashtag
     'no': Non
     recommended: Aconséyase
     required:

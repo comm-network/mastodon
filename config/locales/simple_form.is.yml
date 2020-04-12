@@ -30,6 +30,7 @@ is:
         current_username: Til að staðfesta skaltu setja inn notandanafnið fyrir þennan notandaaðgang
         digest: Er aðeins sent eftir lengri tímabil án virkni og þá aðeins ef þú hefur fengið persónuleg skilaboð á meðan þú hefur ekki verið á línunni
         discoverable: Persónusniðamappan er önnur leið til að láta notandaaðganginn þinn ná til fleiri lesenda
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Þú munt fá sendan staðfestingarpóst
         fields: Þú getur birt allt að 4 atriði sem töflu á notandasniðinu þínu
         header: PNG, GIF eða JPG. Mest %{size}. Verður smækkað í %{dimensions}px
@@ -41,10 +42,14 @@ is:
         phrase: Verður notað til samsvörunar burtséð frá stafstöðu texta eða viðvörunar vegna efnis í tísti
         scopes: Að hvaða API-kerfisviðmótum forritið fær aðgang. Ef þú velur efsta-stigs svið, þarftu ekki að gefa einstakar heimildir.
         setting_aggregate_reblogs: Ekki sýna nýjar endurbirtingar á tístum sem hafa nýlega verið endurbirt (hefur bara áhrif á ný-mótteknar endurbirtingar)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Viðkvæmt myndefni er sjálfgefið falið og er hægt að birta með smelli
         setting_display_media_default: Fela myndefni sem merkt er viðkvæmt
         setting_display_media_hide_all: Alltaf fela allt myndefni
         setting_display_media_show_all: Alltaf birta myndefni sem merkt er viðkvæmt
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Hverjum þú fylgist með og hverjir fylgjast með þér verður ekki birt á notandasniðinu þínu
         setting_noindex: Hefur áhrif á opinbera notandasniðið þitt og stöðusíður
         setting_show_application: Nafnið á forritinu sem þú notar til að tísta mun birtast í ítarlegri sýn á tístunum þínum
@@ -131,6 +136,10 @@ is:
         setting_auto_play_gif: Spila sjálfkrafa GIF-hreyfimyndir
         setting_boost_modal: Sýna staðfestingarglugga fyrir endurbirtingu
         setting_crop_images: Utansníða myndir í ekki útfelldum tístum í 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Tungumál sem skrifað er á
         setting_default_privacy: Gagnaleynd færslna
         setting_default_sensitive: Alltaf merkja myndefni sem viðkvæmt
@@ -139,9 +148,12 @@ is:
         setting_display_media_default: Sjálfgefið
         setting_display_media_hide_all: Fela allt
         setting_display_media_show_all: Birta allt
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Alltaf útfella tíst sem eru með aðvörun vegna efnisins
         setting_hide_network: Fela netkerfið þitt
         setting_noindex: Afþakka atriðaskráningu í leitarvélum
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Minnka hreyfingu í hreyfimyndum
         setting_show_application: Upplýsa um forrit sem er til að senda tíst
         setting_system_font_ui: Nota sjálfgefið letur kerfisins

@@ -8,6 +8,7 @@ nn:
         acct: Spesifiser brukernavn@domene til brukeren du vil flytte til
       account_warning_preset:
         text: Du kan bruke tut syntaks, f.eks. URLer, emneknagger og nevnelser
+        title: Optional. Not visible to the recipient
       admin_account_action:
         include_statuses: Brukeren vil se hvilke tuter som forårsaket moderator-handlingen eller -advarselen
         send_email_notification: Brukeren vil motta en forklaring på hva som har skjedd med deres bruker
@@ -29,6 +30,7 @@ nn:
         current_username: Skriv inn brukarnamnet til den noverande kontoen for å stadfesta
         digest: Kun sendt etter en lang periode med inaktivitet og bare dersom du har mottatt noen personlige meldinger mens du var borte
         discoverable: Profilmappen er en annen måte for kontoen din å nå et bredere publikum på
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Du får snart ein stadfestings-e-post
         fields: Du kan ha opptil 4 gjenstander vist som en tabell på profilsiden din
         header: PNG, GIF eller JPG. Maksimalt %{size}. Vil bli nedskalert til %{dimensions}px
@@ -40,10 +42,14 @@ nn:
         phrase: Vil bli samsvart med, uansett bruk av store/små bokstaver eller innholdsadvarselen til en tut
         scopes: Hvilke API-er programmet vil bli gitt tilgang til. Dersom du velger et toppnivåomfang, trenger du ikke å velge individuelle API-er.
         setting_aggregate_reblogs: Ikke vis nye fremhevinger for tuter som nylig har blitt fremhever (Påvirker kun nylige fremhevinger)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Sensitivt media blir skjult som standard og kan bli vist med et klikk
         setting_display_media_default: Skjul media som er merket som sensitivt
         setting_display_media_hide_all: Alltid skjul alt media
         setting_display_media_show_all: Alltid vis media som er merket som sensitivt
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Kven du fylgjer og kven som fylgjer deg vert ikkje vist på profilen din
         setting_noindex: Påvirker din offentlige profil og statussider
         setting_show_application: Appen du brukte til å tute vil bli vist i den detaljerte visningen til tutene dine
@@ -53,6 +59,9 @@ nn:
         whole_word: Når søkeordet eller setningen bare er alfanumerisk, aktiveres det bare hvis det samsvarer med hele ordet
       domain_allow:
         domain: Dette domenet vil være i stand til å hente data fra denne serveren og dets innkommende data vil bli prosessert og lagret
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Kanskje du vil nytta ein av desse:'
       form_challenge:
@@ -78,6 +87,7 @@ nn:
         acct: Brukernavnet til den nye brukeren
       account_warning_preset:
         text: Føreåtstekst
+        title: Title
       admin_account_action:
         include_statuses: Inkluder rapporterte tuter i e-mailen
         send_email_notification: Varsl brukaren med e-post
@@ -126,6 +136,10 @@ nn:
         setting_auto_play_gif: Spel av animerte GIF-ar automatisk
         setting_boost_modal: Vis bekreftelse før fremheving
         setting_crop_images: Klipp bilder i ikke-utvidede tuter til 16:9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Språk på innlegg
         setting_default_privacy: Privatliv
         setting_default_sensitive: Marker alltid media som sensitivt
@@ -134,9 +148,12 @@ nn:
         setting_display_media_default: Standard
         setting_display_media_hide_all: Gøym alle
         setting_display_media_show_all: Vis alle
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Utvid alltid tuter som er merket med innholdsadvarsler
         setting_hide_network: Skjul nettverket ditt
         setting_noindex: Avmeld fra søkemotorindeksering
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reduser bevegelser i animasjoner
         setting_show_application: Skryt av appen som ble brukt til å sende tuter
         setting_system_font_ui: Bruk standardskrifttypen på systemet
@@ -150,6 +167,8 @@ nn:
         username: Brukarnamn
         username_or_email: Brukarnman eller E-post
         whole_word: Heilt ord
+      email_domain_block:
+        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Emneknagg
       interactions:

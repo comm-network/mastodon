@@ -18,7 +18,11 @@ kk:
     contact_unavailable: Белгісіз
     discover_users: Қолданушыларды іздеңіз
     documentation: Құжаттама
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: "%{instance} платформасындағы аккаунтыңыз арқылы Mastodon желісіндегі кез келген сервердегі қолданушыларға жазыла аласыз."
+    generic_description: "%{domain} is one server in the network"
     get_apps: Мобиль қосымшаны қолданып көріңіз
     hosted_on: Mastodon орнатылған %{domain} доменінде
     instance_actor_flash: |
@@ -92,6 +96,7 @@ kk:
       delete: Өшіру
       destroyed_msg: Модерация жазбасы өшірілді!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: Құптау
       approve_all: Бәрін құптау
       are_you_sure: Шынымен бе?
@@ -172,6 +177,7 @@ kk:
         staff: Қызметкерлер
         user: Қолданушы
       search: Іздеу
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Осы ІРмен кірген басқа қолданушылар
       shared_inbox_url: Бөлісілген инбокс URL
       show:
@@ -193,16 +199,54 @@ kk:
       web: Веб
       whitelisted: Рұқсат тізімі
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} шағым тастады %{target} өздері үшін"
         change_email_user: "%{name} e-mail адресін өзгертті - %{target}"
         confirm_user: "%{name} e-mail адресін құптады - %{target}"
         create_account_warning: "%{name} ескерту жіберді - %{target}"
+        create_announcement: "%{name} created new announcement %{target}"
         create_custom_emoji: "%{name} жаңа эмодзи қосты %{target}"
         create_domain_allow: "%{name} ақ тізімдегі домен %{target}"
         create_domain_block: "%{name} домен бұғаттады - %{target}"
         create_email_domain_block: "%{name} e-mail доменін қара тізімге қосты - %{target}"
         demote_user: "%{name} төмендетілген қолданушы - %{target}"
+        destroy_announcement: "%{name} deleted announcement %{target}"
         destroy_custom_emoji: "%{name} эмодзи жойды %{target}"
         destroy_domain_allow: "%{name} домені %{target} ақ тізімнен шығарылды"
         destroy_domain_block: "%{name} бұғатталмаған домен %{target}"
@@ -224,15 +268,29 @@ kk:
         unassigned_report: "%{name} бекітілмеген есеп %{target}"
         unsilence_account: "%{name} %{target} аккаунтын қайта қосты"
         unsuspend_account: "%{name} %{target} аккаунтын қайта қосты"
+        update_announcement: "%{name} updated announcement %{target}"
         update_custom_emoji: "%{name} эмодзи жаңартты %{target}"
         update_status: "%{name} жазбасын жаңартты %{target}"
       deleted_status: "(өшірілген жазба)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Аудит логы
     announcements:
       destroyed_msg: Анонс сәтті өшірілді!
+      edit:
+        title: Edit announcement
+      empty: No announcements found.
+      live: Live
+      new:
+        create: Create announcement
+        title: New announcement
+      publish: Publish
       published_msg: Анонс сәтті жарияланды!
       scheduled_for: Жоспарланған уақыты %{time}
       scheduled_msg: Анонс жариялану жоспарына алынды!
+      title: Announcements
+      unpublish: Unpublish
       unpublished_msg: Анонс жарияланбады!
       updated_msg: Анонс сәтті жаңартылды!
     custom_emojis:
@@ -347,10 +405,14 @@ kk:
       destroyed_msg: Successfully deletеd e-mail domain from blacklist
       domain: Домен
       empty: Ешқандай e-mail домені қаратізімге алынбапты.
+      from_html: from %{domain}
       new:
         create: Add dоmain
         title: New e-mail blаcklist entry
       title: E-mail қаратізімі
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domаin
       delivery_available: Жеткізу қол жетімді
@@ -401,6 +463,15 @@ kk:
       created_msg: Шағым жазбасы сәтті құрылды!
       destroyed_msg: Шағым жазбасы сәтті өшірілді!
     reports:
+      account:
+        note: note
+        notes:
+          one: "%{count} note"
+          other: "%{count} notes"
+        report: report
+        reports:
+          one: "%{count} report"
+          other: "%{count} reports"
       action_taken_by: Белсенділік жасаған
       are_you_sure: Шынымен бе?
       assign_to_self: Мені тағайындау
@@ -483,6 +554,9 @@ kk:
           approved: Тіркелу үшін мақұлдау қажет
           none: Ешкім тіркеле алмайды
           open: Бәрі тіркеле алады
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Тіркелулер
       show_known_fediverse_at_about_page:
         desc_html: When toggled, it will show toots from all the known fediverse on preview. Otherwise it will only show жергілікті toots.
@@ -519,6 +593,9 @@ kk:
       trends:
         desc_html: Бұрын қарастырылған хэштегтерді қазіргі уақытта трендте көпшілікке көрсету
         title: Тренд хештегтер
+    site_uploads:
+      delete: Delete uploaded file
+      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Аккаунт бетіне оралы
       batch:
@@ -533,12 +610,22 @@ kk:
       no_status_selected: Бірде-бір статус өзгерген жоқ, себебі ештеңе таңдалмады
       title: Аккаунт статустары
       with_media: Медиамен
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Бүгін қолданылғандар
       accounts_week: Осы аптада қолданылғандар
       breakdown: Бүгінгі пайдалану көздері бойынша бөлу
       context: Контекст
       directory: Бөлім ішінде
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} бөлім ішінде"
       last_active: Соңғы белсенділік
       most_popular: Ең танымал
@@ -548,14 +635,17 @@ kk:
       reviewed: Көрілген
       title: Hashtаgs
       trending_right_now: Бұгінгі трендте
+      unhide: Show in directory
       unique_uses_today: "%{count} бүгін жазылған"
       unreviewed: Қаралды
       updated_msg: Хэштег параметрлері сәтті жаңартылды
+      visible: Visible
     title: Administrаtion
     warning_presets:
       add_new: Add nеw
       delete: Deletе
       edit_preset: Edit warning prеset
+      empty: Empty
       title: Manage warning presеts
   admin_mailer:
     new_pending_account:
@@ -580,6 +670,10 @@ kk:
     animations_and_accessibility: Анимациялар және қолжетімділік
     confirmation_dialogs: Пікірталас диалогтары
     discovery: Пікірталас
+    localization:
+      body: Mastodon is translated by volunteers.
+      guide_link: https://crowdin.com/project/mastodon
+      guide_link_text: Everyone can contribute.
     sensitive_content: Нәзік контент
     toot_layout: Жазба формасы
   application_mailer:
@@ -602,6 +696,7 @@ kk:
     change_password: Құпиясөз
     checkbox_agreement_html: Мен <a href="%{rules_path}" target="_blank">ережелер</a> мен <a href="%{terms_path}" target="_blank">шарттарды</a> қабылдаймын
     checkbox_agreement_without_rules_html: Мен <a href="%{terms_path}" target="_blank">шарттармен</a> келісемін
+    confirm_email: Confirm email
     delete_account: Аккаунт өшіру
     delete_account_html: Аккаунтыңызды жойғыңыз келсе, <a href="%{path}">мына жерді</a> басыңыз. Сізден растау сұралатын болады.
     description:
@@ -638,6 +733,7 @@ kk:
     trouble_logging_in: Кіру қиын ба?
   authorize_follow:
     already_following: Бұл аккаунтқа жазылғансыз
+    already_requested: You have already sent a follow request to that account
     error: Өкінішке орай, қашықтағы тіркелгіні іздеуде қате пайда болды
     follow: Жазылу
     follow_request: 'Сіз жазылуға өтініш жібердіңіз:'
@@ -667,9 +763,11 @@ kk:
       x_months: "%{count}ай"
       x_seconds: "%{count}сек"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Сіз енгізген ақпарат дұрыс емес
     confirm_password: Қазіргі құпиясөзіңізді жазыңыз
     confirm_username: Процедураны растау үшін логинді енгізіңіз
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Аккаунт өшіру
     success_msg: Аккаунтыңыз сәтті өшірілді
     warning:
@@ -683,10 +781,18 @@ kk:
       more_details_html: Қосымша мәліметтер алу үшін <a href="%{terms_path}"> құпиялылық саясатын </a> қараңыз.
       username_available: Аккаунтыңыз қайтадан қолжетімді болады
       username_unavailable: Логиніңіз қолжетімді болмайды
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Профильдер каталогы
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Қолданушыларды қызығушылықтарына қарай реттеу
     explore_mastodon: "%{title} шарлау"
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: жарамды домен атауы емес
   errors:
@@ -718,6 +824,7 @@ kk:
     blocks: Бұғатталғансыз
     csv: СSV
     domain_blocks: Домен блоктары
+    follows: You follow
     lists: Тізімдер
     mutes: Үнсіздер
     storage: Медиа жинақ
@@ -728,6 +835,7 @@ kk:
     hint_html: "<strong> Ерекшеліктері бар хэштегтер дегеніміз не? </strong> Олар жалпыға қол жетімді профильде көрсетіледі және адамдарға сіздің жалпы хабарламаларыңызды сол хэштегтердің астына қарауға мүмкіндік береді. Олар шығармашылық жұмыстарды немесе ұзақ мерзімді жобаларды бақылаудың тамаша құралы."
   filters:
     contexts:
+      account: Profiles
       home: Ішкі желі
       notifications: Ескертпелер
       public: Ашық желі
@@ -752,6 +860,7 @@ kk:
     all: Барлығы
     changes_saved_msg: Өзгерістер сәтті сақталды!
     copy: Көшіру
+    delete: Delete
     no_batch_actions_available: Бұл бетте ешқандай әрекет жоқ
     order_by: Сұрыптау
     save_changes: Өзгерістерді сақтау
@@ -821,12 +930,14 @@ kk:
   media_attachments:
     validations:
       images_and_video: Жазбаға видео қоса алмайсыз, тек сурет қосуға болады
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: 4 файлдан артық қосылмайды
   migrations:
     acct: жаңа аккаунт үшін username@domain
     cancel: Редайректті қайтару
     cancel_explanation: Бағыттауды болдырмау сіздің ағымдағы есептік жазбаңызды қайта іске қосады, бірақ сол тіркелгіге көшкен оқырмандарды қайтармайды.
     cancelled_msg: Редайрект қайтарылды.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: бұл сіз ауысқан есептік жазба
       missing_also_known_as: бұл тіркелгіге сілтеме жасамайды
@@ -840,9 +951,11 @@ kk:
     not_redirecting: Your account is not redirecting to any other account currently.
     on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
     past_migrations: Past migrations
+    proceed: Save
     proceed_with_move: Move followers
     redirecting_to: Your account is redirecting to %{acct}.
     set_redirect: Set redirect
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: The new account must first be configured to back-reference this one
       before: 'Жұмысты бастамас бұрын, осы жазбаларды мұқият оқып шығыңыз:'
@@ -926,6 +1039,7 @@ kk:
   reactions:
     errors:
       limit_reached: Түрлі реакциялар лимиті толды
+      unrecognized_emoji: is not a recognized emoji
   relationships:
     activity: Аккаунт белсенділігі
     dormant: Ұйқысыз
@@ -959,6 +1073,10 @@ kk:
     reply:
       proceed: Жауап жазу
       prompt: 'Сіз мына жазбаға жауап жазасыз:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Сіз бір күндік %{limit} жазба лимитін тауыстыңыз
     over_total_limit: Сіз %{limit} жазба лимитін тауыстыңыз
@@ -1041,6 +1159,8 @@ kk:
     disallowed_hashtags:
       one: 'рұқсат етілмеген хэштег: %{tags}'
       other: 'рұқсат етілмеген хэштегтер: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Тілді өздігінен таңда
     open_in_web: Вебте ашу
     over_character_limit: "%{max} максимум таңбадан асып кетті"
@@ -1160,8 +1280,12 @@ kk:
   themes:
     contrast: Mastodon (Жоғары контраст)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Қою)
     mastodon-light: Mastodon (Ашық)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

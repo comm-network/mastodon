@@ -18,7 +18,11 @@ id:
     contact_unavailable: Tidak Tersedia
     discover_users: Temukan pengguna
     documentation: Dokumentasi
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Dengan akun di %{instance} Anda dapat mengikuti orang di server Mastodon mana pun dan di luarnya.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Coba aplikasi mobile
     hosted_on: Mastodon dihosting di %{domain}
     instance_actor_flash: 'Akun ini adalah aktor virtual yang dipakai untuk merepresentasikan server, bukan pengguna individu. Ini dipakai untuk tujuan federasi dan jangan diblokir kecuali Anda ingin memblokir seluruh instansi, yang seharusnya Anda pakai blokir domain.
@@ -191,6 +195,42 @@ id:
       web: Web
       whitelisted: Masuk daftar putih
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} menugaskan laporan %{target} kpd dirinya sendiri"
         change_email_user: "%{name} mengubah alamat surel pengguna %{target}"
@@ -228,6 +268,9 @@ id:
         update_custom_emoji: "%{name} memperbarui emoji %{target}"
         update_status: "%{name} memperbarui status %{target}"
       deleted_status: "(status dihapus)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Log audit
     announcements:
       destroyed_msg: Pengumuman berhasil dihapus!
@@ -238,10 +281,12 @@ id:
       new:
         create: Buat pengumuman
         title: Pengumuman baru
+      publish: Publish
       published_msg: Pengumuman berhasil diterbitkan!
       scheduled_for: Dijadwalkan untuk %{time}
       scheduled_msg: Pengumuman dijadwalkan untuk publikasi!
       title: Pengumuman
+      unpublish: Unpublish
       unpublished_msg: Pengumuman berhasil ditarik!
       updated_msg: Pengumuman berhasil diperbarui!
     custom_emojis:
@@ -360,6 +405,9 @@ id:
         create: Tambah domain
         title: Entri daftar hitam surel baru
       title: Daftar hitam surel
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domain
       delivery_available: Pengiriman tersedia
@@ -410,8 +458,10 @@ id:
       destroyed_msg: Catatan laporan berhasil dihapus!
     reports:
       account:
+        note: note
         notes:
           other: "%{count} catatan"
+        report: report
         reports:
           other: "%{count} laporan"
       action_taken_by: Aksi dilakukan oleh
@@ -496,6 +546,9 @@ id:
           approved: Persetujuan diperlukan untuk mendaftar
           none: Tidak ada yang dapat mendaftar
           open: Siapa pun dapat mendaftar
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Mode registrasi
       show_known_fediverse_at_about_page:
         desc_html: Ketika dimatikan, batasi linimasa publik yang ditautkan dari halaman landas untuk menampilkan konten lokal saja
@@ -549,12 +602,22 @@ id:
       no_status_selected: Tak ada status yang berubah karena tak ada yang dipilih
       title: Status akun
       with_media: Dengan media
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Penggunaan unik hari ini
       accounts_week: Penggunaan unik minggu ini
       breakdown: Rinci penggunaan hari ini berdasar sumber
       context: Konteks
       directory: Di direktori
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} di direktori"
       last_active: Terakhir aktif
       most_popular: Paling populer
@@ -564,14 +627,17 @@ id:
       reviewed: Ditinjau
       title: Tagar
       trending_right_now: Sedang tren sekarang
+      unhide: Show in directory
       unique_uses_today: "%{count} memposkan hari ini"
       unreviewed: Tak tertinjau
       updated_msg: Pembaruan pengaturan tagar berhasil
+      visible: Visible
     title: Administrasi
     warning_presets:
       add_new: Tambah baru
       delete: Hapus
       edit_preset: Sunting preset peringatan
+      empty: Empty
       title: Kelola preset peringatan
   admin_mailer:
     new_pending_account:
@@ -622,6 +688,7 @@ id:
     change_password: Kata sandi
     checkbox_agreement_html: Saya setuju dengan <a href="%{rules_path}" target="_blank">peraturan server</a> dan <a href="%{terms_path}" target="_blank">ketentuan layanan</a>
     checkbox_agreement_without_rules_html: Saya setuju dengan <a href="%{terms_path}" target="_blank">ketentuan layanan</a>
+    confirm_email: Confirm email
     delete_account: Hapus akun
     delete_account_html: Jika Anda ingin menghapus akun Anda, Anda dapat <a href="%{path}">memproses ini</a>. Anda akan dikonfirmasi.
     description:
@@ -691,9 +758,11 @@ id:
       x_months: "%{count}bln"
       x_seconds: "%{count}dtk"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Informasi yang Anda masukkan salah
     confirm_password: Masukkan kata sandi sekarang untuk memverifikasi identitas Anda
     confirm_username: Masukkan nama pengguna untuk mengonfirmasi prosedur
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Hapus akun
     success_msg: Akun Anda berhasil dihapus
     warning:
@@ -707,10 +776,18 @@ id:
       more_details_html: Lebih detailnya, lihat <a href="%{terms_path}">kebijakan privasi</a>.
       username_available: Nama pengguna Anda akan tersedia lagi
       username_unavailable: Nama pengguna Anda tetap tidak akan tersedia
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Direktori profil
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Temukan pengguna berdasarkan minatnya
     explore_mastodon: Jelajahi %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: bukan nama domain yang valid
   errors:
@@ -742,6 +819,7 @@ id:
     blocks: Anda blokir
     csv: CSV
     domain_blocks: Blokir domain
+    follows: You follow
     lists: Daftar
     mutes: Anda bisukan
     storage: Penyimpanan media
@@ -852,6 +930,7 @@ id:
     cancel: Batalkan peralihan
     cancel_explanation: Membatalkan peralihan akan mengaktivasi ulang akun sekarang, tetapi tidak akan mengembalikan pengikut yang telah pindah ke akun baru.
     cancelled_msg: Pembatalan peralihan berhasil.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: adalah akun yang sama yang sudah Anda pindahkan ke
       missing_also_known_as: ini bukan back-reference akun ini
@@ -865,9 +944,11 @@ id:
     not_redirecting: Saat ini akun Anda tidak dialihkan ke akun lain.
     on_cooldown: Anda baru saja memindahkan akun Anda. Fungsi ini akan tersedia kembali %{count} hari lagi.
     past_migrations: Migrasi lampau
+    proceed: Save
     proceed_with_move: Pindahkan pengikut
     redirecting_to: Akun Anda dialihkan ke %{acct}.
     set_redirect: Atur peralihan
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Akun baru harus dikonfigurasi terlebih dahulu agar merujuk ke akun ini
       before: 'Sebelum lanjut, mohon perhatikan catatan ini:'
@@ -983,6 +1064,10 @@ id:
     reply:
       proceed: Lanjutkan ke balasan
       prompt: 'Anda ingin membalas toot ini:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Anda telah melampaui batas %{limit} toot terjadwal untuk sehari
     over_total_limit: Anda telah melampaui batas %{limit} toot terjadwal
@@ -1100,7 +1185,12 @@ id:
   themes:
     contrast: Mastodon (Kontras tinggi)
     default: Mastodon (Gelap)
+    fairy-floss: Fairy Floss (Pastel dark)
+    mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Terang)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

@@ -18,7 +18,11 @@ pt-PT:
     contact_unavailable: n.d.
     discover_users: Descobrir utilizadores
     documentation: Documentação
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Ter uma conta em %{instance} permitirá seguir pessoas em qualquer servidor Mastodon.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Experimente uma aplicação
     hosted_on: Mastodon em %{domain}
     instance_actor_flash: |
@@ -281,10 +285,12 @@ pt-PT:
       new:
         create: Criar anúncio
         title: Novo anúncio
+      publish: Publish
       published_msg: Anúncio publicado com sucesso!
       scheduled_for: Agendado para %{time}
       scheduled_msg: Anúncio agendado para publicação!
       title: Anúncios
+      unpublish: Unpublish
       unpublished_msg: Anúncio retirado de exibição com sucesso!
       updated_msg: Anúncio atualizado com sucesso!
     custom_emojis:
@@ -404,6 +410,9 @@ pt-PT:
         create: Adicionar domínio
         title: Novo bloqueio de domínio de email
       title: Bloqueio de Domínio de Email
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domínio
       delivery_available: Entrega disponível
@@ -455,9 +464,11 @@ pt-PT:
       destroyed_msg: Relatório apagado com sucesso!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} nota"
           other: "%{count} notas"
+        report: report
         reports:
           one: "%{count} relatório"
           other: "%{count} relatórios"
@@ -543,6 +554,9 @@ pt-PT:
           approved: Registo sujeito a aprovação
           none: Ninguém se pode registar
           open: Qualquer pessoa se pode registar
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Modo de registo
       show_known_fediverse_at_about_page:
         desc_html: Quando comutado, irá mostrar a previsualização de publicações de todo o fediverse conhecido. De outro modo só mostrará publicações locais.
@@ -596,12 +610,22 @@ pt-PT:
       no_status_selected: Nenhum estado foi alterado porque nenhum foi selecionado
       title: Estado das contas
       with_media: Com média
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Usos únicos hoje
       accounts_week: Usos únicos desta semana
       breakdown: Descrição do consumo atual por fonte
       context: Contexto
       directory: No diretório
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} no diretório"
       last_active: Última actividade
       most_popular: Mais popular
@@ -611,14 +635,17 @@ pt-PT:
       reviewed: Revista
       title: Hashtags
       trending_right_now: Tendências agora
+      unhide: Show in directory
       unique_uses_today: "%{count} publicando hoje"
       unreviewed: Não revista
       updated_msg: Definições de hashtags actualizadas com sucesso
+      visible: Visible
     title: Administração
     warning_presets:
       add_new: Adicionar novo
       delete: Apagar
       edit_preset: Editar o aviso predefinido
+      empty: Empty
       title: Gerir os avisos predefinidos
   admin_mailer:
     new_pending_account:
@@ -669,6 +696,7 @@ pt-PT:
     change_password: Palavra-passe
     checkbox_agreement_html: Concordo com as <a href="%{rules_path}" target="_blank">regras do servidor</a> e com os <a href="%{terms_path}" target="_blank">termos de serviço</a>
     checkbox_agreement_without_rules_html: Concordo com os <a href="%{terms_path}" target="_blank">termos do serviço</a>
+    confirm_email: Confirm email
     delete_account: Eliminar conta
     delete_account_html: Se desejas eliminar a conta, podes <a href="%{path}">continua aqui</a>. Uma confirmação será pedida.
     description:
@@ -738,9 +766,11 @@ pt-PT:
       x_months: "%{count} meses"
       x_seconds: "%{count} segundos"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: A informação que introduziu não estava correta
     confirm_password: Introduz a palavra-passe atual para verificar a tua identidade
     confirm_username: Introduza o seu nome de utilizador para confirmar o procedimento
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Eliminar conta
     success_msg: A tua conta foi eliminada com sucesso
     warning:
@@ -754,10 +784,18 @@ pt-PT:
       more_details_html: Para mais detalhes, leia a <a href="%{terms_path}">política de privacidade</a>.
       username_available: O seu nome de utilizador ficará novamente disponível
       username_unavailable: O seu nome de utilizador permanecerá indisponível
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Dirétorio de perfil
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Descobre utilizadores com base nos seus interesses
     explore_mastodon: Explorar %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: não é um nome de domínio válido
   errors:
@@ -789,6 +827,7 @@ pt-PT:
     blocks: Bloqueaste
     csv: CSV
     domain_blocks: Bloqueios de domínio
+    follows: You follow
     lists: Listas
     mutes: Tens em silêncio
     storage: Armazenamento de média
@@ -901,6 +940,7 @@ pt-PT:
     cancel: Cancelar redirecionamento
     cancel_explanation: Cancelar o redirecionamento irá reativar a sua conta atual, mas não trará de volta os seguidores que foram migrados para essa conta.
     cancelled_msg: Cancelou com sucesso o redireccionamento.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: é a mesma conta para a qual já migrou
       missing_also_known_as: não está a referenciar esta conta
@@ -914,9 +954,11 @@ pt-PT:
     not_redirecting: A sua conta não está atualmente a ser redirecionada para nenhuma outra conta.
     on_cooldown: Migrou recentemente a sua conta. Esta função ficará disponível novamente em %{count} dias.
     past_migrations: Migrações anteriores
+    proceed: Save
     proceed_with_move: Migrar seguidores
     redirecting_to: A sua conta está a ser redireccionada para %{acct}.
     set_redirect: Definir redirecionamento
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: A nova conta deve primeiro ser configurada para que esta seja referenciada
       before: 'Antes de continuar, leia cuidadosamente estas notas:'
@@ -1034,6 +1076,10 @@ pt-PT:
     reply:
       proceed: Prosseguir com resposta
       prompt: 'Queres responder a esta publicação:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Excedeste o limite de %{limit} publicações agendadas para esse dia
     over_total_limit: Tu excedeste o limite de %{limit} publicações agendadas
@@ -1237,8 +1283,12 @@ pt-PT:
   themes:
     contrast: Mastodon (Elevado contraste)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon
     mastodon-light: Mastodon (Leve)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%H:%M em %d de %b de %Y"

@@ -35,6 +35,7 @@ class Form::AdminSettings
     show_domain_blocks
     show_domain_blocks_rationale
     noindex
+    require_join_reason
   ).freeze
 
   BOOLEAN_KEYS = %i(

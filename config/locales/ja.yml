@@ -18,7 +18,11 @@ ja:
     contact_unavailable: N/A
     discover_users: ユーザーを見つける
     documentation: ドキュメント
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: "%{instance} のアカウントひとつでどんなMastodon互換サーバーのユーザーでもフォローできるでしょう。"
+    generic_description: "%{domain} is one server in the network"
     get_apps: モバイルアプリを試す
     hosted_on: Mastodon hosted on %{domain}
     instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、特定のユーザーを示すものではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックするときは、このアカウントをブロックせずに、ドメインブロックを使用してください。
@@ -277,10 +281,12 @@ ja:
       new:
         create: お知らせを作成
         title: お知らせを追加
+      publish: Publish
       published_msg: お知らせを掲載しました
       scheduled_for: "%{time} に予約"
       scheduled_msg: お知らせの掲載を予約しました
       title: お知らせ
+      unpublish: Unpublish
       unpublished_msg: お知らせを非掲載にしました
       updated_msg: お知らせを更新しました
     custom_emojis:
@@ -399,6 +405,9 @@ ja:
         create: ドメインを追加
         title: メールアドレス用ブラックリスト新規追加
       title: メールブラックリスト
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: ドメイン
       delivery_available: 配送可能
@@ -449,8 +458,10 @@ ja:
       destroyed_msg: 通報メモを削除しました！
     reports:
       account:
+        note: note
         notes:
           other: "%{count} 件のメモ"
+        report: report
         reports:
           other: "%{count} 件の通報"
       action_taken_by: 通報処理者
@@ -535,6 +546,9 @@ ja:
           approved: 登録には承認が必要
           none: 誰にも許可しない
           open: 誰でも登録可
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: 新規登録
       show_known_fediverse_at_about_page:
         desc_html: チェックを外すと、ランディングページからリンクされた公開タイムラインにローカルの公開トゥートのみ表示します。
@@ -588,12 +602,22 @@ ja:
       no_status_selected: 何も選択されていないため、変更されていません
       title: トゥート一覧
       with_media: メディアあり
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: 本日使用した人数
       accounts_week: 今週使用した人数
       breakdown: 直近のサーバー別使用状況
       context: 表示先
       directory: ディレクトリに使用
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} 人がディレクトリに使用"
       last_active: 最近使われた順
       most_popular: 使用頻度順
@@ -603,14 +627,17 @@ ja:
       reviewed: 審査済み
       title: ハッシュタグ
       trending_right_now: 現在のトレンド
+      unhide: Show in directory
       unique_uses_today: 本日 %{count} 人がトゥートに使用
       unreviewed: 未審査
       updated_msg: ハッシュタグ設定が更新されました
+      visible: Visible
     title: 管理
     warning_presets:
       add_new: 追加
       delete: 削除
       edit_preset: プリセット警告文を編集
+      empty: Empty
       title: プリセット警告文を管理
   admin_mailer:
     new_pending_account:
@@ -661,6 +688,7 @@ ja:
     change_password: パスワード
     checkbox_agreement_html: <a href="%{rules_path}" target="_blank">サーバーのルール</a> と <a href="%{terms_path}" target="_blank">プライバシーポリシー</a> に同意します
     checkbox_agreement_without_rules_html: <a href="%{terms_path}" target="_blank">利用規約</a> に同意します
+    confirm_email: Confirm email
     delete_account: アカウントの削除
     delete_account_html: アカウントを削除したい場合、<a href="%{path}">こちら</a> から手続きが行えます。削除する前に、確認画面があります。
     description:
@@ -730,9 +758,11 @@ ja:
       x_months: "%{count}月"
       x_seconds: "%{count}秒"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: 入力された情報は正しくありません
     confirm_password: 本人確認のため、現在のパスワードを入力してください
     confirm_username: 確認のためユーザー名を入力してください
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: アカウントを削除する
     success_msg: アカウントは正常に削除されました
     warning:
@@ -746,10 +776,18 @@ ja:
       more_details_html: 詳しくは<a href="%{terms_path}">プライバシーポリシー</a>をご覧ください。
       username_available: あなたのユーザー名は再利用できるようになります
       username_unavailable: あなたのユーザー名は引き続き利用できません
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: ディレクトリ
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: 関心を軸にユーザーを発見しよう
     explore_mastodon: "%{title}を探索"
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: は無効なドメイン名です
   errors:
@@ -781,6 +819,7 @@ ja:
     blocks: ブロック
     csv: CSV
     domain_blocks: 非表示にしたドメイン
+    follows: You follow
     lists: リスト
     mutes: ミュート
     storage: メディア
@@ -891,6 +930,7 @@ ja:
     cancel: 引っ越しを取り消す
     cancel_explanation: 引っ越しを取り消すと現在のアカウントが再度有効化されますが、引き継がれたフォロワーは戻されません。
     cancelled_msg: 引っ越し設定を取り消しました。
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: は既に引っ越したアカウントと同じです
       missing_also_known_as: はこのアカウントとエイリアスの設定がされていません
@@ -904,9 +944,11 @@ ja:
     not_redirecting: アカウントは現在引っ越し設定されていません。
     on_cooldown: あなたは最近アカウントを引っ越しました。この機能は %{count} 日後に再度利用できるようになります。
     past_migrations: 過去の引っ越し
+    proceed: Save
     proceed_with_move: フォロワーを引き継ぐ
     redirecting_to: アカウントは %{acct} に引っ越し設定されています。
     set_redirect: 引っ越しを設定
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: まずは引っ越し先のアカウントでこのアカウントに対しエイリアスを作成する必要があります
       before: '続行する前に、次の点を再度確認してください:'
@@ -1022,6 +1064,10 @@ ja:
     reply:
       proceed: 返信する
       prompt: '返信しようとしています:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: その日予約できる投稿数 %{limit} を超えています
     over_total_limit: 予約できる投稿数 %{limit} を超えています
@@ -1220,8 +1266,12 @@ ja:
   themes:
     contrast: Mastodon (ハイコントラスト)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (ダーク)
     mastodon-light: Mastodon (ライト)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

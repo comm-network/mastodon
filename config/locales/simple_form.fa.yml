@@ -30,6 +30,7 @@ fa:
         current_username: برای تأیید، لطفاً نام کاربری حساب فعلی را وارد کنید
         digest: تنها وقتی فرستاده می‌شود که مدتی طولانی فعالیتی نداشته باشید و در این مدت برای شما پیغام خصوصی‌ای نوشته شده باشد
         discoverable: فهرست گزیدهٔ کاربران، راهی دیگر برای رسیدن به مخاطبان گسترده‌تری برای حسابتان است
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: به شما ایمیل تأییدی فرستاده خواهد شد
         fields: شما می‌توانید تا چهار مورد را در یک جدول در نمایهٔ خود نمایش دهید
         header: یکی از قالب‌های PNG یا  GIF یا JPG. بیشترین اندازه %{size}. تصویر به اندازهٔ %{dimensions} پیکسل تبدیل خواهد شد
@@ -41,10 +42,14 @@ fa:
         phrase: مستقل از کوچکی و بزرگی حروف، با متن اصلی یا هشدار محتوای بوق‌ها مقایسه می‌شود
         scopes: واسط‌های برنامه‌نویسی که این برنامه به آن دسترسی دارد. اگر بالاترین سطح دسترسی را انتخاب کنید، دیگر نیازی به انتخاب سطح‌های پایینی ندارید.
         setting_aggregate_reblogs: برای بازبوق‌هایی که به تازگی برایتان نمایش داده شده‌اند، بازبوق‌های بیشتر را نشان نده (فقط روی بازبوق‌های اخیر تأثیر می‌گذارد)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: تصاویر حساس به طور پیش‌فرض پنهان هستند و می‌توانند با یک کلیک آشکار شوند
         setting_display_media_default: تصویرهایی را که به عنوان حساس علامت زده شده‌اند پنهان کن
         setting_display_media_hide_all: همیشه همهٔ عکس‌ها و ویدیوها را پنهان کن
         setting_display_media_show_all: همیشه تصویرهایی را که به عنوان حساس علامت زده شده‌اند را نشان بده
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: فهرست پیگیران شما و فهرست کسانی که شما پی می‌گیرید روی نمایهٔ شما دیده نخواهد شد
         setting_noindex: روی نمایهٔ عمومی و صفحهٔ نوشته‌های شما تأثیر می‌گذارد
         setting_show_application: برنامه‌ای که به کمک آن بوق می‌زنید، در جزئیات بوق شما نمایش خواهد یافت
@@ -131,6 +136,10 @@ fa:
         setting_auto_play_gif: پخش خودکار تصویرهای متحرک
         setting_boost_modal: نمایش پیغام تأیید پیش از بازبوقیدن
         setting_crop_images: در بوق‌های بازنشده، تصویرها را به ابعاد ۱۶×۹ کوچک کن
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: زبان نوشته‌های شما
         setting_default_privacy: حریم خصوصی نوشته‌ها
         setting_default_sensitive: همیشه تصاویر را به عنوان حساس علامت بزن
@@ -139,9 +148,12 @@ fa:
         setting_display_media_default: پیش‌فرض
         setting_display_media_hide_all: نهفتن همه
         setting_display_media_show_all: نمایش همه
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: همیشه بوق‌هایی را که هشدار محتوا دارند کامل نشان بده
         setting_hide_network: نهفتن شبکهٔ ارتباطی
         setting_noindex: درخواست از موتورهای جستجوگر برای ظاهر نشدن در نتایج جستجو
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: کاستن از حرکت در پویانمایی‌ها
         setting_show_application: برنامه‌ای که به کار می‌برید آشکار شود
         setting_system_font_ui: به‌کاربردن قلم پیش‌فرض سیستم

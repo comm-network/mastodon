@@ -91,7 +91,7 @@ class User < ApplicationRecord
   scope :enabled, -> { where(disabled: false) }
   scope :disabled, -> { where(disabled: true) }
   scope :inactive, -> { where(arel_table[:current_sign_in_at].lt(ACTIVE_DURATION.ago)) }
-  scope :active, -> { confirmed.where(arel_table[:current_sign_in_at].gteq(ACTIVE_DURATION.ago)).joins(:account).where(accounts: { suspended_at: nil }) }
+  scope :active, -> { confirmed.where(arel_table[:current_sign_in_at].gteq(ACTIVE_DURATION.ago)).joins(:account).where(accounts: {suspended_at: nil}) }
   scope :matches_email, ->(value) { where(arel_table[:email].matches("#{value}%")) }
   scope :matches_ip, ->(value) { left_joins(:session_activations).where('users.current_sign_in_ip <<= ?', value).or(left_joins(:session_activations).where('users.last_sign_in_ip <<= ?', value)).or(left_joins(:session_activations).where('session_activations.ip <<= ?', value)) }
   scope :emailable, -> { confirmed.enabled.joins(:account).merge(Account.searchable) }
@@ -136,7 +136,7 @@ class User < ApplicationRecord
   end
 
   def confirm
-    new_user      = !confirmed?
+    new_user = !confirmed?
     self.approved = true if open_registrations?
 
     super
@@ -149,7 +149,7 @@ class User < ApplicationRecord
   end
 
   def confirm!
-    new_user      = !confirmed?
+    new_user = !confirmed?
     self.approved = true if open_registrations?
 
     skip_confirmation!
@@ -231,7 +231,7 @@ class User < ApplicationRecord
   def token_for_app(a)
     return nil if a.nil? || a.owner != self
     Doorkeeper::AccessToken
-      .find_or_create_by(application_id: a.id, resource_owner_id: id) do |t|
+        .find_or_create_by(application_id: a.id, resource_owner_id: id) do |t|
 
       t.scopes = a.scopes
       t.expires_in = Doorkeeper.configuration.access_token_expires_in
@@ -258,7 +258,7 @@ class User < ApplicationRecord
   end
 
   def invite_code=(code)
-    self.invite  = Invite.find_by(code: code) if code.present?
+    self.invite = Invite.find_by(code: code) if code.present?
     @invite_code = code
   end
 
@@ -290,17 +290,17 @@ class User < ApplicationRecord
 
   def recent_ips
     @recent_ips ||= begin
-      arr = []
+                      arr = []
 
-      session_activations.each do |session_activation|
-        arr << [session_activation.updated_at, session_activation.ip]
-      end
+                      session_activations.each do |session_activation|
+                        arr << [session_activation.updated_at, session_activation.ip]
+                      end
 
-      arr << [current_sign_in_at, current_sign_in_ip] if current_sign_in_ip.present?
-      arr << [last_sign_in_at, last_sign_in_ip] if last_sign_in_ip.present?
+                      arr << [current_sign_in_at, current_sign_in_ip] if current_sign_in_ip.present?
+                      arr << [last_sign_in_at, last_sign_in_ip] if last_sign_in_ip.present?
 
-      arr.sort_by { |pair| pair.first || Time.now.utc }.uniq(&:last).reverse!
-    end
+                      arr.sort_by { |pair| pair.first || Time.now.utc }.uniq(&:last).reverse!
+                    end
   end
 
   protected

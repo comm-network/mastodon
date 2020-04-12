@@ -18,7 +18,11 @@ en:
     contact_unavailable: N/A
     discover_users: Discover users
     documentation: Documentation
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: With an account on %{instance} you'll be able to follow people on any Mastodon server and beyond.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Try a mobile app
     hosted_on: Mastodon hosted on %{domain}
     instance_actor_flash: |
@@ -281,10 +285,12 @@ en:
       new:
         create: Create announcement
         title: New announcement
+      publish: Publish
       published_msg: Announcement successfully published!
       scheduled_for: Scheduled for %{time}
       scheduled_msg: Announcement scheduled for publication!
       title: Announcements
+      unpublish: Unpublish
       unpublished_msg: Announcement successfully unpublished!
       updated_msg: Announcement successfully updated!
     custom_emojis:
@@ -404,6 +410,9 @@ en:
         create: Add domain
         title: New e-mail blacklist entry
       title: E-mail blacklist
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domain
       delivery_available: Delivery is available
@@ -455,9 +464,11 @@ en:
       destroyed_msg: Report note successfully deleted!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} note"
           other: "%{count} notes"
+        report: report
         reports:
           one: "%{count} report"
           other: "%{count} reports"
@@ -543,7 +554,9 @@ en:
           approved: Approval required for sign up
           none: Nobody can sign up
           open: Anyone can sign up
-        require: Make the "Why do you want to join" a required field
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Registrations mode
       show_known_fediverse_at_about_page:
         desc_html: When disabled, restricts the public timeline linked from the landing page to showing only local content
@@ -597,12 +610,22 @@ en:
       no_status_selected: No statuses were changed as none were selected
       title: Account statuses
       with_media: With media
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Unique uses today
       accounts_week: Unique uses this week
       breakdown: Breakdown of today's usage by source
       context: Context
       directory: In directory
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} in directory"
       last_active: Last active
       most_popular: Most popular
@@ -612,14 +635,17 @@ en:
       reviewed: Reviewed
       title: Hashtags
       trending_right_now: Trending right now
+      unhide: Show in directory
       unique_uses_today: "%{count} posting today"
       unreviewed: Not reviewed
       updated_msg: Hashtag settings updated successfully
+      visible: Visible
     title: Administration
     warning_presets:
       add_new: Add new
       delete: Delete
       edit_preset: Edit warning preset
+      empty: Empty
       title: Manage warning presets
   admin_mailer:
     new_pending_account:
@@ -670,6 +696,7 @@ en:
     change_password: Password
     checkbox_agreement_html: I agree to the <a href="%{rules_path}" target="_blank">server rules</a> and <a href="%{terms_path}" target="_blank">terms of service</a>
     checkbox_agreement_without_rules_html: I agree to the <a href="%{terms_path}" target="_blank">terms of service</a>
+    confirm_email: Confirm email
     delete_account: Delete account
     delete_account_html: If you wish to delete your account, you can <a href="%{path}">proceed here</a>. You will be asked for confirmation.
     description:
@@ -739,9 +766,11 @@ en:
       x_months: "%{count}mo"
       x_seconds: "%{count}s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: The information you entered was not correct
     confirm_password: Enter your current password to verify your identity
     confirm_username: Enter your username to confirm the procedure
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Delete account
     success_msg: Your account was successfully deleted
     warning:
@@ -755,10 +784,18 @@ en:
       more_details_html: For more details, see the <a href="%{terms_path}">privacy policy</a>.
       username_available: Your username will become available again
       username_unavailable: Your username will remain unavailable
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Profile directory
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Discover users based on their interests
     explore_mastodon: Explore %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: is not a valid domain name
   errors:
@@ -790,6 +827,7 @@ en:
     blocks: You block
     csv: CSV
     domain_blocks: Domain blocks
+    follows: You follow
     lists: Lists
     mutes: You mute
     storage: Media storage
@@ -902,6 +940,7 @@ en:
     cancel: Cancel redirect
     cancel_explanation: Cancelling the redirect will re-activate your current account, but will not bring back followers that have been moved to that account.
     cancelled_msg: Successfully cancelled the redirect.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: is the same account you have already moved to
       missing_also_known_as: is not back-referencing this account
@@ -915,9 +954,11 @@ en:
     not_redirecting: Your account is not redirecting to any other account currently.
     on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
     past_migrations: Past migrations
+    proceed: Save
     proceed_with_move: Move followers
     redirecting_to: Your account is redirecting to %{acct}.
     set_redirect: Set redirect
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: The new account must first be configured to back-reference this one
       before: 'Before proceeding, please read these notes carefully:'
@@ -1036,6 +1077,10 @@ en:
     reply:
       proceed: Proceed to reply
       prompt: 'You want to reply to this toot:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: You have exceeded the limit of %{limit} scheduled toots for that day
     over_total_limit: You have exceeded the limit of %{limit} scheduled toots

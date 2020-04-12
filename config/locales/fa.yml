@@ -18,7 +18,11 @@ fa:
     contact_unavailable: موجود نیست
     discover_users: یافتن کاربران
     documentation: مستندات
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: با حسابی روی %{instance} می‌توانید افراد روی هر کارساز ماستودون و بیش از آن را پی بگیرید.
+    generic_description: "%{domain} is one server in the network"
     get_apps: یک اپ موبایل را بیازمایید
     hosted_on: ماستودون، میزبانی‌شده روی %{domain}
     instance_actor_flash: |
@@ -219,6 +223,7 @@ fa:
         disable_user: از کار انداختن کاربر
         enable_custom_emoji: به کار انداختن اموجی سفارشی
         enable_user: به کار انداختن کاربر
+        memorialize_account: Memorialize Account
         promote_user: ترفیع کاربر
         remove_avatar_user: برداشتن تصویر نمایه
         reopen_report: بازگشایی گزارش
@@ -282,10 +287,12 @@ fa:
       new:
         create: ساختن اعلامیه
         title: اعلامیهٔ تازه
+      publish: Publish
       published_msg: اعلامیه با موفقیت منتشر شد!
       scheduled_for: زمان‌بسته برای %{time}
       scheduled_msg: اعلامیه برای نشر، زمان‌بندی شد!
       title: اعلامیه‌ها
+      unpublish: Unpublish
       unpublished_msg: انتشار اعلامیه با موفقیت لغو شد!
       updated_msg: اعلامیه با موفقیت به‌روز شد!
     custom_emojis:
@@ -405,6 +412,9 @@ fa:
         create: ساختن مسدودسازی
         title: مسدودسازی دامین ایمیل تازه
       title: مسدودسازی دامین‌های ایمیل
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: دامین
       delivery_available: پیام آماده است
@@ -456,9 +466,11 @@ fa:
       destroyed_msg: یادداشت گزارش با موفقیت حذف شد!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} یادداشت"
           other: "%{count} یادداشت"
+        report: report
         reports:
           one: "%{count} گزارش"
           other: "%{count} گزارش"
@@ -544,6 +556,9 @@ fa:
           approved: ثبت نام نیازمند تأیید مدیران است
           none: کسی نمی‌تواند ثبت نام کند
           open: همه می‌توانند ثبت نام کنند
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: شرایط ثبت نام
       show_known_fediverse_at_about_page:
         desc_html: اگر انتخاب شود، بوق‌های همهٔ سرورهای دیگر نیز در پیش‌نمایش این سرور نمایش می‌یابد. وگرنه فقط بوق‌های محلی نشان داده می‌شوند.
@@ -597,12 +612,22 @@ fa:
       no_status_selected: هیچ بوقی تغییری نکرد زیرا هیچ‌کدام از آن‌ها انتخاب نشده بودند
       title: نوشته‌های حساب
       with_media: دارای عکس یا ویدیو
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: کاربرد یکتا در امروز
       accounts_week: کاربرد یکتا در این هفته
       breakdown: کاربردهای امروز به تفکیک منبع
       context: زمینه
       directory: در فهرست
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} در فهرست"
       last_active: آخرین فعالیت
       most_popular: محبوب‌ترین
@@ -612,14 +637,17 @@ fa:
       reviewed: بازبینی شده
       title: برچسب‌ها
       trending_right_now: پرطرفدارهای کنونی
+      unhide: Show in directory
       unique_uses_today: "%{count} امروز منتشر شده"
       unreviewed: بازبینی نشده
       updated_msg: تنظیمات برچسب‌ها با موفقیت به‌روز شد
+      visible: Visible
     title: مدیریت
     warning_presets:
       add_new: افزودن تازه
       delete: زدودن
       edit_preset: ویرایش هشدار پیش‌فرض
+      empty: Empty
       title: مدیریت هشدارهای پیش‌فرض
   admin_mailer:
     new_pending_account:
@@ -670,6 +698,7 @@ fa:
     change_password: رمز
     checkbox_agreement_html: با <a href="%{rules_path}" target="_blank">قانون‌های این کارساز</a> و <a href="%{terms_path}" target="_blank">شرایط خدماتش</a> موافقم
     checkbox_agreement_without_rules_html: من با <a href="%{terms_path}" target="_blank">شرایط استفاده</a> موافقم
+    confirm_email: Confirm email
     delete_account: پاک‌کردن حساب
     delete_account_html: اگر می‌خواهید حساب خود را پاک کنید، از <a href="%{path}">این‌جا</a> پیش بروید. از شما درخواست تأیید خواهد شد.
     description:
@@ -739,9 +768,11 @@ fa:
       x_months: "%{count} ماه"
       x_seconds: "%{count} ثانیه"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: اطلاعاتی که وارد کردید اشتباه بود
     confirm_password: رمز فعلی خود را وارد کنید تا معلوم شود که خود شمایید
     confirm_username: برای تأیید این فرایند نام کاربری خود را وارد کنید
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: پاک‌کردن حساب
     success_msg: حساب شما با موفقیت پاک شد
     warning:
@@ -755,10 +786,18 @@ fa:
       more_details_html: برای اطلاعات بیشتر <a href="%{terms_path}">سیاست رازداری</a> را ببینید.
       username_available: نام کاربری شما دوباره در دسترس خواهد بود
       username_unavailable: نام کاربری شما برای دیگران غیرقابل دسترس خواهد ماند
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: فهرست گزیدهٔ کاربران
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: کاربران را بر اساس علاقه‌مندی‌هایشان بیابید
     explore_mastodon: گشت و گذار در %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: نام دامین معتبر نیست
   errors:
@@ -790,6 +829,7 @@ fa:
     blocks: حساب‌های مسدودشده
     csv: CSV
     domain_blocks: دامین‌های مسدودشده
+    follows: You follow
     lists: فهرست‌ها
     mutes: حساب‌های بی‌صداشده
     storage: تصویرهای ذخیره‌شده
@@ -902,6 +942,7 @@ fa:
     cancel: لغو انتقال
     cancel_explanation: با لغو انتقال، حساب شما دوباره فعال می‌شود، ولی این کار پیگیران شما را که به حساب دیگر منتقل شده‌اند برنمی‌گرداند.
     cancelled_msg: انتقال حساب با موفقیت لغو شد.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: این همان حسابی است که به آن منتقل شده‌اید
       missing_also_known_as: به حساب شما اشاره نمی‌کند
@@ -915,9 +956,11 @@ fa:
     not_redirecting: حساب شما هم‌اینک به هیچ حساب دیگری منتقل نشده است یا اشاره نمی‌کند.
     on_cooldown: شما به تازگی حساب خود را منتقل کرده‌اید. این ویژگی برای شما دوباره در %{count} روز فعال خواهد شد.
     past_migrations: انتقال‌های پیشین
+    proceed: Save
     proceed_with_move: انتقال پیگیران
     redirecting_to: حساب شما هم‌اینک به %{acct} منتقل شده است.
     set_redirect: اشاره به حساب دیگر
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: حساب تازهٔ شما نخست باید تنظیم شود تا به این حساب اشاره کند
       before: 'پیش از ادامه،‌ لطفاً نکته‌های زیر را به دقت بخوانید:'
@@ -1035,6 +1078,10 @@ fa:
     reply:
       proceed: به سمت پاسخ‌دادن
       prompt: 'شما می‌خواهید به این بوق پاسخ دهید:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: شما از حد مجاز %{limit} بوق زمان‌بندی‌شده در آن روز فراتر رفته‌اید
     over_total_limit: شما از حد مجاز %{limit} بوق زمان‌بندی‌شده فراتر رفته‌اید
@@ -1238,7 +1285,12 @@ fa:
   themes:
     contrast: ماستودون (سایه‌روشن بالا)
     default: ماستودون (تیره)
+    fairy-floss: Fairy Floss (Pastel dark)
+    mastodon-dark: Mastodon (Dark)
     mastodon-light: ماستودون (روشن)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

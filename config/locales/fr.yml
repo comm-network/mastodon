@@ -18,7 +18,11 @@ fr:
     contact_unavailable: N/D
     discover_users: Découvrez des utilisateur·rice·s
     documentation: Documentation
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Avec un compte sur %{instance}, vous pourrez suivre les gens sur n’importe quel serveur Mastodon et au-delà.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Essayez une application mobile
     hosted_on: Serveur Mastodon hébergé par %{domain}
     instance_actor_flash: |
@@ -281,10 +285,12 @@ fr:
       new:
         create: Créer une annonce
         title: Nouvelle annonce
+      publish: Publish
       published_msg: Annonce publiée avec succès !
       scheduled_for: Planifiée pour %{time}
       scheduled_msg: Annonce planifiée pour publication !
       title: Annonces
+      unpublish: Unpublish
       unpublished_msg: L’annonce a été dépubliée avec succès !
       updated_msg: L’annonce a été mise à jour avec succès !
     custom_emojis:
@@ -404,6 +410,9 @@ fr:
         create: Créer le blocage
         title: Nouveau blocage de domaine de courriel
       title: Blocage de domaines de courriel
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domaine
       delivery_available: Livraison disponible
@@ -455,9 +464,11 @@ fr:
       destroyed_msg: Note de signalement effacée avec succès !
     reports:
       account:
+        note: note
         notes:
           one: "%{count} note"
           other: "%{count} notes"
+        report: report
         reports:
           one: "%{count} signalement"
           other: "%{count} signalements"
@@ -543,6 +554,9 @@ fr:
           approved: Approbation requise pour s’inscrire
           none: Personne ne peut s’inscrire
           open: N’importe qui peut s’inscrire
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Mode d’enregistrement
       show_known_fediverse_at_about_page:
         desc_html: Lorsque l’option est activée, les pouets provenant de toutes les serveurs connus sont montrés dans la prévisualisation. Sinon, seuls les pouets locaux sont montrés
@@ -596,12 +610,22 @@ fr:
       no_status_selected: Aucun statut n’a été modifié car aucun n’a été sélectionné
       title: Statuts du compte
       with_media: avec médias
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Utilisations uniques aujourd'hui
       accounts_week: Utilisation unique cette semaine
       breakdown: Répartition de l’utilisation actuelle par source
       context: Contexte
       directory: Dans l’annuaire
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} dans l’annuaire"
       last_active: Dernière activité
       most_popular: Plus populaire
@@ -611,14 +635,17 @@ fr:
       reviewed: Traité
       title: Hashtags
       trending_right_now: Populaire en ce moment
+      unhide: Show in directory
       unique_uses_today: "%{count} posts aujourd'hui"
       unreviewed: Non traité
       updated_msg: Paramètres du hashtag mis à jour avec succès
+      visible: Visible
     title: Administration
     warning_presets:
       add_new: Ajouter un nouveau
       delete: Supprimer
       edit_preset: Éditer les avertissements prédéfinis
+      empty: Empty
       title: Gérer les avertissements prédéfinis
   admin_mailer:
     new_pending_account:
@@ -669,6 +696,7 @@ fr:
     change_password: Mot de passe
     checkbox_agreement_html: J’accepte les <a href="%{rules_path}" target="_blank">règles du serveur</a> et les <a href="%{terms_path}" target="_blank">conditions de service</a>
     checkbox_agreement_without_rules_html: J’accepte les <a href="%{terms_path}" target="_blank">conditions d’utilisation</a>
+    confirm_email: Confirm email
     delete_account: Supprimer le compte
     delete_account_html: Si vous désirez supprimer votre compte, vous pouvez <a href="%{path}">cliquer ici</a>. Il vous sera demandé de confirmer cette action.
     description:
@@ -738,9 +766,11 @@ fr:
       x_months: "%{count} mois"
       x_seconds: "%{count} s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Les renseignements que vous avez entrés n'étaient pas exacts
     confirm_password: Entrez votre mot de passe actuel pour vérifier votre identité
     confirm_username: Entrez votre nom d'utilisateur pour confirmer la procédure
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Supprimer le compte
     success_msg: Votre compte a été supprimé avec succès
     warning:
@@ -754,10 +784,18 @@ fr:
       more_details_html: Pour plus de détails, voir la <a href="%{terms_path}">politique de confidentialité</a>.
       username_available: Votre nom d’utilisateur·rice sera à nouveau disponible
       username_unavailable: Votre nom d’utilisateur·rice restera indisponible
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Annuaire des profils
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Découvrir des utilisateur·rice·s en selon leurs centres d’intérêt
     explore_mastodon: Explorer %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: n’est pas un nom de domaine valide
   errors:
@@ -789,6 +827,7 @@ fr:
     blocks: Vous bloquez
     csv: CSV
     domain_blocks: Bloqueurs de domaine
+    follows: You follow
     lists: Listes
     mutes: Vous masquez
     storage: Médias stockés
@@ -901,6 +940,7 @@ fr:
     cancel: Annuler la redirection
     cancel_explanation: Annuler la redirection réactivera votre compte actuel, mais ne rapportera pas les abonné·e·s qui ont été déplacé·e·s sur ce compte.
     cancelled_msg: Suppression de la redirection réussie.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: est le même compte que vous avez déjà déplacé vers
       missing_also_known_as: ne référence pas ce compte en retour
@@ -914,9 +954,11 @@ fr:
     not_redirecting: Votre compte n'est pas redirigé vers un autre compte actuellement.
     on_cooldown: Vous avez récemment migré votre compte. Cette fonction sera à nouveau disponible dans %{count} jours.
     past_migrations: Migrations passées
+    proceed: Save
     proceed_with_move: Migrer les abonné·e·s
     redirecting_to: Votre compte est redirigé vers %{acct}.
     set_redirect: Définir la redirection
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Le nouveau compte doit d'abord être configuré pour faire référence à celui-ci en définissant un alias
       before: 'Avant de procéder, veuillez lire attentivement ces notes :'
@@ -1034,6 +1076,10 @@ fr:
     reply:
       proceed: Confirmer la réponse
       prompt: 'Vous souhaitez répondre à ce pouet :'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Vous avez dépassé la limite de %{limit} pouets planifiés pour ce jour
     over_total_limit: Vous avez dépassé la limite de %{limit} pouets planifiés
@@ -1237,8 +1283,12 @@ fr:
   themes:
     contrast: Mastodon (Contraste élevé)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Sombre)
     mastodon-light: Mastodon (Clair)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

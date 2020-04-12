@@ -18,7 +18,11 @@ eu:
     contact_unavailable: E/E
     discover_users: Aurkitu erabiltzaileak
     documentation: Dokumentazioa
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: "%{instance} instantzian kontu bat izanda edozein Mastodon zerbitzariko jendea jarraitu ahal izango duzu, eta harago ere."
+    generic_description: "%{domain} is one server in the network"
     get_apps: Probatu mugikorrerako aplikazio bat
     hosted_on: Mastodon %{domain} domeinuan ostatatua
     instance_actor_flash: 'Kontu hau zerbitzaria bera adierazten duen aktore birtual bat da, ez norbanako bat. Federaziorako erabiltzen da eta ez zenuke blokeatu behar instantzia osoa blokeatu nahi ez baduzu, kasu horretan domeinua blokeatzea egokia litzateke.
@@ -195,6 +199,42 @@ eu:
       web: Weba
       whitelisted: Zerrenda zurian
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name}(e)k %{target} salaketa bere buruari esleitu dio"
         change_email_user: "%{name}(e)k %{target}(r)en e-mail helbidea aldatu du"
@@ -232,6 +272,9 @@ eu:
         update_custom_emoji: "%{name}(e)k %{target} emoji-a eguneratu du"
         update_status: "%{name} (e)k %{target}(r)en mezua aldatu du"
       deleted_status: "(ezabatutako mezua)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Auditoria-egunkaria
     announcements:
       destroyed_msg: Iragarpena ongi ezabatu da!
@@ -242,10 +285,12 @@ eu:
       new:
         create: Sortu iragarpena
         title: Iragarpen berria
+      publish: Publish
       published_msg: Iragarpena ongi argitaratu da!
       scheduled_for: "%{time}-rako programatuta"
       scheduled_msg: Iragarpena argitaratzeko programatuta!
       title: Iragarpenak
+      unpublish: Unpublish
       unpublished_msg: Iragarpena ongi desargitaratu da!
       updated_msg: Iragarpena ongi eguneratu da!
     custom_emojis:
@@ -365,6 +410,9 @@ eu:
         create: Gehitu domeinua
         title: Sarrera berria e-mail zerrenda beltzean
       title: E-mail zerrenda beltza
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domeinua
       delivery_available: Bidalketa eskuragarri dago
@@ -416,9 +464,11 @@ eu:
       destroyed_msg: Salaketa oharra ongi ezabatu da!
     reports:
       account:
+        note: note
         notes:
           one: Ohar %{count}
           other: "%{count} ohar"
+        report: report
         reports:
           one: Txosten %{count}
           other: "%{count} txosten"
@@ -504,6 +554,9 @@ eu:
           approved: Izena emateko onarpena behar da
           none: Ezin du inork izena eman
           open: Edonork eman dezake izena
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Erregistratzeko modua
       show_known_fediverse_at_about_page:
         desc_html: Txandakatzean, fedibertso ezagun osoko tootak bistaratuko ditu aurrebistan. Bestela, toot lokalak besterik ez ditu erakutsiko
@@ -557,12 +610,22 @@ eu:
       no_status_selected: Ez da mezurik aldatu ez delako mezurik aukeratu
       title: Kontuaren mezuak
       with_media: Multimediarekin
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Erabilera bakanak gaur
       accounts_week: Erabilera bakanak aste honetan
       breakdown: Gaurko erabilera iturriaren arabera
       context: Testuingurua
       directory: Direktorioan
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} direktorioan"
       last_active: Azkenekoz aktiboa
       most_popular: Erabilienak
@@ -572,14 +635,17 @@ eu:
       reviewed: Berrikusita
       title: Traolak
       trending_right_now: Joera orain
+      unhide: Show in directory
       unique_uses_today: "%{count} idazten gaur"
       unreviewed: Berrikusi gabe
       updated_msg: Traola-ezarpenak ongi eguneratu dira
+      visible: Visible
     title: Administrazioa
     warning_presets:
       add_new: Gehitu berria
       delete: Ezabatu
       edit_preset: Editatu abisu aurre-ezarpena
+      empty: Empty
       title: Kudeatu abisu aurre-ezarpenak
   admin_mailer:
     new_pending_account:
@@ -630,6 +696,7 @@ eu:
     change_password: Pasahitza
     checkbox_agreement_html: <a href="%{rules_path}" target="_blank">Zerbitzariaren arauak</a> eta <a href="%{terms_path}" target="_blank">erabilera baldintzak</a> onartzen ditut
     checkbox_agreement_without_rules_html: <a href="%{terms_path}" target="_blank">Erabilera baldintzak</a> onartzen ditut
+    confirm_email: Confirm email
     delete_account: Ezabatu kontua
     delete_account_html: Kontua ezabatu nahi baduzu, <a href="%{path}">jarraitu hemen</a>. Berrestea eskatuko zaizu.
     description:
@@ -699,9 +766,11 @@ eu:
       x_months: "%{count} hilabete"
       x_seconds: "%{count}s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Sartu duzun informazioa ez da zuzena
     confirm_password: Sartu zure oraingo pasahitza zure identitatea baieztatzeko
     confirm_username: Sartu zure erabiltzaile-izena prozedura berresteko
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Ezabatu kontua
     success_msg: Zure kontua ongi ezabatu da
     warning:
@@ -715,10 +784,18 @@ eu:
       more_details_html: Xehetasun gehiagorako, ikusi <a href="%{terms_path}">pribatutasun politika</a>.
       username_available: Zure erabiltzaile-izena berriro eskuragarri egongo da
       username_unavailable: Zure erabiltzaile-izena ez da eskuragarri egongo
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Profilen direktorioa
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Deskubritu erabiltzaileak interesen arabera
     explore_mastodon: Esploratu %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: ez da domeinu izen baliogarria
   errors:
@@ -750,6 +827,7 @@ eu:
     blocks: Zuk blokeatutakoak
     csv: CSV
     domain_blocks: Domeinuen blokeoak
+    follows: You follow
     lists: Zerrendak
     mutes: Zuk mututukoak
     storage: Multimedia biltegiratzea
@@ -862,6 +940,7 @@ eu:
     cancel: Ezeztatu birbideratzea
     cancel_explanation: Birbideratzea ezezteak zure kontu hau berriro aktibatuko du, baina ez ditu atzera ekarriko bestera aldatu diren jarraitzaileak.
     cancelled_msg: Ongi ezeztatu da birbideratzea.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: kontu honetara migratu duzu dagoeneko
       missing_also_known_as: ez dio kontu honi erreferentzia egiten
@@ -875,9 +954,11 @@ eu:
     not_redirecting: Zure kontuak ez du orain beste konturen batera birbideratzen.
     on_cooldown: Duela gutxi migratu duzu. Funtzio hau %{count} egun barru egongo da berriro eskuragarri.
     past_migrations: Aurreko migrazioak
+    proceed: Save
     proceed_with_move: Mugitu jarraitzaileak
     redirecting_to: 'Zure kontuak hona birbideratzen du: %{acct}.'
     set_redirect: Ezarri birbideratzea
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Kontu berria honi erreferentzia egiteko konfiguratu behar da
       before: 'Jarraitu aurretik, irakurri adi ohar hauek:'
@@ -995,6 +1076,10 @@ eu:
     reply:
       proceed: Ekin erantzuteari
       prompt: 'Toot honi erantzun nahi diozu:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Egun horretarako programatutako toot kopuruaren muga gainditu duzu (%{limit})
     over_total_limit: Programatutako toot kopuruaren muga gainditu duzu (%{limit})
@@ -1077,6 +1162,8 @@ eu:
     disallowed_hashtags:
       one: 'debekatutako traola bat zuen: %{tags}'
       other: 'debekatutako traola hauek zituen: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Antzeman hizkuntza automatikoki
     open_in_web: Ireki web-ean
     over_character_limit: "%{max}eko karaktere muga gaindituta"
@@ -1196,8 +1283,12 @@ eu:
   themes:
     contrast: Mastodon (Kontraste altua)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Iluna)
     mastodon-light: Mastodon (Argia)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%Y(e)ko %b %d, %H:%M"

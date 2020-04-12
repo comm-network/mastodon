@@ -18,7 +18,11 @@ ca:
     contact_unavailable: N/D
     discover_users: Descobreix usuaris
     documentation: Documentació
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Amb un compte de %{instance} podràs seguir persones de qualsevol servidor Mastodon i altres.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Prova una aplicació mòbil
     hosted_on: Mastodon allotjat a %{domain}
     instance_actor_flash: |
@@ -281,10 +285,12 @@ ca:
       new:
         create: Crea un anunci
         title: Nou anunci
+      publish: Publish
       published_msg: L’anunci s’ha publicat amb èxit!
       scheduled_for: Programat per a %{time}
       scheduled_msg: Anunci programat per a ser publicat!
       title: Anuncis
+      unpublish: Unpublish
       unpublished_msg: L’anunci s’ha despublicat amb èxit!
       updated_msg: L'anunci s'ha actualitzat correctament!
     custom_emojis:
@@ -404,6 +410,9 @@ ca:
         create: Afegeix un domini
         title: Nova adreça de correu en la llista negra
       title: Llista negra de correus electrònics
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domini
       delivery_available: El lliurament està disponible
@@ -455,9 +464,11 @@ ca:
       destroyed_msg: La nota del informe s'ha esborrat correctament!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} nota"
           other: "%{count} notes"
+        report: report
         reports:
           one: "%{count} informe"
           other: "%{count} informes"
@@ -543,6 +554,9 @@ ca:
           approved: Es requereix l’aprovació per registrar-se
           none: Ningú no pot registrar-se
           open: Qualsevol pot registrar-se
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Mode de registres
       show_known_fediverse_at_about_page:
         desc_html: Quan està desactivat, restringeix la línia de temps pública enllaçada des de la pàgina inicial a mostrar només contingut local
@@ -596,12 +610,22 @@ ca:
       no_status_selected: No s’han canviat els estatus perquè cap no ha estat seleccionat
       title: Estats del compte
       with_media: Amb contingut multimèdia
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Usos únics actuals
       accounts_week: Usos únics d'aquesta setmana
       breakdown: Desglossament de l’ús actual per origen
       context: Context
       directory: En el directori
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} en el directori"
       last_active: Darrer actiu
       most_popular: Més populars
@@ -611,14 +635,17 @@ ca:
       reviewed: Revisades
       title: Etiquetes
       trending_right_now: Actualment en tendència
+      unhide: Show in directory
       unique_uses_today: "%{count} publicacions d'avui"
       unreviewed: Sense revisar
       updated_msg: Ajustaments d'etiquetes actualitzats amb èxit
+      visible: Visible
     title: Administració
     warning_presets:
       add_new: Afegeix-ne un de nou
       delete: Esborra
       edit_preset: Edita l'avís predeterminat
+      empty: Empty
       title: Gestiona les configuracions predefinides dels avisos
   admin_mailer:
     new_pending_account:
@@ -669,6 +696,7 @@ ca:
     change_password: Contrasenya
     checkbox_agreement_html: Estic d'acord amb les <a href="%{rules_path}" target="_blank">normes del servidor</a> i <a href="%{terms_path}" target="_blank"> els termes del servei</a>
     checkbox_agreement_without_rules_html: Acepto els <a href="%{terms_path}" target="_blank">termes del servei</a>
+    confirm_email: Confirm email
     delete_account: Suprimeix el compte
     delete_account_html: Si vols suprimir el compte pots <a href="%{path}">fer-ho aquí</a>. Se't demanarà confirmació.
     description:
@@ -738,9 +766,11 @@ ca:
       x_months: "%{count} mesos"
       x_seconds: "%{count} s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: L'informació que has entrat no és correcte
     confirm_password: Introdueix la contrasenya actual per a verificar la identitat
     confirm_username: Escriu el teu nom d'usuari per a confirmar el procediment
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Suprimeix el compte
     success_msg: El compte s'ha eliminat correctament
     warning:
@@ -754,10 +784,18 @@ ca:
       more_details_html: Per a més detalls, llegeix la <a href="%{terms_path}">política de privadesa</a>.
       username_available: El teu nom d'usuari esdevindrà altre cop disponible
       username_unavailable: El teu nom d'usuari quedarà inutilitzable
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Directori de perfils
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Descobreix usuaris segons els seus interessos
     explore_mastodon: Explora %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: no es un nom de domini vàlid
   errors:
@@ -789,6 +827,7 @@ ca:
     blocks: Persones que has blocat
     csv: CSV
     domain_blocks: Bloquejos de dominis
+    follows: You follow
     lists: Llistes
     mutes: Persones silenciades
     storage: Emmagatzematge
@@ -901,6 +940,7 @@ ca:
     cancel: Cancel·la redirecció
     cancel_explanation: Cancel·lant la redirecció reactivará el teu compte actual però no recuperarà els seguidors que han estat moguts a aquell compte.
     cancelled_msg: Redirecció cancel·lada amb èxit.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: és el mateix compte al que ja t'has mogut
       missing_also_known_as: no fa referencia a aquest compte
@@ -914,9 +954,11 @@ ca:
     not_redirecting: El teu compte no està redirigint actualment a cap altre.
     on_cooldown: Recentment has emigrat el teu compte. Aquesta funció esdevindrà un altre cop disponible en %{count} dies.
     past_migrations: Migracions passades
+    proceed: Save
     proceed_with_move: Moure seguidors
     redirecting_to: El teu compte està redirigint a %{acct}.
     set_redirect: Ajusta la redirecció
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: El compte nou primer ha de ser configurat per a referenciar aquest
       before: 'Abans de procedir si us plau llegeix amb cura aquestes notes:'
@@ -1034,6 +1076,10 @@ ca:
     reply:
       proceed: Procedir a respondre
       prompt: 'Vols respondre a aquest tut:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Has superat el límit de %{limit} tuts programats per a aquell dia
     over_total_limit: Has superat el limit de %{limit} tuts programats
@@ -1237,8 +1283,12 @@ ca:
   themes:
     contrast: Mastodon (alt contrast)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (fosc)
     mastodon-light: Mastodon (clar)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

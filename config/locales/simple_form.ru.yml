@@ -30,6 +30,7 @@ ru:
         current_username: Для подтверждения, пожалуйста, введите имя пользователя текущей учётной записи
         digest: Если вы долго не заглядывали, отправим вам дайджест событий, которые происходили в период вашего отсутствия.
         discoverable: Каталог профилей это один из способов получить охват вашего профиля более обширной аудиторией
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Вам будет отправлено электронное письмо с подтверждением
         fields: В профиле можно отобразить до 4 пунктов в виде таблицы
         header: Поддерживается PNG, GIF и JPG. Максимальный размер — %{size}. Будет уменьшена до %{dimensions}px
@@ -41,10 +42,14 @@ ru:
         phrase: Будет сопоставлено независимо от присутствия в тексте или предупреждения о содержании поста
         scopes: Какие API приложению будет позволено использовать. Если вы выберете самый верхний, нижестоящие будут выбраны автоматически.
         setting_aggregate_reblogs: Не показывать новые продвижения постов, которые уже были недавно продвинуты (относится только к новым продвижениям)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Деликатные медиафайлы скрыты по умолчанию и могут быть показаны по нажатию на них
         setting_display_media_default: Скрывать деликатные медиафайлы
         setting_display_media_hide_all: Всегда скрывать любые медиафайлы
         setting_display_media_show_all: Всегда показывать деликатные медиафайлы
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Другие не смогут видеть ни ваши подписки, ни ваших подписчиков
         setting_noindex: Относится к вашему публичному профилю и страницам постов
         setting_show_application: При просмотре поста будет видно из какого приложения он отправлен
@@ -131,6 +136,10 @@ ru:
         setting_auto_play_gif: Автоматически проигрывать анимированные GIF
         setting_boost_modal: Всегда спрашивать перед продвижением
         setting_crop_images: Кадрировать изображения в нераскрытых постах до 16:9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Язык отправляемых постов
         setting_default_privacy: Видимость постов
         setting_default_sensitive: Всегда отмечать медиафайлы как деликатные
@@ -139,9 +148,12 @@ ru:
         setting_display_media_default: По умолчанию
         setting_display_media_hide_all: Скрывать все
         setting_display_media_show_all: Показывать все
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Всегда раскрывать посты, имеющие предупреждение о содержании
         setting_hide_network: Скрыть свои связи
         setting_noindex: Отказаться от индексации в поисковых машинах
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Уменьшить движение в анимации
         setting_show_application: Указывать приложение, с которого отправлен пост
         setting_system_font_ui: Использовать шрифт системы по умолчанию

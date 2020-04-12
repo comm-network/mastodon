@@ -18,7 +18,11 @@ vi:
     contact_unavailable: Không có
     discover_users: Khám phá người dùng
     documentation: Tài liệu
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Với tài khoản trên %{instance}, bạn sẽ có thể theo dõi mọi người trên bất kỳ máy chủ Mastodon nào và hơn thế nữa.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Dùng thử ứng dụng di động
     hosted_on: " %{domain} được vận hành trên Mastodon"
     instance_actor_flash: "Tài khoản này là một tác nhân ảo được sử dụng để đại diện cho chính máy chủ chứ không phải bất kỳ người dùng cá nhân nào. Nó được sử dụng cho mục đích liên kết và không nên bị chặn trừ khi bạn muốn chặn toàn bộ phiên bản, trong trường hợp đó bạn nên sử dụng một khối miền. \n"
@@ -86,6 +90,7 @@ vi:
       delete: Xóa bỏ
       destroyed_msg: Lưu ý kiểm duyệt thành công!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: Phê duyệt
       approve_all: Phê duyệt tất cả
       are_you_sure: Bạn có chắc không?
@@ -166,6 +171,7 @@ vi:
         staff: Nhân viên
         user: Người dùng
       search: Tìm kiếm
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Thành viên khác cùng IP
       shared_inbox_url: URL hộp thư đến được chia sẻ
       show:
@@ -187,16 +193,54 @@ vi:
       web: Web
       whitelisted: Danh sách trắng
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} được chỉ định báo cáo %{target} cho chính họ"
         change_email_user: "%{name} đã thay đổi địa chỉ email của người dùng %{target}"
         confirm_user: "%{name} xác nhận địa chỉ email của người dùng %{target}"
         create_account_warning: "%{name} đã gửi cảnh báo tới %{target}"
+        create_announcement: "%{name} created new announcement %{target}"
         create_custom_emoji: "%{name} đã tải lên biểu tượng cảm xúc mới %{target}"
         create_domain_allow: "%{name} tên miền trong danh sách trắng %{target}"
         create_domain_block: "%{name} tên miền bị chặn %{target}"
         create_email_domain_block: "%{name} tên miền e-mail trong danh sách đen %{target}"
         demote_user: "%{name} hạ cấp người dùng %{target}"
+        destroy_announcement: "%{name} deleted announcement %{target}"
         destroy_custom_emoji: "%{name} biểu tượng cảm xúc bị phá hủy %{target}"
         destroy_domain_allow: "%{name} đã xóa tên miền %{target} khỏi danh sách trắng"
         destroy_domain_block: "%{name} tên miền không bị chặn %{target}"
@@ -218,10 +262,31 @@ vi:
         unassigned_report: "%{name} báo cáo chưa được chỉ định %{target}"
         unsilence_account: "%{name} chưa được phân loại tài khoản của %{target}"
         unsuspend_account: "%{name} không có tài khoản %{target} của tài khoản"
+        update_announcement: "%{name} updated announcement %{target}"
         update_custom_emoji: "%{name} đã cập nhật biểu tượng cảm xúc %{target}"
         update_status: "%{name} trạng thái được cập nhật bởi %{target}"
       deleted_status: "(trạng thái đã xóa)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Sổ ghi chép đánh giá
+    announcements:
+      destroyed_msg: Announcement successfully deleted!
+      edit:
+        title: Edit announcement
+      empty: No announcements found.
+      live: Live
+      new:
+        create: Create announcement
+        title: New announcement
+      publish: Publish
+      published_msg: Announcement successfully published!
+      scheduled_for: Scheduled for %{time}
+      scheduled_msg: Announcement scheduled for publication!
+      title: Announcements
+      unpublish: Unpublish
+      unpublished_msg: Announcement successfully unpublished!
+      updated_msg: Announcement successfully updated!
     custom_emojis:
       assign_category: Chỉ định danh mục
       by_domain: Miền
@@ -332,10 +397,15 @@ vi:
       delete: Xóa bỏ
       destroyed_msg: Đã xóa thành công tên miền e-mail khỏi danh sách đen
       domain: Miền
+      empty: No e-mail domains currently blacklisted.
+      from_html: from %{domain}
       new:
         create: Thêm tên miền
         title: Mục nhập danh sách đen e-mail mới
       title: Danh sách đen e-mail
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Miền
       delivery_available: Giao hàng tận nơi
@@ -363,6 +433,8 @@ vi:
       title: Mời
     pending_accounts:
       title: Tài khoản đang chờ xử lý (%{count})
+    relationships:
+      title: "%{acct}'s relationships"
     relays:
       add_new: Thêm rơle mới
       delete: Xóa bỏ
@@ -383,10 +455,20 @@ vi:
       created_msg: Báo cáo ghi chú được tạo thành công!
       destroyed_msg: Báo cáo đã xóa thành công!
     reports:
+      account:
+        note: note
+        notes:
+          one: "%{count} note"
+          other: "%{count} notes"
+        report: report
+        reports:
+          one: "%{count} report"
+          other: "%{count} reports"
       action_taken_by: Hành động được thực hiện bởi
       are_you_sure: Bạn có chắc không?
       assign_to_self: Giao cho tôi
       assigned: Người điều hành được phân công
+      by_target_domain: Domain of reported account
       comment:
         none: không ai
       created_at: Báo cáo
@@ -432,6 +514,8 @@ vi:
         users: Để đăng nhập người dùng cục bộ
       domain_blocks_rationale:
         title: Hiển thị lý do
+      enable_bootstrap_timeline_accounts:
+        title: Enable default follows for new users
       hero:
         desc_html: Hiển thị trên frontpage. Khuyến nghị ít nhất 600x100px. Khi không được đặt, quay lại hình thu nhỏ của máy chủ
         title: Hình ảnh anh hùng
@@ -462,6 +546,9 @@ vi:
           approved: Yêu cầu phê duyệt để đăng ký
           none: Không ai có thể đăng ký
           open: Bất cứ ai cũng có thể đăng ký
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Chế độ đăng ký
       show_known_fediverse_at_about_page:
         desc_html: Khi bị tắt, hãy giới hạn dòng thời gian công khai được liên kết từ trang đích để chỉ hiển thị nội dung cùng miền
@@ -498,6 +585,9 @@ vi:
       trends:
         desc_html: Hiển thị công khai các hashtag được xem xét trước đây hiện đang là xu hướng
         title: Xu hướng hashtags
+    site_uploads:
+      delete: Delete uploaded file
+      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Quay lại trang tài khoản
       batch:
@@ -512,12 +602,22 @@ vi:
       no_status_selected: Không có trạng thái nào được thay đổi vì không có trạng thái nào được chọn
       title: Trạng thái tài khoản
       with_media: Với phương tiện truyền thông
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Sử dụng độc đáo ngày nay
       accounts_week: Sử dụng độc đáo trong tuần này
       breakdown: Phân tích sử dụng ngày nay theo nguồn
       context: Bối cảnh
       directory: Trong thư mục
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} trong thư mục"
       last_active: Hoạt động lần cuối
       most_popular: Phổ biến nhất
@@ -527,14 +627,17 @@ vi:
       reviewed: Đã đánh giá
       title: Hashtags
       trending_right_now: Xu hướng ngay bây giờ
+      unhide: Show in directory
       unique_uses_today: "%{count} đăng ngày hôm nay"
       unreviewed: Chưa được xem xét
       updated_msg: Cài đặt hashtag được cập nhật thành công
+      visible: Visible
     title: Quản trị
     warning_presets:
       add_new: Thêm mới
       delete: Xóa bỏ
       edit_preset: Chỉnh sửa cảnh báo đặt trước
+      empty: Empty
       title: Quản lý cài đặt trước cảnh báo
   admin_mailer:
     new_pending_account:
@@ -559,6 +662,10 @@ vi:
     animations_and_accessibility: Ảnh động và khả năng tiếp cận
     confirmation_dialogs: Hộp thoại xác nhận
     discovery: Khám phá
+    localization:
+      body: Mastodon is translated by volunteers.
+      guide_link: https://crowdin.com/project/mastodon
+      guide_link_text: Everyone can contribute.
     sensitive_content: Nội dung nhạy cảm
     toot_layout: Bố cục Tút
   application_mailer:
@@ -581,6 +688,7 @@ vi:
     change_password: Mật khẩu
     checkbox_agreement_html: Tôi đồng ý với các <a href="%{rules_path}" target="_blank">quy tắc</a> và <a href="%{terms_path}" target="_blank">điều khoản dịch vụ của</a> <a href="%{rules_path}" target="_blank">máy chủ</a>
     checkbox_agreement_without_rules_html: Tôi đồng ý với các <a href="%{terms_path}" target="_blank">điều khoản dịch vụ</a>
+    confirm_email: Confirm email
     delete_account: Xóa tài khoản
     delete_account_html: Nếu bạn muốn xóa tài khoản của mình, bạn có thể <a href="%{path}">tiến hành tại đây</a> . Bạn sẽ được yêu cầu xác nhận.
     description:
@@ -617,6 +725,7 @@ vi:
     trouble_logging_in: Gặp sự cố khi đăng nhập?
   authorize_follow:
     already_following: Bạn đã theo dõi tài khoản này
+    already_requested: You have already sent a follow request to that account
     error: Thật không may, đã xảy ra lỗi khi tra cứu tài khoản từ xa
     follow: Theo
     follow_request: 'Bạn đã gửi yêu cầu theo dõi tới:'
@@ -646,9 +755,11 @@ vi:
       x_months: "%{count}th"
       x_seconds: "%{count}g"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Thông tin bạn nhập không chính xác
     confirm_password: Nhập mật khẩu hiện tại của bạn để xác minh danh tính của bạn
     confirm_username: Nhập tên người dùng của bạn để xác nhận thủ tục
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Xóa tài khoản
     success_msg: Tài khoản của bạn đã được xóa thành công
     warning:
@@ -662,10 +773,18 @@ vi:
       more_details_html: Để biết thêm chi tiết, xem <a href="%{terms_path}">chính sách bảo mật</a> .
       username_available: Tên người dùng của bạn sẽ có sẵn một lần nữa
       username_unavailable: Tên người dùng của bạn sẽ không có sẵn
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Thư mục hồ sơ
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Khám phá người dùng dựa trên sở thích của họ
     explore_mastodon: Khám phá %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: không phải là một tên miền hợp lệ
   errors:
@@ -697,6 +816,7 @@ vi:
     blocks: Bạn chặn
     csv: CSV
     domain_blocks: Khối miền
+    follows: You follow
     lists: Danh sách
     mutes: Bạn câm
     storage: Phương tiện lưu trữ
@@ -707,6 +827,7 @@ vi:
     hint_html: "<strong>Hashtags đặc trưng là gì?</strong> Chúng được hiển thị nổi bật trên hồ sơ công khai của bạn và cho phép mọi người duyệt các bài đăng công khai của bạn cụ thể theo các hashtag đó. Chúng là một công cụ tuyệt vời để theo dõi các công trình sáng tạo hoặc các dự án dài hạn."
   filters:
     contexts:
+      account: Profiles
       home: Dòng thời gian
       notifications: Thông báo
       public: Mốc thời gian công cộng
@@ -718,6 +839,7 @@ vi:
       invalid_irreversible: Lọc không thể đảo ngược chỉ hoạt động với bối cảnh nhà hoặc thông báo
     index:
       delete: Xóa bỏ
+      empty: You have no filters.
       title: Bộ lọc
     new:
       title: Thêm bộ lọc mới
@@ -730,6 +852,7 @@ vi:
     all: Tất cả
     changes_saved_msg: Thay đổi được lưu thành công!
     copy: Sao chép
+    delete: Delete
     no_batch_actions_available: Không có hành động hàng loạt có sẵn trên trang này
     order_by: Đặt bởi
     save_changes: Lưu thay đổi
@@ -797,12 +920,14 @@ vi:
   media_attachments:
     validations:
       images_and_video: Không thể đính kèm video vào trạng thái đã chứa hình ảnh
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Không thể đính kèm hơn 4 tệp
   migrations:
     acct: Chuyển đến
     cancel: Hủy chuyển hướng
     cancel_explanation: Hủy chuyển hướng sẽ kích hoạt lại tài khoản hiện tại của bạn, nhưng sẽ không mang lại những người theo dõi đã được chuyển đến tài khoản đó.
     cancelled_msg: Đã hủy thành công chuyển hướng.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: là cùng một tài khoản bạn đã chuyển đến
       missing_also_known_as: không tham chiếu lại tài khoản này
@@ -816,9 +941,11 @@ vi:
     not_redirecting: Tài khoản của bạn hiện không chuyển hướng đến bất kỳ tài khoản nào khác.
     on_cooldown: Gần đây bạn đã di chuyển tài khoản của bạn. Chức năng này sẽ trở nên khả dụng một lần nữa sau %{count} ngày.
     past_migrations: Di cư trong quá khứ
+    proceed: Save
     proceed_with_move: Di chuyển người theo dõi
     redirecting_to: Tài khoản của bạn đang chuyển hướng đến %{acct}.
     set_redirect: Đặt chuyển hướng
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Tài khoản mới trước tiên phải được cấu hình để tham chiếu lại tài khoản này
       before: 'Trước khi tiếp tục, xin vui lòng đọc các ghi chú cẩn thận:'
@@ -862,6 +989,10 @@ vi:
       body: 'Trạng thái của bạn đã được loan tin bởi %{name}:'
       subject: "%{name} đã loan tin trạng thái của bạn"
       title: Tăng mới
+  notifications:
+    email_events: Events for e-mail notifications
+    email_events_hint: 'Select events that you want to receive notifications for:'
+    other_settings: Other notifications settings
   number:
     human:
       decimal_units:
@@ -893,9 +1024,16 @@ vi:
     other: Khác
     posting_defaults: Đăng mặc định
     public_timelines: Mốc thời gian công cộng
+  reactions:
+    errors:
+      limit_reached: Limit of different reactions reached
+      unrecognized_emoji: is not a recognized emoji
   relationships:
     activity: Hoạt động tài khoản
     dormant: Không hoạt động
+    followers: Followers
+    following: Following
+    invited: Invited
     last_active: Hoạt động lần cuối
     most_recent: Gần đây nhất
     moved: Đã chuyển
@@ -923,6 +1061,10 @@ vi:
     reply:
       proceed: Tiến hành trả lời
       prompt: 'Bạn muốn trả lời tút này:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Bạn đã vượt quá giới hạn của các tút được lên lịch %{limit} cho ngày hôm đó
     over_total_limit: Bạn đã vượt quá giới hạn của các tút theo lịch trình %{limit}
@@ -1002,6 +1144,8 @@ vi:
     content_warning: 'Cảnh báo nội dung: %{warning}'
     disallowed_hashtags:
       other: 'chứa các hashtag không được phép: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Tự động phát hiện ngôn ngữ
     open_in_web: Mở trên web
     over_character_limit: vượt quá giới hạn ký tự của %{max}
@@ -1017,6 +1161,7 @@ vi:
         other: "%{count} phiếu bầu"
       vote: Bỏ phiếu
     show_more: Cho xem nhiều hơn
+    show_thread: Show thread
     sign_in_to_participate: Đăng nhập để tham gia vào cuộc trò chuyện
     title: "%{name}: &quot;%{quote}&quot;"
     visibilities:
@@ -1038,7 +1183,12 @@ vi:
   themes:
     contrast: Mastodon (Độ tương phản cao)
     default: Mastodon (Tối)
+    fairy-floss: Fairy Floss (Pastel dark)
+    mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Ánh sáng)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "% b %d,% Y,% H:% M"

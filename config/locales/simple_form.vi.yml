@@ -8,12 +8,19 @@ vi:
         acct: Chỉ định tênngườidùng@tênmiền của tài khoản bạn muốn chuyển đến
       account_warning_preset:
         text: Bạn có thể sử dụng cú pháp mã thông báo, chẳng hạn như URL, hashtag và đề cập
+        title: Optional. Not visible to the recipient
       admin_account_action:
         include_statuses: Người dùng sẽ thấy các toots nào đã gây ra hành động kiểm duyệt hoặc cảnh báo
         send_email_notification: Người dùng sẽ nhận được lời giải thích về những gì đã xảy ra với tài khoản của họ
         text_html: Không bắt buộc. Bạn có thể sử dụng cú pháp thổi còi. Bạn có thể <a href="%{path}">thêm các cài đặt trước cảnh báo</a> để tiết kiệm thời gian
         type_html: Chọn làm gì với <strong>%{acct}</strong>
         warning_preset_id: Không bắt buộc. Bạn vẫn có thể thêm văn bản tùy chỉnh vào cuối cài đặt trước
+      announcement:
+        all_day: When checked, only the dates of the time range will be displayed
+        ends_at: Optional. Announcement will be automatically unpublished at this time
+        scheduled_at: Leave blank to publish the announcement immediately
+        starts_at: Optional. In case your announcement is bound to a specific time range
+        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: Những người đăng ký thông qua lời mời sẽ tự động theo dõi bạn
         avatar: PNG, GIF hoặc JPG. Nhiều nhất là %{size}. Sẽ bị hạ thấp xuống %{dimensions}px
@@ -23,6 +30,7 @@ vi:
         current_username: Để xác nhận, vui lòng nhập tên người dùng của tài khoản hiện tại
         digest: Chỉ được gửi sau một thời gian dài không hoạt động và chỉ khi bạn đã nhận được bất kỳ tin nhắn cá nhân nào khi bạn vắng mặt
         discoverable: Thư mục hồ sơ là một cách khác để tài khoản của bạn có thể tiếp cận đối tượng rộng hơn
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Bạn sẽ được gửi một email xác nhận
         fields: Bạn có thể có tối đa 4 mục được hiển thị dưới dạng bảng trên hồ sơ của bạn
         header: PNG, GIF hoặc JPG. Nhiều nhất là %{size}. Sẽ bị hạ thấp xuống %{dimensions}px
@@ -34,10 +42,14 @@ vi:
         phrase: Sẽ được kết hợp bất kể vỏ bọc trong văn bản hoặc cảnh báo nội dung của một toot
         scopes: API nào ứng dụng sẽ được phép truy cập. Nếu bạn chọn phạm vi cấp cao nhất, bạn không cần chọn từng phạm vi.
         setting_aggregate_reblogs: Không hiển thị các mức tăng mới cho các mã thông báo đã được tăng gần đây (chỉ ảnh hưởng đến các lần tăng mới nhận được)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Phương tiện nhạy cảm được ẩn theo mặc định và có thể được tiết lộ bằng một cú nhấp chuột
         setting_display_media_default: Ẩn phương tiện được đánh dấu là nhạy cảm
         setting_display_media_hide_all: Luôn ẩn tất cả các phương tiện truyền thông
         setting_display_media_show_all: Luôn hiển thị phương tiện được đánh dấu là nhạy cảm
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Ai bạn theo dõi và ai theo dõi bạn sẽ không được hiển thị trên hồ sơ của bạn
         setting_noindex: Ảnh hưởng đến hồ sơ công khai và trang trạng thái của bạn
         setting_show_application: Ứng dụng bạn sử dụng để mã thông báo sẽ được hiển thị trong chế độ xem chi tiết các mã thông báo của bạn
@@ -47,6 +59,9 @@ vi:
         whole_word: Khi từ khóa hoặc cụm từ chỉ là chữ và số, nó sẽ chỉ được áp dụng nếu nó phù hợp với toàn bộ từ
       domain_allow:
         domain: Tên miền này sẽ có thể tìm nạp dữ liệu từ máy chủ này và dữ liệu đến từ nó sẽ được xử lý và lưu trữ
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Bạn có thể muốn sử dụng một trong những điều sau đây:'
       form_challenge:
@@ -72,6 +87,7 @@ vi:
         acct: Xử lý tài khoản mới
       account_warning_preset:
         text: Văn bản cài sẵn
+        title: Title
       admin_account_action:
         include_statuses: Bao gồm các mã thông báo được báo cáo trong e-mail
         send_email_notification: Thông báo cho người dùng mỗi email
@@ -83,6 +99,12 @@ vi:
           silence: khoảng lặng
           suspend: Đình chỉ và xóa dữ liệu tài khoản
         warning_preset_id: Sử dụng cài đặt trước cảnh báo
+      announcement:
+        all_day: All-day event
+        ends_at: End of event
+        scheduled_at: Schedule publication
+        starts_at: Start of event
+        text: Announcement
       defaults:
         autofollow: Mời theo dõi tài khoản của bạn
         avatar: hình đại diện
@@ -114,6 +136,10 @@ vi:
         setting_auto_play_gif: Tự động phát GIF động
         setting_boost_modal: Hiển thị hộp thoại xác nhận trước khi tăng
         setting_crop_images: Cắt bớt ảnh trong những tút không thể mở rộng về 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Ngôn ngữ đăng
         setting_default_privacy: Đăng quyền riêng tư
         setting_default_sensitive: Luôn đánh dấu phương tiện là nhạy cảm
@@ -122,9 +148,12 @@ vi:
         setting_display_media_default: Mặc định
         setting_display_media_hide_all: Giấu tất cả
         setting_display_media_show_all: Hiển thị tất cả
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Luôn mở rộng các thẻ được đánh dấu bằng cảnh báo nội dung
         setting_hide_network: Ẩn mạng của bạn
         setting_noindex: Từ chối lập chỉ mục công cụ tìm kiếm
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Giảm chuyển động trong hình ảnh động
         setting_show_application: Tiết lộ ứng dụng được sử dụng để gửi toots
         setting_system_font_ui: Sử dụng phông chữ mặc định của hệ thống
@@ -138,6 +167,8 @@ vi:
         username: tên tài khoản
         username_or_email: Tên người dùng hoặc email
         whole_word: Cả từ
+      email_domain_block:
+        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Dấu thăng
       interactions:

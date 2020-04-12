@@ -2,19 +2,35 @@
 sl:
   simple_form:
     hints:
+      account_alias:
+        acct: Specify the username@domain of the account you want to move from
+      account_migration:
+        acct: Specify the username@domain of the account you want to move to
       account_warning_preset:
         text: Lahko uporabite skladnjo tuta, kot so URL-ji, ključniki in omembe
+        title: Optional. Not visible to the recipient
       admin_account_action:
+        include_statuses: The user will see which toots have caused the moderation action or warning
         send_email_notification: Uporabnik bo prejel razlago, kaj se je zgodilo z njihovim računom
         text_html: Neobvezno. Lahko uporabite skladnjo tuta. <a href="%{path}">Prednastavite opozorila</a>, da prihranite čas
         type_html: Izberite, kaj boste storili z <strong>%{acct}</strong>
         warning_preset_id: Neobvezno. Še vedno lahko dodate besedilo po meri na konec prednastavitve
+      announcement:
+        all_day: When checked, only the dates of the time range will be displayed
+        ends_at: Optional. Announcement will be automatically unpublished at this time
+        scheduled_at: Leave blank to publish the announcement immediately
+        starts_at: Optional. In case your announcement is bound to a specific time range
+        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: Osebe, ki se prijavijo prek povabila, vas bodo samodejno sledile
         avatar: PNG, GIF ali JPG. Največ %{size}. Zmanjšana bo na %{dimensions}px
         bot: Ta račun v glavnem opravlja samodejna dejanja in morda ni pod nadzorom
         context: En ali več kontekstov, kjer naj se uporabi filter
+        current_password: For security purposes please enter the password of the current account
+        current_username: To confirm, please enter the username of the current account
         digest: Pošlje se le po dolgem obdobju nedejavnosti in samo, če ste prejeli osebna sporočila v vaši odsotnosti
+        discoverable: The profile directory is another way by which your account can reach a wider audience
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Poslali vam bomo potrditveno e-pošto
         fields: Na svojem profilu lahko imate do 8 predmete prikazane kot tabelo.
         header: PNG, GIF ali JPG. Največ %{size}. Zmanjšana bo na %{dimensions}px
@@ -26,10 +42,14 @@ sl:
         phrase: Se bo ujemal, ne glede na začetnice v tekstu ali opozorilo o vsebini troba
         scopes: Do katerih API-jev bo imel program dostop. Če izberete obseg najvišje ravni, vam ni treba izbrati posameznih.
         setting_aggregate_reblogs: Ne prikažite novih spodbud za tute, ki so bili nedavno spodbujeni (vpliva samo na novo prejete spodbude)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Občutljivi mediji so privzeto skriti in jih je mogoče razkriti s klikom
         setting_display_media_default: Skrij medij, ki je označen kot občutljiv
         setting_display_media_hide_all: Vedno skrij vse medije
         setting_display_media_show_all: Vedno pokaži medij, ki je označen kot občutljiv
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Kogar spremljate in kdo vas spremlja ne bo prikazano na vašem profilu
         setting_noindex: Vpliva na vaš javni profil in na strani s stanjem
         setting_show_application: Aplikacija, ki jo uporabljate za tutanje, bo prikazana v podrobnem pogledu vaših tutov
@@ -39,14 +59,21 @@ sl:
         whole_word: Ko je ključna beseda ali fraza samo alfanumerična, se bo uporabljala le, če se bo ujemala s celotno besedo
       domain_allow:
         domain: Ta domena bo lahko prejela podatke s tega strežnika, dohodni podatki z nje pa bodo obdelani in shranjeni
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Morda boste želeli uporabiti eno od teh:'
+      form_challenge:
+        current_password: You are entering a secure area
       imports:
         data: Izvožena CSV datoteka iz drugega Mastodon vozlišča
       invite_request:
         text: To nam bo pomagalo pregledati vašo prijavo
       sessions:
         otp: 'Vnesite dvomestno kodo, ki je ustvarjena z aplikacijo na telefonu, ali uporabite eno od vaših obnovitvenih kod:'
+      tag:
+        name: You can only change the casing of the letters, for example, to make it more readable
       user:
         chosen_languages: Ko je označeno, bodo v javnih časovnicah prikazani samo trobi v izbranih jezikih
     labels:
@@ -54,9 +81,15 @@ sl:
         fields:
           name: Oznaka
           value: Vsebina
+      account_alias:
+        acct: Handle of the old account
+      account_migration:
+        acct: Handle of the new account
       account_warning_preset:
         text: Prednastavljeno besedilo
+        title: Title
       admin_account_action:
+        include_statuses: Include reported toots in the e-mail
         send_email_notification: Obvesti uporabnika po e-pošti
         text: Opozorilo po meri
         type: Dejanje
@@ -66,6 +99,12 @@ sl:
           silence: Utišaj
           suspend: Suspendiraj in nepovratno izbriši podatke računa
         warning_preset_id: Uporabi prednastavljeno opozorilo
+      announcement:
+        all_day: All-day event
+        ends_at: End of event
+        scheduled_at: Schedule publication
+        starts_at: Start of event
+        text: Announcement
       defaults:
         autofollow: Povabite, da sledi vašemu računu
         avatar: Podoba
@@ -96,6 +135,11 @@ sl:
         setting_aggregate_reblogs: Skupinske spodbude na časovnicah
         setting_auto_play_gif: Samodejno predvajanje animiranih GIF-ov
         setting_boost_modal: Pred sunkom pokaži potrditveno okno
+        setting_crop_images: Crop images in non-expanded toots to 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Jezik objavljanja
         setting_default_privacy: Zasebnost objave
         setting_default_sensitive: Vedno označi medije kot občutljive
@@ -104,13 +148,17 @@ sl:
         setting_display_media_default: Privzeto
         setting_display_media_hide_all: Skrij vse
         setting_display_media_show_all: Prikaži vse
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Vedno razširi trobe, označene z opozorili o vsebini
         setting_hide_network: Skrij svoje omrežje
         setting_noindex: Odsotnost indeksiranja iskalnikov
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Zmanjšanje premikanja v animacijah
         setting_show_application: Razkrij aplikacijo za pošiljanje tutov
         setting_system_font_ui: Uporabi privzeto pisavo sistema
         setting_theme: Tema strani
+        setting_trends: Show today's trends
         setting_unfollow_modal: Pokaži potrditveno okno, preden nekoga prenehamo slediti
         setting_use_blurhash: Pokaži barvite gradiente za skrite medije
         setting_use_pending_items: Počasen način
@@ -119,12 +167,16 @@ sl:
         username: Uporabniško ime
         username_or_email: Uporabniško ime ali E-pošta
         whole_word: Celotna beseda
+      email_domain_block:
+        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Ključnik
       interactions:
         must_be_follower: Blokiraj obvestila nesledilcev
         must_be_following: Blokiraj obvestila oseb, ki jim ne sledite
         must_be_following_dm: Blokiraj neposredna sporočila oseb, ki jim ne sledite
+      invite:
+        comment: Comment
       invite_request:
         text: Zakaj se želite pridružiti?
       notification_emails:
@@ -136,6 +188,12 @@ sl:
         pending_account: Pošlji e-pošto, ko je potreben pregled novega računa
         reblog: Pošlji e-pošto, ko nekdo sune vaše stanje
         report: Pošlji e-pošto, ko je oddana nova prijava
+        trending_tag: An unreviewed hashtag is trending
+      tag:
+        listable: Allow this hashtag to appear in searches and on the profile directory
+        name: Hashtag
+        trendable: Allow this hashtag to appear under trends
+        usable: Allow toots to use this hashtag
     'no': Ne
     recommended: Priporočeno
     required:

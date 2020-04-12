@@ -2,19 +2,35 @@
 ro:
   simple_form:
     hints:
+      account_alias:
+        acct: Specify the username@domain of the account you want to move from
+      account_migration:
+        acct: Specify the username@domain of the account you want to move to
       account_warning_preset:
         text: Poți utiliza sintaxe precum URL, hastag sau menționări
+        title: Optional. Not visible to the recipient
       admin_account_action:
+        include_statuses: The user will see which toots have caused the moderation action or warning
         send_email_notification: Utilizatorul va primi o explicație cu privire la ceea ce sa întâmplat cu contul lui
         text_html: Opțional. Poți utiliza sintaxe. Poți <a href="%{path}">adăuga avertismente predefinite</a> pentru a salva timp
         type_html: Alege ce se întâmplă cu <strong>%{acct}</strong>
         warning_preset_id: Opțional. Poți adăuga text personalizat la sfârșitul presetului
+      announcement:
+        all_day: When checked, only the dates of the time range will be displayed
+        ends_at: Optional. Announcement will be automatically unpublished at this time
+        scheduled_at: Leave blank to publish the announcement immediately
+        starts_at: Optional. In case your announcement is bound to a specific time range
+        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: Persoanele care se înregistrează datorită invitației tale te vor urmări automat
         avatar: PNG, GIF sau JPG. Cel mult %{size}. Va fi redimensionată la %{dimensions}px
         bot: Acest cont performează în cea mai mare parte acțiuni automate și nu poate fi monitorizat
         context: Contextele în care filtrul trebuie aplicat
+        current_password: For security purposes please enter the password of the current account
+        current_username: To confirm, please enter the username of the current account
         digest: Este trimis doar după o lungă perioadă de inactivitate și numai dacă primești mesaje personale în perioada de absență
+        discoverable: The profile directory is another way by which your account can reach a wider audience
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Vei primi un e-mail de confirmare
         fields: Poti afișa pană la maxim 8 adrese sub formă de tabel pe pofilul tău
         header: PNG, GIF sau JPG. Cel mult %{size}. Vor fi redimensionate la %{dimensions}px
@@ -26,17 +42,38 @@ ro:
         phrase: Vor fi potrivite indiferent de textul din casetă sau advertismentul unei postări
         scopes: La care API-uri aplicația are nevoie de acces. Dacă selectezi un scop principal nu mai e nevoie să selectezi fiecare sub-scop al acestuia.
         setting_aggregate_reblogs: Nu afișa redistribuirile noi pentru postările care au fost deja recent redistribuite (afectează doar noile redistribuiri primite)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
+        setting_default_sensitive: Sensitive media is hidden by default and can be revealed with a click
         setting_display_media_default: Ascunde conținutul media marcat ca sensibil (NSFW)
         setting_display_media_hide_all: Întotdeauna ascunde tot conținutul media
         setting_display_media_show_all: Întotdeauna afișează conținutul media marcat ca sensibil
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Pe cine urmărești și cine te urmărește nu vor fi afișați pe profilul tău
         setting_noindex: Afecteazâ profilul tău public și statusurile tale
+        setting_show_application: The application you use to toot will be displayed in the detailed view of your toots
+        setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
+        setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Numele tău de utilizator va fi unic pe %{domain}
         whole_word: Când fraza sau cuvântul este doar alfanumeric, acesta se aplică doar dacă există o potrivire completă
+      domain_allow:
+        domain: This domain will be able to fetch data from this server and incoming data from it will be processed and stored
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
+      featured_tag:
+        name: 'You might want to use one of these:'
+      form_challenge:
+        current_password: You are entering a secure area
       imports:
         data: Fișierul CSV exportat de la o altă instanță
+      invite_request:
+        text: This will help us review your application
       sessions:
         otp: 'Introdu codul pentru dubla protecție generat de telefonul mobil sau unul din codurile de rezervă:'
+      tag:
+        name: You can only change the casing of the letters, for example, to make it more readable
       user:
         chosen_languages: Doar postările în limbile selectate vor fi afișate în fluxurile publice
     labels:
@@ -44,9 +81,15 @@ ro:
         fields:
           name: Etichetă
           value: Conținut
+      account_alias:
+        acct: Handle of the old account
+      account_migration:
+        acct: Handle of the new account
       account_warning_preset:
         text: Text presetat
+        title: Title
       admin_account_action:
+        include_statuses: Include reported toots in the e-mail
         send_email_notification: Notificați utilizatorul prin e-mail
         text: Avertisment personalizat
         type: Acțiune
@@ -56,6 +99,12 @@ ro:
           silence: Liniște
           suspend: Suspendă și șterge ireversibil datele contului
         warning_preset_id: Utilizează un avertisment predefinit
+      announcement:
+        all_day: All-day event
+        ends_at: End of event
+        scheduled_at: Schedule publication
+        starts_at: Start of event
+        text: Announcement
       defaults:
         autofollow: Invită să te urmărească
         avatar: Fotografie de profil
@@ -65,6 +114,7 @@ ro:
         confirm_password: Confirmă parola
         context: Contextele filtrului
         current_password: Parola actuală
+        data: Data
         discoverable: Listează acest cont in director
         display_name: Numele afișat
         email: Adresa de e-mail
@@ -81,37 +131,72 @@ ro:
         otp_attempt: Cod dublă protecție
         password: Parolă
         phrase: Cuvânt sau frază
+        setting_advanced_layout: Enable advanced web interface
+        setting_aggregate_reblogs: Group boosts in timelines
         setting_auto_play_gif: Redă automat animațiile GIF
         setting_boost_modal: Arată dialogul de confirmare înainte de a redistribui
+        setting_crop_images: Crop images in non-expanded toots to 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: În ce limbă postezi
         setting_default_privacy: Cine vede postările tale
         setting_default_sensitive: Întotdeauna marchează conținutul media ca sensibil
         setting_delete_modal: Arată dialogul de confirmare înainte de a șterge o postare
+        setting_display_media: Media display
         setting_display_media_default: Standard
+        setting_display_media_hide_all: Hide all
+        setting_display_media_show_all: Show all
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
+        setting_expand_spoilers: Always expand toots marked with content warnings
         setting_hide_network: Ascunde rețeaua
         setting_noindex: Nu permite motoarelor de căutare să indexeze rețeaua ta
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Redu mișcarea în animații
+        setting_show_application: Disclose application used to send toots
         setting_system_font_ui: Utilizează fontul standard as sistemului
         setting_theme: Tema siteului
+        setting_trends: Show today's trends
         setting_unfollow_modal: Arată dialogul de confirmare înainte de a nu mai urmări pe cineva
+        setting_use_blurhash: Show colorful gradients for hidden media
+        setting_use_pending_items: Slow mode
         severity: Severitate
         type: Ce importați
         username: Nume de utilizator
         username_or_email: Numele de utilizator sau adresa de E-mail
         whole_word: Cuvânt întreg
+      email_domain_block:
+        with_dns_records: Include MX records and IPs of the domain
+      featured_tag:
+        name: Hashtag
       interactions:
         must_be_follower: Blochează notificările de la persoane care nu te urmăresc
         must_be_following: Blochează notificările de la persoane pe care nu le urmărești
         must_be_following_dm: Blochează mesajele directe de la persoane pe care nu le urmărești
+      invite:
+        comment: Comment
+      invite_request:
+        text: Why do you want to join?
       notification_emails:
         digest: Trimite rezumate
         favourite: Trimite e-mail când cineva favorizează unul din statusurile tale
         follow: Trimite e-mail când cineva te urmărește
         follow_request: Trimite e-mail când cineva trimite o cerere de urmărire
         mention: Trimite e-mail când cineva te menționează
+        pending_account: New account needs review
         reblog: Trimite e-mail când cineva redistribuie unul din statusurile tale
         report: Trimite e-mail când un raport nou este trimis
+        trending_tag: An unreviewed hashtag is trending
+      tag:
+        listable: Allow this hashtag to appear in searches and on the profile directory
+        name: Hashtag
+        trendable: Allow this hashtag to appear under trends
+        usable: Allow toots to use this hashtag
     'no': Nu
+    recommended: Recommended
     required:
+      mark: "*"
       text: obligatoriu
     'yes': Da

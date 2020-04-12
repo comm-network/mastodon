@@ -30,6 +30,7 @@ gl:
         current_username: Para confirmar, introduce o nome de usuaria da conta actual
         digest: Enviar só tras un longo período de inactividade e só se recibeu algunha mensaxe directa na súa ausencia
         discoverable: O directorio de perfil é outro xeito para que a túa conta alcance unha maior audiencia
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Ímosche enviar un correo de confirmación
         fields: Pode ter ate 4 elementos no seu perfil mostrados como unha táboa
         header: PNG, GIF ou JPG. Máximo %{size}. Será reducida a %{dimensions}px
@@ -41,10 +42,14 @@ gl:
         phrase: Concordará independentemente das maiúsculas ou avisos de contido no toot
         scopes: A que APIs terá acceso a aplicación. Se selecciona un ámbito de alto nivel, non precisa seleccionar elementos individuais.
         setting_aggregate_reblogs: Non mostrar novas promocións de toots que foron promocionados recentemente (só afecta a promocións recén recibidas)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Medios sensibles marcados como ocultos por defecto e móstranse cun click
         setting_display_media_default: Ocultar medios marcados como sensibles
         setting_display_media_hide_all: Ocultar sempre os medios
         setting_display_media_show_all: Mostrar sempre os medios marcados como sensibles
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Non se mostrará no seu perfil quen a segue e quen a está a seguir
         setting_noindex: Afecta ao seu perfil público e páxinas de estado
         setting_show_application: A aplicación que está a utilizar para enviar toots mostrarase na vista detallada do toot
@@ -131,6 +136,10 @@ gl:
         setting_auto_play_gif: Reprodución automática de GIFs animados
         setting_boost_modal: Pedir confirmación antes de promocionar
         setting_crop_images: Recortar imaxes a 16x9 en toots non despregados
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Idioma de publicación
         setting_default_privacy: Intimidade da publicación
         setting_default_sensitive: Marcar sempre multimedia como sensible
@@ -139,9 +148,12 @@ gl:
         setting_display_media_default: Por omisión
         setting_display_media_hide_all: Ocultar todo
         setting_display_media_show_all: Mostrar todo
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Despregar sempre as mensaxes marcadas con avisos de contido
         setting_hide_network: Non mostrar contactos
         setting_noindex: Pedir non aparecer nas buscas dos motores de busca
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reducir o movemento nas animacións
         setting_show_application: Mostrar a aplicación utilizada para tootear
         setting_system_font_ui: Utilizar a tipografía por defecto do sistema

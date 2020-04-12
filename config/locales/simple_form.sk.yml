@@ -8,12 +8,19 @@ sk:
         acct: Urči prezyvku@domenu účtu, na ktorý sa chceš presunúť
       account_warning_preset:
         text: Môžeš používať rovnakú syntaxiu ako v rámci príspevkov, čiže URL, haštagy, a spomenutia
+        title: Optional. Not visible to the recipient
       admin_account_action:
         include_statuses: Užívateľ uvidí, ktoré príspevky majú za následok moderačný zásah, alebo upozornenie
         send_email_notification: Užívateľ dostane vysvetlenie ohľadom toho, čo sa stalo s ich účtom
         text_html: Voliteľné. Môžeš používať rovnakú syntaxiu ako v príspevkoch. Môžeš pridať <a href="%{path}">varovné predlohy</a> a ušetriť tak čas
         type_html: Vyber si, čo urobiť s účtom <strong>%{acct}</strong>
         warning_preset_id: Voliteľné. Stále môžeš vložiť vlastný text na samý koniec predlohy
+      announcement:
+        all_day: When checked, only the dates of the time range will be displayed
+        ends_at: Optional. Announcement will be automatically unpublished at this time
+        scheduled_at: Leave blank to publish the announcement immediately
+        starts_at: Optional. In case your announcement is bound to a specific time range
+        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: Ľudia ktorí sa zaregistrujú prostredníctvom pozvánky, ťa budú inheď následovať
         avatar: PNG, GIF alebo JPG. Maximálne %{size}. Bude zmenšený na %{dimensions}px
@@ -23,6 +30,7 @@ sk:
         current_username: Pre potvrdenie prosím zadaj prezývku súčasného účtu
         digest: Odoslané iba v prípade dlhodobej neprítomnosti, a len ak si obdržal/a nejaké osobné správy kým si bol/a preč
         discoverable: Zoznam profilov predstavuje ďalšiu cestu akou tvoj účet môže dosiahnúť väčšie publikum
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Bude ti odoslaný potvrdzujúci email
         fields: Až osem položky môžeš mať na svojom profile zobrazené vo forme tabuľky
         header: PNG, GIF, alebo JPG. Maximálne %{size}. Bude zmenšený na %{dimensions}px
@@ -34,10 +42,14 @@ sk:
         phrase: Zhoda sa nájde nezávisle od toho, či je text napísaný, veľkými, alebo malými písmenami, či už v tele, alebo v hlavičke
         scopes: Ktoré API budú povolené aplikácii pre prístup. Ak vyberieš vrcholný stupeň, nemusíš už potom vyberať po jednom.
         setting_aggregate_reblogs: Nezobrazuj nové vyzdvihnutia pre príspevky, ktoré už boli len nedávno povýšené (týka sa iba nanovo získaných povýšení)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Chúlostivé médiá sú štandardne ukryté, a môžu byť zobrazené kliknutím
         setting_display_media_default: Ukry médiá označené ako citlivé
         setting_display_media_hide_all: Vždy ukry všetky médiá
         setting_display_media_show_all: Stále zobrazuj médiá označené ako citlivé
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Koho následuješ, a kto následuje teba, nebude zobrazené na tvojom profile
         setting_noindex: Ovplyvňuje verejný profil a stránky s príspevkami
         setting_show_application: Aplikácia, ktorú používaš na písanie príspevkov, bude zobrazená v podrobnom náhľade jednotlivých tvojích príspevkov
@@ -47,6 +59,9 @@ sk:
         whole_word: Ak je kľúčové slovo, alebo fráza poskladaná iba s písmen a čísel, bude použité iba ak sa zhoduje s celým výrazom
       domain_allow:
         domain: Táto doména bude schopná získavať dáta z tohto servera, a prichádzajúce dáta ním budú spracovávané a uložené
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Možno by si chcel/a použiť niektoré z týchto:'
       form_challenge:
@@ -87,6 +102,7 @@ sk:
       announcement:
         all_day: Celodenná udalosť
         ends_at: Koniec udalosti
+        scheduled_at: Schedule publication
         starts_at: Začiatok udalosti
         text: Oboznámenie
       defaults:
@@ -120,6 +136,10 @@ sk:
         setting_auto_play_gif: Automaticky prehrávaj animované GIFy
         setting_boost_modal: Zobrazuj potvrdzovacie okno pred povýšením
         setting_crop_images: Orež obrázky v nerozbalených príspevkoch na 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Píšeš v jazyku
         setting_default_privacy: Súkromie príspevkov
         setting_default_sensitive: Označ všetky mediálne súbory ako chúlostivé
@@ -128,9 +148,12 @@ sk:
         setting_display_media_default: Štandard
         setting_display_media_hide_all: Ukry všetky
         setting_display_media_show_all: Ukáž všetky
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Stále rozbaľ príspevky označené varovaním o chúlostivom obsahu
         setting_hide_network: Ukry svoju sieť kontaktov
         setting_noindex: Nezaraďuj príspevky do indexu pre vyhľadávče
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Mierni pohyb pri animáciách
         setting_show_application: Zverejni akú aplikáciu používaš na posielanie príspevkov
         setting_system_font_ui: Použi základné systémové písmo
@@ -144,6 +167,8 @@ sk:
         username: Prezývka
         username_or_email: Prezývka, alebo email
         whole_word: Celé slovo
+      email_domain_block:
+        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Haštag
       interactions:

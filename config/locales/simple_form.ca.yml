@@ -30,6 +30,7 @@ ca:
         current_username: Per a confirmar, si us plau entra el nom d'usuari del compte actual
         digest: Només s'envia després d'un llarg període d'inactivitat amb un resum de les mencions que has rebut en la teva absència
         discoverable: El directori de perfils és una altra manera per quin el teu compte pot assolir una audiència més àmplia
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Se t'enviarà un correu electrònic de confirmació
         fields: Pots tenir fins a 8 elements que es mostren com a taula al teu perfil
         header: PNG, GIF o JPG. Màxim %{size}. S'escalarà a %{dimensions}px
@@ -41,10 +42,14 @@ ca:
         phrase: Es combinarà independentment del format en el text o l'avís de contingut del tut
         scopes: A quines API es permetrà a l'aplicació accedir. Si selecciones un àmbit d'alt nivell, no cal que seleccionis un d'individual.
         setting_aggregate_reblogs: No mostra els nous impulsos dels tuts que ja s'han impulsat recentment (només afecta als impulsos nous rebuts)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Els mèdia sensibles estan ocults per defecte i es poden revelar amb un clic
         setting_display_media_default: Amaga els multimèdia marcats com a sensibles
         setting_display_media_hide_all: Oculta sempre tot el contingut multimèdia
         setting_display_media_show_all: Mostra sempre els elements multimèdia marcats com a sensibles
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Qui tu segueixes i els que et segueixen a tu no es mostraran en el teu perfil
         setting_noindex: Afecta el teu perfil públic i les pàgines d'estat
         setting_show_application: L'aplicació que fas servir per a publicar es mostrarà a la vista detallada dels teus tuts
@@ -131,6 +136,10 @@ ca:
         setting_auto_play_gif: Reproducció automàtica de GIFs animats
         setting_boost_modal: Mostra la finestra de confirmació abans d'impulsar
         setting_crop_images: Retalla les imatges en tuts no ampliats a 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: Llengua de les publicacions
         setting_default_privacy: Privacitat de les publicacions
         setting_default_sensitive: Marca sempre els elements multimèdia com a sensibles
@@ -139,9 +148,12 @@ ca:
         setting_display_media_default: Per defecte
         setting_display_media_hide_all: Amaga-ho tot
         setting_display_media_show_all: Mostra-ho tot
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Sempre amplia els tuts marcats amb advertències de contingut
         setting_hide_network: Amaga la teva xarxa
         setting_noindex: Desactivació de la indexació del motor de cerca
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Redueix el moviment en animacions
         setting_show_application: Revela l'aplicació utilitzada per enviar tuts
         setting_system_font_ui: Utilitza el tipus de lletra predeterminat del sistema

@@ -72,6 +72,8 @@ class Sanitize
     MASTODON_STRICT ||= freeze_config(
       elements: %w(a del strong em i p br span code),
 
+      remove_contents: true,
+
       attributes: {
         'a'    => %w(href rel class),
         'span' => %w(class),

@@ -18,7 +18,11 @@ de:
     contact_unavailable: Nicht verfügbar
     discover_users: Benutzer entdecken
     documentation: Dokumentation
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Mit einem Account auf %{instance} wirst du in der Lage sein Nutzern auf irgendeinem Mastodon-Server und darüber hinaus zu folgen.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Versuche eine mobile App
     hosted_on: Mastodon, gehostet auf %{domain}
     instance_actor_flash: |
@@ -281,10 +285,12 @@ de:
       new:
         create: Ankündigung erstellen
         title: Neue Ankündigung
+      publish: Publish
       published_msg: Ankündigung erfolgreich erstellt!
       scheduled_for: Geplant für %{time}
       scheduled_msg: Ankündigung ist zur Veröffentlichung vorgemerkt!
       title: Ankündigungen
+      unpublish: Unpublish
       unpublished_msg: Ankündigung ist jetzt nicht mehr sichtbar!
       updated_msg: Ankündigung erfolgreich geändert!
     custom_emojis:
@@ -404,6 +410,9 @@ de:
         create: Blockade erstellen
         title: Neue E-Mail-Domain-Blockade
       title: E-Mail-Domain-Blockade
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Domain
       delivery_available: Zustellung funktioniert
@@ -455,9 +464,11 @@ de:
       destroyed_msg: Meldungs-Kommentar erfolgreich gelöscht!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} Notiz"
           other: "%{count} Notizen"
+        report: report
         reports:
           one: "%{count} Bericht"
           other: "%{count} Berichte"
@@ -543,6 +554,9 @@ de:
           approved: Zustimmung benötigt zur Registrierung
           none: Niemand kann sich registrieren
           open: Jeder kann sich registrieren
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Registrierungsmodus
       show_known_fediverse_at_about_page:
         desc_html: Wenn aktiviert, wird es alle Beiträge aus dem bereits bekannten Teil des Fediversums auf der Startseite anzeigen. Andernfalls werden lokale Beitrage des Servers angezeigt.
@@ -596,12 +610,22 @@ de:
       no_status_selected: Keine Beiträge wurden geändert, weil keine ausgewählt wurden
       title: Beiträge des Kontos
       with_media: Mit Medien
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Einzigartige Nutzungen heute
       accounts_week: Einzigartige Nutzung dieser Woche
       breakdown: Heruntergebrochene Statistiken der heutigen Nutzung nach Quelle
       context: Kontext
       directory: Im Verzeichnis
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} im Verzeichnis"
       last_active: Zuletzt aktiv
       most_popular: Am beliebtesten
@@ -611,14 +635,17 @@ de:
       reviewed: Überprüft
       title: Hashtags
       trending_right_now: Aktuell in den Trends
+      unhide: Show in directory
       unique_uses_today: "%{count} Beiträge heute"
       unreviewed: Nicht überprüft
       updated_msg: Hashtageinstellungen wurden erfolgreich aktualisiert
+      visible: Visible
     title: Administration
     warning_presets:
       add_new: Neu hinzufügen
       delete: Löschen
       edit_preset: Warnungsvorlage bearbeiten
+      empty: Empty
       title: Warnungsvorlagen verwalten
   admin_mailer:
     new_pending_account:
@@ -669,6 +696,7 @@ de:
     change_password: Passwort
     checkbox_agreement_html: Ich akzeptiere die <a href="%{rules_path}" target="_blank">Server-Regeln</a> und die <a href="%{terms_path}" target="_blank">Nutzungsbedingungen</a>
     checkbox_agreement_without_rules_html: Ich stimme den <a href="%{terms_path}" target="_blank">Nutzungsbedingungen</a> zu
+    confirm_email: Confirm email
     delete_account: Konto löschen
     delete_account_html: Falls du dein Konto löschen willst, kannst du <a href="%{path}">hier damit fortfahren</a>. Du wirst um Bestätigung gebeten werden.
     description:
@@ -738,9 +766,11 @@ de:
       x_months: "%{count}mo"
       x_seconds: "%{count}s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Die eingegebenen Informationen waren nicht korrekt
     confirm_password: Gib dein derzeitiges Passwort ein, um deine Identität zu bestätigen
     confirm_username: Gib deinen Benutzernamen ein, um das Verfahren zu bestätigen
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Konto löschen
     success_msg: Dein Konto wurde erfolgreich gelöscht
     warning:
@@ -754,12 +784,18 @@ de:
       more_details_html: Weitere Details findest du in der <a href="%{terms_path}">Datenschutzrichtlinie</a>.
       username_available: Dein Benutzername wird wieder verfügbar
       username_unavailable: Dein Benutzername bleibt nicht verfügbar
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Profilverzeichnis
     enabled: Du bist gerade in dem Verzeichnis gelistet.
     enabled_but_waiting: Du bist damit einverstanden im Verzeichnis aufgelistet zu werden, aber du hast noch nicht genug Folgende (%{min_followers}).
     explanation: Entdecke Benutzer basierend auf deren Interessen
     explore_mastodon: Entdecke %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: ist kein gültiger Domain-Name
   errors:
@@ -791,6 +827,7 @@ de:
     blocks: Du hast blockiert
     csv: CSV
     domain_blocks: Domainblockaden
+    follows: You follow
     lists: Listen
     mutes: Du hast stummgeschaltet
     storage: Medienspeicher
@@ -903,6 +940,7 @@ de:
     cancel: Umleitung abbrechen
     cancel_explanation: Das Abbrechen der Umleitung wird dein aktuelles Konto erneut aktivieren, aber keine Folgenden, die auf dieses Konto verschoben wurden, zurückholen.
     cancelled_msg: Die Umleitung wurde erfolgreich abgebrochen.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: ist das gleiche Konto, zu dem du bereits umgezogen bist
       missing_also_known_as: referenziert nicht zurück auf dieses Konto
@@ -916,9 +954,11 @@ de:
     not_redirecting: Dein Konto wird derzeit nicht auf ein anderes Konto weitergeleitet.
     on_cooldown: Du hast dein Konto vor kurzem migriert. Diese Funktion wird in %{count} Tagen wieder verfügbar sein.
     past_migrations: Vorherige Migrationen
+    proceed: Save
     proceed_with_move: Folgende verschieben
     redirecting_to: Dein Konto wird zu %{acct} weitergeleitet.
     set_redirect: Umleitung einrichten
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Das neue Konto muss zuerst so konfiguriert werden, dass es auf das alte Konto referenziert
       before: 'Bevor du fortfährst, lese bitte diese Hinweise sorgfältig durch:'
@@ -1036,6 +1076,10 @@ de:
     reply:
       proceed: Fortfahren zum Antworten
       prompt: 'Du möchtest auf diesen Beitrag antworten:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Du hast das Limit für geplante Beiträge, dass %{limit} beträgt, für heute erreicht
     over_total_limit: Du hast das Limit für geplante Beiträge, dass %{limit} beträgt, erreicht
@@ -1241,8 +1285,12 @@ de:
   themes:
     contrast: Mastodon (Hoher Kontrast)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dunkel)
     mastodon-light: Mastodon (Hell)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d.%m.%Y %H:%M"

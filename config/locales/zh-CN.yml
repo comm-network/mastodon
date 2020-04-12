@@ -18,7 +18,11 @@ zh-CN:
     contact_unavailable: 未公开
     discover_users: 发现用户
     documentation: 文档
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: 在%{instance} 上拥有账号后，你可以关注任何 Mastodon 服务器或其他服务器上的人。
+    generic_description: "%{domain} is one server in the network"
     get_apps: 尝试移动应用
     hosted_on: 一个在 %{domain} 上运行的 Mastodon 实例
     instance_actor_flash: '这个账号是个虚拟帐号，不代表任何用户，只用来代表服务器本身。它用于和其它服务器互通，所以不应该被封禁，除非你想封禁整个实例。但是想封禁整个实例的时候，你应该用域名封禁。
@@ -191,6 +195,42 @@ zh-CN:
       web: 站内页面
       whitelisted: 已加入白名单
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: "%{name} 接管了举报 %{target}"
         change_email_user: "%{name} 更改了用户 %{target} 的电子邮件地址"
@@ -228,6 +268,9 @@ zh-CN:
         update_custom_emoji: "%{name} 更新了自定义表情 %{target}"
         update_status: "%{name} 刷新了 %{target} 的嘟文"
       deleted_status: "（嘟文已删除）"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: 运营日志
     announcements:
       destroyed_msg: 公告已删除！
@@ -238,10 +281,12 @@ zh-CN:
       new:
         create: 创建公告
         title: 新公告
+      publish: Publish
       published_msg: 公告已发布！
       scheduled_for: 定时在 %{time}
       scheduled_msg: 定时公告已创建！
       title: 公告
+      unpublish: Unpublish
       unpublished_msg: 公告已取消发布！
       updated_msg: 公告已成功更新！
     custom_emojis:
@@ -360,6 +405,9 @@ zh-CN:
         create: 添加域名
         title: 添加电子邮件域名屏蔽
       title: 电子邮件域名屏蔽
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: 域名
       delivery_available: 无法投递
@@ -410,8 +458,10 @@ zh-CN:
       destroyed_msg: 举报记录删除成功！
     reports:
       account:
+        note: note
         notes:
           other: "%{count} 条笔记"
+        report: report
         reports:
           other: "%{count} 个报告"
       action_taken_by: 操作执行者
@@ -496,6 +546,9 @@ zh-CN:
           approved: 注册时需要批准
           none: 关闭注册
           open: 开放注册
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: 注册模式
       show_known_fediverse_at_about_page:
         desc_html: 如果开启，就会在时间轴预览显示其他站点嘟文，否则就只会只显示本站嘟文。
@@ -549,12 +602,22 @@ zh-CN:
       no_status_selected: 因为没有嘟文被选中，所以没有更改
       title: 帐户嘟文
       with_media: 含有媒体文件
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: 今日活跃用户
       accounts_week: 本周活跃用户
       breakdown: 按来源分类今天的使用情况
       context: 上下文
       directory: 在目录中
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: 目录中 %{count} 条
       last_active: 最近活动
       most_popular: 最热门的
@@ -564,14 +627,17 @@ zh-CN:
       reviewed: 已审核
       title: 话题标签
       trending_right_now: 当前热门
+      unhide: Show in directory
       unique_uses_today: 今天发布了 %{count} 条
       unreviewed: 未审核
       updated_msg: 话题标签设置更新成功
+      visible: Visible
     title: 管理
     warning_presets:
       add_new: 添加新条目
       delete: 删除
       edit_preset: 编辑预置警告
+      empty: Empty
       title: 管理预设警告
   admin_mailer:
     new_pending_account:
@@ -622,6 +688,7 @@ zh-CN:
     change_password: 密码
     checkbox_agreement_html: 我同意 <a href="%{rules_path}" target="_blank">服务器规则</a> 和 <a href="%{terms_path}" target="_blank">服务条款</a>
     checkbox_agreement_without_rules_html: 我同意 <a href="%{terms_path}" target="_blank">服务条款</a>
+    confirm_email: Confirm email
     delete_account: 删除帐户
     delete_account_html: 如果你想删除你的帐户，请<a href="%{path}">点击这里继续</a>。你需要确认你的操作。
     description:
@@ -691,9 +758,11 @@ zh-CN:
       x_months: "%{count}个月"
       x_seconds: "%{count}秒"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: 您输入的信息不正确
     confirm_password: 输入你当前的密码来验证身份
     confirm_username: 输入您的用户名以继续
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: 删除帐户
     success_msg: 你的帐户已经成功删除
     warning:
@@ -707,10 +776,18 @@ zh-CN:
       more_details_html: 更多细节，请查看 <a href="%{terms_path}">隐私政策</a> 。
       username_available: 您的用户名现在又可以使用了
       username_unavailable: 您的用户名仍将无法使用
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: 用户目录
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: 根据兴趣发现用户
     explore_mastodon: 探索 %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: 不是一个有效的域名
   errors:
@@ -742,6 +819,7 @@ zh-CN:
     blocks: 屏蔽的用户
     csv: CSV
     domain_blocks: 域名屏蔽
+    follows: You follow
     lists: 列表
     mutes: 隐藏的用户
     storage: 媒体文件存储
@@ -852,6 +930,7 @@ zh-CN:
     cancel: 取消跳转
     cancel_explanation: 取消跳转将会重新激活您当前的帐号，但是已经迁移到新账号的关注者不会回来。
     cancelled_msg: 成功取消跳转
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: 和您已经迁移过的帐号相同
       missing_also_known_as: 没有引用此帐号
@@ -865,9 +944,11 @@ zh-CN:
     not_redirecting: 您的帐号当前未跳转到其他帐户。
     on_cooldown: 您最近已经迁移过您的帐号。此功能将在%{count} 天后再次可用。
     past_migrations: 迁移记录
+    proceed: Save
     proceed_with_move: 移动关注者
     redirecting_to: 您的帐户被跳转到了 %{acct}。
     set_redirect: 设置跳转
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: 新账号必须先引用现在这个帐号
       before: 在继续前，请仔细阅读下列说明：
@@ -983,6 +1064,10 @@ zh-CN:
     reply:
       proceed: 确认回复
       prompt: 您想要回复此嘟文：
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: 您已超出每日定时嘟文的上限（%{limit} 条）
     over_total_limit: 您已超出定时嘟文的上限（%{limit} 条）
@@ -1181,8 +1266,12 @@ zh-CN:
   themes:
     contrast: Mastodon（高对比度）
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon（暗色主题）
     mastodon-light: Mastodon（亮色主题）
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

@@ -30,6 +30,7 @@ th:
         current_username: เพื่อยืนยัน โปรดป้อนชื่อผู้ใช้ของบัญชีปัจจุบัน
         digest: ส่งเฉพาะหลังจากไม่มีการใช้งานเป็นเวลานานและในกรณีที่คุณได้รับข้อความส่วนบุคคลใด ๆ เมื่อคุณไม่อยู่เท่านั้น
         discoverable: ไดเรกทอรีโปรไฟล์เป็นอีกวิธีหนึ่งที่ทำให้บัญชีของคุณสามารถเข้าถึงผู้ชมได้กว้างขึ้น
+        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: คุณจะได้รับอีเมลยืนยัน
         fields: คุณสามารถมีได้มากถึง 8 รายการแสดงเป็นตารางในโปรไฟล์ของคุณ
         header: PNG, GIF หรือ JPG สูงสุด %{size} จะถูกย่อขนาดเป็น %{dimensions}px
@@ -41,10 +42,14 @@ th:
         phrase: จะถูกจับคู่โดยไม่คำนึงถึงตัวพิมพ์ใหญ่เล็กในข้อความหรือคำเตือนเนื้อหาของโพสต์
         scopes: API ใดที่แอปพลิเคชันจะได้รับอนุญาตให้เข้าถึง หากคุณเลือกขอบเขตระดับบนสุด คุณไม่จำเป็นต้องเลือกแต่ละขอบเขต
         setting_aggregate_reblogs: ไม่แสดงการดันใหม่สำหรับโพสต์ที่เพิ่งดัน (มีผลต่อการดันที่ได้รับใหม่เท่านั้น)
+        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
+        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
+        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: ซ่อนสื่อที่ละเอียดอ่อนโดยค่าเริ่มต้นและสามารถเปิดเผยได้ด้วยการคลิก
         setting_display_media_default: ซ่อนสื่อที่ถูกทำเครื่องหมายว่าละเอียดอ่อน
         setting_display_media_hide_all: ซ่อนสื่อเสมอ
         setting_display_media_show_all: แสดงสื่อเสมอ
+        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: จะไม่แสดงผู้ที่คุณติดตามและผู้ที่ติดตามคุณในโปรไฟล์ของคุณ
         setting_noindex: มีผลต่อโปรไฟล์สาธารณะและหน้าสถานะของคุณ
         setting_show_application: จะแสดงแอปพลิเคชันที่คุณใช้เพื่อโพสต์ในมุมมองโดยละเอียดของโพสต์ของคุณ
@@ -54,6 +59,9 @@ th:
         whole_word: เมื่อคำสำคัญหรือวลีเป็นตัวอักษรและตัวเลขเท่านั้น จะนำไปใช้กับคำสำคัญหรือวลีหากตรงกันทั้งคำเท่านั้น
       domain_allow:
         domain: โดเมนนี้จะสามารถดึงข้อมูลจากเซิร์ฟเวอร์นี้และข้อมูลขาเข้าจากโดเมนจะได้รับการประมวลผลและจัดเก็บ
+      email_domain_block:
+        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
+        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'คุณอาจต้องการใช้หนึ่งในนี้:'
       form_challenge:
@@ -128,6 +136,10 @@ th:
         setting_auto_play_gif: เล่น GIF แบบเคลื่อนไหวโดยอัตโนมัติ
         setting_boost_modal: แสดงกล่องโต้ตอบการยืนยันก่อนดัน
         setting_crop_images: ครอบตัดภาพในโพสต์ที่ไม่ได้ขยายเป็น 16x9
+        setting_default_content_type: Default format for toots
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_language: ภาษาของการโพสต์
         setting_default_privacy: ความเป็นส่วนตัวของการโพสต์
         setting_default_sensitive: ทำเครื่องหมายสื่อว่าละเอียดอ่อนเสมอ
@@ -136,9 +148,12 @@ th:
         setting_display_media_default: ค่าเริ่มต้น
         setting_display_media_hide_all: ซ่อนทั้งหมด
         setting_display_media_show_all: แสดงทั้งหมด
+        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: ขยายโพสต์ที่ทำเครื่องหมายด้วยคำเตือนเนื้อหาเสมอ
         setting_hide_network: ซ่อนเครือข่ายของคุณ
         setting_noindex: เลือกไม่รับการทำดัชนีโดยเครื่องมือค้นหา
+        setting_notif_sound: Enable notification sound
+        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: ลดการเคลื่อนไหวในภาพเคลื่อนไหว
         setting_show_application: เปิดเผยแอปพลิเคชันที่ใช้ในการส่งโพสต์
         setting_system_font_ui: ใช้แบบอักษรเริ่มต้นของระบบ

@@ -18,7 +18,11 @@ cs:
     contact_unavailable: Neuvedeno
     discover_users: Objevujte uživatele
     documentation: Dokumentace
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: S účtem na serveru %{instance} můžete sledovat lidi na jakémkoliv ze serverů Mastodon a dalších službách.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Vyzkoušejte mobilní aplikaci
     hosted_on: Mastodon na doméně %{domain}
     instance_actor_flash: |
@@ -100,6 +104,7 @@ cs:
       delete: Smazat
       destroyed_msg: Moderátorská poznámka byla úspěšně zničena!
     accounts:
+      add_email_domain_block: Blacklist e-mail domain
       approve: Schválit
       approve_all: Schválit vše
       are_you_sure: Opravdu?
@@ -180,6 +185,7 @@ cs:
         staff: Člen personálu
         user: Uživatel
       search: Hledat
+      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Další uživatelé se stejnou IP adresou
       shared_inbox_url: URL sdílené příchozí schránky
       show:
@@ -201,6 +207,42 @@ cs:
       web: Web
       whitelisted: Na bílé listině
     action_logs:
+      action_types:
+        assigned_to_self_report: Assign Report
+        change_email_user: Change E-mail for User
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
+        destroy_status: Delete Status
+        disable_2fa_user: Disable 2FA
+        disable_custom_emoji: Disable Custom Emoji
+        disable_user: Disable User
+        enable_custom_emoji: Enable Custom Emoji
+        enable_user: Enable User
+        memorialize_account: Memorialize Account
+        promote_user: Promote User
+        remove_avatar_user: Remove Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
+        silence_account: Silence Account
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
+        update_status: Update Status
       actions:
         assigned_to_self_report: Uživatel %{name} si přidělil hlášení %{target}
         change_email_user: Uživatel %{name} změnil e-mailovou adresu uživatele %{target}
@@ -238,6 +280,9 @@ cs:
         update_custom_emoji: Uživatel %{name} aktualizoval emoji %{target}
         update_status: Uživatel %{name} aktualizoval toot uživatele %{target}
       deleted_status: "(smazaný toot)"
+      empty: No logs found.
+      filter_by_action: Filter by action
+      filter_by_user: Filter by user
       title: Auditovací protokol
     announcements:
       destroyed_msg: Oznámení bylo úspěšně odstraněno
@@ -248,10 +293,12 @@ cs:
       new:
         create: Vytvořit oznámení
         title: Nové oznámení
+      publish: Publish
       published_msg: Oznámení bylo úspěšně zveřejněno
       scheduled_for: Naplánováno na %{time}
       scheduled_msg: Zveřejnění oznámení bylo naplánováno
       title: Oznámení
+      unpublish: Unpublish
       unpublished_msg: Zveřejněné oznámení bylo skryto
       updated_msg: Oznámení bylo úspěšně aktualizováno
     custom_emojis:
@@ -368,10 +415,14 @@ cs:
       destroyed_msg: E-mailová doména úspěšně odstraněna z černé listiny
       domain: Doména
       empty: Na černé listině aktuálně nejsou žádné e-mailové domény.
+      from_html: from %{domain}
       new:
         create: Přidat doménu
         title: Nová položka pro černou listinu e-mailů
       title: Černá listina e-mailů
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Doména
       delivery_available: Doručení je k dispozici
@@ -425,11 +476,13 @@ cs:
       destroyed_msg: Poznámka o hlášení úspěšně smazána!
     reports:
       account:
+        note: note
         notes:
           few: "%{count} poznámky"
           many: "%{count} poznámek"
           one: "%{count} poznámka"
           other: "%{count} poznámek"
+        report: report
         reports:
           few: "%{count} hlášení"
           many: "%{count} hlášení"
@@ -517,6 +570,9 @@ cs:
           approved: Pro registraci je vyžadováno schválení
           none: Nikdo se nemůže registrovat
           open: Kdokoliv se může registrovat
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Režim registrací
       show_known_fediverse_at_about_page:
         desc_html: Je-li tohle vypnuto, bude veřejná časová osa, na kterou odkazuje hlavní stránka serveru, omezena pouze na místní obsah
@@ -553,6 +609,9 @@ cs:
       trends:
         desc_html: Veřejně zobrazit populární hashtagy, které byly předtím schváleny
         title: Populární hashtagy
+    site_uploads:
+      delete: Delete uploaded file
+      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Zpět na stránku účtu
       batch:
@@ -567,12 +626,22 @@ cs:
       no_status_selected: Nebyly změněny žádné tooty, neboť žádné nebyly vybrány
       title: Tooty účtu
       with_media: S médii
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Dnešní jedinečná použití
       accounts_week: Jedinečná použití tento týden
       breakdown: Přehled dnešního používání podle zdroje
       context: Kontext
       directory: V adresáři
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} v adresáři"
       last_active: Naposledy aktivní
       most_popular: Nejpopulárnější
@@ -582,14 +651,17 @@ cs:
       reviewed: Schválen
       title: Hashtagy
       trending_right_now: Právě je trendy
+      unhide: Show in directory
       unique_uses_today: Dnes použilo %{count} uživatelů
       unreviewed: Nezkontrolováno
       updated_msg: Nastavení hashtagů bylo úspěšně aktualizováno
+      visible: Visible
     title: Administrace
     warning_presets:
       add_new: Přidat nové
       delete: Smazat
       edit_preset: Upravit předlohu pro varování
+      empty: Empty
       title: Spravovat předlohy pro varování
   admin_mailer:
     new_pending_account:
@@ -640,6 +712,7 @@ cs:
     change_password: Heslo
     checkbox_agreement_html: Souhlasím s <a href="%{rules_path}" target="_blank">pravidly serveru</a> a <a href="%{terms_path}" target="_blank">podmínkami používání</a>
     checkbox_agreement_without_rules_html: Souhlasím s <a href="%{terms_path}" target="_blank">podmínkami používání</a>
+    confirm_email: Confirm email
     delete_account: Odstranit účet
     delete_account_html: Chcete-li odstranit svůj účet, <a href="%{path}">pokračujte zde</a>. Budete požádáni o potvrzení.
     description:
@@ -709,9 +782,11 @@ cs:
       x_months: "%{count} mesíců"
       x_seconds: "%{count} s"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Zadané informace nejsou správné
     confirm_password: Pro ověření vaší identity zadejte své současné heslo
     confirm_username: Zadáním svého uživatelského jména proces potvrdíte
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Odstranit účet
     success_msg: Váš účet byl úspěšně odstraněn
     warning:
@@ -725,10 +800,18 @@ cs:
       more_details_html: Podrobnosti najdete v <a href="%{terms_path}">zásadách ochrany osobních údajů</a>.
       username_available: Vaše uživatelské jméno bude opět dostupné
       username_unavailable: Vaše uživatelské jméno zůstane nedostupné
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Adresář profilů
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Objevujte uživatele podle jejich zájmů
     explore_mastodon: Prozkoumejte %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: není platné doménové jméno
   errors:
@@ -760,6 +843,7 @@ cs:
     blocks: Blokujete
     csv: CSV
     domain_blocks: Blokování domén
+    follows: You follow
     lists: Seznamy
     mutes: Skryli jste
     storage: Paměť médií
@@ -869,12 +953,14 @@ cs:
   media_attachments:
     validations:
       images_and_video: K tootu, který již obsahuje obrázky, nelze připojit video
+      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Nelze připojit více než 4 soubory
   migrations:
     acct: Přesunuto na
     cancel: Zrušit přesměrování
     cancel_explanation: Zrušením přesměrování znovu aktivujete svůj aktuální účet, ale nevrátí se vám sledující, kteří byli přesměrováni na druhý účet.
     cancelled_msg: Přesměrování bylo úspěšně zrušeno.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: je stejný účet, na který jste se již přesunuli
       missing_also_known_as: neodkazuje na tento účet
@@ -888,9 +974,11 @@ cs:
     not_redirecting: Váš účet se aktuálně nepřesměrovává na žádný jiný účet.
     on_cooldown: Nedávno jste svůj účet přesunuli. Tato funkce bude opět dostupná za %{count} dní.
     past_migrations: Předchozí přesuny
+    proceed: Save
     proceed_with_move: Přesunout sledující
     redirecting_to: Váš účet se přesměrovává na účet %{acct}.
     set_redirect: Nastavit přesměrování
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Nový účet musí být nejprve nastaven, aby odkazoval zpátky na tento
       before: 'Před pokračováním si prosím pečlivě přečtěte tyto poznámky:'
@@ -984,6 +1072,7 @@ cs:
     dormant: Nečinné
     followers: Sledující
     following: Sledovaní
+    invited: Invited
     last_active: Naposledy aktivní
     most_recent: Nejnovější
     moved: Přesunuté
@@ -1011,6 +1100,10 @@ cs:
     reply:
       proceed: Pokračovat k odpovědi
       prompt: 'Chcete odpovědět na tento toot:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Překročili jste limit %{limit} tootů naplánovaných na tento den
     over_total_limit: Překročili jste limit %{limit} naplánovaných tootů
@@ -1099,6 +1192,8 @@ cs:
       many: 'obsahoval nepovolené hashtagy: %{tags}'
       one: 'obsahoval nepovolený hashtag: %{tags}'
       other: 'obsahoval nepovolené hashtagy: %{tags}'
+    errors:
+      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Zjistit jazyk automaticky
     open_in_web: Otevřít na webu
     over_character_limit: byl překročen limit %{max} znaků
@@ -1222,8 +1317,12 @@ cs:
   themes:
     contrast: Mastodon (vysoký kontrast)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (tmavý)
     mastodon-light: Mastodon (světlý)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d. %b %Y, %H:%M"

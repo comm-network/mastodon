@@ -18,7 +18,11 @@ el:
     contact_unavailable: Μη διαθέσιμο
     discover_users: Ανακάλυψε χρήστες
     documentation: Τεκμηρίωση
+    extended_description_html: |
+      <h3>1A good place for rules</h3>2
+      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Με ένα λογαριασμό στο %{instance} θα μπορείς να ακολουθείς ανθρώπους σε οποιοδήποτε κόμβο Mastodon αλλά και παραπέρα.
+    generic_description: "%{domain} is one server in the network"
     get_apps: Δοκίμασε μια εφαρμογή κινητού
     hosted_on: Το Mastodon φιλοξενείται στο %{domain}
     instance_actor_flash: |
@@ -196,16 +200,40 @@ el:
       whitelisted: Εγκεκριμένοι
     action_logs:
       action_types:
+        assigned_to_self_report: Assign Report
         change_email_user: Αλλαγή email για χρήστη
+        confirm_user: Confirm User
+        create_account_warning: Create Warning
+        create_announcement: Create Announcement
+        create_custom_emoji: Create Custom Emoji
+        create_domain_allow: Create Domain Allow
+        create_domain_block: Create Domain Block
+        create_email_domain_block: Create E-mail Domain Block
+        demote_user: Demote User
+        destroy_announcement: Delete Announcement
+        destroy_custom_emoji: Delete Custom Emoji
+        destroy_domain_allow: Delete Domain Allow
+        destroy_domain_block: Delete Domain Block
+        destroy_email_domain_block: Delete e-mail domain block
         destroy_status: Διαγραφή Κατάστασης
         disable_2fa_user: Απενεργοποίηση 2FA
         disable_custom_emoji: Απενεργοποίηση Προσαρμοσμένων Emoji
         disable_user: Απενεργοποίηση Χρήστη
         enable_custom_emoji: Ενεργοποίηση Προσαρμοσμένων Emoji
         enable_user: Ενεργοποίηση Χρήστη
+        memorialize_account: Memorialize Account
         promote_user: Προαγωγή Χρήστη
         remove_avatar_user: Αφαίρεση Avatar
+        reopen_report: Reopen Report
+        reset_password_user: Reset Password
+        resolve_report: Resolve Report
         silence_account: Σίγαση Λογαριασμού
+        suspend_account: Suspend Account
+        unassigned_report: Unassign Report
+        unsilence_account: Unsilence Account
+        unsuspend_account: Unsuspend Account
+        update_announcement: Update Announcement
+        update_custom_emoji: Update Custom Emoji
         update_status: Ενημέρωση Κατάστασης
       actions:
         assigned_to_self_report: Ο/Η %{name} ανάθεσε την καταγγελία %{target} στον εαυτό του/της
@@ -257,10 +285,12 @@ el:
       new:
         create: Δημιουργία ανακοίνωσης
         title: Νέα ανακοίνωση
+      publish: Publish
       published_msg: Επιτυχής δημοσίευση ανακοίνωσης!
       scheduled_for: Προγραμματισμένη για %{time}
       scheduled_msg: Η ανακοίνωση προγραμματίστηκε για δημοσίευση!
       title: Ανακοινώσεις
+      unpublish: Unpublish
       unpublished_msg: Επιτυχής ακύρωση δημοσίευσης ανακοίνωσης!
       updated_msg: Επιτυχής ενημέρωση ανακοίνωσης!
     custom_emojis:
@@ -380,6 +410,9 @@ el:
         create: Πρόσθεση τομέα
         title: Νέα εγγραφή email στη μαύρη λίστα
       title: Μαύρη λίστα email
+    followers:
+      back_to_account: Back To Account
+      title: "%{acct}'s Followers"
     instances:
       by_domain: Τομέας
       delivery_available: Διαθέσιμη παράδοση
@@ -431,9 +464,11 @@ el:
       destroyed_msg: Επιτυχής διαγραφή σημείωσης καταγγελίας!
     reports:
       account:
+        note: note
         notes:
           one: "%{count} σημείωση"
           other: "%{count} σημειώσεις"
+        report: report
         reports:
           one: "%{count} αναφορά"
           other: "%{count} αναφορές"
@@ -519,6 +554,9 @@ el:
           approved: Απαιτείται έγκριση για εγγραφή
           none: Δεν μπορεί να εγγραφεί κανείς
           open: Μπορεί να εγγραφεί ο οποιοσδήποτε
+        require:
+          hint: When enabled, the "Why do you want to join" field will be required
+          title: Require join reason on registration
         title: Μέθοδος εγγραφής
       show_known_fediverse_at_about_page:
         desc_html: Όταν αντιστραφεί, θα δείχνει τα τουτ από όλο το γνωστό fediverse στην προεπισκόπηση. Διαφορετικά θα δείχνει μόνο τοπικά τουτ.
@@ -572,12 +610,22 @@ el:
       no_status_selected: Καμία δημοσίευση δεν άλλαξε αφού καμία δεν ήταν επιλεγμένη
       title: Καταστάσεις λογαριασμού
       with_media: Με πολυμέσα
+    subscriptions:
+      callback_url: Callback URL
+      confirmed: Confirmed
+      expires_in: Expires in
+      last_delivery: Last delivery
+      title: WebSub
+      topic: Topic
     tags:
+      accounts: Accounts
       accounts_today: Μοναδικές χρήσεις ημέρας
       accounts_week: Μοναδικές χρήσεις εβδομάδας
       breakdown: Ανάλυση σημερινής χρήσης ανα πηγή
       context: Συνάφεια
       directory: Στον κατάλογο
+      hidden: Hidden
+      hide: Hide from directory
       in_directory: "%{count} στον κατάλογο"
       last_active: Τελευταία δραστηριότητα
       most_popular: Δημοφιλέστερες
@@ -587,14 +635,17 @@ el:
       reviewed: Εγκεκριμένες
       title: Ετικέτες
       trending_right_now: Δημοφιλείς αυτή τη στιγμή
+      unhide: Show in directory
       unique_uses_today: "%{count} σημερινές δημοσιεύσεις"
       unreviewed: Εκκρεμεί έγκριση
       updated_msg: Οι ρυθμίσεις των ετικετών ενημερώθηκαν επιτυχώς
+      visible: Visible
     title: Διαχείριση
     warning_presets:
       add_new: Πρόσθεση νέου
       delete: Διαγραφή
       edit_preset: Ενημέρωση προκαθορισμένης προειδοποίησης
+      empty: Empty
       title: Διαχείριση προκαθορισμένων προειδοποιήσεων
   admin_mailer:
     new_pending_account:
@@ -645,6 +696,7 @@ el:
     change_password: Συνθηματικό
     checkbox_agreement_html: Συμφωνώ με τους <a href="%{rules_path}" target="_blank">κανονισμούς του κόμβου</a> και <a href="%{terms_path}" target="_blank">τους όρους χρήσης</a>
     checkbox_agreement_without_rules_html: Συμφωνώ με τους <a href="%{terms_path}" target="_blank">όρους χρήσης</a>
+    confirm_email: Confirm email
     delete_account: Διαγραφή λογαριασμού
     delete_account_html: Αν θέλεις να διαγράψεις το λογαριασμό σου, μπορείς <a href="%{path}">να συνεχίσεις εδώ</a>. Θα σου ζητηθεί επιβεβαίωση.
     description:
@@ -714,9 +766,11 @@ el:
       x_months: "%{count}μ"
       x_seconds: "%{count}δ"
   deletes:
+    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Τα στοιχεία δεν ήταν σωστά
     confirm_password: Γράψε το τρέχον συνθηματικό σου για να πιστοποιήσεις την ταυτότητά σου
     confirm_username: Γράψε το όνομα χρήστη σου για επιβεβαίωση
+    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Διαγραφή λογαριασμού
     success_msg: Ο λογαριασμός σου διαγράφηκε με επιτυχία
     warning:
@@ -730,10 +784,18 @@ el:
       more_details_html: Για περισσότερες πληροφορίες, δες την <a href="%{terms_path}">πολιτική απορρήτου</a>.
       username_available: Το όνομα χρήστη σου θα γίνει ξανά διαθέσιμο
       username_unavailable: Το όνομα χρήστη σου θα παραμείνει μη διαθέσιμο
+    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
+    warning_title: Disseminated content availability
   directories:
     directory: Κατάλογος λογαριασμών
+    enabled: You are currently listed in the directory.
+    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Βρες χρήστες βάσει των ενδιαφερόντων τους
     explore_mastodon: Εξερεύνησε το %{title}
+    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
+    people:
+      one: "%{count} person"
+      other: "%{count} people"
   domain_validator:
     invalid_domain: δεν είναι έγκυρο όνομα τομέα
   errors:
@@ -765,6 +827,7 @@ el:
     blocks: Μπλοκάρεις
     csv: CSV
     domain_blocks: Μπλοκαρίσματα κόμβων
+    follows: You follow
     lists: Λίστες
     mutes: Αποσιωπήσεις
     storage: Αποθήκευση πολυμέσων
@@ -877,6 +940,7 @@ el:
     cancel: Ακύρωση ανακατεύθυνσης
     cancel_explanation: Ακυρώνοντας την ανακατεύθυνση θα ενεργοποιήσει ξανά τον τρέχοντα λογαριασμό σου, αλλά δεν θα φέρει πίσω τους ακόλουθους που έχουν μεταφερθεί σε εκείνον το λογαριασμό.
     cancelled_msg: Η ανακατεύθυνση ακυρώθηκε επιτυχώς.
+    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: είναι ο ίδιος λογαριασμός στον οποίο έχεις ήδη μεταφερθεί
       missing_also_known_as: δεν αναφέρει αυτόν τον λογαριασμό
@@ -890,9 +954,11 @@ el:
     not_redirecting: Ο λογαριασμός σου δεν ανακατευθύνει σε κανέναν άλλο προς το παρόν.
     on_cooldown: Έχεις μετακομίσει το λογαριασμό σου πρόσφατα. Η δυνατότητα αυτή θα γίνει πάλι διαθέσιμη σε %{count} μέρες.
     past_migrations: Προηγούμενες μετακινήσεις
+    proceed: Save
     proceed_with_move: Μετακίνηση ακολούθων
     redirecting_to: Ο λογαριασμός σου ανακατευθύνει στο %{acct}.
     set_redirect: Όρισε ανακατεύθυνση
+    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Θα πρέπει πρώτα να ρυθμιστεί μια αναφορά από τον νέο λογαριασμό προς αυτόν
       before: 'Πριν συνεχίσεις, παρακαλούμε διάβασε αυτές τις σημειώσεις προσεκτικά:'
@@ -1010,6 +1076,10 @@ el:
     reply:
       proceed: Συνέχισε για να απαντήσεις
       prompt: 'Θέλεις να απαντήσεις σε αυτό το τουτ:'
+  remote_unfollow:
+    error: Error
+    title: Title
+    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Έχεις υπερβεί το όριο των %{limit} προγραμματισμένων τουτ για εκείνη τη μέρα
     over_total_limit: Έχεις υπερβεί το όριο των %{limit} προγραμματισμένων τουτ
@@ -1213,8 +1283,12 @@ el:
   themes:
     contrast: Mastodon (Υψηλή αντίθεση)
     default: Vapor
+    fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Σκοτεινό)
     mastodon-light: Mastodon (Ανοιχτόχρωμο)
+    ocean: Ocean
+    ocean-blur: Ocean (Blurred)
+    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
