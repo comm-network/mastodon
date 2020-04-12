@@ -59,7 +59,12 @@ class Formatter
     html = format_markdown(html) if status.content_type == 'text/markdown'
     html = encode_and_link_urls(html, linkable_accounts, keep_html: %w(text/markdown text/html).include?(status.content_type))
     html = encode_custom_emojis(html, status.emojis, options[:autoplay]) if options[:custom_emojify]
-    html = reformat(html)
+    if %w(text/markdown text/html).include?(status.content_type)
+      html = reformat(html)
+    else
+      html = simple_format(html, {}, sanitize: false)
+      html = html.delete("\n")
+    end
 
     html.html_safe # rubocop:disable Rails/OutputSafety
   end
