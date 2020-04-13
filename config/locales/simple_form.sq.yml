@@ -53,6 +53,7 @@ sq:
         setting_hide_network: Cilët ndiqni dhe cilët ju ndjekin nuk do të shfaqen në profilin tuaj
         setting_noindex: Prek faqet e profilit tuaj publik dhe gjendjeve
         setting_show_application: Aplikacioni që përdorni për mesazhe do të shfaqet te pamja e hollësishme për mesazhet tuaj
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Emri juaj i përdoruesit do të jetë unik në %{domain}
@@ -156,6 +157,7 @@ sq:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Zvogëlo lëvizjen në animacione
         setting_show_application: Tregoje aplikacionin e përdorur për të dërguar mesazhe
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Përdor shkronja parazgjedhje të sistemit
         setting_theme: Temë sajti
         setting_trends: Show today's trends

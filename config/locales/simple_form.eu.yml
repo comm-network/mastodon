@@ -53,6 +53,7 @@ eu:
         setting_hide_network: Nor jarraitzen duzun eta nork jarraitzen zaituen ez da bistaratuko zure profilean
         setting_noindex: Zure profil publiko eta tooten orrietan eragina du
         setting_show_application: Tootak bidaltzeko erabiltzen duzun aplikazioa zure tooten ikuspegi xehetsuan bistaratuko da
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradienteak ezkutatutakoaren koloreetan oinarritzen dira, baina xehetasunak ezkutatzen dituzte
         setting_use_pending_items: Ezkutatu denbora-lerroko eguneraketak klik baten atzean jarioa automatikoki korritu ordez
         username: Zure erabiltzaile-izena bakana izango da %{domain} domeinuan
@@ -156,6 +157,7 @@ eu:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Murriztu animazioen mugimenduak
         setting_show_application: Utzi agerian tootak bidaltzeko erabilitako aplikazioa
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Erabili sistemako tipografia lehenetsia
         setting_theme: Gunearen gaia
         setting_trends: Erakutsi gaurko joerak

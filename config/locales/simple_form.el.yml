@@ -53,6 +53,7 @@ el:
         setting_hide_network: Δε θα εμφανίζεται στο προφίλ σου ποιους ακολουθείς και ποιοι σε ακολουθούν
         setting_noindex: Επηρεάζει το δημόσιο προφίλ και τις δημοσιεύσεις σου
         setting_show_application: Η εφαρμογή που χρησιμοποιείς για να στέλνεις τα τουτ σου θα εμφανίζεται στις αναλυτικές λεπτομέρειες τους
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Οι χρωματισμοί βασίζονται στα χρώματα του κρυμμένου πολυμέσου αλλά θολώνουν τις λεπτομέρειες
         setting_use_pending_items: Εμφάνιση ενημερώσεων ροής μετά από κλικ αντί για αυτόματη κύλισή τους
         username: Το όνομα χρήστη σου θα είναι μοναδικό στο %{domain}
@@ -156,6 +157,7 @@ el:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Μείωση κίνησης κινουμένων στοιχείων
         setting_show_application: Αποκάλυψη εφαρμογής που χρησιμοποιήθηκε για την αποστολή των τουτ
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Χρήση της προεπιλεγμένης γραμματοσειράς του συστήματος
         setting_theme: Θέμα ιστότοπου
         setting_trends: Εμφάνιση σημερινών τάσεων

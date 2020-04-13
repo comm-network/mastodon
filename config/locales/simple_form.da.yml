@@ -53,6 +53,7 @@ da:
         setting_hide_network: Hvem du følger og hvem der følger dig vil ikke blive vist på din profil
         setting_noindex: Påvirker din offentlige profil og status sider
         setting_show_application: The application you use to toot will be displayed in the detailed view of your toots
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Dit brugernavn vil være unikt på %{domain}
@@ -156,6 +157,7 @@ da:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reducer animationers bevægelse
         setting_show_application: Disclose application used to send toots
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Brug systemets standard font
         setting_theme: Tema for side
         setting_trends: Vis dagens tendenser

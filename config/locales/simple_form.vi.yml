@@ -53,6 +53,7 @@ vi:
         setting_hide_network: Ai bạn theo dõi và ai theo dõi bạn sẽ không được hiển thị trên hồ sơ của bạn
         setting_noindex: Ảnh hưởng đến hồ sơ công khai và trang trạng thái của bạn
         setting_show_application: Ứng dụng bạn sử dụng để mã thông báo sẽ được hiển thị trong chế độ xem chi tiết các mã thông báo của bạn
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Các lớp được dựa trên màu sắc của hình ảnh ẩn nhưng che giấu bất kỳ chi tiết nào
         setting_use_pending_items: Ẩn các cập nhật dòng thời gian đằng sau một nhấp chuột thay vì tự động cuộn nguồn cấp dữ liệu
         username: Tên người dùng của bạn sẽ là duy nhất trên %{domain}
@@ -156,6 +157,7 @@ vi:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Giảm chuyển động trong hình ảnh động
         setting_show_application: Tiết lộ ứng dụng được sử dụng để gửi toots
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Sử dụng phông chữ mặc định của hệ thống
         setting_theme: Chủ đề trang web
         setting_trends: Hiển thị xu hướng ngày nay

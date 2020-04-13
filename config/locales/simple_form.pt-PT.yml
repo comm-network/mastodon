@@ -53,6 +53,7 @@ pt-PT:
         setting_hide_network: Quem tu segues e quem te segue não será mostrado no teu perfil
         setting_noindex: Afecta o teu perfil público e as páginas das tuas publicações
         setting_show_application: A aplicação que tu usas para publicar será mostrada na vista detalhada das tuas publicações
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Os gradientes são baseados nas cores das imagens escondidas, mas ofuscam quaisquer detalhes
         setting_use_pending_items: Ocultar atualizações da cronologia atrás de um clique ao invés de rolar automaticamente o feed
         username: O teu nome de utilizador será único em %{domain}
@@ -156,6 +157,7 @@ pt-PT:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reduz movimento em animações
         setting_show_application: Revelar sempre qual a aplicação usada para enviar as publicações
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Usar a fonte padrão do teu sistema
         setting_theme: Tema do site
         setting_trends: Mostrar as tendências de hoje

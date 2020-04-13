@@ -53,6 +53,7 @@ fa:
         setting_hide_network: فهرست پیگیران شما و فهرست کسانی که شما پی می‌گیرید روی نمایهٔ شما دیده نخواهد شد
         setting_noindex: روی نمایهٔ عمومی و صفحهٔ نوشته‌های شما تأثیر می‌گذارد
         setting_show_application: برنامه‌ای که به کمک آن بوق می‌زنید، در جزئیات بوق شما نمایش خواهد یافت
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: سایه‌ها بر اساس رنگ‌های به‌کاررفته در تصویر پنهان‌شده ساخته می‌شوند ولی جزئیات تصویر در آن‌ها آشکار نیست
         setting_use_pending_items: به جای پیش‌رفتن خودکار در فهرست، به‌روزرسانی فهرست نوشته‌ها را پشت یک کلیک پنهان کن
         username: نام کاربری شما روی %{domain} یکتا خواهد بود
@@ -156,6 +157,7 @@ fa:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: کاستن از حرکت در پویانمایی‌ها
         setting_show_application: برنامه‌ای که به کار می‌برید آشکار شود
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: به‌کاربردن قلم پیش‌فرض سیستم
         setting_theme: تم سایت
         setting_trends: نشان‌دادن موضوعات پرطرفدار روز

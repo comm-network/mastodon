@@ -53,6 +53,7 @@ nn:
         setting_hide_network: Kven du fylgjer og kven som fylgjer deg vert ikkje vist på profilen din
         setting_noindex: Påvirker din offentlige profil og statussider
         setting_show_application: Appen du brukte til å tute vil bli vist i den detaljerte visningen til tutene dine
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradientene er basert på fargene til de skjulte visualitetene, men gjør alle detaljer uklare
         setting_use_pending_items: Skjul tidslinjeoppdateringer bak et klikk, i stedet for å automatisk la strømmen skrolle
         username: Brukarnamnet ditt vert unikt på %{domain}
@@ -156,6 +157,7 @@ nn:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reduser bevegelser i animasjoner
         setting_show_application: Skryt av appen som ble brukt til å sende tuter
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Bruk standardskrifttypen på systemet
         setting_theme: Sidetema
         setting_trends: Vis kva som er populært i dag

@@ -53,6 +53,7 @@ hu:
         setting_hide_network: Nem látszik majd a profilodon, kik követnek és te kiket követsz
         setting_noindex: A nyilvános profilodra és a tülkjeidre vonatkozik
         setting_show_application: A tülkök részletes nézetében látszani fog, milyen alkalmazást használtál a tülköléshez
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: A kihomályosítás az eredeti képből történik, de minden részletet elrejt
         setting_use_pending_items: Idővonal frissítése csak kattintásra automatikus görgetés helyett
         username: A felhasználói neved egyedi lesz a %{domain} domainen
@@ -156,6 +157,7 @@ hu:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Animációk mozgásának csökkentése
         setting_show_application: A tülkölésre használt alkalmazás feltüntetése
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Rendszer betűtípusának használata
         setting_theme: Megjelenítési sablon
         setting_trends: Mai trend mutatása

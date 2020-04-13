@@ -53,6 +53,7 @@ et:
         setting_hide_network: Keda Te jälgite ja kes jägib Teid ei kuvata Teie profiilil
         setting_noindex: Mõjutab Teie avalikku profiili ja staatuse lehekülgi
         setting_show_application: Rakendus, mida kasutate tuututamiseks, kuvatakse tuututuste üksikasjade vaates
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Värvid põhinevad peidetud visuaalidel, kuid hägustavad igasuguseid detaile
         setting_use_pending_items: Peida ajajoone uuendused kliki taga selle asemel, et automaatselt kerida voogu
         username: Teie kasutajanimi on %{domain}-il unikaalne
@@ -156,6 +157,7 @@ et:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Vähenda liikumist animatsioonides
         setting_show_application: Avalikusta tuututuste saatmisel kasutatud rakendused
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Kasuta süsteemi vaikefonti
         setting_theme: Saidi teema
         setting_trends: Näita tänaseid trende

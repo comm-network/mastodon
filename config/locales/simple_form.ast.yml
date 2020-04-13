@@ -53,6 +53,7 @@ ast:
         setting_hide_network: La xente que sigas y teas siguiendo nun va amosase nel perfil
         setting_noindex: Affects your public profile and status pages
         setting_show_application: L'aplicación qu'uses pa barritar va amosase na vista detallada d'ellos
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: El nome d'usuariu va ser únicu en %{domain}
@@ -156,6 +157,7 @@ ast:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reduce motion in animations
         setting_show_application: Dicir les aplicaciones que s'usen pa barritar
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Usar la fonte predeterminada del sistema
         setting_theme: Estilu del sitiu
         setting_trends: Amosar les tendencies de güei

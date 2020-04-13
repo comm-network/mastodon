@@ -53,6 +53,7 @@ co:
         setting_hide_network: I vostri abbunati è abbunamenti ùn saranu micca mustrati nant’à u vostru prufile
         setting_noindex: Tocca à u vostru prufile pubblicu è i vostri statuti
         setting_show_application: L'applicazione chì voi utilizate per mandà statuti sarà affissata indè a vista ditagliata di quelli
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: I digradati blurhash sò basati nant'à i culori di u ritrattu piattatu ma senza i ditagli
         setting_use_pending_items: Clicchi per messe à ghjornu i statuti invece di fà sfilà a linea autumaticamente
         username: U vostru cugnome sarà unicu nant'à %{domain}
@@ -156,6 +157,7 @@ co:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Fà chì l’animazione vanu più pianu
         setting_show_application: Indicà u nome di l'applicazione utilizata per mandà statuti
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Pulizza di caratteri di u sistemu
         setting_theme: Tema di u situ
         setting_trends: Vede e tendenze per oghji

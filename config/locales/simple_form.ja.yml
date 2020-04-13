@@ -53,6 +53,7 @@ ja:
         setting_hide_network: フォローとフォロワーの情報がプロフィールページで見られないようにします
         setting_noindex: 公開プロフィールおよび各投稿ページに影響します
         setting_show_application: トゥートするのに使用したアプリがトゥートの詳細ビューに表示されるようになります
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: ぼかしはメディアの色を元に生成されますが、細部は見えにくくなっています
         setting_use_pending_items: 新着があってもタイムラインを自動的にスクロールしないようにします
         username: あなたのユーザー名は %{domain} の中で重複していない必要があります
@@ -156,6 +157,7 @@ ja:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: アニメーションの動きを減らす
         setting_show_application: 送信したアプリを開示する
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: システムのデフォルトフォントを使う
         setting_theme: サイトテーマ
         setting_trends: 本日のトレンドタグを表示する

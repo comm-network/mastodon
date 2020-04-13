@@ -53,6 +53,7 @@ eo:
         setting_hide_network: Tiuj, kiujn vi sekvas, kaj tiuj, kiuj sekvas vin ne estos videblaj en via profilo
         setting_noindex: Influas vian publikan profilon kaj mesaĝajn paĝojn
         setting_show_application: La aplikaĵo, kiun vi uzas por afiŝi, estos montrita en la detala vido de viaj mesaĝoj
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Transirojn estas bazita sur la koloroj de la kaŝitaj aŭdovidaĵoj sed ne montri iun ajn detalon
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Via uzantnomo estos unika ĉe %{domain}
@@ -156,6 +157,7 @@ eo:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Malrapidigi animaciojn
         setting_show_application: Publikigi la aplikaĵon uzatan por sendi mesaĝojn
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Uzi la dekomencan tiparon de la sistemo
         setting_theme: Reteja etoso
         setting_trends: Montri hodiaŭajn furoraĵojn

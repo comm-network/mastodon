@@ -53,6 +53,7 @@ id:
         setting_hide_network: Siapa yang Anda ikuti dan yang mengikuti Anda tak akan ditampilkan dalam profil
         setting_noindex: Pengaruhi profil publik dan halaman status Anda
         setting_show_application: Aplikasi yang Anda pakai untuk men-toot akan ditampilkan di tampilan detail toot
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradien didasarkan pada warna visual yang tersembunyi tetapi mengaburkan setiap detail
         setting_use_pending_items: Sembunyikan pembaruan linimasa di balik klik alih-alih bergulir secara otomatis
         username: Nama pengguna Anda unik di %{domain}
@@ -156,6 +157,7 @@ id:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Kurangi gerakan animasi
         setting_show_application: Singkap aplikasi yang dipakai utk kirim toot
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Gunakan fon bawaan sistem
         setting_theme: Tema situs
         setting_trends: Tampilkan tren hari ini

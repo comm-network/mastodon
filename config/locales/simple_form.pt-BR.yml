@@ -53,6 +53,7 @@ pt-BR:
         setting_hide_network: Quem você segue e seus seguidores não serão mostrados no seu perfil
         setting_noindex: Afeta seu perfil público e as páginas dos seus toots
         setting_show_application: O aplicativo que você usar para tootar será mostrado na visão detalhada dos seus toots
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: O blur é baseado nas cores da imagem oculta, ofusca a maioria dos detalhes
         setting_use_pending_items: Ocultar atualizações da linha do tempo atrás de um clique ao invés de rolar automaticamente
         username: Seu nome de usuário será único em %{domain}
@@ -156,6 +157,7 @@ pt-BR:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Reduzir animações
         setting_show_application: Mostrar o aplicativo usado para enviar os toots
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Usar fonte padrão do sistema
         setting_theme: Tema do site
         setting_trends: Mostrar em alta hoje

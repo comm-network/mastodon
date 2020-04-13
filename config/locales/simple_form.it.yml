@@ -53,6 +53,7 @@ it:
         setting_hide_network: Chi segui e chi segue te non saranno mostrati sul tuo profilo
         setting_noindex: Ha effetto sul tuo profilo pubblico e sulle pagine degli status
         setting_show_application: L'applicazione che usi per pubblicare i toot sarà mostrata nella vista di dettaglio dei tuoi toot
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: I gradienti sono basati sui colori delle immagini nascoste ma offuscano tutti i dettagli
         setting_use_pending_items: Fare clic per mostrare i nuovi messaggi invece di aggiornare la timeline automaticamente
         username: Il tuo nome utente sarà unico su %{domain}
@@ -156,6 +157,7 @@ it:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Riduci movimento nelle animazioni
         setting_show_application: Rendi pubblica l'applicazione usata per inviare i toot
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Usa il carattere predefinito del sistema
         setting_theme: Tema sito
         setting_trends: Mostra tendenze di oggi

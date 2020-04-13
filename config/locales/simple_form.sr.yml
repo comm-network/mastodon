@@ -53,6 +53,7 @@ sr:
         setting_hide_network: Кога пратите и ко вас прати неће бити приказано на вашем профилу
         setting_noindex: Утиче на Ваш јавни профил и статусне стране
         setting_show_application: The application you use to toot will be displayed in the detailed view of your toots
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Ваш надимак ће бити јединствен на %{domain}
@@ -156,6 +157,7 @@ sr:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Смањи покрете у анимацијама
         setting_show_application: Disclose application used to send toots
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Користи системски фонт
         setting_theme: Тема сајта
         setting_trends: Show today's trends

@@ -53,6 +53,7 @@ cs:
         setting_hide_network: Koho sledujete a kdo sleduje vás nebude zobrazeno na vašem profilu
         setting_noindex: Ovlivňuje váš veřejný profil a stránky tootů
         setting_show_application: Aplikace, kterou používáte k psaní tootů, bude zobrazena v detailním zobrazení vašich tootů
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradienty jsou založeny na barvách skryté grafiky, ale zakrývají jakékoliv detaily
         setting_use_pending_items: Aktualizovat časovou osu až po kliknutím namísto automatického rolování kanálu
         username: Vaše uživatelské jméno bude na serveru %{domain} unikátní
@@ -156,6 +157,7 @@ cs:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Omezit pohyb v animacích
         setting_show_application: Zobrazit aplikaci používanou k psaní tootů
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Použít výchozí písmo systému
         setting_theme: Vzhled stránky
         setting_trends: Zobrazit dnešní trendy

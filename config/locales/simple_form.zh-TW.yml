@@ -53,6 +53,7 @@ zh-TW:
         setting_hide_network: 你關注的人與關注你的人將不會在你的個人資料頁上顯示
         setting_noindex: 會影響您的公開個人資料與嘟文頁面
         setting_show_application: 您用來發嘟文的應用程式將會在您嘟文的詳細檢視顯示
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: 您的使用者名稱將在 %{domain} 是獨一無二的
@@ -156,6 +157,7 @@ zh-TW:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: 減少過渡動畫效果
         setting_show_application: 顯示用來傳送嘟文的應用程式
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: 使用系統預設字型
         setting_theme: 站點主題
         setting_trends: 顯示本日趨勢

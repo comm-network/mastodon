@@ -53,6 +53,7 @@ sk:
         setting_hide_network: Koho následuješ, a kto následuje teba, nebude zobrazené na tvojom profile
         setting_noindex: Ovplyvňuje verejný profil a stránky s príspevkami
         setting_show_application: Aplikácia, ktorú používaš na písanie príspevkov, bude zobrazená v podrobnom náhľade jednotlivých tvojích príspevkov
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Prechody sú založené na farbách skrytých vizuálov, ale zahaľujú akékoľvek podrobnosti
         setting_use_pending_items: Skry aktualizovanie časovej osi tak, aby bola načitávaná iba po kliknutí, namiesto samostatného posúvania
         username: Tvoja prezývka bude unikátna pre server %{domain}
@@ -156,6 +157,7 @@ sk:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Mierni pohyb pri animáciách
         setting_show_application: Zverejni akú aplikáciu používaš na posielanie príspevkov
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Použi základné systémové písmo
         setting_theme: Vzhľad webu
         setting_trends: Ukáž dnešné trendy

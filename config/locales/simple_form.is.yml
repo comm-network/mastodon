@@ -53,6 +53,7 @@ is:
         setting_hide_network: Hverjum þú fylgist með og hverjir fylgjast með þér verður ekki birt á notandasniðinu þínu
         setting_noindex: Hefur áhrif á opinbera notandasniðið þitt og stöðusíður
         setting_show_application: Nafnið á forritinu sem þú notar til að tísta mun birtast í ítarlegri sýn á tístunum þínum
+        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Litstiglarnir byggja á litunum í földu myndunum, en gera öll smáatriði óskýr
         setting_use_pending_items: Fela uppfærslur tímalínu þar til smellt er, í stað þess að hún skruni streyminu sjálfvirkt
         username: Notandanafnið þitt verður einstakt á %{domain}
@@ -156,6 +157,7 @@ is:
         setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Minnka hreyfingu í hreyfimyndum
         setting_show_application: Upplýsa um forrit sem er til að senda tíst
+        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Nota sjálfgefið letur kerfisins
         setting_theme: Þema vefsvæðis
         setting_trends: Birta það sem er efst á baugi í dag
