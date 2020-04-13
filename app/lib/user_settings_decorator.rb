@@ -28,6 +28,7 @@ class UserSettingsDecorator
     user.settings['expand_spoilers']      = expand_spoilers_preference if change?('setting_expand_spoilers')
     user.settings['reduce_motion']        = reduce_motion_preference if change?('setting_reduce_motion')
     user.settings['enable_ui_tweaks']     = enable_ui_tweaks_preference if change?('setting_enable_ui_tweaks')
+    user.settings['show_preferred_theme'] = show_preferred_theme_preference if change?('setting_show_preferred_theme')
     user.settings['system_font_ui']       = system_font_ui_preference if change?('setting_system_font_ui')
     user.settings['noindex']              = noindex_preference if change?('setting_noindex')
     user.settings['notification_sounds']  = merged_notification_sounds if change?('notification_sounds')
@@ -97,6 +98,10 @@ class UserSettingsDecorator
 
   def enable_ui_tweaks_preference
     boolean_cast_setting 'setting_enable_ui_tweaks'
+  end
+
+  def show_preferred_theme_preference
+    boolean_cast_setting 'setting_show_preferred_theme'
   end
 
   def noindex_preference
