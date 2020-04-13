@@ -1,6 +1,8 @@
 - content_for :header_tags do
   = render_initial_state
   = javascript_pack_tag 'public', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 - content_for :content do
   .admin-wrapper

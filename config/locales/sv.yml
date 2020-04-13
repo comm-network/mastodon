@@ -1257,12 +1257,14 @@ sv:
     title: "%{instance} Användarvillkor och Sekretesspolicy"
   themes:
     contrast: Hög kontrast
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon
     mastodon-light: Mastodon (ljust)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   two_factor_authentication:
     code_hint: Ange koden som genererats av din autentiseringsapp för att bekräfta

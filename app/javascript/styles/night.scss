@@ -1,0 +1,550 @@
+@import 'night/variables';
+@import 'application';
+@import 'night/borders';
+@import 'night/transparency';
+
+canvas#starfield {
+  z-index: -1;
+}
+
+.emoji-picker-dropdown__menu > section.emoji-mart {
+  border-bottom-color: rgba(22, 22, 22, 0.3) !important;
+
+  .emoji-mart-search {
+    background-color: rgba(22, 22, 22, 0.3) !important;
+
+    input {
+      background-color: transparent;
+      border-color: $classic-primary-color;
+    }
+  }
+}
+
+div.emoji-picker-dropdown__menu,
+div.emoji-mart-scroll,
+section.emoji-mart,
+section.emoji-mart > .emoji-mart-bar,
+div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible,
+div.compose-form > div.autosuggest-textarea__suggestions,
+.compose-form .autosuggest-textarea__suggestions-wrapper .autosuggest-textarea__suggestions,
+div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible > div:hover,
+div.search-popout,
+div.search-results,
+.public-layout .public-account-header__bar::before,
+.poll ul li .poll__chart,
+section.emoji-mart > .emoji-mart-scroll .emoji-mart-emoji:hover::before,
+body.app-body > div.privacy-dropdown__dropdown,
+body.app-body > div.content-type-dropdown__dropdown,
+body.theme-default .compose-form .active .content-type-dropdown__value,
+body.theme-default .compose-form .active .privacy-dropdown__value,
+.compose-form .compose-form__warning,
+div.keyboard-shortcuts > table > tbody > tr:nth-child(odd),
+div.keyboard-shortcuts > table > tbody > tr > td > kbd {
+  background-color: rgba(22, 22, 22, 0.9) !important;
+  backdrop-filter: blur(5px);
+}
+
+table.table > thead > tr > th,
+table.table > thead > tr > td,
+table.table td,
+table.table th,
+body.theme-default .dashboard__counters > div > div,
+body.theme-default .dashboard__counters > div > a,
+button.column-header__button.active:hover,
+a.column-link:hover,
+div.column-player > button.column-player__toggle:hover,
+a.button.button-alternative-2.webapp-btn:hover,
+nav.drawer__header > a.drawer__tab:hover,
+button.load-more:hover,
+::-webkit-scrollbar-thumb:hover,
+div.public-layout > div.container > nav.header > div.nav-right > a.nav-link.nav-button.webapp-btn:hover,
+.batch-table .batch-table__body .batch-table__row:nth-child(2n):hover,
+div.activity-stream > div.entry > a.load-more.load-gap:hover,
+div.autosuggest-textarea > div.autosuggest-textarea__suggestions.autosuggest-textarea__suggestions--visible > div:hover,
+div.detailed-status .status-card:hover,
+div.activity-stream div.detailed-status.light .status-card:hover,
+div.dashboard__counters > div > a:hover,
+div.dashboard__counters > div > div:hover,
+.compose-form .autosuggest-textarea__suggestions .autosuggest-textarea__suggestions__item:hover,
+div.landing-page__forms > a.button.button-alternative-2.webapp-btn:hover,
+div.emoji-mart-scroll > div.emoji-mart-category .emoji-mart-emoji:hover::before,
+.status .status-card:hover,
+.status .status-card.compact:hover,
+div.report-card__summary > div.report-card__summary__item:hover,
+div.h-feed div.account__section-headline > a:hover,
+div.public-layout > div.container > nav.header > div.nav-left > a.brand:hover,
+div.column-player:hover,
+::-webkit-scrollbar-thumb,
+.grid .directory__tag a:hover,
+.directory > .directory__tag a:hover,
+form.edit_account a:hover div.card__bar,
+div.card > a:hover > div.card__bar,
+div.public-layout div.card-grid > div.card > a:hover > div.card__bar,
+button.onboarding-modal__nav.onboarding-modal__done:hover,
+button.status__content__spoiler-link.status__content__spoiler-link--show-more:hover,
+button.status__content__spoiler-link.status__content__spoiler-link--show-less:hover,
+div.status a.status__content__spoiler-link:hover,
+div.getting-started__wrapper div.column-player > button.column-player__toggle:hover,
+div.admin-wrapper div.sidebar ul a:hover,
+.admin-wrapper .sidebar ul .simple-navigation-active-leaf a:hover {
+  background-color: rgba(22, 22, 22, 0.5) !important;
+}
+
+.dropdown-menu__item a:focus, .dropdown-menu__item a:hover, .dropdown-menu__item a:active,
+body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:not(.active):hover,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option:not(.active):hover,
+ul > li.dropdown-menu__item:hover > a,
+body.theme-default .dropdown-menu ul {
+  background-color: rgba(0,0,0, 0.99) !important;
+}
+
+::selection {
+  background-color: rgba(255,255,255, 0.8) !important;
+  backdrop-filter: blur(5px);
+  color: $black;
+}
+
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.status-card__actions button,
+.status-card__actions a {
+  color: white;
+}
+
+html {
+  scrollbar-color: rgba(110, 110, 217, 0.3) rgba(217, 225, 232, 0.2);
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(217, 225, 232, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.status-card .status-card__content strong,
+.status-card .status-card__content span,
+#tabs-bar__portal > button.column-back-button,
+.placeholder-widget a,
+.back-link a,
+.admin-wrapper .content h1,
+.admin-wrapper .content h2,
+.admin-wrapper .content h3,
+.admin-wrapper .content h4,
+.admin-wrapper .content p,
+.account__header__fields dt,
+.account__header__fields dd,
+.navigation-bar strong,
+.information-board__section,
+.information-board__section span:last-child {
+  color: $primary-text-color;
+}
+
+.admin-wrapper .content > p {
+  color: $dark-text-color;
+}
+
+.admin-wrapper .content a,
+.status__content a {
+  color: $white;
+}
+
+body.theme-default div.status__content {
+  color: $inverted-text-color;
+}
+
+div.navigation-panel a.column-link.active {
+  color: lighten($classic-primary-color, 15%);
+}
+
+div.compose__action-bar div.compose__action-bar-dropdown button.icon-button {
+  color: lighten($classic-primary-color, 15%);
+
+  &.disabled {
+    color: #555;
+  }
+}
+
+.compose-panel .compose-form .compose-form__modifiers {
+  background-color: transparent;
+}
+
+.columns-area__panels__pane .columns-area__panels__pane__inner .navigation-panel hr {
+  visibility: hidden;
+}
+
+div.account-timeline__header > div.account__header {
+  background-image: none;
+}
+
+div.keyboard-shortcuts > table > tbody > tr > td {
+  padding-top: 8px;
+}
+
+div.public-layout > div.container > nav.header,
+div.public-layout > div.container > nav.header > div.grid-container {
+  overflow: hidden;
+}
+
+div.public-layout > div.container > nav.header {
+  > div.nav-left,
+  > div.nav-center,
+  > div.nav-right {
+    z-index: 1;
+  }
+}
+
+div.public-layout > div.container > nav.header a.brand > img {
+  width: 128px;
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+div.public-layout div.grid-container {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  svg#header-grid {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    transform: scale(10, 4);
+  }
+}
+
+div.public-layout path.horizontal, path.vertical {
+  stroke: $classic-primary-color;
+  opacity: .7;
+  z-index: 0;
+}
+
+div.public-layout path.horizontal {
+  stroke-width: 3px;
+
+}
+
+div.public-layout path.vertical {
+  stroke-width: 2px;
+
+}
+
+div.public-layout path.horizontal {
+  animation-name: gridMove;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+div.notification-bar.notification-bar-active {
+  background-color: rgba(217, 225, 232, 0.8);
+}
+
+audio.react-audio-player {
+  visibility: hidden;
+}
+
+a.brand > span.brand__tagline {
+  bottom: -40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.content form.simple_form select.select {
+  background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='#2b90d9'/></svg>") no-repeat right 8px center/auto 16px;
+}
+
+form div.input {
+  input[type=text],
+  input[type=number],
+  input[type=email],
+  input[type=password],
+  input[type=text]:hover,
+  input[type=number]:hover,
+  input[type=email]:hover,
+  input[type=password]:hover,
+  input[type=text]:focus,
+  input[type=number]:focus,
+  input[type=password]:focus,
+  input[type=email]:focus,
+  .simple_form__overlay-area textarea#user_invite_request_attributes_text,
+  .simple_form__overlay-area textarea#user_invite_request_attributes_text:focus {
+    background: transparent;
+    border-color: $classic-primary-color;
+  }
+}
+
+div.landing-page > div.information-board > div.container-alt > div.panel,
+div.autosuggest-textarea > div.autosuggest-textarea__suggestions {
+  background-color: rgb(186, 168, 238);
+}
+
+div.account-grid-card > div.account-grid-card__header > div.controls > a.icon-button,
+a.button.button-alternative {
+  color: white;
+}
+
+div.h-feed > data.p-name > div.activity-stream-tabs > a {
+  color: $dark-text-color;
+
+  &.active {
+    color: $primary-text-color;
+  }
+}
+
+div.landing-page__forms > a.button.button-alternative-2.webapp-btn {
+  background-color: rgba(100, 100, 100, 0.2);
+}
+
+div.compose-form > div.compose-form__buttons-wrapper i.fa,
+div.compose-form > div.compose-form__buttons-wrapper svg.octicon,
+div.compose-form > div.compose-form__buttons-wrapper button.text-icon-button,
+div.compose-form > div.compose-form__buttons-wrapper > div.character-counter__wrapper > span.character-counter {
+  color: $primary-text-color;
+}
+
+div.landing-page__short-description > div.row > h1 {
+  font-weight: 100;
+  font-family: 'mastodon-font-sans-serif', sans-serif;
+}
+
+div.landing-page__short-description > div.row > h1:not(small) {
+  font-family: monospace;
+}
+
+div.compose-form > div.compose-form__buttons-wrapper > div.character-counter__wrapper > span.character-counter.character-counter--over {
+  color: #a14545;
+}
+
+div.account-card > div.detailed-status__display-name > span.display-name > a.detailed-status__display-name.p-author.h-card > strong,
+div.column > button.column-back-button,
+div.account__header span.account__header__username,
+h1.column-header > div.column-header__buttons > button.column-header__back-button,
+div.column-back-button--slim > div.column-back-button.column-back-button--slim-button,
+h1.column-header > button.column-header__back-button,
+nav.drawer__header > a.drawer__tab,
+div.column-header__buttons > button.column-header__button,
+div.search > div.search__icon > i.fa,
+div.search > label > input.search__input,
+textarea.autosuggest-textarea__textarea,
+textarea.text.optional,
+form.column-inline-form > label > input.setting-text,
+div.column-settings__row > label > input.setting-text,
+form > div input,
+div.account--action-button > button > i.fa.fa-pencil,
+div.account-timeline__header > div > div.account__action-bar > div.account__action-bar-dropdown > div > button.icon-button > i.fa,
+div.account-timeline__header > div > div.account__action-bar > div.account__action-bar-links > a.account__action-bar__tab > span,
+div.account-timeline__header > div.account__section-headline > a,
+div.item-list > div.public-timeline__section-headline > a,
+div.column > div > div.public-timeline__section-headline > a,
+div.item-list > div.community-timeline__section-headline > a,
+div.column > div > div.community-timeline__section-headline > a,
+div.account-timeline__header > div.account__section-headline > a,
+body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option,
+body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option.active > div.privacy-dropdown__option__content,
+body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option.active > div.privacy-dropdown__option__content > strong,
+body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:not(.active):hover > div.privacy-dropdown__option__content,
+body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:not(.active):hover > div.privacy-dropdown__option__content > strong,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option.active > div.content-type-dropdown__option__content,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option.active > div.content-type-dropdown__option__content > strong,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option:not(.active):hover > div.content-type-dropdown__option__content,
+body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option:not(.active):hover > div.content-type-dropdown__option__content > strong,
+ul > li.dropdown-menu__item:hover > a,
+ul > li.dropdown-menu__item > a:focus,
+ul > li.dropdown-menu__item:focus > a,
+.admin-wrapper .sidebar ul ul a.selected {
+  color: $primary-text-color;
+}
+
+.notification__filter-bar button.active {
+  color: $white;
+}
+
+textarea.autosuggest-textarea__textarea::placeholder,
+div.search > label > input.search__input::placeholder,
+form.column-inline-form > label > input.setting-text::placeholder,
+div.column-settings__row > label > input.setting-text::placeholder,
+form > div input::placeholder,
+textarea.text.optional::placeholder {
+  color: $dark-text-color;
+}
+
+div.drawer__inner__mastodon {
+  background-color: transparent;
+
+  & > img {
+    opacity: 0.6;
+  }
+}
+
+div.row__mascot > div.landing-page__mascot > img {
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+div.landing-page__logo > img {
+  mix-blend-mode: normal;
+}
+
+div.admin-wrapper div.content-wrapper > div.content h2 {
+  font-family: sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+.compose-form__poll-wrapper .poll__footer button.button.button-secondary,
+.account__header__tabs__buttons button.icon-button {
+  border-color: $classic-primary-color;
+  color: $classic-primary-color;
+}
+
+.introduction__dots > .introduction__dot {
+  border-color: $classic-primary-color;
+
+  &.active {
+    background-color: $classic-primary-color;
+  }
+}
+
+
+.compose-form__poll-wrapper ul li .icon-button,
+.list-adder button.icon-button {
+  color: $classic-primary-color;
+
+  &.disabled {
+    color: #555;
+  }
+}
+
+.landing-page .separator-or span,
+.account__header__tabs__buttons .button.logo-button {
+  background-color: $classic-primary-color;
+  color: white;
+}
+
+div.public-account-header > div.public-account-header__bar > a.avatar > img {
+  border-color: rgba(217, 225, 232, 0.2);
+}
+
+a.mention.hashtag.status-link {
+  color: $white;
+}
+
+div.card > div.card__bio {
+  background-color: rgba(200, 168, 255, 0.9);
+}
+
+div.card__illustration > div.controls > a.icon-button {
+  color: $white;
+}
+
+div.modal-root > div > div.modal-root__overlay {
+  color: $white;
+}
+
+form.table-form div.warning,
+form.simple-form div.warning {
+  background: rgba(223, 43, 42, 0.6);
+  color: white;
+
+  & a {
+    color: white;
+  }
+}
+
+body .warning-hint, .admin-wrapper .content .warning-hint {
+  color: $hint-warning-color;
+}
+
+div.onboarding-modal__paginator button.onboarding-modal__nav.onboarding-modal__next:focus,
+div.onboarding-modal__paginator button.onboarding-modal__nav.onboarding-modal__next:hover,
+div.onboarding-modal__paginator button.onboarding-modal__nav.onboarding-modal__next:active,
+div.entry > div.detailed-status.light > a.button.button-secondary.logo-button,
+div.entry > div.detailed-status > a.button.logo-button,
+div.public-account-header__tabs__tabs > div.public-account-header__tabs__tabs__buttons > a.button.logo-button,
+div.content div.input-copy button[type=button],
+div.content div.actions > button,
+div.content a.button,
+div.content a.block-button {
+  background-color: $classic-highlight-color;
+  color: white;
+}
+
+div.getting-started__wrapper > div.column-subheading {
+  color: $dark-text-color;
+}
+
+div.landing-page__forms form.new_user > p.hint a {
+  color: $primary-text-color;
+  text-decoration: underline;
+}
+
+div.public-account-header > div.public-account-header__image > img {
+  opacity: 0.8;
+}
+
+div.public-layout div.footer > div.grid > div.column-2 > h4,
+div.public-layout div.footer > div.grid > div.column-2 > h4 > a {
+  color: #3e3e3e
+}
+
+div.public-layout div.footer > div.grid ul > li,
+div.public-layout div.footer > div.grid ul > li > a {
+  color: #454545;
+}
+
+div.public-account-header div.public-account-header__tabs > div.public-account-header__tabs__name > h1,
+div.public-account-header div.public-account-header__tabs > div.public-account-header__tabs__name > h1 > small {
+  color: white;
+  text-shadow: 1px 1px 1px lighten($base-shadow-color, 20%);
+}
+
+div.public-layout > div.grid-3 > div.column-3 > div.box-widget a {
+  color: $white;
+}
+
+.contact .account .display-name .display-name__account:before {
+  content: '\A';
+}
+
+section.emoji-mart-category > .emoji-mart-category-label {
+  backdrop-filter: blur(5px);
+}
+
+label.radio-button > span.radio-button__input {
+  border-color: $classic-primary-color;
+
+  &.checked {
+    background-color: $classic-primary-color;
+  }
+}
+
+div.columns-area > div.column > div.getting-started {
+  overflow: hidden;
+}

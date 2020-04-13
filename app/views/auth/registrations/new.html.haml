@@ -3,6 +3,8 @@
 
 - content_for :header_tags do
   = render partial: 'shared/og', locals: { description: description_for_sign_up }
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
   = render 'shared/error_messages', object: resource

@@ -1282,12 +1282,14 @@ nl:
     title: Gebruiksvoorwaarden en privacybeleid van %{instance}
   themes:
     contrast: Mastodon (hoog contrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (donker)
     mastodon-light: Mastodon (licht)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

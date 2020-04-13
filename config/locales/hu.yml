@@ -1282,12 +1282,14 @@ hu:
     title: "%{instance} Felhasználási feltételek és Adatkezelési nyilatkozat"
   themes:
     contrast: Mastodon (Nagy kontrasztú)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Sötét)
     mastodon-light: Mastodon (Világos)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

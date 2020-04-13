@@ -1279,12 +1279,14 @@ kk:
     title: "%{instance} Қызмет көрсету шарттары және Құпиялылық саясаты"
   themes:
     contrast: Mastodon (Жоғары контраст)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Қою)
     mastodon-light: Mastodon (Ашық)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

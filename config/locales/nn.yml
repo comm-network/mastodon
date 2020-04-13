@@ -1284,8 +1284,10 @@ nn:
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Lyst)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

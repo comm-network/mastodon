@@ -1200,12 +1200,14 @@ eo:
     title: Uzkondiĉoj kaj privateca politiko de %{instance}
   themes:
     contrast: Mastodon (Forta kontrasto)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Malluma)
     mastodon-light: Mastodon (Luma)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

@@ -1282,12 +1282,14 @@ pt-PT:
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
     contrast: Mastodon (Elevado contraste)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon
     mastodon-light: Mastodon (Leve)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

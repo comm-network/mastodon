@@ -1284,12 +1284,14 @@ oc:
     title: Condicions d’utilizacion e politica de confidencialitat de %{instance}
   themes:
     contrast: Mastodon (Fòrt contrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Escur)
     mastodon-light: Mastodon (Clar)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

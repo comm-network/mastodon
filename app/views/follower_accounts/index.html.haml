@@ -4,6 +4,8 @@
 - content_for :header_tags do
   %meta{ name: 'robots', content: 'noindex' }/
   = render 'accounts/og', account: @account, url: account_followers_url(@account, only_path: false)
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 = render 'accounts/header', account: @account
 

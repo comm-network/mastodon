@@ -1199,8 +1199,10 @@ sr:
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Мастодон (светло)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   two_factor_authentication:
     code_hint: Да бисте потврдили, унесите код генерисан од стране ваше апликације за потврду идентитета

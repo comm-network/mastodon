@@ -1316,12 +1316,14 @@ pl:
     title: Zasady korzystania i polityka prywatności %{instance}
   themes:
     contrast: Mastodon (Wysoki kontrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Ciemny)
     mastodon-light: Mastodon (Jasny)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

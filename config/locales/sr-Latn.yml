@@ -1166,12 +1166,14 @@ sr-Latn:
     title: Uslovi korišćenja i politika privatnosti instance %{instance}
   themes:
     contrast: Mastodon (High contrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodont
     mastodon-light: Mastodon (Light)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   two_factor_authentication:
     code_hint: Unesite kod sa Vaše aplikacije za proveru identiteta da potvrdite

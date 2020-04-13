@@ -3,6 +3,8 @@
 
 - content_for :header_tags do
   = javascript_pack_tag 'admin', integrity: true, async: true, crossorigin: 'anonymous'
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 - content_for :heading_actions do
   = link_to t('admin.custom_emojis.upload'), new_admin_custom_emoji_path, class: 'button'

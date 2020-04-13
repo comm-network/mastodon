@@ -1265,12 +1265,14 @@ ja:
     title: "%{instance} 利用規約・プライバシーポリシー"
   themes:
     contrast: Mastodon (ハイコントラスト)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (ダーク)
     mastodon-light: Mastodon (ライト)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

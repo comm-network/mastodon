@@ -1317,12 +1317,14 @@ ru:
     title: Условия обслуживания и политика конфиденциальности %{instance}
   themes:
     contrast: Mastodon (высококонтрастная)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (тёмная)
     mastodon-light: Mastodon (светлая)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

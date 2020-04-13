@@ -4,6 +4,8 @@
 - content_for :header_tags do
   %link{ rel: 'canonical', href: about_url }/
   = render partial: 'shared/og'
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 .landing
   .landing__brand

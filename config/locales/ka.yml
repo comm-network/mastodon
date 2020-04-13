@@ -1280,8 +1280,10 @@ ka:
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: მასტოდონი (ღია)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   two_factor_authentication:
     code_hint: დასამოწმებლად შეიყვანეთ თქვენი აუტენტიფიკატორ აპლიკაციისგან გენერირებული კოდი

@@ -1282,12 +1282,14 @@ co:
     title: Termini d’usu è di cunfidenzialità per %{instance}
   themes:
     contrast: Mastodon (Cuntrastu altu)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Scuru)
     mastodon-light: Mastodon (Chjaru)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

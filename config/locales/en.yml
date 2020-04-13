@@ -1283,12 +1283,14 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: Mastodon (High contrast)
-    default: Vapor
+    default: Night
+    vapor: Vapor
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    night: Night
     win95: Windows 95 (Buggy)
   time:
     formats:

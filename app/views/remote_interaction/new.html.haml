@@ -1,5 +1,7 @@
 - content_for :header_tags do
   %meta{ name: 'robots', content: 'noindex' }/
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 .form-container
   .follow-prompt

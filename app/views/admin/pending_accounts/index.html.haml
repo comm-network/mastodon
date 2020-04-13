@@ -3,6 +3,8 @@
 
 - content_for :header_tags do
   = javascript_pack_tag 'admin', integrity: true, async: true, crossorigin: 'anonymous'
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 = form_for(@form, url: batch_admin_pending_accounts_path) do |f|
   = hidden_field_tag :page, params[:page] || 1

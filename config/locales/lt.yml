@@ -1237,12 +1237,14 @@ lt:
     title: "%{instance} Naudojimosi Sąlygos ir Privatumo Politika"
   themes:
     contrast: Mastodon (Didelio Kontrasto)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Tamsus)
     mastodon-light: Mastodon (Šviesus)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   two_factor_authentication:
     code_hint: Įveskite autentikacijos aplikacijos sugeneruotą kodą kad galėtumete tęsti

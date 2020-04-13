@@ -1282,12 +1282,14 @@ ca:
     title: "%{instance} Condicions del servei i política de privadesa"
   themes:
     contrast: Mastodon (alt contrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (fosc)
     mastodon-light: Mastodon (clar)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

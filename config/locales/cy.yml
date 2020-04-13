@@ -1352,12 +1352,14 @@ cy:
     title: "%{instance} Termau Gwasanaeth a Polisi Preifatrwydd"
   themes:
     contrast: Mastodon (Cyferbyniad uchel)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Tywyll)
     mastodon-light: Mastodon (golau)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

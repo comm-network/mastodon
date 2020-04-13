@@ -1238,12 +1238,14 @@ uk:
     title: Умови використання та Політика приватності %{instance}
   themes:
     contrast: Висока контрасність
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon
     mastodon-light: Mastodon (світла)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

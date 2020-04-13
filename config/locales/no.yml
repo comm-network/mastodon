@@ -1282,12 +1282,14 @@
     title: "%{instance} Personvern og villkår for bruk av nettstedet"
   themes:
     contrast: Mastodon (Høykontrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon
     mastodon-light: Mastodon (Lyst)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

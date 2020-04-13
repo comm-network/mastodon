@@ -1181,12 +1181,14 @@ zh-TW:
     title: "%{instance} 使用條款和隱私權政策"
   themes:
     contrast: Mastodon（高對比）
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon（亮色主題）
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:

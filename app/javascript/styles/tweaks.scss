@@ -55,7 +55,7 @@ body.experimental {
   .account__avatar,
   .account__avatar-overlay-base,
   .account__avatar-overlay-overlay {
-    border-radius: 50%;
+    border-radius: 50% !important;
   }
 
   /*
@@ -76,7 +76,7 @@ body.experimental {
   }
 
   .emojione {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out !important;
     /* the 0.2s is the animation time for shrinking the emojo, it can be set to 0 */
   ;
   }

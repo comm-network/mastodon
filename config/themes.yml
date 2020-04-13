@@ -1,6 +1,7 @@
-default: styles/vapor.scss
+default: styles/night.scss
 ocean: styles/ocean.scss
 ocean-blur: styles/ocean-blur.scss
+vapor: styles/vapor.scss
 mastodon-dark: styles/application.scss
 mastodon-light: styles/mastodon-light.scss
 contrast: styles/contrast.scss

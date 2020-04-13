@@ -1188,12 +1188,14 @@ da:
     title: Vilkår og privatlivpolitik for %{instance}
   themes:
     contrast: Mastodon (Høj kontrast)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodont (Mørk)
     mastodon-light: Mastodon (Lys)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   two_factor_authentication:
     code_hint: Indtast koden der er genereret af din app for at bekræfte

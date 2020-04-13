@@ -1,5 +1,7 @@
 - content_for :header_tags do
   = render_initial_state
   = javascript_pack_tag 'share', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'default'
+    = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
 
 #mastodon-compose{ data: { props: Oj.dump(default_props) } }

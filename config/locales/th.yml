@@ -1176,12 +1176,14 @@ th:
     title: เงื่อนไขการให้บริการและนโยบายความเป็นส่วนตัวของ %{instance}
   themes:
     contrast: Mastodon (ความคมชัดสูง)
-    default: Vapor
+    default: Night
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (มืด)
     mastodon-light: Mastodon (สว่าง)
+    night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)
+    vapor: Vapor
     win95: Windows 95 (Buggy)
   time:
     formats:
