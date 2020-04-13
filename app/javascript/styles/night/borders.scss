@@ -130,15 +130,19 @@ body.app-body.no-reduce-motion > div.dropdown-menu,
 body.theme-default button.button,
 body.theme-default button.btn,
 body.theme-default button,
-body.theme-default .block-button {
-  border-color: rgba(255,255,255,0.3);
+body.theme-default .block-button,
+button.status__content__spoiler-link.status__content__spoiler-link--show-more,
+button.status__content__spoiler-link.status__content__spoiler-link--show-less {
+  border-color: rgba(255,255,255,0.3) !important;
 }
 
 body.theme-default .button.button--block,
 body.theme-default .button,
 body.theme-default .btn,
 body.theme-default button,
-body.theme-default .block-button {
+body.theme-default .block-button,
+button.status__content__spoiler-link.status__content__spoiler-link--show-more,
+button.status__content__spoiler-link.status__content__spoiler-link--show-less {
   border: 1px solid;
 }
 
@@ -147,6 +151,7 @@ body.theme-default button.load-gap,
 body.theme-default button.icon-button,
 body.theme-default button.table-action-link,
 body.theme-default button.poll__link,
+body.theme-default button.status__content__read-more-button,
 body.theme-default button.column-back-button,
 body.theme-default button.text-icon-button,
 div.columns-area div.notification__filter-bar button,

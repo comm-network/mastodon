@@ -39,7 +39,12 @@ body.theme-default .compose-form .active .content-type-dropdown__value,
 body.theme-default .compose-form .active .privacy-dropdown__value,
 .compose-form .compose-form__warning,
 div.keyboard-shortcuts > table > tbody > tr:nth-child(odd),
-div.keyboard-shortcuts > table > tbody > tr > td > kbd {
+div.keyboard-shortcuts > table > tbody > tr > td > kbd,
+div.ui div.compose-form div.reply-indicator,
+div.modal-root div.media-modal div.media-modal__closer,
+div.modal-root div.modal-root__container,
+div.modal-root div.modal-root__container div.modal-root__modal,
+div.modal-root div.block-modal__action-bar {
   background-color: rgba(22, 22, 22, 0.9) !important;
   backdrop-filter: blur(5px);
 }
@@ -104,6 +109,15 @@ body.theme-default .dropdown-menu ul {
   color: $black;
 }
 
+span.poll__input.checkbox.active {
+  background: $white;
+  border: 3px solid $success-green;
+}
+
+.poll ul li .poll__chart {
+  background-color: $classic-highlight-color;
+}
+
 body {
   min-height: 100vh;
   max-height: 100vh;
@@ -152,7 +166,9 @@ html {
 .rich-formatting h3,
 .rich-formatting h4,
 .rich-formatting h5,
-.rich-formatting h6 {
+.rich-formatting h6,
+button.status__content__spoiler-link.status__content__spoiler-link--show-more span,
+button.status__content__spoiler-link.status__content__spoiler-link--show-less span {
   color: $primary-text-color;
 }
 

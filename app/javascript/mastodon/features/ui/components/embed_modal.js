@@ -61,7 +61,7 @@ class EmbedModal extends ImmutablePureComponent {
     return (
       <div className='modal-root__modal report-modal embed-modal'>
         <div className='report-modal__target'>
-          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon='times' onClick={onClose} size={16} />
+          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon='times-circle' onClick={onClose} size={16} />
           <FormattedMessage id='status.embed' defaultMessage='Embed' />
         </div>
 
