@@ -206,11 +206,13 @@ div.conversation__content div.conversation__content__info div.conversation__cont
 #mastodon div.columns-area div.getting-started div.getting-started__wrapper .column-subheading,
 body.theme-default div.admin-wrapper div.sidebar-wrapper__inner,
 body.theme-default .button,
+body.theme-default button,
 body.theme-default .block-button,
 body.theme-default .btn,
 body.theme-default div.columns-area div.empty-column-indicator,
 .react-toggle.react-toggle--checked .react-toggle-track,
-.poll__option input[type=text] {
+.poll__option input[type=text],
+body.layout-single-column div.search-results {
   background-color: transparent !important;
 }
 
