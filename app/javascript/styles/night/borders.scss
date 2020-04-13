@@ -131,6 +131,8 @@ body.theme-default button.button,
 body.theme-default button.btn,
 body.theme-default button,
 body.theme-default .block-button,
+body.theme-default .logo-button,
+div.entry > div.detailed-status > a.button.logo-button,
 button.status__content__spoiler-link.status__content__spoiler-link--show-more,
 button.status__content__spoiler-link.status__content__spoiler-link--show-less {
   border-color: rgba(255,255,255,0.3) !important;
@@ -141,6 +143,8 @@ body.theme-default .button,
 body.theme-default .btn,
 body.theme-default button,
 body.theme-default .block-button,
+body.theme-default .logo-button,
+div.entry > div.detailed-status > a.button.logo-button,
 button.status__content__spoiler-link.status__content__spoiler-link--show-more,
 button.status__content__spoiler-link.status__content__spoiler-link--show-less {
   border: 1px solid;

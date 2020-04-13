@@ -177,6 +177,10 @@ a.column-link--transparent {
   color: $dark-text-color;
 }
 
+.display-name__account {
+  color: $darker-text-color !important;
+}
+
 .admin-wrapper .content a,
 .status__content a,
 div.account__section-headline a.active,
