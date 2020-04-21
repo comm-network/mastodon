@@ -8,11 +8,11 @@ class HTMLRenderer < Redcarpet::Render::HTML
     "<pre><code>#{encode(code).gsub("\n", '<br/>')}</code></pre>"
   end
 
-  def list(contents, list_type)
+  def list(contents, _list_type)
     "<p>#{contents}</p>"
   end
 
-  def list_item(text, list_type)
+  def list_item(text, _list_type)
     "- #{text.strip}<br />"
   end
 
