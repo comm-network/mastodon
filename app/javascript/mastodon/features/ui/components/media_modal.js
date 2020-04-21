@@ -10,6 +10,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import ImageLoader from './image_loader';
 import Icon from 'mastodon/components/icon';
 import GIFV from 'mastodon/components/gifv';
+import { X } from '@primer/octicons-react';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -218,7 +219,7 @@ class MediaModal extends ImmutablePureComponent {
         </div>
 
         <div className={navigationClassName}>
-          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon='times-circle' onClick={onClose} size={40} />
+          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon={''} octicon={X} onClick={onClose} size={40} />
 
           {leftNav}
           {rightNav}

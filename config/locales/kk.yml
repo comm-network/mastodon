@@ -29,6 +29,7 @@ kk:
       Бұл аккаунт кез-келген жеке пайдаланушыны емес, сервердің өзін көрсету үшін қолданылатын виртуалды актер.
       Ол федерация мақсаттарында қолданылады және сіз барлығын бұғаттағыңыз келмейінше, бұғатталмауы керек, бұл жағдайда сіз домен блогын қолданған жөн.
     learn_more: Көбірек білу
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Құпиялылық саясаты
     see_whats_happening: Не болып жатқанын қараңыз
     server_stats: 'Сервер статистикасы:'
@@ -662,6 +663,7 @@ kk:
     add_new: Алиас қосу
     created_msg: Жаңа алиас сәтті жасалды. Енді сіз ескі аккаунттан көшіруді бастай аласыз.
     deleted_msg: Алиасты сәтті алып тастаңыз. Осы есептік жазбадан екіншіге ауысу мүмкін болмайды.
+    empty: You have no aliases.
     hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Алиас сілтемесін алып тастау
   appearance:

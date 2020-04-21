@@ -29,6 +29,7 @@ eo:
       Ĉi tiu konto estas virtuala ulo uzata por reprezenti la servilon mem kaj ne iun apartan uzanton.
       Ĝi estas uzata por frataraj celoj kaj ĝi ne devus esti blokita krom se vi volas bloki la tutan servilon, tiuokaze vi devus uzi domajnan blokadon.
     learn_more: Lerni pli
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Privateca politiko
     see_whats_happening: Vidi kio okazas
     server_stats: Servo statuso
@@ -662,6 +663,7 @@ eo:
     add_new: Krei alinomon
     created_msg: Kreis novan alinomon sukcese. Vi povas inici la transloki el la malnovan konton nun.
     deleted_msg: Forigis la alinomon sukcese. Transloki el tiu konto al ĉi tiu ne plu eblos.
+    empty: You have no aliases.
     hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Malligili alinomon
   appearance:

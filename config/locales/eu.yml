@@ -29,6 +29,7 @@ eu:
 
 '
     learn_more: Ikasi gehiago
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Pribatutasun politika
     see_whats_happening: Ikusi zer gertatzen ari den
     server_stats: 'Zerbitzariaren estatistikak:'
@@ -662,6 +663,7 @@ eu:
     add_new: Sortu ezizena
     created_msg: Ongi sortu da ezizena. Orain kontu zaharretik migratzen hasi zaitezke.
     deleted_msg: Ongi kendu da ezizena. Orain ezin izango da aurreko kontutik hona migratu.
+    empty: You have no aliases.
     hint_html: Beste kontu batetik hona migratu nahi baduzu, hemen ezizen bat sortu dezakezu, hau beharrezkoa da kontu zaharreko jarraitzaileak hona ekartzeko. Ekintza hau berez <strong>kaltegabea eta desegingarria</strong> da. <strong>Kontuaren migrazioa kontu zaharretik abiatzen da</strong>.
     remove: Deslotu ezizena
   appearance:

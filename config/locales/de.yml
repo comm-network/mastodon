@@ -29,6 +29,7 @@ de:
       Dieses Konto ist ein virtueller Akteur, der den Server selbst und nicht einen einzelnen Benutzer repräsentiert.
       Dieser wird für Föderationszwecke verwendet und sollte nicht blockiert werden, es sei denn du möchtest die gesamte Instanz blockieren.
     learn_more: Mehr erfahren
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Datenschutzerklärung
     see_whats_happening: Finde heraus, was gerade in der Welt los ist
     server_stats: 'Serverstatistiken:'
@@ -662,6 +663,7 @@ de:
     add_new: Alias erstellen
     created_msg: Ein neuer Alias wurde erfolgreich erstellt. Du kannst nun den Wechsel vom alten Konto starten.
     deleted_msg: Der Alias wurde erfolgreich entfernt. Aus diesem Konto zu diesem zu verschieben ist nicht mehr möglich.
+    empty: You have no aliases.
     hint_html: Wenn du von einem Konto zu einem anderem Konto wechseln möchtest, dann kannst du einen Alias erstellen, welcher benötigt wird bevor du deine Folgenden vom altem Account zu diesen migrierst. Die Aktion alleine ist <strong>harmlos und wi­der­ruf­lich</strong>. <strong>Die Kontenmigration wird vom altem Konto aus eingeleitet</strong>.
     remove: Alle Aliase aufheben
   appearance:

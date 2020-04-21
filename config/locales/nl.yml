@@ -29,6 +29,7 @@ nl:
 
 '
     learn_more: Meer leren
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Privacybeleid
     see_whats_happening: Kijk wat er aan de hand is
     server_stats: 'Serverstatistieken:'
@@ -662,6 +663,7 @@ nl:
     add_new: Alias aanmaken
     created_msg: Succesvol een nieuwe alias aangemaakt. Je kunt nu met de verhuizing vanaf het oude account beginnen.
     deleted_msg: De alias is succesvol verwijderd. Verhuizen vanaf dat account naar dit account is niet meer mogelijk.
+    empty: You have no aliases.
     hint_html: Wanneer je vanaf een ander account naar dit account wilt verhuizen, kun je hier een alias aanmaken. Dit is nodig voordat je verder kunt gaan met het verhuizen van volgers van het oude naar dit nieuwe account. Deze actie is op zich <strong>ongevaarlijk en omkeerbaar</strong>. <strong>De accountmigratie wordt gestart vanaf het oude account</strong>.
     remove: Alias ontkoppelen
   appearance:

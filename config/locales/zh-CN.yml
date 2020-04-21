@@ -29,6 +29,7 @@ zh-CN:
 
 '
     learn_more: 了解详情
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: 隐私政策
     see_whats_happening: 看一看现在在发生什么
     server_stats: 服务器统计数据：
@@ -654,6 +655,7 @@ zh-CN:
     add_new: 创建别名
     created_msg: 成功创建了一个新别名。您现在可以从旧账户开始迁移了。
     deleted_msg: 成功移除别名。已经无法从该帐户移动到此帐户了。
+    empty: You have no aliases.
     hint_html: 如果你想把另一个帐号迁移到这里，你可以先在这里创建一个别名。如果你想把关注者迁移过来，这一步是必须的。设置别名的操作时<strong>无害而且可以恢复的</strong>。<strong>帐号迁移的操作会从旧帐号开始</strong>。
     remove: 取消关联别名
   appearance:

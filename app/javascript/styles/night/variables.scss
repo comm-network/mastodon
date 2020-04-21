@@ -22,7 +22,7 @@ $ui-highlight-color: $classic-highlight-color !default;
 $primary-text-color: #c0c0c0 !default;
 $darker-text-color: #acacac !default;
 $dark-text-color: #8e8e8e !default;
-$action-button-color: $ui-highlight-color;
+$action-button-color: $darker-text-color;
 
 $inverted-text-color: #e5e5e5 !default;
 $lighter-text-color: $darker-text-color !default;

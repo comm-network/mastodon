@@ -29,6 +29,7 @@ et:
       See konto on virtuaalne näitleja, mis esindab tervet serverit ning mitte ühtegi kindlat isikut.
       Seda kasutatakse föderatiivsetel põhjustel ning seda ei tohiks blokeerida, välja arvatud juhul, kui soovite blokeerida tervet serverit, kuid sellel juhul soovitame hoopis kasutada domeeni blokeerimist.
     learn_more: Lisateave
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Privaatsuspoliitika
     see_whats_happening: Vaata, mis toimub
     server_stats: 'Serveri statistika:'
@@ -665,6 +666,7 @@ et:
     add_new: Loo teine nimi
     created_msg: Teine nimi on edukalt loodud. Te saate nüüd alustada kolimist vanalt kontolt.
     deleted_msg: Edukalt kustutasime teise nime. Kolimine sellelt kontolt praegusele on nüüdsest võimatu.
+    empty: You have no aliases.
     hint_html: Kui Te soovite kolida teiselt kontolt praegusele kontole, saate Te siin luua teise nime, mis on kohustuslik, enne kui saate kolida jälgijaid vanalt kontolt praegusele. See tegevus on iseenesest <strong>kahjutu ja taastatav</strong>. <strong>Konto ületoomine alustatakse vanalt kontolt</strong>.
     remove: Eemalda teine nimi
   appearance:

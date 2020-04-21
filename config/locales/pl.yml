@@ -29,6 +29,7 @@ pl:
       To konto jest wirtualnym nadawcą, używanym do reprezentacji serwera, a nie jakiegokolwiek użytkownika.
       Jest używane w celu federowania i nie powinno być blokowane, chyba że chcesz zablokować całą instację, w takim przypadku użyj blokady domeny.
     learn_more: Dowiedz się więcej
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Polityka prywatności
     see_whats_happening: Zobacz co się dzieje
     server_stats: 'Statystyki serwera:'
@@ -678,6 +679,7 @@ pl:
     add_new: Utwórz alias
     created_msg: Pomyślnie utworzono nowy alias. Możesz teraz rozpocząć przenoszenie ze starego konta.
     deleted_msg: Pomyślnie usunięto alias. Przenoszenie z tamtego konta na to nie będzie dłużej możliwe.
+    empty: You have no aliases.
     hint_html: Jeżeli chcesz przenieść się z innego konta na to, możesz utworzyć alias, który jest wymagany zanim zaczniesz przenoszenie obserwacji z poprzedniego konta na to. To działanie <strong>nie wyrządzi szkód i jest odwracalne</strong>. <strong>Migracja konta jest inicjowana ze starego konta</strong>.
     remove: Odłącz alias
   appearance:

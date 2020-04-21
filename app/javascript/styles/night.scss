@@ -100,11 +100,11 @@ body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:no
 body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option:not(.active):hover,
 ul > li.dropdown-menu__item:hover > a,
 body.theme-default .dropdown-menu ul {
-  background-color: rgba(0,0,0, 0.99) !important;
+  background-color: rgba(0, 0, 0, 0.99) !important;
 }
 
 ::selection {
-  background-color: rgba(255,255,255, 0.8) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: blur(5px);
   color: $black;
 }
@@ -192,11 +192,35 @@ body.theme-default div.status__content {
   color: $inverted-text-color;
 }
 
-div.compose__action-bar div.compose__action-bar-dropdown button.icon-button {
-  color: lighten($classic-primary-color, 15%);
+.detailed-status__action-bar > .detailed-status__button button.icon-button {
+  &,
+  i.fa.fa-retweet {
+    color: $darker-text-color;
+  }
 
-  &.disabled {
-    color: #555;
+  &.active {
+    color: $ui-highlight-color;
+  }
+}
+
+textarea.upload-modal__description {
+  color: $black;
+}
+
+div.compose__action-bar div.compose__action-bar-dropdown,
+.compose-form .compose-form__modifiers .compose-form__upload__actions {
+  button.icon-button {
+    color: $darker-text-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $ui-highlight-color;
+    }
+
+    &.disabled {
+      color: #555;
+    }
   }
 }
 
@@ -537,7 +561,7 @@ div.public-account-header > div.public-account-header__image > img {
 
 div.public-layout div.footer > div.grid > div.column-2 > h4,
 div.public-layout div.footer > div.grid > div.column-2 > h4 > a {
-  color: $dark-text-color
+  color: $darker-text-color
 }
 
 div.public-layout div.footer > div.grid ul > li,

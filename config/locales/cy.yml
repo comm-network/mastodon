@@ -29,6 +29,7 @@ cy:
       Mae'r cyfrif hwn yn actor rhithwir a ddefnyddir i gynrychioli'r gweinydd ei hun ac nid unrhyw ddefnyddiwr unigol.
       Fe'i defnyddir at ddibenion ffederasiwn ac ni ddylid ei rwystro oni bai eich bod am rwystro'r achos cyfan, ac os felly dylech ddefnyddio bloc parth.
     learn_more: Dysu mwy
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Polisi preifatrwydd
     see_whats_happening: Gweld beth sy'n digwydd
     server_stats: 'Ystadegau gweinydd:'
@@ -694,6 +695,7 @@ cy:
     add_new: Creu enw arall
     created_msg: Wedi creu enw arall yn llwyddianus. Gallwch nawr dechrau'r symudiad o'r hen gyfrif.
     deleted_msg: Wedi tynnu enw arall yn llwyddianus. Ni fydd symud o'r cyfrif hynny i'r cyfrif hon yn bosib.
+    empty: You have no aliases.
     hint_html: Os hoffech symyd o gyfrif arall i'r cyfrif hon, gallwch creu enw arall fama, sydd yn angenrheidiol cyn i chi dechrau symyd ddilynwyr o'r hen gyfrif i'r cyfrif hon. Mae'r gweithred hon yn <strong>ddiniwed ac yn gildroadwy</strong>. <strong>Caiff symudiad y cyfrif ei dechrau o'r hen gyfrif</strong>.
     remove: Dadgysylltu'r enw arall
   appearance:

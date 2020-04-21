@@ -17,6 +17,7 @@ import CharacterCounter from 'mastodon/features/compose/components/character_cou
 import { length } from 'stringz';
 import { Tesseract as fetchTesseract } from 'mastodon/features/ui/util/async-components';
 import GIFV from 'mastodon/components/gifv';
+import { X } from '@primer/octicons-react';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -257,7 +258,7 @@ class FocalPointModal extends ImmutablePureComponent {
     return (
       <div className='modal-root__modal report-modal' style={{ maxWidth: 960 }}>
         <div className='report-modal__target'>
-          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon='times-circle' onClick={onClose} size={16} />
+          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon={''} octicon={X} onClick={onClose} size={16} />
           <FormattedMessage id='upload_modal.edit_media' defaultMessage='Edit media' />
         </div>
 

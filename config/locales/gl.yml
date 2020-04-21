@@ -29,6 +29,7 @@ gl:
 
 '
     learn_more: Saber máis
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Política de privacidade
     see_whats_happening: Ver o que está a acontecer
     server_stats: 'Estatísticas do servidor:'
@@ -662,6 +663,7 @@ gl:
     add_new: Crear alcume
     created_msg: Creou un novo alcume correctamente. Pode iniciar o movemento desde a conta antiga.
     deleted_msg: Eliminou correctamente o alcume. Xa non será posible mover desde esa conta a esta.
+    empty: You have no aliases.
     hint_html: Se queres mudarte desde outra conta a esta nova, aquí podes crear un alcume, que é requerido antes de poder proceder a mover os seguidores da conta antiga a esta nova. Esta acción por si mesma é <strong>inocua e reversible</strong>. <strong>A migración da conta iníciase desde a conta antiga</strong>.
     remove: Desligar alcume
   appearance:

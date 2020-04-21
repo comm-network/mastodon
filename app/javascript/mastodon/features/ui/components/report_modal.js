@@ -12,6 +12,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import Button from '../../../components/button';
 import Toggle from 'react-toggle';
 import IconButton from '../../../components/icon_button';
+import { X } from '@primer/octicons-react';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -91,7 +92,7 @@ class ReportModal extends ImmutablePureComponent {
     return (
       <div className='modal-root__modal report-modal'>
         <div className='report-modal__target'>
-          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon='times-circle' onClick={onClose} size={16} />
+          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon={''} octicon={X} onClick={onClose} size={16} />
           <FormattedMessage id='report.target' defaultMessage='Report {target}' values={{ target: <strong>{account.get('acct')}</strong> }} />
         </div>
 

@@ -27,6 +27,7 @@ vi:
     hosted_on: " %{domain} được vận hành trên Mastodon"
     instance_actor_flash: "Tài khoản này là một tác nhân ảo được sử dụng để đại diện cho chính máy chủ chứ không phải bất kỳ người dùng cá nhân nào. Nó được sử dụng cho mục đích liên kết và không nên bị chặn trừ khi bạn muốn chặn toàn bộ phiên bản, trong trường hợp đó bạn nên sử dụng một khối miền. \n"
     learn_more: Tìm hiểu thêm
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Chính sách bảo mật
     see_whats_happening: Xem những gì đang xảy ra
     server_stats: 'Số liệu thống kê máy chủ:'
@@ -654,6 +655,7 @@ vi:
     add_new: Tạo bí danh
     created_msg: Tạo thành công một bí danh mới. Bây giờ bạn có thể bắt đầu di chuyển từ tài khoản cũ.
     deleted_msg: Xóa thành công bí danh. Chuyển từ tài khoản này sang tài khoản này sẽ không còn có thể.
+    empty: You have no aliases.
     hint_html: Nếu bạn muốn chuyển từ tài khoản khác sang tài khoản này, tại đây bạn có thể tạo bí danh, điều này là bắt buộc trước khi bạn có thể tiến hành chuyển người theo dõi từ tài khoản cũ sang tài khoản này. Hành động này của chính nó là <strong>vô hại và có thể đảo ngược</strong> . <strong>Việc di chuyển tài khoản được bắt đầu từ tài khoản cũ</strong> .
     remove: Bỏ liên kết bí danh
   appearance:

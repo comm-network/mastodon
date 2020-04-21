@@ -29,6 +29,7 @@ pt-BR:
       Esta conta é um ator virtual usado para representar a própria instância.
       É usado para fins de federação e não deve ser bloqueado a menos que você queira bloquear toda a instância, nesse caso é melhor usar um bloqueador de domínios.
     learn_more: Saiba mais
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Política de Privacidade
     see_whats_happening: Veja o que está acontecendo
     server_stats: 'Estatísticas da instância:'
@@ -662,6 +663,7 @@ pt-BR:
     add_new: Criar alias
     created_msg: Um novo alias foi criado com sucesso. Agora você pode se mudar.
     deleted_msg: Alias excluído com sucesso. Não será mais possível se mudar para esta conta.
+    empty: You have no aliases.
     hint_html: Se você quiser migrar de uma outra conta para esta, você pode criar um alias aqui, o que é necessário antes que você possa migrar os seguidores da conta antiga para esta. Esta ação por si só é <strong>inofensiva e reversível</strong>. <strong>A migração da conta é iniciada pela conta antiga</strong>.
     remove: Desvincular alias
   appearance:

@@ -29,6 +29,7 @@ cs:
       Tento účet je virtuální aktér, který představuje server samotný, nikoliv účet jednotlivého uživatele.
       Používá se pro účely federace a nesmí být blokován, pokud nechcete blokovat celý server. V takovém případě použijte blokaci domény.
     learn_more: Zjistit více
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Zásady ochrany osobních údajů
     see_whats_happening: Podívejte se, co se děje
     server_stats: 'Statistika serveru:'
@@ -678,6 +679,7 @@ cs:
     add_new: Vytvořit alias
     created_msg: Nový alias byl úspěšně vytvořen. Nyní můžete zahájit přesun ze starého účtu.
     deleted_msg: Alias byl úspěšně odstraněn. Přesun z jiného účtu na tento již nebude možný.
+    empty: You have no aliases.
     hint_html: Chcete-li se přesunout z jiného účtu na tento, můžete si zde vytvořit alias, který je vyžadován předtím, než můžete pokračovat přesunem sledujících ze starého účtu na tento. Tato akce sama o sobě je <strong>neškodná a vratná</strong>. <strong>Přesun účtu se zahajuje ze starého účtu</strong>.
     remove: Odpojit alias
   appearance:

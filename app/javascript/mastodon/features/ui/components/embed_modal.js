@@ -4,6 +4,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { defineMessages, FormattedMessage, injectIntl } from 'react-intl';
 import api from 'mastodon/api';
 import IconButton from 'mastodon/components/icon_button';
+import { X } from '@primer/octicons-react';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -61,7 +62,7 @@ class EmbedModal extends ImmutablePureComponent {
     return (
       <div className='modal-root__modal report-modal embed-modal'>
         <div className='report-modal__target'>
-          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon='times-circle' onClick={onClose} size={16} />
+          <IconButton className='media-modal__close' title={intl.formatMessage(messages.close)} icon={''} octicon={X} onClick={onClose} size={16} />
           <FormattedMessage id='status.embed' defaultMessage='Embed' />
         </div>
 

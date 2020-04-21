@@ -29,6 +29,7 @@ tr:
       Bu hesap, herhangi bir kullanıcıyı değil sunucunun kendisini temsil etmek için kullanılan sanal bir aktördür.
       Federasyon amaçlı kullanılır ve tüm yansıyı engellemek istemediğiniz sürece engellenmemelidir; bu durumda bir etki alanı bloğu kullanmanız gerekir.
     learn_more: Daha fazla bilgi edinin
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Gizlilik politikası
     see_whats_happening: Neler olduğunu görün
     server_stats: 'Sunucu istatistikleri:'
@@ -662,6 +663,7 @@ tr:
     add_new: Takma ad oluştur
     created_msg: Yeni takma ad başarıyla oluşturuldu. Artık eski hesaptan taşınmayı başlatabilirsiniz.
     deleted_msg: Yeni takma ad başarıyla kaldırıldı. O hesaptan bu hesaba taşınmak artık mümkün değil.
+    empty: You have no aliases.
     hint_html: Başka bir hesaptan bu hesaba taşınmak istiyorsanız, takipçileri eski hesaptan bu hesaba taşımadan önce gerekli olan takma adı burada oluşturabilirsiniz. Bu eylem kendi başına <strong>zararsızdır ve geri döndürülebilir</strong>. <strong>Hesap taşıma işlemi eski hesaptan başlatılır</strong>.
     remove: Takma adların bağlantısını kaldır
   appearance:

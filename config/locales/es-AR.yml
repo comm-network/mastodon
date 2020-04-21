@@ -29,6 +29,7 @@ es-AR:
       Esta cuenta es un actor virtual usado para representar al propio servidor y no a ningún usuario individual.
       Se usa para fines federativos y no debe ser bloqueado a menos que quieras bloquear toda la instancia, en cuyo caso deberías usar un bloqueo de dominio.
     learn_more: Aprendé más
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Política de privacidad
     see_whats_happening: Esto es lo que está pasando ahora
     server_stats: 'Estadísticas del servidor:'
@@ -662,6 +663,7 @@ es-AR:
     add_new: Crear alias
     created_msg: El nuevo alias se creó exitosamente. Ahora podés empezar la mudanza desde la cuenta vieja.
     deleted_msg: Eliminaste el alias exitosamente. La mudanza de esa cuenta a esta ya no será posible.
+    empty: You have no aliases.
     hint_html: Si querés mudarte desde otra cuenta a esta, acá podés crear un alias, el cual es necesario antes de empezar a mudar seguidores de la cuenta vieja a esta. Esta acción por sí misma es <strong>inofensiva y reversible</strong>. <strong>La migración de la cuenta se inicia desde la cuenta anterior</strong>.
     remove: Desenlazar alias
   appearance:

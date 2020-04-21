@@ -29,6 +29,7 @@ ro:
       This account is a virtual actor used to represent the server itself and not any individual user.
       It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
     learn_more: Learn more
+    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Privacy policy
     see_whats_happening: See what's happening
     server_stats: 'Server stats:'
@@ -662,6 +663,7 @@ ro:
     add_new: Create alias
     created_msg: Successfully created a new alias. You can now initiate the move from the old account.
     deleted_msg: Successfully remove the alias. Moving from that account to this one will no longer be possible.
+    empty: You have no aliases.
     hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Unlink alias
   appearance:
