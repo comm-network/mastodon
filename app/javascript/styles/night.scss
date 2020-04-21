@@ -169,7 +169,8 @@ html {
 .rich-formatting h5,
 .rich-formatting h6,
 button.status__content__spoiler-link.status__content__spoiler-link--show-more span,
-button.status__content__spoiler-link.status__content__spoiler-link--show-less span {
+button.status__content__spoiler-link.status__content__spoiler-link--show-less span,
+.rich-formatting em {
   color: $primary-text-color;
 }
 
