@@ -8,6 +8,14 @@ class HTMLRenderer < Redcarpet::Render::HTML
     "<pre><code>#{encode(code).gsub("\n", '<br/>')}</code></pre>"
   end
 
+  def list(contents, list_type)
+    "<p>#{contents}</p>"
+  end
+
+  def list_item(text, list_type)
+    "- #{text.strip}<br />"
+  end
+
   def autolink(link, link_type)
     return link if link_type == :email
 
@@ -139,27 +147,27 @@ class Formatter
     return @markdown_formatter if defined?(@markdown_formatter)
 
     extensions = {
-      autolink: true,
-      no_intra_emphasis: true,
-      fenced_code_blocks: true,
-      disable_indented_code_blocks: true,
-      strikethrough: true,
-      lax_spacing: true,
-      space_after_headers: true,
-      superscript: true,
-      underline: true,
-      highlight: true,
-      footnotes: false,
+        autolink: true,
+        no_intra_emphasis: true,
+        fenced_code_blocks: true,
+        disable_indented_code_blocks: true,
+        strikethrough: true,
+        lax_spacing: true,
+        space_after_headers: true,
+        superscript: true,
+        underline: true,
+        highlight: true,
+        footnotes: false,
     }
 
     renderer = HTMLRenderer.new(
-      filter_html: false,
-      escape_html: false,
-      no_images: true,
-      no_styles: true,
-      safe_links_only: true,
-      hard_wrap: true,
-      link_attributes: { target: '_blank', rel: 'nofollow noopener' }
+        filter_html: false,
+        escape_html: false,
+        no_images: true,
+        no_styles: true,
+        safe_links_only: true,
+        hard_wrap: true,
+        link_attributes: {target: '_blank', rel: 'nofollow noopener'}
     )
 
     @markdown_formatter = Redcarpet::Markdown.new(renderer, extensions)
@@ -303,13 +311,13 @@ class Formatter
     # for mention so this requires additional check
     special = Extractor.extract_urls_with_indices(escaped, options).map do |extract|
       new_indices = [
-        old_to_new_index.find_index(extract[:indices].first),
-        old_to_new_index.find_index(extract[:indices].last),
+          old_to_new_index.find_index(extract[:indices].first),
+          old_to_new_index.find_index(extract[:indices].last),
       ]
 
       next extract.merge(
-        indices: new_indices,
-        url: text[new_indices.first..new_indices.last - 1]
+          indices: new_indices,
+          url: text[new_indices.first..new_indices.last - 1]
       )
     end
 
@@ -331,20 +339,20 @@ class Formatter
     end
 
     entities = Extractor.extract_hashtags_with_indices(escaped, check_url_overlap: false) +
-               Extractor.extract_mentions_or_lists_with_indices(escaped)
+        Extractor.extract_mentions_or_lists_with_indices(escaped)
     Extractor.remove_overlapping_entities(entities).map do |extract|
       pos = extract[:indices].first
       offset_idx = gaps.rindex { |gap| gap.first <= pos }
       offset = offset_idx.nil? ? 0 : gaps[offset_idx].last
       next extract.merge(
-        indices: [extract[:indices].first + offset, extract[:indices].last + offset]
+          indices: [extract[:indices].first + offset, extract[:indices].last + offset]
       )
     end
   end
 
   def link_to_url(entity, options = {})
     url = Addressable::URI.parse(entity[:url])
-    html_attrs = { target: '_blank', rel: 'nofollow noopener noreferrer' }
+    html_attrs = {target: '_blank', rel: 'nofollow noopener noreferrer'}
 
     html_attrs[:rel] = "me #{html_attrs[:rel]}" if options[:me]
 
@@ -376,9 +384,9 @@ class Formatter
   end
 
   def link_html(url)
-    url    = Addressable::URI.parse(url).to_s
+    url = Addressable::URI.parse(url).to_s
     prefix = url.match(/\A(https?:\/\/(www\.)?|xmpp:)/).to_s
-    text   = url[prefix.length, 30]
+    text = url[prefix.length, 30]
     suffix = url[prefix.length + 30..-1]
     cutoff = url[prefix.length..-1].length > 30
 
