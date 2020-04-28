@@ -167,6 +167,8 @@ ActiveRecord::Schema.define(version: 2020_04_21_000351) do
     t.datetime "suspended_at"
     t.integer "trust_level"
     t.boolean "hide_collections"
+    t.integer "avatar_storage_schema_version"
+    t.integer "header_storage_schema_version"
     t.index "(((setweight(to_tsvector('simple'::regconfig, (display_name)::text), 'A'::\"char\") || setweight(to_tsvector('simple'::regconfig, (username)::text), 'B'::\"char\")) || setweight(to_tsvector('simple'::regconfig, (COALESCE(domain, ''::character varying))::text), 'C'::\"char\")))", name: "search_index", using: :gin
     t.index "lower((username)::text), lower((domain)::text)", name: "index_accounts_on_username_and_domain_lower", unique: true
     t.index ["domain"], name: "index_accounts_on_domain"
@@ -290,6 +292,7 @@ ActiveRecord::Schema.define(version: 2020_04_21_000351) do
     t.string "image_remote_url"
     t.boolean "visible_in_picker", default: true, null: false
     t.bigint "category_id"
+    t.integer "image_storage_schema_version"
     t.index ["shortcode", "domain"], name: "index_custom_emojis_on_shortcode_and_domain", unique: true
   end
 
@@ -453,6 +456,7 @@ ActiveRecord::Schema.define(version: 2020_04_21_000351) do
     t.bigint "scheduled_status_id"
     t.string "blurhash"
     t.integer "processing"
+    t.integer "file_storage_schema_version"
     t.index ["account_id"], name: "index_media_attachments_on_account_id"
     t.index ["shortcode"], name: "index_media_attachments_on_shortcode", unique: true
     t.index ["status_id"], name: "index_media_attachments_on_status_id"
@@ -589,6 +593,7 @@ ActiveRecord::Schema.define(version: 2020_04_21_000351) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "embed_url", default: "", null: false
+    t.integer "image_storage_schema_version"
     t.index ["url"], name: "index_preview_cards_on_url", unique: true
   end
 
@@ -776,6 +781,13 @@ ActiveRecord::Schema.define(version: 2020_04_21_000351) do
     t.boolean "by_moderator"
     t.index ["account_id"], name: "index_tombstones_on_account_id"
     t.index ["uri"], name: "index_tombstones_on_uri"
+  end
+
+  create_table "unavailable_domains", force: :cascade do |t|
+    t.string "domain", default: "", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["domain"], name: "index_unavailable_domains_on_domain", unique: true
   end
 
   create_table "user_invite_requests", force: :cascade do |t|
