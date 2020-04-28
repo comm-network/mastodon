@@ -160,7 +160,8 @@ body.theme-default button.column-back-button,
 body.theme-default button.text-icon-button,
 body.theme-default button.link-button,
 div.columns-area div.notification__filter-bar button,
-h1.column-header button {
+h1.column-header button,
+div.video-player__buttons-bar button {
   border: none;
 }
 
@@ -173,14 +174,18 @@ div.keyboard-shortcuts > table > tbody > tr > td > kbd {
   border-bottom: none;
 }
 
-.notification__filter-bar button.active::after,
-.notification__filter-bar a.active::after,
-div.account__section-headline button.active::after,
-div.account__section-headline a.active::after,
-.notification__filter-bar button.active::before,
-.notification__filter-bar a.active::before,
-div.account__section-headline button.active::before,
-div.account__section-headline a.active::before {
+div.account__section-headline button.active:before,
+div.account__section-headline a.active:before,
+.notification__filter-bar button.active:before,
+.notification__filter-bar a.active:before {
+  display: none;
+}
+
+.notification__filter-bar button.active:after,
+.notification__filter-bar a.active:after,
+div.account__section-headline button.active:after,
+div.account__section-headline a.active:after,
+div.account-timeline__header > div.account__section-headline > a.active:after {
   border-bottom: 4px solid white !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
