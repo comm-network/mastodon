@@ -17,6 +17,8 @@ Modifications include (incomplete list):
     - action buttons hidden to prevent accidental clicks
 - options to lower the notification sound volume
 - Markdown/HTML support in posts
+- Prometheus metrics
+    - Reachable at `http://localhost:9394/metrics` (see [config options](https://github.com/discourse/prometheus_exporter#exporter-process-configuration))
 - ... and more
 
 ## About
