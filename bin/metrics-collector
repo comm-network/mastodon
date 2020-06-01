@@ -36,7 +36,7 @@ begin
     start_time = DateTime.now.strftime("%Q").to_i
 
     instance_version = Mastodon::Version
-    instance_url = Rails.configuration.x.web_domain
+    instance_url = Rails.configuration.x.local_domain
     logins_value = Redis.current.pfcount("activity:logins:#{Time.now.utc.to_date.cweek}")
     users_value = User.count
     pending_value = User.pending.count
