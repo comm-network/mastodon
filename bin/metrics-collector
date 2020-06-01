@@ -18,27 +18,28 @@ end
 begin
   client = PrometheusExporter::Client.default
   PrometheusExporter::Instrumentation::Process.start(client: client, type: "metrics-collector")
-  instance_presenter = InstancePresenter.new
-
-  logins_gauge = client.register(:gauge, "mastodon_logins_week", "Logins this week")
-  users_gauge = client.register(:gauge, "mastodon_users_total", "Total users")
-  active_users_gauge = client.register(:gauge, "mastodon_users_active_4w", "Active users in the last four weeks")
-  pending_gauge = client.register(:gauge, "mastodon_users_pending", "Pending users")
-  unresolved_gauge = client.register(:gauge, "mastodon_reports_unresolved", "Unresolved reports")
-  dbsize_gauge = client.register(:gauge, "mastodon_database_size_bytes", "Database size in bytes")
-  enqueued_gauge = client.register(:gauge, "sidekiq_jobs_enqueud", "Enquequed Sidekiq Jobs")
-  interactions_gauge = client.register(:gauge, "mastodon_interactions_1w", "Interactions this week")
-  registrations_gauge = client.register(:gauge, "mastodon_registrations_1w", "Registrations this week")
-  relay_gauge = client.register(:gauge, "mastodon_relay_enabled", "Relay enabled")
-  registration_gauge = client.register(:gauge, "mastodon_registrations_enabled", "Registrations enabled")
-  fetch_duration_gauge = client.register(:gauge, "mastodon_metrics_collect_duration_millis", "Mastodon metric collection duration in milliseconds")
-  pending_tags_gauge = client.register(:gauge, "mastodon_pending_tags", "Pending Tags")
-  status_count_gauge = client.register(:gauge, "mastodon_status_count", "Number of statuses")
-  domain_count_gauge = client.register(:gauge, "mastodon_domain_count", "Number of known domains")
 
   while true do
     # This should come first!
     start_time = DateTime.now.strftime("%Q").to_i
+
+    instance_presenter = InstancePresenter.new
+
+    logins_gauge = client.register(:gauge, "mastodon_logins_week", "Logins this week")
+    users_gauge = client.register(:gauge, "mastodon_users_total", "Total users")
+    active_users_gauge = client.register(:gauge, "mastodon_users_active_4w", "Active users in the last four weeks")
+    pending_gauge = client.register(:gauge, "mastodon_users_pending", "Pending users")
+    unresolved_gauge = client.register(:gauge, "mastodon_reports_unresolved", "Unresolved reports")
+    dbsize_gauge = client.register(:gauge, "mastodon_database_size_bytes", "Database size in bytes")
+    enqueued_gauge = client.register(:gauge, "sidekiq_jobs_enqueud", "Enquequed Sidekiq Jobs")
+    interactions_gauge = client.register(:gauge, "mastodon_interactions_1w", "Interactions this week")
+    registrations_gauge = client.register(:gauge, "mastodon_registrations_1w", "Registrations this week")
+    relay_gauge = client.register(:gauge, "mastodon_relay_enabled", "Relay enabled")
+    registration_gauge = client.register(:gauge, "mastodon_registrations_enabled", "Registrations enabled")
+    fetch_duration_gauge = client.register(:gauge, "mastodon_metrics_collect_duration_millis", "Mastodon metric collection duration in milliseconds")
+    pending_tags_gauge = client.register(:gauge, "mastodon_pending_tags", "Pending Tags")
+    status_count_gauge = client.register(:gauge, "mastodon_status_count", "Number of statuses")
+    domain_count_gauge = client.register(:gauge, "mastodon_domain_count", "Number of known domains")
 
     logins_value = Redis.current.pfcount("activity:logins:#{Time.now.utc.to_date.cweek}")
     users_value = User.count
