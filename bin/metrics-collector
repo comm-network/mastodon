@@ -1,11 +1,12 @@
 #!/usr/bin/env ruby
 APP_PATH = File.expand_path('../config/application', __dir__)
 
-require_relative '../config/boot'
-require_relative '../config/environment'
+require "bundler/setup"
 require 'sidekiq/api'
 require 'prometheus_exporter'
 require 'prometheus_exporter/client'
+require_relative '../config/boot'
+require_relative '../config/environment'
 
 scrape_interval = 2.seconds
 ActiveRecord::Base.logger = Logger.new('/dev/null')
