@@ -18,18 +18,13 @@ eo:
     contact_unavailable: Ne disponebla
     discover_users: Malkovri uzantojn
     documentation: Dokumentado
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Per konto ĉe %{instance}, vi povos sekvi homojn ĉe iu ajn Mastodon nodo kaj preter.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Provu telefonan aplikaĵon
     hosted_on: "%{domain} estas nodo de Mastodon"
     instance_actor_flash: |
       Ĉi tiu konto estas virtuala ulo uzata por reprezenti la servilon mem kaj ne iun apartan uzanton.
       Ĝi estas uzata por frataraj celoj kaj ĝi ne devus esti blokita krom se vi volas bloki la tutan servilon, tiuokaze vi devus uzi domajnan blokadon.
     learn_more: Lerni pli
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Privateca politiko
     see_whats_happening: Vidi kio okazas
     server_stats: Servo statuso
@@ -44,10 +39,6 @@ eo:
     unavailable_content_description:
       domain: Servilo
       reason: 'Kialo:'
-      rejecting_media: 'Media files from these servers will not be processed or stored, and no thumbnails will be displayed, requiring manual click-through to the original file:'
-      silenced: 'Posts from these servers will be hidden in public timelines and conversations, and no notifications will be generated from their users'' interactions, unless you are following them:'
-      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
-    unavailable_content_html: Mastodon generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
     user_count_after:
       one: uzanto
       other: uzantoj
@@ -55,8 +46,6 @@ eo:
     what_is_mastodon: Kio estas Mastodon?
   accounts:
     choices_html: 'Proponoj de %{name}:'
-    endorsements_hint: You can endorse people you follow from the web interface, and they will show up here.
-    featured_tags_hint: You can feature specific hashtags that will be displayed here.
     follow: Sekvi
     followers:
       one: Sekvanto
@@ -97,7 +86,6 @@ eo:
       delete: Forigi
       destroyed_msg: Kontrola noto sukcese detruita!
     accounts:
-      add_email_domain_block: Blacklist e-mail domain
       approve: Aprobi
       approve_all: Aprobi ĉiujn
       are_you_sure: Ĉu vi certas?
@@ -178,7 +166,6 @@ eo:
         staff: Teamo
         user: Uzanto
       search: Serĉi
-      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Aliaj uzantoj kun la sama IP
       shared_inbox_url: URL de kunhavigita leterkesto
       show:
@@ -201,41 +188,9 @@ eo:
       whitelisted: En la blanka listo
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        disable_user: Malebligi uzanton
+        enable_user: Ebligi uzanton
+        reopen_report: Remalfermi signalon
       actions:
         assigned_to_self_report: "%{name} asignis signalon %{target} al si mem"
         change_email_user: "%{name} ŝanĝis retadreson de uzanto %{target}"
@@ -273,9 +228,6 @@ eo:
         update_custom_emoji: "%{name} ĝisdatigis emoĝion %{target}"
         update_status: "%{name} ĝisdatigis mesaĝon de %{target}"
       deleted_status: "(forigita mesaĝo)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
       title: Kontrola protokolo
     announcements:
       destroyed_msg: Anonco sukcese forigita!
@@ -286,12 +238,10 @@ eo:
       new:
         create: Krei anoncon
         title: Nova anonco
-      publish: Publish
       published_msg: Anonco sukcese publikigita!
       scheduled_for: Planigita je %{time}
       scheduled_msg: Anonco planigita por publikigo!
       title: Anoncoj
-      unpublish: Unpublish
       unpublished_msg: Anonco sukcese malpublikigita!
       updated_msg: Anonco sukcese ĝisdatigis!
     custom_emojis:
@@ -376,9 +326,7 @@ eo:
           suspend: Haltigi
         title: Nova domajna blokado
       private_comment: Privata komento
-      private_comment_hint: Comment about this domain limitation for internal use by the moderators.
       public_comment: Publika komento
-      public_comment_hint: Comment about this domain limitation for the general public, if advertising the list of domain limitations is enabled.
       reject_media: Malakcepti aŭdovidajn dosierojn
       reject_media_hint: Forigas aŭdovidaĵojn loke konservitajn kaj rifuzas alŝuti ajnan estonte. Ne koncernas haltigojn
       reject_reports: Malakcepti signalojn
@@ -406,14 +354,10 @@ eo:
       destroyed_msg: Retadreso sukcese forigita de la nigra listo
       domain: Domajno
       empty: Neniu retadresa domajno nune estas en la nigra listo.
-      from_html: from %{domain}
       new:
         create: Aldoni domajnon
         title: Nova blokado de retadresa domajno
       title: Nigra listo de retadresaj domajnoj
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Domajno
       delivery_available: Liverado disponeblas
@@ -457,7 +401,6 @@ eo:
       pending: Atendante aprobon de la ripetilo
       save_and_enable: Konservi kaj ebligi
       setup: Agordi konekton al ripetilo
-      signatures_not_enabled: Relays will not work correctly while secure mode or whitelist mode is enabled
       status: Stato
       title: Ripetiloj
     report_notes:
@@ -465,11 +408,9 @@ eo:
       destroyed_msg: Signala noto sukcese forigita!
     reports:
       account:
-        note: note
         notes:
           one: "%{count} noto"
           other: "%{count} notoj"
-        report: report
         reports:
           one: "%{count} signalo"
           other: "%{count} signaloj"
@@ -513,9 +454,6 @@ eo:
       custom_css:
         desc_html: Ŝanĝi la aspekton per CSS ŝargita en ĉiu pago
         title: Propra CSS
-      default_noindex:
-        desc_html: Affects all users who have not changed this setting themselves
-        title: Opt users out of search engine indexing by default
       domain_blocks:
         all: Al ciuj
         disabled: Al neniu
@@ -555,9 +493,6 @@ eo:
           approved: Bezonas aprobi por aliĝi
           none: Neniu povas aliĝi
           open: Iu povas aliĝi
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Registrado modo
       show_known_fediverse_at_about_page:
         desc_html: Kiam ŝaltita, ĝi montros mesaĝojn de la tuta konata fediverse antaŭvide. Aliokaze, ĝi montros nur lokajn mesaĝojn.
@@ -579,7 +514,6 @@ eo:
         title: Propraj uzkondiĉoj
       site_title: Nomo de la servilo
       spam_check_enabled:
-        desc_html: Mastodon can auto-report accounts that send repeated unsolicited messages. There may be false positives.
         title: Kontraŭ-spamo aŭtomatige
       thumbnail:
         desc_html: Uzata por antaŭvidoj per OpenGraph kaj per API. 1200x630px rekomendita
@@ -588,15 +522,9 @@ eo:
         desc_html: Montri publikan templinion en komenca paĝo
         title: Tempolinia antaŭvido
       title: Retejaj agordoj
-      trendable_by_default:
-        desc_html: Affects hashtags that have not been previously disallowed
-        title: Allow hashtags to trend without prior review
       trends:
         desc_html: Publike montri antaŭe kontrolitajn kradvortojn, kiuj nune furoras
         title: Furoraj kradvortoj
-    site_uploads:
-      delete: Delete uploaded file
-      destroyed_msg: Site upload successfully deleted!
     statuses:
       back_to_account: Reveni al konta paĝo
       batch:
@@ -611,22 +539,12 @@ eo:
       no_status_selected: Neniu mesaĝo estis ŝanĝita ĉar neniu estis elektita
       title: Mesaĝoj de la konto
       with_media: Kun aŭdovidaĵoj
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Unikaj uzoj hodiaŭ
       accounts_week: Unikaj uzoj je ĉi tiu semajno
       breakdown: Disigo de la hodiaŭa uzo per fonto
       context: Kunteksto
       directory: En la adresaro
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} en adresaro"
       last_active: Laste aktiva
       most_popular: La plej populara
@@ -636,17 +554,14 @@ eo:
       reviewed: Recenzis
       title: Kradvortoj
       trending_right_now: Nunaj furoraĵoj
-      unhide: Show in directory
       unique_uses_today: "%{count} uzas hodiaŭ"
       unreviewed: Ne recenzis
       updated_msg: Kradvorto agordoj ĝisdatigis sukcese
-      visible: Visible
     title: Administrado
     warning_presets:
       add_new: Aldoni novan
       delete: Forigi
       edit_preset: Redakti avertan antaŭagordon
-      empty: Empty
       title: Administri avertajn antaŭagordojn
   admin_mailer:
     new_pending_account:
@@ -663,8 +578,6 @@ eo:
     add_new: Krei alinomon
     created_msg: Kreis novan alinomon sukcese. Vi povas inici la transloki el la malnovan konton nun.
     deleted_msg: Forigis la alinomon sukcese. Transloki el tiu konto al ĉi tiu ne plu eblos.
-    empty: You have no aliases.
-    hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Malligili alinomon
   appearance:
     advanced_web_interface: Altnivela retpaĝa interfaco
@@ -698,13 +611,11 @@ eo:
     change_password: Pasvorto
     checkbox_agreement_html: Mi samopinii al la <a href="%{rules_path}" target="_blank">Servo reguloj</a> kaj <a href="%{terms_path}" target="_blank">kondiĉo al servadon</a>
     checkbox_agreement_without_rules_html: Mi konsenti la <a href="%{terms_path}" target="_blank">reguloj de servado</a>
-    confirm_email: Confirm email
     delete_account: Forigi konton
     delete_account_html: Se vi deziras forigi vian konton, vi povas <a href="%{path}">fari tion ĉi tie</a>. Vi bezonos konfirmi vian peton.
     description:
       prefix_invited_by_user: "@%{name} invitigi vin aligiĝi ĉi tiu servilo de Mastodon!"
       prefix_sign_up: Registriĝi ĉe Mastodon hodiaŭ!
-      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any Mastodon server and more!
     didnt_get_confirmation: Ĉu vi ne ricevis la instrukciojn por konfirmi?
     forgot_password: Pasvorto forgesita?
     invalid_reset_password_token: Ĵetono por restarigi pasvorton nevalida aŭ eksvalida. Bonvolu peti novan.
@@ -723,19 +634,13 @@ eo:
     security: Sekureco
     set_new_password: Elekti novan pasvorton
     setup:
-      email_below_hint_html: If the below e-mail address is incorrect, you can change it here and receive a new confirmation e-mail.
-      email_settings_hint_html: The confirmation e-mail was sent to %{email}. If that e-mail address is not correct, you can change it in account settings.
       title: Agordi
     status:
       account_status: Statuso de la konto
-      confirming: Waiting for e-mail confirmation to be completed.
       functional: Via konto estas plene funkcianta.
-      pending: Your application is pending review by our staff. This may take some time. You will receive an e-mail if your application is approved.
-      redirecting_to: Your account is inactive because it is currently redirecting to %{acct}.
     trouble_logging_in: Ĝeni ensaluti?
   authorize_follow:
     already_following: Vi jam sekvas tiun konton
-    already_requested: You have already sent a follow request to that account
     error: Bedaŭrinde, estis eraro en la serĉado de la fora konto
     follow: Sekvi
     follow_request: 'Vi sendis peton de sekvado al:'
@@ -747,7 +652,6 @@ eo:
     title: Sekvi %{acct}
   challenge:
     confirm: Daŭrigi
-    hint_html: "<strong>Tip:</strong> We won't ask you for your password again for the next hour."
     invalid_password: Nevalida pasvorto
     prompt: Konfirmi pasvorton por daŭrigi
   datetime:
@@ -765,36 +669,20 @@ eo:
       x_months: "%{count}mo"
       x_seconds: "%{count}s"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: La informaĵo ke vi enigis estis malĝusta
     confirm_password: Enmetu vian nunan pasvorton por konfirmi vian identecon
     confirm_username: Enigi vian uzantnomon por konfirmi la procedo
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Forigi konton
     success_msg: Via konto estis sukcese forigita
     warning:
-      before: 'Before proceeding, please read these notes carefully:'
-      caches: Content that has been cached by other servers may persist
-      data_removal: Your posts and other data will be permanently removed
       email_change_html: Vi povas <a href="%{path}">ŝanĝi vian retadreson</a> sen forigi vian konton
-      email_contact_html: If it still doesn't arrive, you can e-mail <a href="mailto:%{email}">%{email}</a> for help
-      email_reconfirmation_html: If you are not receiving the confirmation e-mail, you can <a href="%{path}">request it again</a>
-      irreversible: You will not be able to restore or reactivate your account
       more_details_html: Por pli da detaloj, vidi la <a href="%{terms_path}">privatecan politikon</a>.
       username_available: Via uzantnomo iĝos denove disponebla
       username_unavailable: Via uzantnomo restos nedisponebla
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Profilujo
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Malkovru uzantojn per iliaj interesoj
     explore_mastodon: Esplori %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: ne estas valida domajna nomo
   errors:
@@ -828,7 +716,6 @@ eo:
     blocks: Vi blokas
     csv: CSV
     domain_blocks: Blokoj de domajnoj
-    follows: You follow
     lists: Listoj
     mutes: Vi silentigas
     storage: Aŭdovidaĵa konservado
@@ -865,7 +752,6 @@ eo:
     changes_saved_msg: Ŝanĝoj sukcese konservitaj!
     copy: Kopii
     delete: Forigi
-    no_batch_actions_available: No batch actions available on this page
     order_by: Ordigi de
     save_changes: Konservi ŝanĝojn
     validation_errors:
@@ -934,14 +820,11 @@ eo:
   media_attachments:
     validations:
       images_and_video: Aldoni videon al mesaĝo, kiu jam havas bildojn ne eblas
-      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Aldoni pli ol 4 dosierojn ne eblas
   migrations:
     acct: Movigita al
     cancel: Nuligi alidirekton
-    cancel_explanation: Cancelling the redirect will re-activate your current account, but will not bring back followers that have been moved to that account.
     cancelled_msg: Sukcese forigis la alidirekton.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: estas la saman konton vi jam translokiĝis al
       missing_also_known_as: ne returne referencas al ĉi tiu konto
@@ -951,24 +834,12 @@ eo:
     followers_count: Sekvantoj en la momento de moviĝo
     incoming_migrations: Moviĝi el alia konto
     incoming_migrations_html: Por moviĝi el alia konto al ĉi tiu, vi unue devas <a href="%{path}">krei kromnomo de konto</a>.
-    moved_msg: Your account is now redirecting to %{acct} and your followers are being moved over.
-    not_redirecting: Your account is not redirecting to any other account currently.
-    on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
     past_migrations: Pasintaj translokaj
-    proceed: Save
     proceed_with_move: Translokigi sekvantoj
     redirecting_to: Via konto alidirektas al %{acct}.
     set_redirect: Agordi alidirekton
-    updated_msg: Your account migration setting successfully updated!
     warning:
-      backreference_required: The new account must first be configured to back-reference this one
-      before: 'Before proceeding, please read these notes carefully:'
-      cooldown: After moving there is a cooldown period during which you will not be able to move again
-      disabled_account: Your current account will not be fully usable afterwards. However, you will have access to data export as well as re-activation.
-      followers: This action will move all followers from the current account to the new account
       only_redirect_html: Alie, vi povas <a href="%{path}">nur aldoni alidirekton en via profilo</a>.
-      other_data: No other data will be moved automatically
-      redirect: Your current account's profile will be updated with a redirect notice and be excluded from searches
   moderation:
     title: Kontrolado
   notification_mailer:
@@ -1077,10 +948,6 @@ eo:
     reply:
       proceed: Konfirmi la respondon
       prompt: 'Vi volas respondi al ĉi tiu mesaĝo:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Vi transpasis la limigon al %{limit} samtage planitaj mesaĝoj
     over_total_limit: Vi transpasis la limigon al %{limit} planitaj mesaĝoj
@@ -1147,8 +1014,6 @@ eo:
     profile: Profilo
     relationships: Sekvatoj kaj sekvantoj
     two_factor_authentication: Dufaktora aŭtentigo
-  spam_check:
-    spam_detected: This is an automated report. Spam has been detected.
   statuses:
     attached:
       description: 'Ligita: %{attached}'
@@ -1163,8 +1028,6 @@ eo:
     disallowed_hashtags:
       one: 'enhavas malpermesitan kradvorton: %{tags}'
       other: 'enhavis malpermesitan kradvorton: %{tags}'
-    errors:
-      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Aŭtomate detekti la lingvon
     open_in_web: Malfermi retumile
     over_character_limit: limo de %{max} signoj transpasita
@@ -1202,15 +1065,8 @@ eo:
     title: Uzkondiĉoj kaj privateca politiko de %{instance}
   themes:
     contrast: Mastodon (Forta kontrasto)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Malluma)
+    default: Mastodon (Malluma)
     mastodon-light: Mastodon (Luma)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%Y-%m-%d %H:%M"
@@ -1241,7 +1097,6 @@ eo:
         disable: Dum via konto estas frostigita, via kontaj datumoj restas intaktaj, sed vi ne povas plenumi iujn agojn ĝis ĝi estas malhaltigita.
         silence: Dum via konto estas limigita, nur tiuj, kiuj jam sekvas vin, vidos viajn mesaĝojn en ĉi tiu servilo, kaj vi povus esti ekskludita de diversaj publikaj listoj. Tamen, aliaj ankoraŭ povas mane sekvi vin.
         suspend: Via konto estis haltigita, kaj ĉiuj el viaj mesaĝoj kaj alŝutitaj aŭdovidaj dosieroj estis nemalfareble forigitaj de ĉi tiu servilo, kaj de la serviloj, kie vi havis sekvantojn.
-      get_in_touch: You can reply to this e-mail to get in touch with the staff of %{instance}.
       review_server_policies: Superrigardi servilajn politikojn
       statuses: 'Specife, per:'
       subject:

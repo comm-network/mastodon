@@ -18,18 +18,13 @@ pt-BR:
     contact_unavailable: Não disponível
     discover_users: Descubra usuários
     documentation: Documentação
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Com uma conta em %{instance} você vai poder seguir e interagir com pessoas de qualquer canto do fediverso.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Experimente um aplicativo
     hosted_on: Instância Mastodon em %{domain}
     instance_actor_flash: |
       Esta conta é um ator virtual usado para representar a própria instância.
       É usado para fins de federação e não deve ser bloqueado a menos que você queira bloquear toda a instância, nesse caso é melhor usar um bloqueador de domínios.
     learn_more: Saiba mais
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Política de Privacidade
     see_whats_happening: Veja o que está acontecendo
     server_stats: 'Estatísticas da instância:'
@@ -97,7 +92,7 @@ pt-BR:
       delete: Excluir
       destroyed_msg: Nota de moderação excluída com sucesso!
     accounts:
-      add_email_domain_block: Adicionar o domínio de email à lista negra
+      add_email_domain_block: Adicionar o domínio de e-mail à lista negra
       approve: Aprovar
       approve_all: Aprovar tudo
       are_you_sure: Você tem certeza?
@@ -208,14 +203,14 @@ pt-BR:
         create_announcement: Criar Anúncio
         create_custom_emoji: Criar Emoji Personalizado
         create_domain_allow: Adicionar domínio permitido
-        create_domain_block: Adicionar domínio bloqueado
-        create_email_domain_block: Adicionar domínio de e-mail bloqueado
-        demote_user: Despromover Utilizador
+        create_domain_block: Criar Bloqueio de Domínio
+        create_email_domain_block: Criar Bloqueio de Domínio de E-mail
+        demote_user: Rebaixar usuário
         destroy_announcement: Excluir anúncio
         destroy_custom_emoji: Excluir emoji personalizado
         destroy_domain_allow: Excluir domínio permitido
-        destroy_domain_block: Excluir domínio bloqueado
-        destroy_email_domain_block: Excluir domínio de e-mail bloqueado
+        destroy_domain_block: Excluir Bloqueio de Domínio
+        destroy_email_domain_block: Excluir bloqueio de domínio de e-mail
         destroy_status: Excluir Status
         disable_2fa_user: Desativar autenticação de dois fatores
         disable_custom_emoji: Desativar Emoji Personalizado
@@ -231,8 +226,8 @@ pt-BR:
         silence_account: Silenciar conta
         suspend_account: Suspender Conta
         unassigned_report: Remover relatório
-        unsilence_account: Deixar de Silenciar Conta
-        unsuspend_account: Retirar Suspensão à Conta
+        unsilence_account: Desfazer silenciar conta
+        unsuspend_account: Remover suspensão de conta
         update_announcement: Editar anúncio
         update_custom_emoji: Editar Emoji Personalizado
         update_status: Editar Status
@@ -268,7 +263,7 @@ pt-BR:
         suspend_account: "%{name} baniu a conta de %{target}"
         unassigned_report: "%{name} largou a denúncia %{target}"
         unsilence_account: "%{name} desativou o silêncio de %{target}"
-        unsuspend_account: "%{name} desbaniu %{target}"
+        unsuspend_account: "%{name} removeu a suspensão da conta de %{target}"
         update_announcement: "%{name} atualizou o anúncio %{target}"
         update_custom_emoji: "%{name} atualizou o emoji %{target}"
         update_status: "%{name} atualizou o status de %{target}"
@@ -286,12 +281,10 @@ pt-BR:
       new:
         create: Criar anúncio
         title: Novo anúncio
-      publish: Publish
       published_msg: Anúncio publicado com sucesso!
       scheduled_for: Agendado para %{time}
       scheduled_msg: Anúncio agendado para publicação!
       title: Anúncios
-      unpublish: Unpublish
       unpublished_msg: Anúncio despublicado com sucesso!
       updated_msg: Anúncio atualizado com sucesso!
     custom_emojis:
@@ -360,31 +353,31 @@ pt-BR:
       destroyed_msg: Domínio foi bloqueado
       undo: Bloquear
     domain_blocks:
-      add_new: Novo bloqueio de domínio
+      add_new: Adicionar novo bloqueio de domínio
       created_msg: Domínio está sendo bloqueado
       destroyed_msg: Domínio desbloqueado
       domain: Domínio
       edit: Editar bloqueio de domínio
-      existing_domain_block_html: Você já bloqueou %{name}, é necessário <a href="%{unblock_url}">desbloqueá-lo</a> primeiro.
+      existing_domain_block_html: Você já impôs limites mais estritos em %{name}, você precisa <a href="%{unblock_url}">desbloqueá-lo</a> primeiro.
       new:
         create: Criar bloqueio
-        hint: O bloqueio de domínio não prevenirá a criação de entradas de contas na base de dados, mas vai retroativamente e automaticamente aplicar métodos específicos de moderação nestas contas.
+        hint: O bloqueio de domínio não vai prevenir a criação de entradas de contas na base de dados, mas vai retroativamente e automaticamente aplicar métodos específicos de moderação nessas contas.
         severity:
-          desc_html: "<strong>Silenciar</strong> fará com que os toots da conta fiquem invisíveis para qualquer um que não a esteja seguindo. <strong>Banir</strong> removerá todo o conteúdo da conta, mídia e dados do perfil. Use <strong>Nenhum</strong> se você apenas deseja recusar os arquivos de mídia."
+          desc_html: "<strong>Silenciar</strong> vai fazer os posts da conta invisíveis para qualquer um que não os esteja seguindo. <strong>Suspender</strong> vai remover todo o conteúdo, mídia, e dados de perfil da conta. Use <strong>Nenhum</strong> se você só quer rejeitar arquivos de mídia."
           noop: Nenhum
           silence: Silenciar
           suspend: Banir
-        title: Bloquear domínio
+        title: Novo bloqueio de domínio
       private_comment: Comentário privado
       private_comment_hint: Comente sobre essa restrição ao domínio para uso interno dos moderadores.
       public_comment: Comentário público
       public_comment_hint: Comente sobre essa restrição ao domínio para o público geral, caso a divulgação da lista de bloqueio esteja ativada.
-      reject_media: Recusar arquivos de mídia
-      reject_media_hint: Remove arquivos de mídia armazenados localmente e recusa quaisquer outros no futuro. Irrelevante para banimentos
-      reject_reports: Recusar denúncias
-      reject_reports_hint: Ignora todas as denúncias vindas deste domínio. Irrelevante para banimentos
-      rejecting_media: recusando arquivos de mídia
-      rejecting_reports: recusando denúncias
+      reject_media: Rejeitar arquivos de mídia
+      reject_media_hint: Remove arquivos de mídia armazenados localmente e recusa fazer download de qualquer um no futuro. Irrelevante para suspensões
+      reject_reports: Rejeitar denúncias
+      reject_reports_hint: Ignora todas as denúncias vindo deste domínio. Irrelevante para suspensões
+      rejecting_media: rejeitando arquivos de mídia
+      rejecting_reports: rejeitando denúncias
       severity:
         silence: silenciado
         suspend: banido
@@ -393,27 +386,24 @@ pt-BR:
           one: Uma conta no banco de dados foi afetada
           other: "%{count} contas no banco de dados foram afetadas"
         retroactive:
-          silence: Desativar silêncio de todas as contas desse domínio
-          suspend: Desbanir todas as contas deste domínio
-        title: Desbloquear domínio %{domain}
+          silence: Dessilenciar contas existentes afetadas deste domínio
+          suspend: Dessuspender contas existentes afetadas deste domínio
+        title: Desfazer bloqueio de domínio para %{domain}
         undo: Desfazer
-      undo: Desbloquear domínio
+      undo: Desfazer bloqueio de domínio
       view: Ver domínios bloqueados
     email_domain_blocks:
       add_new: Adicionar novo
-      created_msg: Domínio de e-mail bloqueado
+      created_msg: Domínio de e-mail adicionado à lista negra com sucesso
       delete: Excluir
-      destroyed_msg: Domínio de e-mail desbloqueado
+      destroyed_msg: Domínio de e-mail excluído da lista negra com sucesso
       domain: Domínio
-      empty: Sem domínios de e-mail bloqueados.
+      empty: Nenhum domínio de e-mail atualmente na lista negra.
       from_html: de %{domain}
       new:
         create: Adicionar domínio
-        title: Novo domínio de e-mail bloqueado
-      title: Lista de bloqueio de domínios de e-mail
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
+        title: Nova entrada de lista negra de e-mail
+      title: Lista de negra de e-mail
     instances:
       by_domain: Domínio
       delivery_available: Envio disponível
@@ -465,11 +455,9 @@ pt-BR:
       destroyed_msg: Nota de denúncia excluída com sucesso!
     reports:
       account:
-        note: note
         notes:
           one: "%{count} nota"
           other: "%{count} notas"
-        report: report
         reports:
           one: "%{count} denúncia"
           other: "%{count} denúncias"
@@ -520,7 +508,7 @@ pt-BR:
         all: Para todos
         disabled: Para ninguém
         title: Mostrar domínios bloqueados
-        users: Para usuários locais ativos
+        users: Para usuários locais logados
       domain_blocks_rationale:
         title: Mostrar motivo
       enable_bootstrap_timeline_accounts:
@@ -555,9 +543,6 @@ pt-BR:
           approved: Aprovação necessária para criar conta
           none: Ninguém pode criar conta
           open: Qualquer um pode criar conta
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Modo de novos usuários
       show_known_fediverse_at_about_page:
         desc_html: Quando ativado, mostra toots globais na prévia da linha, se não, mostra somente toots locais
@@ -611,22 +596,12 @@ pt-BR:
       no_status_selected: Nenhum status foi modificado porque nenhum estava selecionado
       title: Toots da conta
       with_media: Com mídia
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Usos únicos de hoje
       accounts_week: Usos únicos desta semana
       breakdown: Descrição do consumo atual por fonte
       context: Contexto
       directory: No diretório
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} no diretório"
       last_active: Última atividade
       most_popular: Mais populares
@@ -636,17 +611,14 @@ pt-BR:
       reviewed: Revisado
       title: Hashtags
       trending_right_now: Em alta no momento
-      unhide: Show in directory
       unique_uses_today: "%{count} tootando hoje"
       unreviewed: Não revisadas
       updated_msg: Configurações de hashtag atualizadas com sucesso
-      visible: Visible
     title: Administração
     warning_presets:
       add_new: Adicionar novo
       delete: Excluir
       edit_preset: Editar o aviso pré-definido
-      empty: Empty
       title: Gerenciar os avisos pré-definidos
   admin_mailer:
     new_pending_account:
@@ -661,9 +633,9 @@ pt-BR:
       subject: Nova hashtag disponível para revisão em %{instance} (#%{name})
   aliases:
     add_new: Criar alias
-    created_msg: Um novo alias foi criado com sucesso. Agora você pode se mudar.
-    deleted_msg: Alias excluído com sucesso. Não será mais possível se mudar para esta conta.
-    empty: You have no aliases.
+    created_msg: Um novo alias foi criado com sucesso. Agora você pode iniciar a mudança da conta antiga.
+    deleted_msg: Alias removido com sucesso. Não será mais possível se mudar daquela conta para esta conta.
+    empty: Você não tem alias.
     hint_html: Se você quiser migrar de uma outra conta para esta, você pode criar um alias aqui, o que é necessário antes que você possa migrar os seguidores da conta antiga para esta. Esta ação por si só é <strong>inofensiva e reversível</strong>. <strong>A migração da conta é iniciada pela conta antiga</strong>.
     remove: Desvincular alias
   appearance:
@@ -698,7 +670,6 @@ pt-BR:
     change_password: Senha
     checkbox_agreement_html: Concordo com <a href="%{rules_path}" target="_blank">as regras da instância</a> e com <a href="%{terms_path}" target="_blank">os termos de serviço</a>
     checkbox_agreement_without_rules_html: Concordo com os <a href="%{terms_path}" target="_blank">termos do serviço</a>
-    confirm_email: Confirm email
     delete_account: Excluir conta
     delete_account_html: Se você deseja excluir sua conta, você pode <a href="%{path}">fazer isso aqui</a>. Uma confirmação será solicitada.
     description:
@@ -768,11 +739,9 @@ pt-BR:
       x_months: "%{count}m"
       x_seconds: "%{count}seg"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: As informações que você inseriu não estão corretas
     confirm_password: Digite a sua senha atual para verificar a sua identidade
     confirm_username: Digite seu nome de usuário para confirmar o procedimento
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Excluir conta
     success_msg: A sua conta foi excluída com sucesso
     warning:
@@ -786,18 +755,10 @@ pt-BR:
       more_details_html: Para mais detalhes, consulte a <a href="%{terms_path}">Política de Privacidade</a>.
       username_available: Seu nome de usuário ficará disponível novamente
       username_unavailable: Seu nome de usuário permanecerá indisponível
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Diretório de perfis
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Descobrir usuários baseado em seus interesses
     explore_mastodon: Explore o %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: não é um nome de domínio válido
   errors:
@@ -807,7 +768,7 @@ pt-BR:
     '406': Esta página não está disponível no formato solicitado.
     '410': A página que você procura não existe mais.
     '422':
-      content: Falha na verificação de segurança. Você desativou o uso de cookies?
+      content: Falha na verificação de segurança. Você está bloqueando cookies?
       title: Falha na verificação de segurança
     '429': Muitas solicitações
     '500':
@@ -829,7 +790,6 @@ pt-BR:
     blocks: Você bloqueou
     csv: CSV
     domain_blocks: Bloqueios de domínio
-    follows: You follow
     lists: Listas
     mutes: Você silenciou
     storage: Armazenamento de mídia
@@ -890,6 +850,8 @@ pt-BR:
     inactive: Inativo
     publicize_checkbox: 'E toote isso:'
     publicize_toot: 'Está provado! Eu sou %{username} no %{service}: %{url}'
+    remove: Remover comprovatido da conta
+    removed: Comprovativo removido da conta com sucesso
     status: Status da verificação
     view_proof: Ver prova
   imports:
@@ -942,7 +904,6 @@ pt-BR:
     cancel: Cancelar redirecionamento
     cancel_explanation: Cancelar o redirecionamento reativará a sua conta atual, mas não trará de volta os seguidores que não foram migrados para aquela conta.
     cancelled_msg: Redirecionamento cancelado com sucesso.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: é a mesma conta que você migrou
       missing_also_known_as: não está referenciando esta conta
@@ -956,11 +917,9 @@ pt-BR:
     not_redirecting: Sua conta não está redirecionando para nenhuma outra conta atualmente.
     on_cooldown: Você migrou recentemente sua conta. Esta função ficará disponível novamente em %{count} dias.
     past_migrations: Migrações passadas
-    proceed: Save
     proceed_with_move: Migrar seguidores
     redirecting_to: Sua conta está redirecionando para %{acct}.
     set_redirect: Definir redirecionamento
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: A nova conta deve primeiro ser configurada para que esta seja referenciada
       before: 'Antes de prosseguir, por favor leia com cuidado:'
@@ -1078,10 +1037,6 @@ pt-BR:
     reply:
       proceed: Continue para responder
       prompt: 'Você responderá este toot:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Você excedeu o limite de %{limit} toots agendados para esse dia
     over_total_limit: Você excedeu o limite de %{limit} toots agendados
@@ -1284,15 +1239,8 @@ pt-BR:
     title: Termos de Serviço e Política de Privacidade de %{instance}
   themes:
     contrast: Mastodon  (Alto contraste)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Noturno)
+    default: Mastodon (Noturno)
     mastodon-light: Mastodon (Diurno)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%H:%M em %d de %b de %Y"
@@ -1320,7 +1268,7 @@ pt-BR:
       title: Baixar arquivo
     warning:
       explanation:
-        disable: Enquanto sua conta está bloqueada, seus dados estão intactos, mas você não pode realizar nenhuma ação até que sua conta seja desbloqueada.
+        disable: Enquanto sua conta está congelada, seus dados de conta permanecem intactos, mas você não pode realizar nenhuma ação até que esteja destrancada.
         silence: Enquanto sua conta está silenciada, somente pessoas que já estão seguindo você poderão ver seus toots nessa instância, e você pode ser excluído de várias listas públicas. No entanto, outros ainda podem te seguir manualmente.
         suspend: Sua conta foi banida e todos os seus toots e mídias foram irreversivelmente excluídos desta instância e das instâncias dos seus seguidores.
       get_in_touch: Você pode responder a este e-mail para entrar em contato com a equipe de %{instance}.
@@ -1338,7 +1286,7 @@ pt-BR:
         suspend: Conta banida
     welcome:
       edit_profile_action: Configurar perfil
-      edit_profile_step: Você pode personalizar o seu perfil enviando uma imagem de perfil, uma capa, alterando seu nome de exibição e etc. Se você preferir aprovar seus novos seguidores antes de eles verem seus toots, você pode trancar a sua conta.
+      edit_profile_step: Você pode customizar o seu perfil ao fazer upload de um avatar, header, alterar seu nome de exibição e mais. Se você preferir revisar novos seguidores antes de poderem te seguir, você pode trancar a sua conta.
       explanation: Aqui estão algumas dicas para você começar
       final_action: Comece a tootar
       final_step: 'Comece a tootar! Mesmo sem seguidores, suas mensagens públicas podem ser vistas pelos outros, por exemplo, na linha local e nas hashtags. Você pode querer fazer uma introdução usando a hashtag #introdução, ou em inglês usando a hashtag #introductions.'

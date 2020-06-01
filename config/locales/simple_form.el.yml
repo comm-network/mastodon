@@ -30,9 +30,8 @@ el:
         current_username: Για επιβεβαίωση, παρακαλώ γράψε το όνομα χρήστη του τρέχοντος λογαριασμού
         digest: Αποστέλλεται μόνο μετά από μακρά περίοδο αδράνειας και μόνο αν έχεις λάβει προσωπικά μηνύματα κατά την απουσία σου
         discoverable: Ο κατάλογος λογαριασμών είναι ένας ακόμα τρόπος ώστε ο λογαριασμός σου να βρει μεγαλύτερο κοινό
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Θα σου σταλεί email επιβεβαίωσης
-        fields: Μπορείς να έχεις έως 8 σημειώσεις σε μορφή πίνακα στο προφίλ σου
+        fields: Μπορείς να έχεις έως 4 σημειώσεις σε μορφή πίνακα στο προφίλ σου
         header: PNG, GIF ή JPG. Έως %{size}. Θα περιοριστεί σε διάσταση %{dimensions}px
         inbox_url: Αντέγραψε το URL της αρχικής σελίδας του ανταποκριτή (relay) που θέλεις να χρησιμοποιήσεις
         irreversible: Τα φιλτραρισμένα τουτ θα εξαφανιστούν αμετάκλητα, ακόμα και αν το φίλτρο αργότερα αφαιρεθεί
@@ -42,18 +41,13 @@ el:
         phrase: Θα ταιριάζει ανεξαρτήτως πεζών/κεφαλαίων ή προειδοποίησης περιεχομένου του τουτ
         scopes: Ποια API θα επιτρέπεται στην εφαρμογή να χρησιμοποιήσεις. Αν επιλέξεις κάποιο υψηλό εύρος εφαρμογής, δε χρειάζεται να επιλέξεις και εξειδικευμένα.
         setting_aggregate_reblogs: Απόκρυψη των νέων προωθήσεωνγια τα τουτ που έχουν προωθηθεί πρόσφατα (επηρεάζει μόνο τις νέες προωθήσεις)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Τα ευαίσθητα πολυμέσα είναι κρυμμένα και εμφανίζονται με ένα κλικ
         setting_display_media_default: Απόκρυψη ευαίσθητων πολυμέσων
         setting_display_media_hide_all: Μόνιμη απόκρυψη όλων των πολυμέσων
         setting_display_media_show_all: Μόνιμη εμφάνιση ευαίσθητων πολυμέσων
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Δε θα εμφανίζεται στο προφίλ σου ποιους ακολουθείς και ποιοι σε ακολουθούν
         setting_noindex: Επηρεάζει το δημόσιο προφίλ και τις δημοσιεύσεις σου
         setting_show_application: Η εφαρμογή που χρησιμοποιείς για να στέλνεις τα τουτ σου θα εμφανίζεται στις αναλυτικές λεπτομέρειες τους
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Οι χρωματισμοί βασίζονται στα χρώματα του κρυμμένου πολυμέσου αλλά θολώνουν τις λεπτομέρειες
         setting_use_pending_items: Εμφάνιση ενημερώσεων ροής μετά από κλικ αντί για αυτόματη κύλισή τους
         username: Το όνομα χρήστη σου θα είναι μοναδικό στο %{domain}
@@ -61,8 +55,8 @@ el:
       domain_allow:
         domain: Ο τομέας αυτός θα επιτρέπεται να ανακτά δεδομένα από αυτό τον διακομιστή και τα εισερχόμενα δεδομένα θα επεξεργάζονται και θα αποθηκεύονται
       email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
+        domain: Αυτό μπορεί να είναι το όνομα του τομέα που εμφανίζεται στη διεύθυνση email, στην εγγραφή MX στην οποία δείχνει ο τομέας ή την διεύθυνση IP του σέρβερ που δείχνει η εγγραφή MX. Αυτά θα ελεγχθούν κατά την εγγραφή του χρήστη και η εγγραφή θα απορριφθεί αναλόγως.
+        with_dns_records: Θα γίνει απόπειρα ανάλυσης των εγγραφών DNS του τομέα και τα αποτελέσματα θα μπουν και αυτά σε μαύρη λίστα
       featured_tag:
         name: 'Ίσως να θες να χρησιμοποιήσεις μια από αυτές:'
       form_challenge:
@@ -137,10 +131,6 @@ el:
         setting_auto_play_gif: Αυτόματη αναπαραγωγή των GIF
         setting_boost_modal: Επιβεβαίωση πριν την προώθηση
         setting_crop_images: Περιορισμός των εικόνων σε μη-ανεπτυγμένα τουτ σε αναλογία 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Γλώσσα δημοσιεύσεων
         setting_default_privacy: Ιδιωτικότητα δημοσιεύσεων
         setting_default_sensitive: Σημείωση όλων των πολυμέσων ως ευαίσθητου περιεχομένου
@@ -149,15 +139,11 @@ el:
         setting_display_media_default: Προκαθορισμένο
         setting_display_media_hide_all: Απόκρυψη όλων
         setting_display_media_show_all: Εμφάνιση όλων
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Μόνιμη ανάπτυξη των τουτ με προειδοποίηση περιεχομένου
         setting_hide_network: Κρύψε τις διασυνδέσεις σου
         setting_noindex: Επέλεξε να μην συμμετέχεις στα αποτελέσματα μηχανών αναζήτησης
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Μείωση κίνησης κινουμένων στοιχείων
         setting_show_application: Αποκάλυψη εφαρμογής που χρησιμοποιήθηκε για την αποστολή των τουτ
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Χρήση της προεπιλεγμένης γραμματοσειράς του συστήματος
         setting_theme: Θέμα ιστότοπου
         setting_trends: Εμφάνιση σημερινών τάσεων

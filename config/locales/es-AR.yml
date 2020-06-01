@@ -18,18 +18,13 @@ es-AR:
     contact_unavailable: No disponible
     discover_users: Descubrir usuarios
     documentation: Documentación
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Con una cuenta en %{instance} vas a poder seguir a gente de cualquier servidor de Mastodon y más allá.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Probá una aplicación móvil
     hosted_on: Mastodon alojado en %{domain}
     instance_actor_flash: |
       Esta cuenta es un actor virtual usado para representar al propio servidor y no a ningún usuario individual.
       Se usa para fines federativos y no debe ser bloqueado a menos que quieras bloquear toda la instancia, en cuyo caso deberías usar un bloqueo de dominio.
     learn_more: Aprendé más
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Política de privacidad
     see_whats_happening: Esto es lo que está pasando ahora
     server_stats: 'Estadísticas del servidor:'
@@ -286,12 +281,10 @@ es-AR:
       new:
         create: Crear anuncio
         title: Nuevo anuncio
-      publish: Publish
       published_msg: "¡Anuncio publicado exitosamente!"
       scheduled_for: Programado para %{time}
       scheduled_msg: "¡Anuncio programado para su publicación!"
       title: Anuncios
-      unpublish: Unpublish
       unpublished_msg: "¡Anuncio dejado de publicar exitosamente!"
       updated_msg: "¡Anuncio actualizado exitosamente!"
     custom_emojis:
@@ -411,9 +404,6 @@ es-AR:
         create: Agregar dominio
         title: Nueva desaprobación de correo electrónico
       title: Desaprobación de correo electrónico
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Dominio
       delivery_available: La entrega está disponible
@@ -465,11 +455,9 @@ es-AR:
       destroyed_msg: "¡La nota de denuncia fue eliminada exitosamente!"
     reports:
       account:
-        note: note
         notes:
           one: "%{count} nota"
           other: "%{count} notas"
-        report: report
         reports:
           one: "%{count} denuncia"
           other: "%{count} denuncias"
@@ -555,9 +543,6 @@ es-AR:
           approved: Se requiere aprobación para registrarse
           none: Nadie puede registrarse
           open: Cualquiera puede registrarse
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Modo de registros
       show_known_fediverse_at_about_page:
         desc_html: Cuando está deshabilitado, restringe la línea temporal pública enlazada desde la página de inicio para mostrar sólo contenido local
@@ -611,22 +596,12 @@ es-AR:
       no_status_selected: No se cambió ningún estado ya que ninguno fue seleccionado
       title: Estados de la cuenta
       with_media: Con medios
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Usos únicos de hoy
       accounts_week: Usos únicos esta semana
       breakdown: Desglose del consumo de hoy por fuentes
       context: Contexto
       directory: En el directorio
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} en el directorio"
       last_active: Última actividad
       most_popular: Lo más popular
@@ -636,17 +611,14 @@ es-AR:
       reviewed: Revisado
       title: Etiquetas
       trending_right_now: En tendencia ahora mismo
-      unhide: Show in directory
       unique_uses_today: "%{count} toots hoy"
       unreviewed: No revisado
       updated_msg: La configuración de la etiqueta se actualizó exitosamente
-      visible: Visible
     title: Administración
     warning_presets:
       add_new: Agregar nuevo
       delete: Eliminar
       edit_preset: Editar preajuste de advertencia
-      empty: Empty
       title: Administrar preajustes de advertencia
   admin_mailer:
     new_pending_account:
@@ -663,7 +635,7 @@ es-AR:
     add_new: Crear alias
     created_msg: El nuevo alias se creó exitosamente. Ahora podés empezar la mudanza desde la cuenta vieja.
     deleted_msg: Eliminaste el alias exitosamente. La mudanza de esa cuenta a esta ya no será posible.
-    empty: You have no aliases.
+    empty: No tenés alias.
     hint_html: Si querés mudarte desde otra cuenta a esta, acá podés crear un alias, el cual es necesario antes de empezar a mudar seguidores de la cuenta vieja a esta. Esta acción por sí misma es <strong>inofensiva y reversible</strong>. <strong>La migración de la cuenta se inicia desde la cuenta anterior</strong>.
     remove: Desenlazar alias
   appearance:
@@ -698,7 +670,6 @@ es-AR:
     change_password: Contraseña
     checkbox_agreement_html: Acepto las <a href="%{rules_path}" target="_blank">reglas del servidor</a> y los <a href="%{terms_path}" target="_blank">términos del servicio</a>
     checkbox_agreement_without_rules_html: Acepto los <a href="%{terms_path}" target="_blank">términos del servicio</a>
-    confirm_email: Confirm email
     delete_account: Eliminar cuenta
     delete_account_html: Si querés eliminar tu cuenta, podés <a href="%{path}">seguí por acá</a>. Se te va a pedir una confirmación.
     description:
@@ -768,11 +739,9 @@ es-AR:
       x_months: "%{count}m"
       x_seconds: "%{count}s"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: La información que ingresaste no es correcta
     confirm_password: Ingresa tu contraseña actual para verificar tu identidad
     confirm_username: Ingresá tu nombre de usuario para confirmar el procedimiento
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Eliminar cuenta
     success_msg: Tu cuenta fue eliminada exitosamente
     warning:
@@ -786,18 +755,10 @@ es-AR:
       more_details_html: Para más detalles, leé la <a href="%{terms_path}">política de privacidad</a>.
       username_available: Tu nombre de usuario volverá a estar disponible
       username_unavailable: Tu nombre de usuario no estará disponible
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Directorio de perfiles
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Descubrí usuarios basados en sus intereses
     explore_mastodon: Navegá %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: no es un nombre de dominio válido
   errors:
@@ -829,7 +790,6 @@ es-AR:
     blocks: Tus bloqueos
     csv: CSV
     domain_blocks: Dominios bloqueados
-    follows: You follow
     lists: Listas
     mutes: Quienes silenciaste
     storage: Almacenamiento de medios
@@ -890,6 +850,8 @@ es-AR:
     inactive: Inactiva
     publicize_checkbox: 'Y tooteá esto:'
     publicize_toot: "¡Comprobado! Soy %{username} en %{service}: %{url}"
+    remove: Quitar prueba de cuenta
+    removed: Se quitó la prueba de cuenta exitosamente
     status: Estado de verificación
     view_proof: Ver prueba
   imports:
@@ -942,7 +904,6 @@ es-AR:
     cancel: Cancelar redireccionamiento
     cancel_explanation: Al cancelar el redireccionamiento se reactivará tu cuenta actual, pero no recuperarás los seguidores que hayan sido mudados a la otra cuenta.
     cancelled_msg: Se canceló exitosamente el redireccionamiento.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: es la misma cuenta a la que ya te mudaste
       missing_also_known_as: no está haciendo referencia a esta cuenta
@@ -956,11 +917,9 @@ es-AR:
     not_redirecting: Actualmente, tu cuenta no está siendo redirigida a ninguna otra cuenta.
     on_cooldown: Recientemente mudaste tu cuenta. Esta función estará disponible de nuevo en %{count} días.
     past_migrations: Mudanzas pasadas
-    proceed: Save
     proceed_with_move: Mudar seguidores
     redirecting_to: Tu cuenta está siendo redirigida a %{acct}.
     set_redirect: Establecer redireccionamiento
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: La nueva cuenta debe ser configurada primero para hacer referencia a esta
       before: 'Antes de proceder, por favor, leé estas notas cuidadosamente:'
@@ -1078,10 +1037,6 @@ es-AR:
     reply:
       proceed: Proceder para responder
       prompt: 'Vas a responder a este toot:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Superaste el límite de %{limit} toots programados para ese día
     over_total_limit: Superaste el límite de %{limit} toots programados
@@ -1285,14 +1240,7 @@ es-AR:
   themes:
     contrast: Alto contraste
     default: Oscuro
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Dark)
     mastodon-light: Claro
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%Y.%b.%d, %H:%M"

@@ -30,9 +30,8 @@ cy:
         current_username: I gadarnhau, nodwch enw defnyddiwr y cyfrif cyfredol
         digest: Ond yn cael eu hanfon ar ôl cyfnod hir o anweithgarwch ac ond os ydych wedi derbyn unrhyw negeseuon personol yn eich absenoldeb
         discoverable: Mae'r cyfeirlyfr proffil yn ffordd arall y gall eich cyfrif gyrraedd cynulleidfa ehangach
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Byddwch yn derbyn e-bost i gadarnhau
-        fields: Mae modd i chi arddangos hyd at 8 eitem fel tabl ar eich proffil
+        fields: Mae modd i chi arddangos hyd at 4 eitem fel tabl ar eich proffil
         header: PNG, GIF neu JPG. %{size} ar y mwyaf. Ceith ei israddio i %{dimensions}px
         inbox_url: Copïwch yr URL o dudalen flaen y relái yr ydych am ei ddefnyddio
         irreversible: Bydd tŵtiau wedi eu hidlo yn diflannu am byth, hyd yn oed os ceith yr hidlydd ei ddileu'n hwyrach
@@ -42,18 +41,13 @@ cy:
         phrase: Caiff ei gyfateb heb ystyriaeth o briflythrennu mewn testun neu rhybudd ynghylch cynnwys tŵt
         scopes: Pa APIau y bydd gan y rhaglen ganiatad i gael mynediad iddynt. Os dewiswch maes lefel uchaf, yna nid oes angen dewis rhai unigol.
         setting_aggregate_reblogs: Paid dangos bŵstiau newydd ar gyfer tŵtiau sydd wedi'i fŵstio yn ddiweddar (dim ond yn effeithio bŵstiau newydd ei dderbyn)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Mae cyfryngau sensitif yn cael ei gyddio'n rhagosodiedig, a gall cael eu dangos â chlic
         setting_display_media_default: Cuddio cyfryngau wedi eu marcio'n sensitif
         setting_display_media_hide_all: Cuddio cyfryngau bob tro
         setting_display_media_show_all: Dangos cyfryngau wedi eu marcio'n sensitif bob tro
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Ni fydd y rheini yr ydych yn eu dilyn a phwy sy'n eich dilyn chi yn cael ei ddangos ar eich proffil
         setting_noindex: Mae hyn yn effeithio ar eich proffil cyhoeddus a'ch tudalennau statws
         setting_show_application: Bydd y offer frydych yn defnyddio i dŵtio yn cael ei arddangos yn golwg manwl eich tŵtiau
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Mae graddiannau wedi'u seilio ar liwiau'r delweddau cudd ond maent yn cuddio unrhyw fanylion
         setting_use_pending_items: Cuddio diweddariadau llinell amser y tu ôl i glic yn lle sgrolio yn awtomatig
         username: Bydd eich enw defnyddiwr yn unigryw ar %{domain}
@@ -61,8 +55,8 @@ cy:
       domain_allow:
         domain: Bydd y parth hwn yn gallu nôl data o'r gweinydd hwn a bydd data sy'n dod i mewn ohono yn cael ei brosesu a'i storio
       email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
+        domain: Gall hyn fod yr enw parth sy'n dangos yn yr ebost, y cofnod MX mae'r parth yn adfer i, neu'r cyfeiriad IP o'r gweinydd mae'r cofnod MX yn adfer i. Bydd y rhain yn cael eu gwirio wrth i defnyddiwr cofrestru, a chaiff y cofrestriad ei wrthod.
+        with_dns_records: Bydd ceisiad i adfer cofnodau DNS y parth penodol yn cael ei wneud, a bydd y canlyniadau hefyd yn cael ei gosbrestru
       featured_tag:
         name: 'Efallai hoffech defnyddio un o''r rhain:'
       form_challenge:
@@ -137,10 +131,6 @@ cy:
         setting_auto_play_gif: Chwarae GIFs wedi'u hanimeiddio yn awtomatig
         setting_boost_modal: Dangos deialog cadarnhad cyn bŵstio
         setting_crop_images: Tocio lluniau o fewn tŵtiau ddi-ehangedig i 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Cyhoeddi iaith
         setting_default_privacy: Cyfrinachedd cyhoeddi
         setting_default_sensitive: Marcio cyfryngau fel eu bod yn sensitif bob tro
@@ -149,15 +139,11 @@ cy:
         setting_display_media_default: Rhagosodiad
         setting_display_media_hide_all: Cuddio oll
         setting_display_media_show_all: Dangos oll
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Ymestyn tŵtiau wedi'u marcio a rhybudd cynnwys bob tro
         setting_hide_network: Cuddio eich rhwydwaith
         setting_noindex: Dewis peidio mynegeio peiriant chwilota
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Lleihau mudiant mewn animeiddiadau
         setting_show_application: Datguddio'r offer defnyddwyd i anfon tŵtiau
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Defnyddio ffont rhagosodedig y system
         setting_theme: Thema'r wefan
         setting_trends: Dangos tueddiadau o heddiw ymlaen
@@ -170,7 +156,7 @@ cy:
         username_or_email: Enw defnyddiwr neu e-bost
         whole_word: Gair cyfan
       email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
+        with_dns_records: Cynnwys cofnodion MX a chyfeiriadau IP y parth
       featured_tag:
         name: Hashnod
       interactions:

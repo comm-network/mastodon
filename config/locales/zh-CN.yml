@@ -18,18 +18,13 @@ zh-CN:
     contact_unavailable: 未公开
     discover_users: 发现用户
     documentation: 文档
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: 在%{instance} 上拥有账号后，你可以关注任何 Mastodon 服务器或其他服务器上的人。
-    generic_description: "%{domain} is one server in the network"
     get_apps: 尝试移动应用
     hosted_on: 一个在 %{domain} 上运行的 Mastodon 实例
     instance_actor_flash: '这个账号是个虚拟帐号，不代表任何用户，只用来代表服务器本身。它用于和其它服务器互通，所以不应该被封禁，除非你想封禁整个实例。但是想封禁整个实例的时候，你应该用域名封禁。
 
 '
     learn_more: 了解详情
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: 隐私政策
     see_whats_happening: 看一看现在在发生什么
     server_stats: 服务器统计数据：
@@ -143,7 +138,7 @@ zh-CN:
         silenced: 已隐藏
         suspended: 已封禁
         title: 帐户状态
-      moderation_notes: 管理备忘
+      moderation_notes: 管理员备注
       most_recent_activity: 最后一次活跃的时间
       most_recent_ip: 最后一次活跃的 IP 地址
       no_account_selected: 因为没有帐号被选择，所以没有更改
@@ -171,7 +166,7 @@ zh-CN:
       roles:
         admin: 管理员
         moderator: 监察员
-        staff: 管理人员
+        staff: 站务人员
         user: 普通用户
       search: 搜索
       search_same_email_domain: 其他具有相同电子邮箱域名的用户
@@ -197,41 +192,41 @@ zh-CN:
       whitelisted: 已加入白名单
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        assigned_to_self_report: 指派举报
+        change_email_user: 为用户修改邮箱地址
+        confirm_user: 确认用户
+        create_account_warning: 创建警告
+        create_announcement: 创建公告
+        create_custom_emoji: 创建自定义表情符号
+        create_domain_allow: 允许新域名
+        create_domain_block: 封禁新域名
+        create_email_domain_block: 封禁电子邮箱域名
+        demote_user: 给用户降职
+        destroy_announcement: 删除公告
+        destroy_custom_emoji: 删除自定义表情符号
+        destroy_domain_allow: 解除域名允许
+        destroy_domain_block: 解除域名封禁
+        destroy_email_domain_block: 解除电子邮箱域名封禁
+        destroy_status: 删除嘟文
+        disable_2fa_user: 禁用双重认证
+        disable_custom_emoji: 禁用自定义表情符号
+        disable_user: 禁用用户
+        enable_custom_emoji: 启用自定义表情符号
+        enable_user: 启用用户
+        memorialize_account: 将账户设为追悼模式
+        promote_user: 给用户升任
+        remove_avatar_user: 移除头像
+        reopen_report: 重开举报
+        reset_password_user: 重置密码
+        resolve_report: 处理举报
+        silence_account: 隐藏用户
+        suspend_account: 封禁用户
+        unassigned_report: 取消举报的指派
+        unsilence_account: 解除账号隐藏
+        unsuspend_account: 解除账号封禁
+        update_announcement: 更新公告
+        update_custom_emoji: 更新自定义表情符号
+        update_status: 更新嘟文
       actions:
         assigned_to_self_report: "%{name} 接管了举报 %{target}"
         change_email_user: "%{name} 更改了用户 %{target} 的电子邮件地址"
@@ -269,9 +264,9 @@ zh-CN:
         update_custom_emoji: "%{name} 更新了自定义表情 %{target}"
         update_status: "%{name} 刷新了 %{target} 的嘟文"
       deleted_status: "（嘟文已删除）"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      empty: 没有找到日志
+      filter_by_action: 根据行为过滤
+      filter_by_user: 根据用户过滤
       title: 运营日志
     announcements:
       destroyed_msg: 公告已删除！
@@ -282,12 +277,10 @@ zh-CN:
       new:
         create: 创建公告
         title: 新公告
-      publish: Publish
       published_msg: 公告已发布！
       scheduled_for: 定时在 %{time}
       scheduled_msg: 定时公告已创建！
       title: 公告
-      unpublish: Unpublish
       unpublished_msg: 公告已取消发布！
       updated_msg: 公告已成功更新！
     custom_emojis:
@@ -330,7 +323,7 @@ zh-CN:
       feature_invites: 邀请链接
       feature_profile_directory: 用户目录
       feature_registrations: 公开注册
-      feature_relay: 中继服务器
+      feature_relay: 联邦中继站
       feature_spam_check: 反垃圾
       feature_timeline_preview: 时间轴预览
       features: 功能
@@ -406,12 +399,9 @@ zh-CN:
         create: 添加域名
         title: 添加电子邮件域名屏蔽
       title: 电子邮件域名屏蔽
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: 域名
-      delivery_available: 无法投递
+      delivery_available: 可投递
       known_accounts:
         other: "%{count} 个已知帐户"
       moderation:
@@ -439,30 +429,28 @@ zh-CN:
     relationships:
       title: "%{acct} 的关系"
     relays:
-      add_new: 订阅新的中继
+      add_new: 订阅新的中继站
       delete: 删除
       description_html: "<strong>中继服务器</strong>是一个信息统合服务器，各服务器可以通过订阅中继服务器和向中继服务器推送信息来交换大量公开嘟文。<strong>它可以帮助中小型服务器发现联邦宇宙中的其他服务器的内容</strong>，而无需本站用户手动关注其他远程服务器上的用户。"
       disable: 禁用
       disabled: 已禁用
       enable: 启用
-      enable_hint: 启用此功能后，你的实例会订阅此中继的所有公开嘟文，并同时向其推送本服务器的公开嘟文。
+      enable_hint: 启用此功能后，你的实例会订阅此中继站的所有公开嘟文，并同时向其推送本服务器的公开嘟文。
       enabled: 已启用
-      inbox_url: 中继 URL
-      pending: 等待中继确认
+      inbox_url: 中继站 URL
+      pending: 等待中继站的确认
       save_and_enable: 保存并启用
       setup: 设置中继连接
       signatures_not_enabled: 安全模式或白名单模式启用时，中继将不会正常工作
       status: 状态
-      title: 中继
+      title: 中继站
     report_notes:
       created_msg: 举报记录建立成功！
       destroyed_msg: 举报记录删除成功！
     reports:
       account:
-        note: note
         notes:
           other: "%{count} 条笔记"
-        report: report
         reports:
           other: "%{count} 个报告"
       action_taken_by: 操作执行者
@@ -547,9 +535,6 @@ zh-CN:
           approved: 注册时需要批准
           none: 关闭注册
           open: 开放注册
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: 注册模式
       show_known_fediverse_at_about_page:
         desc_html: 如果开启，就会在时间轴预览显示其他站点嘟文，否则就只会只显示本站嘟文。
@@ -603,22 +588,12 @@ zh-CN:
       no_status_selected: 因为没有嘟文被选中，所以没有更改
       title: 帐户嘟文
       with_media: 含有媒体文件
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: 今日活跃用户
       accounts_week: 本周活跃用户
       breakdown: 按来源分类今天的使用情况
       context: 上下文
       directory: 在目录中
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: 目录中 %{count} 条
       last_active: 最近活动
       most_popular: 最热门的
@@ -628,17 +603,14 @@ zh-CN:
       reviewed: 已审核
       title: 话题标签
       trending_right_now: 当前热门
-      unhide: Show in directory
       unique_uses_today: 今天发布了 %{count} 条
       unreviewed: 未审核
       updated_msg: 话题标签设置更新成功
-      visible: Visible
     title: 管理
     warning_presets:
       add_new: 添加新条目
       delete: 删除
       edit_preset: 编辑预置警告
-      empty: Empty
       title: 管理预设警告
   admin_mailer:
     new_pending_account:
@@ -655,7 +627,7 @@ zh-CN:
     add_new: 创建别名
     created_msg: 成功创建了一个新别名。您现在可以从旧账户开始迁移了。
     deleted_msg: 成功移除别名。已经无法从该帐户移动到此帐户了。
-    empty: You have no aliases.
+    empty: 你没有设置别名
     hint_html: 如果你想把另一个帐号迁移到这里，你可以先在这里创建一个别名。如果你想把关注者迁移过来，这一步是必须的。设置别名的操作时<strong>无害而且可以恢复的</strong>。<strong>帐号迁移的操作会从旧帐号开始</strong>。
     remove: 取消关联别名
   appearance:
@@ -690,7 +662,6 @@ zh-CN:
     change_password: 密码
     checkbox_agreement_html: 我同意 <a href="%{rules_path}" target="_blank">服务器规则</a> 和 <a href="%{terms_path}" target="_blank">服务条款</a>
     checkbox_agreement_without_rules_html: 我同意 <a href="%{terms_path}" target="_blank">服务条款</a>
-    confirm_email: Confirm email
     delete_account: 删除帐户
     delete_account_html: 如果你想删除你的帐户，请<a href="%{path}">点击这里继续</a>。你需要确认你的操作。
     description:
@@ -760,11 +731,9 @@ zh-CN:
       x_months: "%{count}个月"
       x_seconds: "%{count}秒"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: 您输入的信息不正确
     confirm_password: 输入你当前的密码来验证身份
     confirm_username: 输入您的用户名以继续
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: 删除帐户
     success_msg: 你的帐户已经成功删除
     warning:
@@ -778,18 +747,10 @@ zh-CN:
       more_details_html: 更多细节，请查看 <a href="%{terms_path}">隐私政策</a> 。
       username_available: 您的用户名现在又可以使用了
       username_unavailable: 您的用户名仍将无法使用
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: 用户目录
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: 根据兴趣发现用户
     explore_mastodon: 探索 %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: 不是一个有效的域名
   errors:
@@ -821,7 +782,6 @@ zh-CN:
     blocks: 屏蔽的用户
     csv: CSV
     domain_blocks: 域名屏蔽
-    follows: You follow
     lists: 列表
     mutes: 隐藏的用户
     storage: 媒体文件存储
@@ -881,6 +841,8 @@ zh-CN:
     inactive: 失效
     publicize_checkbox: 并发一条这样的嘟文：
     publicize_toot: '证明完毕！我是 %{service} 上的 %{username}: %{url}'
+    remove: 从帐户中移除凭据
+    removed: 成功从帐户中删除凭据
     status: 验证状态
     view_proof: 查看证明
   imports:
@@ -932,7 +894,6 @@ zh-CN:
     cancel: 取消跳转
     cancel_explanation: 取消跳转将会重新激活您当前的帐号，但是已经迁移到新账号的关注者不会回来。
     cancelled_msg: 成功取消跳转
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: 和您已经迁移过的帐号相同
       missing_also_known_as: 没有引用此帐号
@@ -946,11 +907,9 @@ zh-CN:
     not_redirecting: 您的帐号当前未跳转到其他帐户。
     on_cooldown: 您最近已经迁移过您的帐号。此功能将在%{count} 天后再次可用。
     past_migrations: 迁移记录
-    proceed: Save
     proceed_with_move: 移动关注者
     redirecting_to: 您的帐户被跳转到了 %{acct}。
     set_redirect: 设置跳转
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: 新账号必须先引用现在这个帐号
       before: 在继续前，请仔细阅读下列说明：
@@ -1066,10 +1025,6 @@ zh-CN:
     reply:
       proceed: 确认回复
       prompt: 您想要回复此嘟文：
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: 您已超出每日定时嘟文的上限（%{limit} 条）
     over_total_limit: 您已超出定时嘟文的上限（%{limit} 条）
@@ -1267,15 +1222,8 @@ zh-CN:
     title: "%{instance} 使用条款和隐私权政策"
   themes:
     contrast: Mastodon（高对比度）
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon（暗色主题）
+    default: Mastodon（暗色主题）
     mastodon-light: Mastodon（亮色主题）
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

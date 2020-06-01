@@ -18,18 +18,13 @@ hu:
     contact_unavailable: N/A
     discover_users: Találj meg másokat
     documentation: Dokumentáció
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Egy %{instance} fiókkal bármely más Mastodon szerveren vagy a föderációban lévő felhasználót követni tudsz.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Próbálj ki egy mobil appot
     hosted_on: "%{domain} Mastodon szerver"
     instance_actor_flash: 'Ez a fiók egy virtuális szereplő, mely magát a szervert reprezentálja, nem egy felhasználót. Ez a föderáció támogatására készült, ezért nem szabad blokkolni, hacsak egy teljes szervert nem akarsz kitiltani, amire persze a domain blokkolása jobb megoldás.
 
 '
     learn_more: Tudj meg többet
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Adatvédelmi szabályzat
     see_whats_happening: Nézd, mi történik
     server_stats: 'Szerver statisztika:'
@@ -116,7 +111,7 @@ hu:
       deleted: Törölve
       demote: Lefokozás
       disable: Kikapcsolás
-      disable_two_factor_authentication: Kétlépcsős azonosítás kikapcsolása
+      disable_two_factor_authentication: Kétlépcsős hitelesítés kikapcsolása
       disabled: Kikapcsolva
       display_name: Megjelenített név
       domain: Domain
@@ -128,7 +123,7 @@ hu:
       followers: Követő
       follows: Követett
       header: Fejléc
-      inbox_url: Beérkezett üzenetek URL
+      inbox_url: Beérkezett üzenetek URL-je
       invited_by: Meghívta
       ip: IP
       joined: Csatlakozott
@@ -286,12 +281,10 @@ hu:
       new:
         create: Közlemény létrehozása
         title: Új közlemény
-      publish: Publish
       published_msg: A közlemény sikeresen publikálva!
       scheduled_for: Ekkorra ütemezve %{time}
       scheduled_msg: A közlemény közzétételre beütemezve!
       title: Közlemények
-      unpublish: Unpublish
       unpublished_msg: A közlemény közzététele sikeresen visszavonva!
       updated_msg: A közlemény sikeresen frissítve!
     custom_emojis:
@@ -411,9 +404,6 @@ hu:
         create: Domain hozzáadása
         title: Új e-mail feketelista bejegyzés
       title: E-mail feketelista
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Domain
       delivery_available: Kézbesítés elérhető
@@ -465,11 +455,9 @@ hu:
       destroyed_msg: Bejelentési feljegyzés törölve!
     reports:
       account:
-        note: note
         notes:
           one: "%{count} feljegyzés"
           other: "%{count} feljegyzés"
-        report: report
         reports:
           one: "%{count} bejelentés"
           other: "%{count} bejelentés"
@@ -555,9 +543,6 @@ hu:
           approved: A regisztráció engedélyhez kötött
           none: Senki sem regisztrálhat
           open: Bárki regisztrálhat
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Regisztrációs mód
       show_known_fediverse_at_about_page:
         desc_html: Ha aktív, az előnézetben minden tülk megjelenik a velünk kapcsolatban álló szerverekről, egyébként csak helyi tülköket mutatunk.
@@ -611,22 +596,12 @@ hu:
       no_status_selected: Nem változtattunk meg semmit, mert semmi sem volt kiválasztva
       title: Felhasználó tülkjei
       with_media: Médiafájlokkal
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Egyedi használat a mai napon
       accounts_week: Egyedi használat ezen a héten
       breakdown: Mai használat bontása forrás szerint
       context: Környezet
       directory: Katalógusban
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} a katalógusban"
       last_active: Utoljára aktív
       most_popular: Legnépszerűbb
@@ -636,17 +611,14 @@ hu:
       reviewed: Engedélyezett
       title: Hashtagek
       trending_right_now: Most trendi
-      unhide: Show in directory
       unique_uses_today: "%{count} mai tülkölés"
       unreviewed: Még nem engedélyezett
       updated_msg: A hashtag beállításokat sikeresen frissítettük
-      visible: Visible
     title: Karbantartás
     warning_presets:
       add_new: Új hozzáadása
       delete: Törlés
       edit_preset: Figyelmeztetés szerkesztése
-      empty: Empty
       title: Figyelmeztetések
   admin_mailer:
     new_pending_account:
@@ -663,8 +635,8 @@ hu:
     add_new: Alias készítése
     created_msg: Elkészült az új aliasod. Most már elkezdheted a költöztetést a régi fiókból.
     deleted_msg: Sikeresen eltávolítottad az aliast. A fiókról erre a fiókra való áttérés már nem lehetséges.
-    empty: You have no aliases.
-    hint_html: Ha másik fiókról kívánsz átlépni erre a fiókra, itt létrehozhatsz egy aliast, amelyre szükség van, mielőtt folytathatod a követők áthelyezését a régi fiókból erre. Ez az áthelyezés önmagában <strong>ártalmatlan és visszafordítható</strong> folyamat. <strong>A fiók áttelepítését a régi fiókból indul el. </strong>
+    empty: Nincsenek aliasaid.
+    hint_html: Ha másik fiókról kívánsz átlépni erre a fiókra, itt létrehozhatsz egy aliast, amelyre szükség van, mielőtt folytathatod a követők áthelyezését a régi fiókból erre. Ez az áthelyezés önmagában <strong>ártalmatlan és visszafordítható</strong> folyamat. <strong>A fiók áttelepítése a régi fiókból indul el. </strong>
     remove: Alias szétkapcsolása
   appearance:
     advanced_web_interface: Haladó webes felület
@@ -698,7 +670,6 @@ hu:
     change_password: Jelszó
     checkbox_agreement_html: Egyetértek a <a href="%{rules_path}" target="_blank">szerver szabályaival</a> és a <a href="%{terms_path}" target="_blank">felhasználási feltételekkel</a>
     checkbox_agreement_without_rules_html: Egyetértek a <a href="%{terms_path}" target="_blank">felhasználási feltételekkel</a>
-    confirm_email: Confirm email
     delete_account: Felhasználói fiók törlése
     delete_account_html: Felhasználói fiókod törléséhez <a href="%{path}">kattints ide</a>. A rendszer újbóli megerősítést fog kérni.
     description:
@@ -768,11 +739,9 @@ hu:
       x_months: "%{count}h"
       x_seconds: "%{count}mp"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: A beírt információ helytelen
     confirm_password: Személyazonosságod megerősítéséhez írd be a jelenlegi jelszavad
     confirm_username: Add meg a felhasználói nevedet a jóváhagyáshoz
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Felhasználói fiók törlése
     success_msg: Felhasználói fiókod sikeresen töröltük
     warning:
@@ -786,18 +755,10 @@ hu:
       more_details_html: A részletekért nézd meg az <a href="%{terms_path}">adatvédelmi szabályzatot</a>.
       username_available: A fiókod ismét elérhetővé válik
       username_unavailable: A fiókod elérhetetlen marad
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Profilok
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Találj másokra érdeklődésük alapján
     explore_mastodon: "%{title} felfedezése"
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: nem egy valódi domain név
   errors:
@@ -829,7 +790,6 @@ hu:
     blocks: Tiltólistádon
     csv: CSV
     domain_blocks: Tiltott domainjeid
-    follows: You follow
     lists: Listáid
     mutes: Némításaid
     storage: Médiatároló
@@ -890,6 +850,8 @@ hu:
     inactive: Inaktív
     publicize_checkbox: 'És ezt tülköld ki:'
     publicize_toot: 'Tanúsítva! %{username} vagyok %{service}: %{url} szerveren'
+    remove: Tanúsítás eltávolítása a fiókról
+    removed: Leszedtük a tanúsítást a fiókról
     status: Ellenőrzés állapota
     view_proof: Tanúsítás megtekintése
   imports:
@@ -942,7 +904,6 @@ hu:
     cancel: Átirányítás törlése
     cancel_explanation: Az átirányítás törlése reaktiválja a fiókodat, de nem fogja visszahozni azokat a követőidet, akik közben a másik fiókhoz kerültek át.
     cancelled_msg: Az átirányítást sikeresen töröltük.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: ugyanaz a fiók, ahová már elköltöztél
       missing_also_known_as: nem hivatkozza vissza ezt a fiókot
@@ -956,11 +917,9 @@ hu:
     not_redirecting: A fiókod nincs átirányítva jelenleg sehová sem.
     on_cooldown: Nemrég költöztetted a fiókod. Ez a funkció %{count} nap múlva lesz megint elérhető.
     past_migrations: Eddigi költözések
-    proceed: Save
     proceed_with_move: Követők átköltöztetése
     redirecting_to: A fiókod át van irányítva ide %{acct}.
     set_redirect: Átirányítás beállítása
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Az új fiókot először be kell úgy állítani, hogy ezt visszahivatkozza
       before: 'Mielőtt továbbmész, olvasd el ezeket kérlek figyelmesen:'
@@ -1078,10 +1037,6 @@ hu:
     reply:
       proceed: Válaszadás
       prompt: 'Erre a tülkre szeretnél válaszolni:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Túllépted az időzített tülkökre vonatkozó napi limitet (%{limit})
     over_total_limit: Túllépted az időzített tülkökre vonatkozó limitet (%{limit})
@@ -1284,18 +1239,11 @@ hu:
     title: "%{instance} Felhasználási feltételek és Adatkezelési nyilatkozat"
   themes:
     contrast: Mastodon (Nagy kontrasztú)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Sötét)
+    default: Mastodon (Sötét)
     mastodon-light: Mastodon (Világos)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
-      default: "%Y %b %d, %H:%M"
+      default: "%Y. %b %d., %H:%M"
       month: "%Y %b"
   two_factor_authentication:
     code_hint: Megerősítéshez írd be az alkalmazás által generált kódot

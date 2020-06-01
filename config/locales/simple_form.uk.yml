@@ -8,7 +8,7 @@ uk:
         acct: Вкажіть ім'я користувача@домен облікового запису, на яку ви хочете переміститися
       account_warning_preset:
         text: Ви можете використовувати синтаксис дмухів, наприклад URLи, хештеґи та згадки
-        title: Optional. Not visible to the recipient
+        title: Необов'язково. Не відображається отримувачу
       admin_account_action:
         include_statuses: Користувач побачить, які дмухи призвели до адміністративних дій або попереджень
         send_email_notification: Користувач отримає роз'яснення, що сталося з його обліковим записом
@@ -24,15 +24,14 @@ uk:
       defaults:
         autofollow: Люди, що зареєструвалися за вашим запрошенням, автоматично підпишуться на вас
         avatar: PNG, GIF, або JPG. Максимум - %{size}. Буде зменшено до %{dimensions}px
-        bot: Цей аккаунт в основному виконує автоматичні дії та може не відстежуватіся
+        bot: Цей акаунт виконує автоматичні дії та може не відстежуватися
         context: Один або кілька контекстів, до яких повинні бути застосовані фільтри
         current_password: Для цілей безпеки, будь ласка, введіть пароль поточного облікового запису
         current_username: Для підтвердження, будь ласка, введіть ім'я користувача поточного облікового запису
         digest: Буде послано тільки після довгого періоду неактивності, та тільки якщо ви отримаєте персональне повідомлення у цей період
         discoverable: Ще один шлях, за яким про вас можуть дізнатися користувачі — каталог профілів
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Вам надійде електронний лист з підтвердженням
-        fields: До 8 елементів може бути відображено як таблиця у вашому профілі
+        fields: До 4 елементів може бути відображено як таблиця у вашому профілі
         header: PNG, GIF, або JPG. Максимум - %{size}. Буде зменшено до %{dimensions}px
         inbox_url: Скопіюйте інтернет-адресу з титульної сторінки ретранслятора
         irreversible: Відсіяні дмухи зникнуть назавжди, навіть якщо фільтр потім буде знято
@@ -42,27 +41,19 @@ uk:
         phrase: Шукає без врахування регістру у тексті дмуха або у його попередженні про вміст
         scopes: Які API додатку буде дозволено використовувати. Якщо ви виберете самий верхній, нижчестоящі будуть обрані автоматично.
         setting_aggregate_reblogs: Не показувати передмухи для дмухів, які нещодавно вже були передмухнуті (не вплине на вже отримані передмухи)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Дражливі медіа приховані за промовчанням та можуть бути розкрити кліком
         setting_display_media_default: Приховувати медіа, помічені як дражливі
-        setting_display_media_hide_all: Приховувати будь-які медіа
-        setting_display_media_show_all: Завжди відображати медіа, помічені як дражливі
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
+        setting_display_media_hide_all: Завжди приховувати медіа
+        setting_display_media_show_all: Завжди показувати медіа
         setting_hide_network: У вашому профілі не буде відображено підписки та підписників
         setting_noindex: Впливає на ваш публічний профіль та сторінки статусу
         setting_show_application: Застосунок, за допомогою якого ви дмухнули, буде відображено серед деталей дмуху
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Градієнти, що базуються на кольорах прихованих медіа, але роблять нерозрізненними будь-які деталі
         setting_use_pending_items: Не додавати нові повідомлення до стрічок миттєво. Показувати їх тільки після додаткового клацання.
         username: Ваше ім'я користувача буде унікальним у %{domain}
         whole_word: Якщо пошукове слово або фраза містить тільки літери та цифри, воно має співпадати цілком
       domain_allow:
         domain: Цей домен зможе отримувати дані з цього серверу. Вхідні дані будуть оброблені та збережені
-      email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Можливо, ви захочете використовувати один з цих:'
       form_challenge:
@@ -88,7 +79,7 @@ uk:
         acct: Оброблювач нового облікового запису
       account_warning_preset:
         text: Текст шаблону
-        title: Title
+        title: Заголовок
       admin_account_action:
         include_statuses: Додати дмухи, на які ви скаржитесь, до електронного листа
         send_email_notification: Сповістити користувача електронною поштою
@@ -137,10 +128,6 @@ uk:
         setting_auto_play_gif: Автоматично відтворювати анімовані GIF
         setting_boost_modal: Відображати діалог підтвердження під час передмухування
         setting_crop_images: Обрізати зображення в нерозкритих постах до 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Мова дмухів
         setting_default_privacy: Видимість постів
         setting_default_sensitive: Позначити медіа як дражливе
@@ -149,15 +136,11 @@ uk:
         setting_display_media_default: За промовчанням
         setting_display_media_hide_all: Сховати всі
         setting_display_media_show_all: Показати всі
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Завжди розгортати дмухи з попередженнями про вміст
         setting_hide_network: Сховати вашу мережу
         setting_noindex: Відмовитися від індексування пошуковими системами
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Менше руху в анімаціях
         setting_show_application: Відображати застосунки, використані для дмухання
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Використовувати типовий системний шрифт
         setting_theme: Тема сайту
         setting_trends: Показати сьогоднішні тренди
@@ -169,8 +152,6 @@ uk:
         username: Ім'я користувача
         username_or_email: Ім'я користувача або електронна пошта
         whole_word: Ціле слово
-      email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Хештеґ
       interactions:

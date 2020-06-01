@@ -2,25 +2,13 @@
 eo:
   simple_form:
     hints:
-      account_alias:
-        acct: Specify the username@domain of the account you want to move from
-      account_migration:
-        acct: Specify the username@domain of the account you want to move to
       account_warning_preset:
         text: Vi povas uzi skribmanierojn de mesaĝoj, kiel URL-ojn, kradvortojn kaj menciojn
-        title: Optional. Not visible to the recipient
       admin_account_action:
-        include_statuses: The user will see which toots have caused the moderation action or warning
         send_email_notification: La uzanto ricevos klarigon pri tio, kio okazis al ties konto
         text_html: Malnepra. Vi povas uzi skribmanierojn de mesaĝoj. Vi povas <a href="%{path}">aldoni avertajn antaŭagordojn</a> por ŝpari tempon
         type_html: Elektu kion fari kun <strong>%{acct}</strong>
         warning_preset_id: Malnepra. Vi povas ankoraŭ aldoni propran tekston al la fino de la antaŭagordo
-      announcement:
-        all_day: When checked, only the dates of the time range will be displayed
-        ends_at: Optional. Announcement will be automatically unpublished at this time
-        scheduled_at: Leave blank to publish the announcement immediately
-        starts_at: Optional. In case your announcement is bound to a specific time range
-        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: Homoj, kiuj registriĝos per la invito aŭtomate sekvos vin
         avatar: Formato PNG, GIF aŭ JPG. Ĝis %{size}. Estos malgrandigita al %{dimensions}px
@@ -29,10 +17,9 @@ eo:
         current_password: Pro sekuraj kialoj, bonvolu enigi la pasvorton de la nuna konto
         current_username: Por konfirmi, bonvolu enigi la uzantnomon de la nuna konto
         digest: Sendita nur post longa tempo de neaktiveco, kaj nur se vi ricevis personan mesaĝon en via foresto
-        discoverable: The profile directory is another way by which your account can reach a wider audience
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
+        discoverable: Montru ĉi tiun profilon en la profilujon por ke la konto estos pli-vaste vidata
         email: Vi ricevos konfirman retmesaĝon
-        fields: Vi povas havi ĝis 8 tabelajn elementojn en via profilo
+        fields: Vi povas havi ĝis 4 tabelajn elementojn en via profilo
         header: Formato PNG, GIF aŭ JPG. Ĝis %{size}. Estos malgrandigita al %{dimensions}px
         inbox_url: Kopiu la URL de la ĉefpaĝo de la ripetilo, kiun vi volas uzi
         irreversible: Elfiltritaj mesaĝoj malaperos por ĉiam, eĉ se la filtrilo estas poste forigita
@@ -42,27 +29,16 @@ eo:
         phrase: Estos provita senzorge pri la uskleco de teksto aŭ averto pri enhavo de mesaĝo
         scopes: Kiujn API-ojn la aplikaĵo permesiĝos atingi. Se vi elektas supran amplekson, vi ne bezonas elekti la individuajn.
         setting_aggregate_reblogs: Ne montri novajn diskonigojn de mesaĝoj laste diskonigitaj (nur efikas al novaj diskonigoj)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Sentema komunikilo estas kaŝita defaŭlte kaj povas esti rivelita per alklako
         setting_display_media_default: Kaŝi aŭdovidaĵojn markitajn kiel tiklaj
         setting_display_media_hide_all: Ĉiam kaŝi ĉiujn aŭdovidaĵojn
         setting_display_media_show_all: Ĉiam montri aŭdovidaĵojn markitajn kiel tiklaj
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Tiuj, kiujn vi sekvas, kaj tiuj, kiuj sekvas vin ne estos videblaj en via profilo
         setting_noindex: Influas vian publikan profilon kaj mesaĝajn paĝojn
         setting_show_application: La aplikaĵo, kiun vi uzas por afiŝi, estos montrita en la detala vido de viaj mesaĝoj
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Transirojn estas bazita sur la koloroj de la kaŝitaj aŭdovidaĵoj sed ne montri iun ajn detalon
-        setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Via uzantnomo estos unika ĉe %{domain}
         whole_word: Kiam la vorto aŭ frazo estas nur litera aŭ cifera, ĝi estos uzata nur se ĝi kongruas kun la tuta vorto
-      domain_allow:
-        domain: This domain will be able to fetch data from this server and incoming data from it will be processed and stored
-      email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Vi povus uzi iun el la jenaj:'
       form_challenge:
@@ -73,8 +49,6 @@ eo:
         text: Ĉi tio helpos nin revizii vian kandidatiĝon
       sessions:
         otp: 'Enmetu la kodon de dufaktora aŭtentigo el via telefono aŭ uzu unu el viaj realiraj kodoj:'
-      tag:
-        name: You can only change the casing of the letters, for example, to make it more readable
       user:
         chosen_languages: Kiam estas elekto, nur mesaĝoj en elektitaj lingvoj aperos en publikaj tempolinioj
     labels:
@@ -88,9 +62,7 @@ eo:
         acct: Tenilo de la novan konton
       account_warning_preset:
         text: Antaŭagordita teksto
-        title: Title
       admin_account_action:
-        include_statuses: Include reported toots in the e-mail
         send_email_notification: Atentigi la uzanton retpoŝte
         text: Propra averto
         type: Ago
@@ -137,10 +109,6 @@ eo:
         setting_auto_play_gif: Aŭtomate ekigi GIF-ojn
         setting_boost_modal: Montri fenestron por konfirmi antaŭ ol diskonigi mesaĝon
         setting_crop_images: Stuci bildojn en negrandigitaj mesaĝoj al 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Publikada lingvo
         setting_default_privacy: Mesaĝa videbleco
         setting_default_sensitive: Ĉiam marki aŭdovidaĵojn tiklaj
@@ -149,15 +117,11 @@ eo:
         setting_display_media_default: Dekomenca
         setting_display_media_hide_all: Kaŝi ĉiujn
         setting_display_media_show_all: Montri ĉiujn
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Ĉiam malfoldas mesaĝojn markitajn per averto pri enhavo
         setting_hide_network: Kaŝi viajn sekvantojn kaj sekvatojn
         setting_noindex: Ellistiĝi de retserĉila indeksado
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Malrapidigi animaciojn
         setting_show_application: Publikigi la aplikaĵon uzatan por sendi mesaĝojn
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Uzi la dekomencan tiparon de la sistemo
         setting_theme: Reteja etoso
         setting_trends: Montri hodiaŭajn furoraĵojn
@@ -169,8 +133,6 @@ eo:
         username: Uzantnomo
         username_or_email: Uzantnomo aŭ Retadreso
         whole_word: Tuta vorto
-      email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Kradvorto
       interactions:
@@ -192,7 +154,6 @@ eo:
         report: Nova signalo estas sendita
         trending_tag: Sendi retpoŝtmesaĝon kiam nekontrolita kradvorto furoras
       tag:
-        listable: Allow this hashtag to appear in searches and on the profile directory
         name: Kradvorto
         trendable: Permesi al ĉi tiu kradvorto aperi en furoraĵoj
         usable: Permesi tootojn uzi ĉiun tiun haketon

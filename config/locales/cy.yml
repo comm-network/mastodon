@@ -18,18 +18,13 @@ cy:
     contact_unavailable: Ddim yn berthnasol
     discover_users: Darganfod defnyddwyr
     documentation: Dogfennaeth
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Gyda cyfrif ar %{instance}, gallwch dilyn pobl ar unrhyw gweinydd Mastodon, a thu hwnt.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Rhowch gynnig ar ap dyfeis symudol
     hosted_on: Mastodon wedi ei weinyddu ar %{domain}
     instance_actor_flash: |
       Mae'r cyfrif hwn yn actor rhithwir a ddefnyddir i gynrychioli'r gweinydd ei hun ac nid unrhyw ddefnyddiwr unigol.
       Fe'i defnyddir at ddibenion ffederasiwn ac ni ddylid ei rwystro oni bai eich bod am rwystro'r achos cyfan, ac os felly dylech ddefnyddio bloc parth.
     learn_more: Dysu mwy
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Polisi preifatrwydd
     see_whats_happening: Gweld beth sy'n digwydd
     server_stats: 'Ystadegau gweinydd:'
@@ -113,7 +108,7 @@ cy:
       delete: Dileu
       destroyed_msg: Dinistrwyd nodyn goruwchwylio yn llwyddiannus!
     accounts:
-      add_email_domain_block: Blacklist e-mail domain
+      add_email_domain_block: Cosbrestru parth e-bost
       approve: Cymeradwyo
       approve_all: Cymeradwyo pob un
       are_you_sure: Ydych chi'n siŵr?
@@ -194,7 +189,7 @@ cy:
         staff: Staff
         user: Defnyddiwr
       search: Chwilio
-      search_same_email_domain: Other users with the same e-mail domain
+      search_same_email_domain: Defnyddwyr eraill gyda'r un parth ebost
       search_same_ip: Defnyddwyr eraill gyda'r un IP
       shared_inbox_url: URL Mewnflwch wedi ei rannu
       show:
@@ -217,41 +212,41 @@ cy:
       whitelisted: Rhestredig wen
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        assigned_to_self_report: Neilltuo Adroddiad
+        change_email_user: Newid Ebost ar gyfer Defnyddiwr
+        confirm_user: Cadarnhau Defnyddiwr
+        create_account_warning: Creu Rhybydd
+        create_announcement: Creu Cyhoeddiad
+        create_custom_emoji: Creu Emoji Addasiedig
+        create_domain_allow: Creu Alluogiad Parth
+        create_domain_block: Creu Gwaharddiad Parth
+        create_email_domain_block: Creu Gwaharddiad Parth Ebost
+        demote_user: Diraddio Defnyddiwr
+        destroy_announcement: Dileu Cyhoeddiad
+        destroy_custom_emoji: Dileu Emoji Addasiedig
+        destroy_domain_allow: Dileu Alluogiad Parth
+        destroy_domain_block: Dileu Gwaharddiad Parth
+        destroy_email_domain_block: Dileu gwaharddiad parth ebost
+        destroy_status: Dileu Statws
+        disable_2fa_user: Diffodd 2FA
+        disable_custom_emoji: Analluogi Emoji Addasiedig
+        disable_user: Analluogi Defnyddiwr
+        enable_custom_emoji: Alluogi Emoji Addasiedig
+        enable_user: Alluogi Defnyddiwr
+        memorialize_account: Cofadeilio Cyfrif
+        promote_user: Dyrchafu Defnyddiwr
+        remove_avatar_user: Tynnu Afatar
+        reopen_report: Ailagor Adroddiad
+        reset_password_user: Ailosod Cyfrinair
+        resolve_report: Datrus Adroddiad
+        silence_account: Tawelu Cyfrif
+        suspend_account: Gwahardd Cyfrif Dros Dro
+        unassigned_report: Dadneilltuo Adroddiad
+        unsilence_account: Dadawelu Cyfrif
+        unsuspend_account: Tynnu Gwahardd Cyfrif Dros Dro
+        update_announcement: Diweddaru Cyhoeddiad
+        update_custom_emoji: Diweddaru Emoji Addasiedig
+        update_status: Diweddaru Statws
       actions:
         assigned_to_self_report: Aseiniodd %{name} adroddiad %{target} i'w hunan
         change_email_user: Newidodd %{name} gyfeiriad e-bost y defnyddiwr %{target}
@@ -289,9 +284,9 @@ cy:
         update_custom_emoji: Diweddarodd %{name} emoji %{target}
         update_status: Diweddarodd %{name} statws gan %{target}
       deleted_status: "(statws wedi ei ddileu)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      empty: Dim logiau ar gael.
+      filter_by_action: Hidlo wrth weithred
+      filter_by_user: Hidlo wrth ddefnyddiwr
       title: Log archwilio
     announcements:
       destroyed_msg: Cyhoeddiad wedi'i ddileu yn llwyddianus!
@@ -302,12 +297,10 @@ cy:
       new:
         create: Creu cyhoeddiad
         title: Cyhoeddiad newydd
-      publish: Publish
       published_msg: Cyhoeddiad wedi'i gyhoeddi'n llwyddianus!
       scheduled_for: Wedi'i amserlenni ar gyfer %{time}
       scheduled_msg: Cyhoeddiad wedi'i amserlenni ar gyfer cyhoeddiad!
       title: Cyhoeddiadau
-      unpublish: Unpublish
       unpublished_msg: Cyhoeddiad wedi'i angyhoeddi'n llwyddianus!
       updated_msg: Cyhoeddiad wedi'i ddiweddaru yn llwyddianus!
     custom_emojis:
@@ -426,14 +419,11 @@ cy:
       destroyed_msg: Llwyddwyd i ddileu parth e-bost o'r gosbrestr
       domain: Parth
       empty: Dim parthiau ebost ar y rhestr rhwystro.
-      from_html: from %{domain}
+      from_html: o %{domain}
       new:
         create: Ychwanegu parth
         title: Cofnod newydd yng nghosbrestr e-byst
       title: Cosbrestr e-bost
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Parth
       delivery_available: Mae'r cyflenwad ar gael
@@ -489,7 +479,6 @@ cy:
       destroyed_msg: Llwyddwyd i ddileu nodyn adroddiad!
     reports:
       account:
-        note: note
         notes:
           few: "%{count} o nodiadau"
           many: "%{count} o nodiadau"
@@ -497,7 +486,6 @@ cy:
           other: "%{count} o nodiadau"
           two: "%{count} o nodiadau"
           zero: "%{count} nodyn"
-        report: report
         reports:
           few: "%{count} o adroddiadau"
           many: "%{count} o adroddiadau"
@@ -587,9 +575,6 @@ cy:
           approved: Mae angen cymeradwyaeth ar gyfer cofrestru
           none: Ni all unrhyw un cofrestru
           open: Gall unrhyw un cofrestru
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Modd cofrestriadau
       show_known_fediverse_at_about_page:
         desc_html: Wedi'i ddewis, bydd yn dangos rhagolwg o dŵtiau o'r holl ffedysawd. Fel arall bydd ond yn dangos tŵtiau lleol.
@@ -643,22 +628,12 @@ cy:
       no_status_selected: Ni newidwyd dim statws achos ni ddewiswyd dim un
       title: Statysau cyfrif
       with_media: A chyfryngau
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Defyddau unigol heddiw
       accounts_week: Defnyddau unigol yr wythnos hon
       breakdown: Ymddatodiad o ddefnyddiaeth heddiw wrth ffynhonnell
       context: Cyd-destun
       directory: O fewn y gyfeiriadur
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} yn y gyfeiriadur"
       last_active: Yn weithredol ddiwethaf
       most_popular: Mwyaf poblogaidd
@@ -668,17 +643,14 @@ cy:
       reviewed: Wedi'i adolygu
       title: Hashnodau
       trending_right_now: Yn tueddu nawr
-      unhide: Show in directory
       unique_uses_today: "%{count} yn postio heddiw"
       unreviewed: Heb ei adolygu
       updated_msg: Gosodiadau hashnodau wedi'i diweddaru'n llwyddiannus
-      visible: Visible
     title: Gweinyddiaeth
     warning_presets:
       add_new: Ychwanegu newydd
       delete: Dileu
       edit_preset: Golygu rhagosodiad rhybudd
-      empty: Empty
       title: Rheoli rhagosodiadau rhybudd
   admin_mailer:
     new_pending_account:
@@ -695,7 +667,7 @@ cy:
     add_new: Creu enw arall
     created_msg: Wedi creu enw arall yn llwyddianus. Gallwch nawr dechrau'r symudiad o'r hen gyfrif.
     deleted_msg: Wedi tynnu enw arall yn llwyddianus. Ni fydd symud o'r cyfrif hynny i'r cyfrif hon yn bosib.
-    empty: You have no aliases.
+    empty: Nid oes gennych chi enwau eraill.
     hint_html: Os hoffech symyd o gyfrif arall i'r cyfrif hon, gallwch creu enw arall fama, sydd yn angenrheidiol cyn i chi dechrau symyd ddilynwyr o'r hen gyfrif i'r cyfrif hon. Mae'r gweithred hon yn <strong>ddiniwed ac yn gildroadwy</strong>. <strong>Caiff symudiad y cyfrif ei dechrau o'r hen gyfrif</strong>.
     remove: Dadgysylltu'r enw arall
   appearance:
@@ -730,7 +702,6 @@ cy:
     change_password: Cyfrinair
     checkbox_agreement_html: Rydw i'n cytuno i'r <a href="%{rules_path}" target="_blank">rheolau'r gweinydd</a> a'r <a href="%{terms_path}" target="_blank">telerau gwasanaeth</a>
     checkbox_agreement_without_rules_html: Rydw i'n cytuno i <a href="%{terms_path}" target="_blank">Delerau y Gwasanaeth</a>
-    confirm_email: Confirm email
     delete_account: Dileu cyfrif
     delete_account_html: Os hoffech chi ddileu eich cyfrif, mae modd <a href="%{path}">parhau yma</a>. Bydd gofyn i chi gadarnhau.
     description:
@@ -800,11 +771,9 @@ cy:
       x_months: "%{count}mis"
       x_seconds: "%{count}eiliad"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Nid oedd y wybodaeth a nodoch yn gywir
     confirm_password: Mewnbynnwch eich cyfrinair presennol i gadarnhau mai chi sydd yno
     confirm_username: Rhowch eich enw defnyddiwr i gadarnhau'r weithdrefn
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Dileu cyfrif
     success_msg: Llwyddwyd i ddileu eich cyfrif
     warning:
@@ -818,18 +787,10 @@ cy:
       more_details_html: Am fwy o fanylion, gwelwch y <a href="%{terms_path}">polisi preifatrwydd</a>.
       username_available: Bydd eich enw defnyddiwr ar gael eto
       username_unavailable: Ni fydd eich enw defnyddiwr ar gael
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Cyfeiriadur proffil
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Darganfod defnyddwyr yn seiliedig ar eu diddordebau
     explore_mastodon: Archwilio %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: ddim yn enw parth dilys
   errors:
@@ -861,7 +822,6 @@ cy:
     blocks: Yr ydych yn blocio
     csv: CSV
     domain_blocks: Blociau parth
-    follows: You follow
     lists: Rhestrau
     mutes: Yr ydych yn tawelu
     storage: Storio cyfryngau
@@ -982,7 +942,6 @@ cy:
     cancel: Canslo ailgyfeirio
     cancel_explanation: Bydd diddymu'r ailgyfeiriad yn ail-actifadu eich cyfrif bresennol, ond ni fydd hi'n dychwelyd dilynwyr sydd wedi'i symud i'r cyfrif hynny.
     cancelled_msg: Wedi diddymu'r ailgyfeiriad yn llwyddiannus.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: yw'r un cyfrif rydych barod wedi symud i
       missing_also_known_as: yn olgyfeirio at y gyfrif hon
@@ -996,11 +955,9 @@ cy:
     not_redirecting: Nid yw eich cyfrif yn ailgyfeirio at gyfrif arall yn bresennol.
     on_cooldown: Rydych wedi mudo eich cyfrif yn diweddar. Bydd y swyddogaeth hon ar gael eto mewn %{count} diwrnod.
     past_migrations: Ymfudiadau yn y gorffennol
-    proceed: Save
     proceed_with_move: Symud dilynwyr
     redirecting_to: Mae eich cyfrif yn ailgyfeirio at %{acct}.
     set_redirect: Gosod ailgyfeiriad
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Bydd rhaid i'r cyfrif newydd olgyfeirio at y cyfrif hon yn gyntaf
       before: 'Cyn bwrw ymlaen, darllenwch y nodiadau hyn yn ofalus:'
@@ -1128,10 +1085,6 @@ cy:
     reply:
       proceed: Ymlaen i ateb
       prompt: 'Hoffech ateb y tŵt hon:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Rydych wedi rhagori'r cyfwng o %{limit} o dŵtiau rhestredig ar y dydd hynny
     over_total_limit: Rydych wedi rhagori'r cyfwng o %{limit} o dŵtiau rhestredig
@@ -1227,7 +1180,7 @@ cy:
       two: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
       zero: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
     errors:
-      in_reply_not_found: The status you are trying to reply to does not appear to exist.
+      in_reply_not_found: Nid yw'r statws rydych yn ceisio ymateb i yn edrych fel ei fod yn bodoli.
     language_detection: Canfod iaith yn awtomataidd
     open_in_web: Agor yn y wê
     over_character_limit: wedi mynd heibio'r uchafswm nodyn o %{max}
@@ -1354,15 +1307,8 @@ cy:
     title: "%{instance} Termau Gwasanaeth a Polisi Preifatrwydd"
   themes:
     contrast: Mastodon (Cyferbyniad uchel)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Tywyll)
+    default: Mastodon (Tywyll)
     mastodon-light: Mastodon (golau)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

@@ -18,18 +18,13 @@ pl:
     contact_unavailable: Nie dotyczy
     discover_users: Odkrywaj użytkowników
     documentation: Dokumentacja
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Z kontem na %{instance}, możesz śledzić użytkowników każdego serwera Mastodona i nie tylko.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Spróbuj aplikacji mobilnej
     hosted_on: Mastodon uruchomiony na %{domain}
     instance_actor_flash: |
       To konto jest wirtualnym nadawcą, używanym do reprezentacji serwera, a nie jakiegokolwiek użytkownika.
       Jest używane w celu federowania i nie powinno być blokowane, chyba że chcesz zablokować całą instację, w takim przypadku użyj blokady domeny.
     learn_more: Dowiedz się więcej
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Polityka prywatności
     see_whats_happening: Zobacz co się dzieje
     server_stats: 'Statystyki serwera:'
@@ -294,12 +289,10 @@ pl:
       new:
         create: Utwórz ogłoszenie
         title: Nowe ogłoszenie
-      publish: Publish
       published_msg: Pomyślnie opublikowano ogłoszenie!
       scheduled_for: Zaplanowano na %{time}
       scheduled_msg: Zaplanowano publikację ogłoszenia!
       title: Ogłoszenia
-      unpublish: Unpublish
       unpublished_msg: Pomyślnie wycofano publikację ogłoszenia!
       updated_msg: Pomyślnie zaktualizowano ogłoszenie!
     custom_emojis:
@@ -421,9 +414,6 @@ pl:
         create: Utwórz blokadę
         title: Nowa blokada domeny e-mail
       title: Blokowanie domen e-mail
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Domena
       delivery_available: Doręczanie jest dostępne
@@ -477,13 +467,11 @@ pl:
       destroyed_msg: Pomyślnie usunięto notatkę moderacyjną.
     reports:
       account:
-        note: note
         notes:
           few: "%{count} notatki"
           many: "%{count} notatek"
           one: "%{count} notatka"
           other: "%{count} notatki"
-        report: report
         reports:
           few: "%{count} zgłoszenia"
           many: "%{count} zgłoszeń"
@@ -571,9 +559,6 @@ pl:
           approved: Przyjęcie jest wymagane do rejestracji
           none: Nikt nie może się zarejestrować
           open: Każdy może się zarejestrować
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Tryb rejestracji
       show_known_fediverse_at_about_page:
         desc_html: Jeśli włączone, podgląd instancji będzie wyświetlał wpisy z całego Fediwersum. W innym przypadku, będą wyświetlane tylko lokalne wpisy.
@@ -627,22 +612,12 @@ pl:
       no_status_selected: Żaden wpis nie został zmieniony, bo żaden nie został wybrany
       title: Wpisy konta
       with_media: Z zawartością multimedialną
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Unikalne wykorzystania dzisiaj
       accounts_week: Unikalne wykorzystania w tym tygodniu
       breakdown: Podział dzisiejszego wykorzystania według źródła
       context: Kontekst
       directory: W katalogu
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} w katalogu"
       last_active: Ostatnia aktywność
       most_popular: Najpopularniejsze
@@ -652,17 +627,14 @@ pl:
       reviewed: Przejrzany
       title: Hashtagi
       trending_right_now: Obecnie na czasie
-      unhide: Show in directory
       unique_uses_today: "%{count} opublikowanych dzisiaj"
       unreviewed: Nie przejrzano
       updated_msg: Pomyślnie uaktualniono ustawienia hashtagów
-      visible: Visible
     title: Administracja
     warning_presets:
       add_new: Dodaj nowy
       delete: Usuń
       edit_preset: Edytuj szablon ostrzeżenia
-      empty: Empty
       title: Zarządzaj szablonami ostrzeżeń
   admin_mailer:
     new_pending_account:
@@ -679,7 +651,7 @@ pl:
     add_new: Utwórz alias
     created_msg: Pomyślnie utworzono nowy alias. Możesz teraz rozpocząć przenoszenie ze starego konta.
     deleted_msg: Pomyślnie usunięto alias. Przenoszenie z tamtego konta na to nie będzie dłużej możliwe.
-    empty: You have no aliases.
+    empty: Nie masz żadnych aliasów.
     hint_html: Jeżeli chcesz przenieść się z innego konta na to, możesz utworzyć alias, który jest wymagany zanim zaczniesz przenoszenie obserwacji z poprzedniego konta na to. To działanie <strong>nie wyrządzi szkód i jest odwracalne</strong>. <strong>Migracja konta jest inicjowana ze starego konta</strong>.
     remove: Odłącz alias
   appearance:
@@ -714,7 +686,6 @@ pl:
     change_password: Hasło
     checkbox_agreement_html: Zgadzam się z <a href="%{rules_path}" target="_blank">regułami serwera</a> i <a href="%{terms_path}" target="_blank">zasadami korzystania z usługi</a>
     checkbox_agreement_without_rules_html: Akceptuję <a href="%{terms_path}" target="_blank">warunki korzystania z usługi</a>
-    confirm_email: Confirm email
     delete_account: Usunięcie konta
     delete_account_html: Jeżeli chcesz usunąć konto, <a href="%{path}">przejdź tutaj</a>. Otrzymasz prośbę o potwierdzenie.
     description:
@@ -784,11 +755,9 @@ pl:
       x_months: "%{count} miesięcy"
       x_seconds: "%{count}s"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Wprowadzone informacje za nieprawidłowe
     confirm_password: Wprowadź aktualne hasło, aby potwierdzić tożsamość
     confirm_username: Wprowadź swoją nazwę użytkownika aby potwierdzić procedurę
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Usuń konto
     success_msg: Twoje konto zostało pomyślnie usunięte
     warning:
@@ -802,18 +771,10 @@ pl:
       more_details_html: Aby uzyskać więcej szczegółów, przeczytaj naszą <a href="%{terms_path}">politykę prywatności</a>.
       username_available: Twoja nazwa użytkownika będzie z powrotem dostępna
       username_unavailable: Twoja nazwa użytkownika pozostanie niedostępna
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Katalog profilów
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Poznaj profile na podstawie zainteresowań
     explore_mastodon: Odkrywaj %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: nie jest prawidłową nazwą domeny
   errors:
@@ -845,7 +806,6 @@ pl:
     blocks: Zablokowani
     csv: CSV
     domain_blocks: Blokady domen
-    follows: You follow
     lists: Listy
     mutes: Wyciszeni
     storage: Urządzenie przechowujące dane
@@ -962,7 +922,6 @@ pl:
     cancel: Anuluj przekierowanie
     cancel_explanation: Anulowanie przekierowania aktywuje Twoje obecne konto ponownie, ale nie przeniesie z powrotem śledzących, których przeniesiono na tamto konto.
     cancelled_msg: Pomyślnie anulowano przekierowanie.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: jest tym samym kontem, na które już się przeniosłeś(-aś)
       missing_also_known_as: nie odwołuje się do tego konta
@@ -976,11 +935,9 @@ pl:
     not_redirecting: Twoje konto nie przekierowuje obecnie na żadne inne konto.
     on_cooldown: Ostatnio przeniosłeś(-aś) swoje konto. Ta funkcja będzie dostępna ponownie za %{count} dni.
     past_migrations: Poprzednie migracje
-    proceed: Save
     proceed_with_move: Przenieś obserwujących
     redirecting_to: Twoje konto przekierowuje na %{acct}.
     set_redirect: Ustaw przekierowanie
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Nowe konto musi wcześniej zostać skonfigurowane tak, aby odwoływało się do tego
       before: 'Zanim kontynuujesz, przeczytaj uważnie te uwagi:'
@@ -1102,10 +1059,6 @@ pl:
     reply:
       proceed: Przejdź do dodawania odpowiedzi
       prompt: 'Chcesz odpowiedzieć na ten wpis:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Przekroczyłeś(-aś) limit %{limit} zaplanowanych wpisów na ten dzień
     over_total_limit: Przekroczyłeś(-aś) limit %{limit} zaplanowanych wpisów
@@ -1318,15 +1271,8 @@ pl:
     title: Zasady korzystania i polityka prywatności %{instance}
   themes:
     contrast: Mastodon (Wysoki kontrast)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Ciemny)
+    default: Mastodon (Ciemny)
     mastodon-light: Mastodon (Jasny)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d. %b %Y, %H:%M"

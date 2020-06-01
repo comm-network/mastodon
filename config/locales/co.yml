@@ -18,18 +18,13 @@ co:
     contact_unavailable: Micca dispunibule
     discover_users: Scopre utilizatori
     documentation: Ducumentazione
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Cù un contu nant'à %{instance} puderete siguità ghjente da tutti i servori Mastodon è ancu più d'altri.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Pruvà un'applicazione di telefuninu
     hosted_on: Mastodon allughjatu nant’à %{domain}
     instance_actor_flash: |
       Stu contu ghjè un'attore virtuale chì ghjove à riprisentà u servore sanu è micca un veru utilizatore.
       Hè utilizatu da a federazione è ùn deve micca esse bluccatu eccettu s'e voi vulete bluccà tuttu u servore, in quellu casu duvereste utilizà un blucchime di duminiu.
     learn_more: Amparà di più
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Pulitica di vita privata
     see_whats_happening: Vede cio chì si passa
     server_stats: 'Statistiche di u servore:'
@@ -286,12 +281,10 @@ co:
       new:
         create: Creà un'annunziu
         title: Novu annunziu
-      publish: Publish
       published_msg: Annunziu pubblicatu!
       scheduled_for: Prugrammatu per %{time}
       scheduled_msg: Annunziu prugrammatu per pubblicazione!
       title: Annunzii
-      unpublish: Unpublish
       unpublished_msg: Annunziu piattatu!
       updated_msg: Annunziu mudificatu!
     custom_emojis:
@@ -411,9 +404,6 @@ co:
         create: Creà un blucchime
         title: Nova iscrizzione nant’a lista nera e-mail
       title: Lista nera e-mail
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Duminiu
       delivery_available: Rimessa dispunibule
@@ -465,11 +455,9 @@ co:
       destroyed_msg: Nota di signalamentu sguassata!
     reports:
       account:
-        note: note
         notes:
           one: "%{count} nota"
           other: "%{count} note"
-        report: report
         reports:
           one: "%{count} riportu"
           other: "%{count} riporti"
@@ -555,9 +543,6 @@ co:
           approved: Apprubazione necessaria per arregistrassi
           none: Nimu ùn pò arregistrassi
           open: Tutt'ognunu pò arregistrassi
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Modu d'arregistramenti
       show_known_fediverse_at_about_page:
         desc_html: Quandu ghjè selezziunatu, statuti di tuttu l’istanze cunnisciute saranu affissati indè a vista di e linee. Altrimente soli i statuti lucali saranu mustrati.
@@ -611,22 +596,12 @@ co:
       no_status_selected: I statuti ùn sò micca stati mudificati perchè manc'unu era selezziunatu
       title: Statuti di u contu
       with_media: Cù media
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Usi unichi oghji
       accounts_week: Usi unichi sta settimana
       breakdown: Ditagli di l'usu d'oghji per origine
       context: Cuntestu
       directory: In l'annuariu
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} in l'annuariu"
       last_active: Ultima attività
       most_popular: Più pupulari
@@ -636,17 +611,14 @@ co:
       reviewed: Verificatu
       title: Hashtag
       trending_right_now: Tendenze avà
-      unhide: Show in directory
       unique_uses_today: "%{count} pustendu oghji"
       unreviewed: Micca verificatu
       updated_msg: Parametri di i hashtag messi à ghjornu
-      visible: Visible
     title: Amministrazione
     warning_presets:
       add_new: Aghjunghje
       delete: Sguassà
       edit_preset: Cambià a preselezzione d'avertimentu
-      empty: Empty
       title: Amministrà e preselezzione d'avertimentu
   admin_mailer:
     new_pending_account:
@@ -663,7 +635,7 @@ co:
     add_new: Creà un pseudonimu
     created_msg: Novu pseudonimu creatu. Pudete avà inizià u trasferimentu da u vechju contu.
     deleted_msg: U pseudonimu hè statu sguassatu. Ùn si puderà più migrà da questu contu à quellu.
-    empty: You have no aliases.
+    empty: Ùn avete un pseudonimu.
     hint_html: Per traslucà da un altru contu à questu, quì pudete creà un pseudonimu o "alias", riquisitu per trasferì l'abbunati da u vechju contu à u novu. St'azzione sola <strong>ùn face nunda</strong> è pò esse <strong>annullata senza prublemi</strong>. <strong>A migrazione hè principiata dapoi u vechju contu</strong>.
     remove: Sguassà u pseudonimu
   appearance:
@@ -698,7 +670,6 @@ co:
     change_password: Chjave d’accessu
     checkbox_agreement_html: Sò d'accunsentu cù e <a href="%{rules_path}" target="_blank">regule di u servore</a> è i <a href="%{terms_path}" target="_blank">termini di u serviziu</a>
     checkbox_agreement_without_rules_html: Accettu i <a href="%{terms_path}" target="_blank">termini di u serviziu</a>
-    confirm_email: Confirm email
     delete_account: Sguassà u contu
     delete_account_html: S’è voi vulete toglie u vostru contu <a href="%{path}">ghjè quì</a>. Duverete cunfirmà a vostra scelta.
     description:
@@ -768,11 +739,9 @@ co:
       x_months: "%{count}Me"
       x_seconds: "%{count}s"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: L'infurmazione entrata ùn era micca curretta
     confirm_password: Entrate a vostra chjave d’accessu attuale per verificà a vostra identità
     confirm_username: Entrà u vostru cugnome per cunfirmà a prucedura
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Sguassà u contu
     success_msg: U vostru contu hè statu sguassatu
     warning:
@@ -786,18 +755,10 @@ co:
       more_details_html: Per più di ditagli, videte a <a href="%{terms_path}">pulitica di vita privata</a>.
       username_available: U vostru cugnome riduvinterà dispunibule
       username_unavailable: U vostru cugnome ùn sarà sempre micca dispunibule
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Annuariu di i prufili
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Scopre utilizatori à partesi di i so centri d'interessu
     explore_mastodon: Scopre à %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: ùn hè micca un nome di duminiu currettu
   errors:
@@ -829,7 +790,6 @@ co:
     blocks: Bluccate
     csv: CSV
     domain_blocks: Blucchime di duminiu
-    follows: You follow
     lists: Liste
     mutes: Piattate
     storage: I vostri media
@@ -890,6 +850,8 @@ co:
     inactive: Inattiva
     publicize_checkbox: 'È mandà stu statutu:'
     publicize_toot: 'Hè pruvata! Sò %{username} nant’à %{service}: %{url}'
+    remove: Sguassà a prova da u contu
+    removed: Prova sguassata da u contu
     status: Statutu di a verificazione
     view_proof: Vede a prova
   imports:
@@ -942,7 +904,6 @@ co:
     cancel: Annullà ridirezzione
     cancel_explanation: L'annullazione di a ridirezzione hà da riattivà stu contu, mà ùn si puderà micca ricuperà l'abbunati chì sò digià stati trasferriti à l'altru contu.
     cancelled_msg: Ridirezzione annullata.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: hè digià u contu induve avede traslucatu
       missing_also_known_as: ùn fà micca riferenza à stu contu
@@ -956,11 +917,9 @@ co:
     not_redirecting: U vostru contu ùn riindirizza micca ancu versu un'altru contu.
     on_cooldown: Avede digià migratu u vostru contu. Sta funzionne sarà torna dispunibule in %{count} ghjorni.
     past_migrations: Anziane migrazione
-    proceed: Save
     proceed_with_move: Trasferì l'abbunati
     redirecting_to: U vostru contu riindirizza versu à %{acct}.
     set_redirect: Creà ridirezzione
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: U novu contu deve prima esse cunfiguratu per fà rifirenza cù un pseudonimu à quessu contu
       before: 'Nanz''à cuntinuà, leghjete ste note attentamente:'
@@ -1078,10 +1037,6 @@ co:
     reply:
       proceed: Cuntinuà per risponde
       prompt: 'Vulete risponde à stu statutu:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Avete trapassatu a limita di %{limit} statuti pianificati per stu ghjornu
     over_total_limit: Avete trapassatu a limita di %{limit} statuti pianificati
@@ -1284,15 +1239,8 @@ co:
     title: Termini d’usu è di cunfidenzialità per %{instance}
   themes:
     contrast: Mastodon (Cuntrastu altu)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Scuru)
+    default: Mastodon (Scuru)
     mastodon-light: Mastodon (Chjaru)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

@@ -10,7 +10,7 @@ sk:
     api: API
     apps: Aplikácie
     apps_platforms: Užívaj Mastodon z iOSu, Androidu, a iných platforiem
-    browse_directory: Prehľadávaj databázu profilov, filtruj podľa záujmov
+    browse_directory: Prehľadávaj databázu profilov, a filtruj podľa záujmov
     browse_local_posts: Prebádaj naživo prúd verejných príspevkov z tohto servera
     browse_public_posts: Sleduj naživo prúd verejných príspevkov na Mastodone
     contact: Kontakt
@@ -18,18 +18,13 @@ sk:
     contact_unavailable: Neuvedený/á
     discover_users: Objavuj užívateľov
     documentation: Dokumentácia
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: S účtom na %{instance} budeš môcť následovať ľúdí na hociakom Mastodon serveri, ale aj na iných serveroch.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Vyskúšaj aplikácie
     hosted_on: Mastodon hostovaný na %{domain}
     instance_actor_flash: |
       Tento účet je virtuálnym aktérom, ktorý predstavuje samotný server a nie žiadného jedného užívateľa.
       Je využívaný pre potreby federovania a nemal by byť blokovaný, pokiaľ nechceš zablokovať celý server, čo ide lepšie dosiahnúť cez blokovanie domény.
     learn_more: Zisti viac
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Zásady súkromia
     see_whats_happening: Pozoruj, čo sa deje
     server_stats: 'Serverové štatistiky:'
@@ -48,7 +43,6 @@ sk:
       reason: 'Dôvod:'
       rejecting_media: 'Mediálne súbory z týchto serverov nebudú spracované, alebo ukladané, a nebudú z nich zobrazované žiadne náhľady, vyžadujúc ručné prekliknutie priamo až k pôvodnému súboru:'
       silenced: 'Príspevky z týchto serverov budú skryté z verejných osí a z konverzácií, a nebudú vytvorené žiadné oboznámena ohľadom aktivity ich užívateľov, pokiaľ ich nenásleduješ:'
-      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
     unavailable_content_html: Vo všeobecnosti, Mastodon ti dovoľuje vidieť obsah, a komunikovať s užívateľmi akéhokoľvek iného serveru v rámci fediversa. Toto sú výnimky, ktoré boli vytvorené na tomto konkrétnom serveri.
     user_count_after:
       few: užívateľov
@@ -82,9 +76,9 @@ sk:
       following: Musíš už následovať toho človeka, ktorého si praješ zviditeľniť
     posts:
       few: Príspevkov
-      many: Príspevkov
+      many: Príspevky
       one: Príspevok
-      other: Príspevky
+      other: Príspevkov
     posts_tab_heading: Príspevky
     posts_with_replies: Príspevky s odpoveďami
     reserved_username: Prihlasovacie meno je vyhradené
@@ -124,7 +118,7 @@ sk:
       deleted: Vymazané
       demote: Degraduj
       disable: Zablokuj
-      disable_two_factor_authentication: Zakáž 2FA
+      disable_two_factor_authentication: Vypni dvoj-faktorové overovanie
       disabled: Blokovaný
       display_name: Ukáž meno
       domain: Doména
@@ -209,53 +203,37 @@ sk:
       whitelisted: Na bielej listine
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        assigned_to_self_report: Priraď hlásenie
+        change_email_user: Zmeň email pre užívateľa
+        confirm_user: Potvrď užívateľa
+        create_account_warning: Vytvor výstrahu
+        create_announcement: Vytvor oboznámenie
+        create_domain_allow: Vytvor povolenie pre doménu
+        create_domain_block: Vytvor doménovú blokádu
+        demote_user: Zniž užívateľskú rolu
+        destroy_announcement: Vymaž oboznámenie
+        destroy_domain_allow: Zmaž povolenie pre doménu
+        destroy_domain_block: Zruš blokovanie domény
+        destroy_status: Vymaž príspevok
+        disable_2fa_user: Vypni dvoj-faktorové overovanie
+        disable_user: Deaktivuj užívateľa
+        enable_user: Povoľ užívateľa
+        remove_avatar_user: Vymaž avatar
+        reopen_report: Znovu otvor hlásenie
+        reset_password_user: Obnov heslo
+        silence_account: Utíš účet
+        suspend_account: Vylúč účet
+        update_status: Aktualizuj stav
       actions:
         assigned_to_self_report: "%{name} pridelil/a hlásenie užívateľa %{target} sebe"
         change_email_user: "%{name} zmenil/a emailovú adresu užívateľa %{target}"
         confirm_user: "%{name} potvrdil emailovú adresu používateľa %{target}"
         create_account_warning: "%{name} poslal/a varovanie užívateľovi %{target}"
-        create_announcement: "%{name} created new announcement %{target}"
         create_custom_emoji: "%{name} nahral nový emoji %{target}"
         create_domain_allow: "%{name} pridal/a doménu %{target} na zoznam povolených"
         create_domain_block: "%{name} zablokoval doménu %{target}"
         create_email_domain_block: "%{name} pridal e-mailovú doménu %{target} na zoznam zakázaných"
         demote_user: "%{name} degradoval používateľa %{target}"
-        destroy_announcement: "%{name} deleted announcement %{target}"
         destroy_custom_emoji: "%{name} zničil/a %{target} emoji"
         destroy_domain_allow: "%{name} odstránil/a doménu %{target} zo zoznamu povolených"
         destroy_domain_block: "%{name} povolil doménu %{target}"
@@ -277,13 +255,11 @@ sk:
         unassigned_report: "%{name} odobral/a report od %{target}"
         unsilence_account: "%{name} zrušil/a stíšenie účtu používateľa %{target}"
         unsuspend_account: "%{name} zrušil/a blokovanie účtu používateľa %{target}"
-        update_announcement: "%{name} updated announcement %{target}"
         update_custom_emoji: "%{name} aktualizoval/a emoji %{target}"
         update_status: "%{name} aktualizoval/a status pre %{target}"
       deleted_status: "(zmazaný príspevok)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      filter_by_action: Filtruj podľa úkonu
+      filter_by_user: Trieď podľa užívateľa
       title: Kontrólny záznam
     announcements:
       destroyed_msg: Oboznámenie úspešne vymazané!
@@ -294,14 +270,10 @@ sk:
       new:
         create: Vytvor oznam
         title: Nové oznámenie
-      publish: Publish
       published_msg: Oboznámenie úspešne zverejnené!
       scheduled_for: Načasované na %{time}
       scheduled_msg: Oboznámenie bolo naplánované na zverejnenie!
       title: Oboznámenia
-      unpublish: Unpublish
-      unpublished_msg: Announcement successfully unpublished!
-      updated_msg: Announcement successfully updated!
     custom_emojis:
       assign_category: Priraď kategóriu
       by_domain: Doména
@@ -386,7 +358,6 @@ sk:
       private_comment: Súkromný komentár
       private_comment_hint: Odôvodni toto doménové obmedzenie, pre vnútorné vyrozumenie moderátorov.
       public_comment: Verejný komentár
-      public_comment_hint: Comment about this domain limitation for the general public, if advertising the list of domain limitations is enabled.
       reject_media: Odmietaj súbory s obrázkami, alebo videami
       reject_media_hint: Vymaže miestne uložené súbory médií a odmietne ich sťahovanie v budúcnosti. Nepodstatné pri vylúčení
       reject_reports: Zamietni hlásenia
@@ -421,9 +392,6 @@ sk:
         create: Pridaj doménu
         title: Nový email na zablokovanie
       title: Blokované emailové adresy
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Doména
       delivery_available: Je v dosahu doručovania
@@ -477,11 +445,6 @@ sk:
       destroyed_msg: Poznámka o nahlásení úspešne vymazaná!
     reports:
       account:
-        note: note
-        notes:
-          one: "%{count} note"
-          other: "%{count} notes"
-        report: report
         reports:
           few: "%{count} hlásení"
           many: "%{count} hlásenia"
@@ -569,9 +532,6 @@ sk:
           approved: Pre registráciu je nutné povolenie
           none: Nikto sa nemôže registrovať
           open: Ktokoľvek sa môže zaregistrovať
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Režím registrácií
       show_known_fediverse_at_about_page:
         desc_html: Ak je zapnuté, bude v ukážke osi možné nahliadnúť príspevky z celého známeho fediversa. Inak budú ukázané iba príspevky z miestnej osi.
@@ -625,22 +585,12 @@ sk:
       no_status_selected: Žiadne príspevky neboli zmenené, keďže si žiadne nemal/a zvolené
       title: Príspevky na účte
       with_media: S médiami
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Jedinečných užívateľov za dnešok
       accounts_week: Jedinečných užívateľov tento týždeň
       breakdown: Rozpis dnešného využitia podľa zdroja
       context: Súvis
       directory: V zozname
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} v zozname"
       last_active: Naposledy aktívny
       most_popular: Najpopulárnejšie
@@ -650,17 +600,14 @@ sk:
       reviewed: Zhodnotené
       title: Haštagy
       trending_right_now: Práve populárne
-      unhide: Show in directory
       unique_uses_today: "%{count} dnes prispievajú"
       unreviewed: Neposúdené
       updated_msg: Nastavenia haštagov boli úspešne aktualizované
-      visible: Visible
     title: Spravovanie
     warning_presets:
       add_new: Pridaj nové
       delete: Vymaž
       edit_preset: Uprav varovnú predlohu
-      empty: Empty
       title: Spravuj varovné predlohy
   admin_mailer:
     new_pending_account:
@@ -671,14 +618,11 @@ sk:
       body_remote: Niekto z %{domain} nahlásil/a %{target}
       subject: Nové hlásenie pre %{instance} (#%{id})
     new_trending_tag:
-      body: 'The hashtag #%{name} is trending today, but has not been previously reviewed. It will not be displayed publicly unless you allow it to, or just save the form as it is to never hear about it again.'
       subject: Nový haštag očakáva preverenie na %{instance} (#%{name})
   aliases:
     add_new: Vytvor alias
     created_msg: Nový alias úspešne vytvorený. Teraz môžeš začať presun zo starého účtu.
     deleted_msg: Alias úspešne odstránený. Presun z tamtoho účtu na tento už viac nebude možný.
-    empty: You have no aliases.
-    hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Odpoj alias
   appearance:
     advanced_web_interface: Pokročilé webové rozhranie
@@ -688,7 +632,6 @@ sk:
     discovery: Nájdenie
     localization:
       body: Mastodon je prekladaný dobrovoľníkmi.
-      guide_link: https://crowdin.com/project/mastodon
       guide_link_text: Prispievať môže každý.
     sensitive_content: Chúlostivý obsah
     toot_layout: Rozloženie príspevkov
@@ -712,7 +655,6 @@ sk:
     change_password: Heslo
     checkbox_agreement_html: Súhlasím s <a href="%{rules_path}" target="_blank">pravidlami servera</a>, aj s <a href="%{terms_path}" target="_blank">prevoznými podmienkami</a>
     checkbox_agreement_without_rules_html: Súhlasím s <a href="%{terms_path}" target="_blank">podmienkami užívania</a>
-    confirm_email: Confirm email
     delete_account: Vymaž účet
     delete_account_html: Pokiaľ chceš svoj účet odtiaľto vymazať, môžeš tak <a href="%{path}">urobiť tu</a>. Budeš požiadaný/á o potvrdenie tohto kroku.
     description:
@@ -746,7 +688,6 @@ sk:
     trouble_logging_in: Problém s prihlásením?
   authorize_follow:
     already_following: Tento účet už následuješ
-    already_requested: You have already sent a follow request to that account
     error: Naneštastie nastala chyba pri hľadaní vzdialeného účtu
     follow: Nasleduj
     follow_request: 'Poslal/a si žiadosť následovať užívateľa:'
@@ -776,11 +717,9 @@ sk:
       x_months: "%{count}mesiace"
       x_seconds: "%{count}sek"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Údaje, ktoré si zadal/a, sú nesprávne
     confirm_password: Napíš svoje terajšie heslo pre overenie tvojej identity
     confirm_username: Zadaj svoju prezývku, na potvrdenie úkonu
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Vymaž účet
     success_msg: Tvoj účet bol úspešne vymazaný
     warning:
@@ -794,18 +733,10 @@ sk:
       more_details_html: Pre viac podrobností, pozri <a href="%{terms_path}">zásady súkromia</a>.
       username_available: Tvoje užívateľské meno bude znova dostupné
       username_unavailable: Tvoja prezývka ostane neprístupná
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Katalóg profilov
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Pátraj po užívateľoch podľa ich záujmov
     explore_mastodon: Prebádaj %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: nieje správny tvar domény
   errors:
@@ -837,7 +768,6 @@ sk:
     blocks: Blokujete
     csv: CSV
     domain_blocks: Blokované domény
-    follows: You follow
     lists: Zoznamy
     mutes: Stíšil/a si
     storage: Úložisko médií
@@ -845,7 +775,6 @@ sk:
     add_new: Pridaj nový
     errors:
       limit: Už si si predvolil/a najvyšší možný počet obľúbených haštagov
-    hint_html: "<strong>What are featured hashtags?</strong> They are displayed prominently on your public profile and allow people to browse your public posts specifically under those hashtags. They are a great tool for keeping track of creative works or long-term projects."
   filters:
     contexts:
       account: Profily
@@ -949,14 +878,12 @@ sk:
   media_attachments:
     validations:
       images_and_video: K príspevku ktorý už obsahuje obrázky nemôžeš priložiť video
-      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Nemôžeš priložiť viac ako 4 súbory
   migrations:
     acct: prezývka@doména nového účtu
     cancel: Zruš presmerovanie
     cancel_explanation: Zrušenie presmerovania znovu aktivuje tvoj súčasný účet, ale neprenesie naspäť sledovateľov, ktorí už boli presunutý na tamten účet.
     cancelled_msg: Presmerovanie úspešne zrušené.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
       already_moved: je ten istý účet, na ktorý si sa už presunul/a
       missing_also_known_as: neodkazuje spätne na tento účet
@@ -970,11 +897,9 @@ sk:
     not_redirecting: Tvoj účet v súčasnosti nepresmerováva na žiaden iný účet.
     on_cooldown: Účet si si presunul/a len nedávno. Táto vymoženosť bude znovu sprístupnená za %{count} dní.
     past_migrations: Predošlé presuny
-    proceed: Save
     proceed_with_move: Presuň sledovateľov
     redirecting_to: Tvoj účet presmerováva na %{acct}.
     set_redirect: Nastav presmerovanie
-    updated_msg: Your account migration setting successfully updated!
     warning:
       backreference_required: Nový účet musí byť najskôr nastavený tak, aby spätne odkazoval na tento
       before: 'Než budeš pokračovať, prosím pozorne si prečítaj tieto poznámky:'
@@ -1085,10 +1010,6 @@ sk:
     reply:
       proceed: Pokračuj odpovedaním
       prompt: 'Chceš odpovedať na tento príspevok:'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Prekročil/a si denný limit %{limit} predplánovaných príspevkov
     over_total_limit: Prekročil/a si limit %{limit} predplánovaných príspevkov
@@ -1232,15 +1153,8 @@ sk:
     title: Podmienky užívania, a pravidlá súkromia pre %{instance}
   themes:
     contrast: Mastodon (vysoký kontrast)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (tmavý)
+    default: Mastodon (tmavý)
     mastodon-light: Mastodon (svetlý)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: "%b %d, %R, %H:%M"

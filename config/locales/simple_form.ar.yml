@@ -10,13 +10,11 @@ ar:
         text: بإمكانك استخدام نفس القواعد التي نجدها في التبويقات كعناوين الروابط والوسوم والإشارات
         title: اختياري. غير مرئي للمُستَلِم
       admin_account_action:
-        include_statuses: The user will see which toots have caused the moderation action or warning
+        include_statuses: سيرى المستخدم أي مِن التبويقات تسببت في إجراء الإشراف أو التحذير
         send_email_notification: سوف يتلقى المستخدم رسالة تُفسِّر ما حدث على حسابه
-        text_html: Optional. You can use toot syntax. You can <a href="%{path}">add warning presets</a> to save time
         type_html: اختر ما تود إجراؤه على <strong>%{acct}</strong>
         warning_preset_id: اختياري. يمكنك إضافة نص مخصص إلى نهاية النموذج
       announcement:
-        all_day: When checked, only the dates of the time range will be displayed
         ends_at: اختياري. سيتم إلغاء نشر الإعلان تلقائيا على هذه الساعة
         scheduled_at: اتركه فارغا لنشر الإعلان في الحين
         starts_at: اختياري. في حالة ما كان إعلانك ذو صلة بنطاق زمني مخصّص
@@ -30,9 +28,8 @@ ar:
         current_username: يرجى إدخال اسم المستخدم الخاص بالحساب الحالي قصد التأكيد
         digest: تُرسَل إليك بعد مُضيّ مدة مِن خمول نشاطك و فقط إذا ما تلقيت رسائل شخصية مباشِرة أثناء فترة غيابك مِن الشبكة
         discoverable: سِجل الملفات التعريفية للمستخدمين هو طريقة أخرى لبلوغ جمهور أوسع
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: سوف تتلقى رسالة إلكترونية للتأكيد
-        fields: يُمكنك عرض 8 عناصر على شكل جدول في صفحتك التعريفية
+        fields: يُمكنك عرض 4 عناصر على شكل جدول في صفحتك التعريفية
         header: ملف PNG أو GIF أو JPG. حجمه على أقصى تصدير %{size}. سيتم تصغيره إلى %{dimensions}px
         inbox_url: نسخ العنوان الذي تريد استخدامه مِن صفحة الاستقبال للمُرحَّل
         irreversible: التبويقات التي تم تصفيتها ستختفي لا محالة حتى و إن تمت إزالة عامِل التصفية لاحقًا
@@ -42,27 +39,16 @@ ar:
         phrase: سوف يتم العثور عليه مهما كان نوع النص أو حتى و إن كان داخل الويب فيه تحذير عن المحتوى
         scopes: ما هي المجالات المسموح بها في التطبيق ؟ إن قمت باختيار أعلى المجالات فيمكنك الاستغناء عن الخَيار اليدوي.
         setting_aggregate_reblogs: لا تقم بعرض المشارَكات الجديدة لتبويقات قد قُمتَ بمشاركتها سابقا (هذا الإجراء يعني المشاركات الجديدة فقط التي تلقيتَها)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: تُخفى الوسائط الحساسة تلقائيا ويمكن اظهارها عن طريق النقر عليها
         setting_display_media_default: إخفاء الوسائط المُعيَّنة كحساسة
         setting_display_media_hide_all: إخفاء كافة الوسائط دائمًا
         setting_display_media_show_all: دائمًا عرض الوسائط المُعيَّنة كحساسة
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: الحسابات التي تُتابعها و التي تُتابِعك على حد سواء لن تُعرَض على صفحتك التعريفية
         setting_noindex: ذلك يؤثر على صفحتك التعريفية وصفحات المنشورات
         setting_show_application: يتم عرض اسم التطبيق الذي تستخدمه عند التبويق في العرض المفصّل لتبوبيقاتك
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
-        setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: إخفاء تحديثات الخط وراء نقرة بدلًا مِن التمرير التلقائي للتدفق
         username: اسم المستخدم الخاص بك سوف يكون فريدا مِن نوعه على %{domain}
         whole_word: إذا كانت الكلمة أو العبارة مكونة من أرقام وحروف فقط سوف يتم تطبيقها فقط عند مطابقة الكلمة ككل
-      domain_allow:
-        domain: This domain will be able to fetch data from this server and incoming data from it will be processed and stored
-      email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'رُبَّما تريد·ين استخدام واحد مِن بين هذه:'
       form_challenge:
@@ -73,8 +59,6 @@ ar:
         text: هذا سوف يساعدنا في مراجعة تطبيقك
       sessions:
         otp: 'قم بإدخال رمز المصادقة بخطوتين الذي قام بتوليده تطبيق جهازك أو استخدم أحد رموز النفاذ الاحتياطية:'
-      tag:
-        name: You can only change the casing of the letters, for example, to make it more readable
       user:
         chosen_languages: لن تظهر على الخيوط العمومية إلّا التبويقات المنشورة في اللغات المختارة
     labels:
@@ -101,7 +85,6 @@ ar:
           suspend: تعليق و حذف كافة بيانات الحساب
         warning_preset_id: استخدم نموذج تنبيه
       announcement:
-        all_day: All-day event
         ends_at: نهاية الفعالية
         scheduled_at: جَدوِل المنشور
         starts_at: بداية الفعالية
@@ -137,10 +120,6 @@ ar:
         setting_auto_play_gif: تشغيل تلقائي لِوَسائط جيف المتحركة
         setting_boost_modal: إظهار مربع حوار للتأكيد قبل ترقية أي تبويق
         setting_crop_images: قص الصور في التبويقات غير الموسعة إلى 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: لغة النشر
         setting_default_privacy: خصوصية المنشور
         setting_default_sensitive: اعتبر الوسائط دائما كمحتوى حساس
@@ -149,15 +128,11 @@ ar:
         setting_display_media_default: افتراضي
         setting_display_media_hide_all: إخفاء الكل
         setting_display_media_show_all: عرض الكل
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: توسيع التبويقات التي تحتوي على تحذيرات عن المحتوى تلقائيا
         setting_hide_network: إخفِ شبكتك
         setting_noindex: عدم السماح لمحركات البحث بفهرسة ملفك الشخصي
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: تخفيض عدد الصور في الوسائط المتحركة
         setting_show_application: اكشف اسم التطبيقات المستخدمة لنشر التبويقات
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: استخدم الخطوط الافتراضية للنظام
         setting_theme: سمة الموقع
         setting_trends: اعرض ما يُتداوَل اليوم
@@ -169,8 +144,6 @@ ar:
         username: اسم المستخدم
         username_or_email: اسم المستخدم أو كلمة السر
         whole_word: الكلمة كاملة
-      email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: الوسم
       interactions:

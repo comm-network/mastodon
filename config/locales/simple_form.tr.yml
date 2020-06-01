@@ -8,7 +8,6 @@ tr:
         acct: Taşınmak istediğiniz hesabın kullanıcı-adı@alan-adını belirtin
       account_warning_preset:
         text: URL'ler, etiketler ve bahsetmeler gibi toot sözdizimleri kullanabilirsiniz
-        title: Optional. Not visible to the recipient
       admin_account_action:
         include_statuses: Kullanıcı hangi tootların denetleme eylemi ya da uyarısına neden olduğunu görecektir
         send_email_notification: Kullanıcı, hesabına ne olduğu hakkında bir bildirim alacak
@@ -30,9 +29,8 @@ tr:
         current_username: Onaylamak için lütfen şu anki hesabın kullanıcı adını girin
         digest: Yalnızca uzun süre kullanılmadığında ve yalnızca yokluğunda kişisel mesajlar aldıysanız gönderilir
         discoverable: Profil dizini, hesabınızın daha geniş bir kitleye ulaşmasının başka bir yoludur
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Onay e-postası gönderilecek
-        fields: Profilinizde tablo olarak görüntülenen en fazla 8 ögeye sahip olabilirsiniz
+        fields: Profilinizde tablo olarak görüntülenen en fazla 4 ögeye sahip olabilirsiniz
         header: En fazla %{size} olacak şekilde PNG, GIF veya JPG formatında yükleyiniz. %{dimensions}px büyüklüğüne indirgenecektir.
         inbox_url: Kullanmak istediğiniz aktarıcının ön sayfasından URL'yi kopyalayın
         irreversible: Filtre uygulanmış tootlar, filtre daha sonra çıkartılsa bile geri dönüşümsüz biçimde kaybolur
@@ -42,27 +40,19 @@ tr:
         phrase: Metnin büyük/küçük harf durumundan veya tootun içerik uyarısından bağımsız olarak eşleştirilecek
         scopes: Uygulamanın erişmesine izin verilen API'ler. Üst seviye bir kapsam seçtiyseniz, bireysel kapsam seçmenize gerek yoktur.
         setting_aggregate_reblogs: Yakın zamanda yinelenmiş tootlar için yeni yinelemeler gösterme (yalnızca yeni alınan yinelemeleri etkiler)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Hassas medya varsayılan olarak gizlenir ve bir tıklama ile görüntülenebilir
         setting_display_media_default: Hassas olarak işaretlenmiş medyayı gizle
         setting_display_media_hide_all: Tüm medyayı gizle
         setting_display_media_show_all: Hassas olarak işaretlenmiş medyayı göster
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Takip edilenler ve takipçiler profilinizde gösterilmeyecek
         setting_noindex: Herkese açık profilinizi ve durum sayfalarınızı etkiler
         setting_show_application: Tootlamak için kullandığınız uygulama, tootlarınızın detaylı görünümünde gösterilecektir
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Gradyenler gizli görsellerin renklerine dayanır, ancak detayları gizler
         setting_use_pending_items: Zaman çizelgesi güncellemelerini, akışı otomatik olarak kaydırmak yerine bir tıklamanın arkasına gizleyin
         username: Kullanıcı adınız %{domain} alanında benzersiz olacak
         whole_word: Anahtar kelime veya kelime öbeği yalnızca alfasayısal olduğunda, yalnızca tüm sözcükle eşleşirse uygulanır
       domain_allow:
         domain: Bu alan adı, bu sunucudan veri alabilecek ve ondan gelen veri işlenecek ve saklanacaktır
-      email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 'Bunlardan birini kullanmak isteyebilirsiniz:'
       form_challenge:
@@ -88,7 +78,7 @@ tr:
         acct: Yeni hesabın tanıtıcısı
       account_warning_preset:
         text: Ön-ayar metni
-        title: Title
+        title: Başlık
       admin_account_action:
         include_statuses: Birdirilen tootları e-postaya dahil et
         send_email_notification: E-postayla kullanıcıyı bilgilendir
@@ -137,10 +127,6 @@ tr:
         setting_auto_play_gif: GIF'leri otomatik oynatt
         setting_boost_modal: Boost etmeden önce onay diyaloğu göster
         setting_crop_images: Genişletilmemiş tootlardaki resimleri 16x9 olarak kırp
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Gönderi dili
         setting_default_privacy: Gönderi gizliliği
         setting_default_sensitive: Her zaman hassas medya olarak işaretle
@@ -149,15 +135,11 @@ tr:
         setting_display_media_default: Varsayılan
         setting_display_media_hide_all: Tümünü gizle
         setting_display_media_show_all: Tümünü göster
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: İçerik uyarılarıyla işaretli tootları her zaman genişlet
         setting_hide_network: Ağını gizle
         setting_noindex: Arama motoru endekslemesini iptal et
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Animasyonlarda hareketi azalt
         setting_show_application: Toot göndermek için kullanılan uygulamayı belirt
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Sistemin varsayılan yazı tipini kullan
         setting_theme: Site teması
         setting_trends: Bugünün trendlerini göster
@@ -169,8 +151,6 @@ tr:
         username: Kullanıcı adınız
         username_or_email: Kullanıcı adı ya da email
         whole_word: Tüm dünya
-      email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: Hashtag
       interactions:
