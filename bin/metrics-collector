@@ -11,6 +11,10 @@ require_relative '../config/environment'
 scrape_interval = 2.seconds
 ActiveRecord::Base.logger = Logger.new('/dev/null')
 
+def collect_metric(gauge, value)
+  gauge.observe(value, instance: Rails.configuration.x.local_domain, version: Mastodon::Version)
+end
+
 begin
   client = PrometheusExporter::Client.default
   PrometheusExporter::Instrumentation::Process.start(client: client, type: "metrics-collector")
@@ -23,7 +27,8 @@ begin
   unresolved_gauge = client.register(:gauge, "mastodon_reports_unresolved", "Unresolved reports")
   dbsize_gauge = client.register(:gauge, "mastodon_database_size_bytes", "Database size in bytes")
   enqueued_gauge = client.register(:gauge, "sidekiq_jobs_enqueud", "Enquequed Sidekiq Jobs")
-  interactions_gauge = client.register(:gauge, "mastodon_interactions_week", "Interactions this week")
+  interactions_gauge = client.register(:gauge, "mastodon_interactions_1w", "Interactions this week")
+  registrations_gauge = client.register(:gauge, "mastodon_registrations_1w", "Registrations this week")
   relay_gauge = client.register(:gauge, "mastodon_relay_enabled", "Relay enabled")
   registration_gauge = client.register(:gauge, "mastodon_registrations_enabled", "Registrations enabled")
   fetch_duration_gauge = client.register(:gauge, "mastodon_metrics_collect_duration_millis", "Mastodon metric collection duration in milliseconds")
@@ -35,15 +40,14 @@ begin
     # This should come first!
     start_time = DateTime.now.strftime("%Q").to_i
 
-    instance_version = Mastodon::Version
-    instance_url = Rails.configuration.x.local_domain
     logins_value = Redis.current.pfcount("activity:logins:#{Time.now.utc.to_date.cweek}")
     users_value = User.count
     pending_value = User.pending.count
     unresolved_value = Report.unresolved.count
     dbsize_value = ActiveRecord::Base.connection.execute('SELECT pg_database_size(current_database())').first['pg_database_size']
     enqueued_value = Sidekiq::Stats.new.enqueued
-    interaction_value = Redis.current.get("activity:interactions:#{Time.now.utc.to_date.cweek}")
+    interaction_value = Redis.current.get("activity:interactions:#{Time.now.utc.to_date.cweek}") || 0
+    registrations_value = Redis.current.get("activity:accounts:local:#{Time.now.utc.to_date.cweek}") || 0
     relay_value = Relay.enabled.exists? ? 1 : 0
     registration_value = Setting.registrations_mode != 'none' ? 1 : 0
     pending_tags_value = Tag.pending_review.count
@@ -51,19 +55,20 @@ begin
     active_users_value = instance_presenter.active_user_count
     domain_count_value = instance_presenter.domain_count
 
-    logins_gauge.observe(logins_value, instance: instance_url, version: instance_version)
-    users_gauge.observe(users_value, instance: instance_url, version: instance_version)
-    pending_gauge.observe(pending_value, instance: instance_url, version: instance_version)
-    unresolved_gauge.observe(unresolved_value, instance: instance_url, version: instance_version)
-    dbsize_gauge.observe(dbsize_value, instance: instance_url, version: instance_version)
-    enqueued_gauge.observe(enqueued_value, instance: instance_url, version: instance_version)
-    interactions_gauge.observe(interaction_value, instance: instance_url, version: instance_version)
-    relay_gauge.observe(relay_value, instance: instance_url, version: instance_version)
-    registration_gauge.observe(registration_value, instance: instance_url, version: instance_version)
-    pending_tags_gauge.observe(pending_tags_value, instance: instance_url, version: instance_version)
-    status_count_gauge.observe(status_count_value, instance: instance_url, version: instance_version)
-    active_users_gauge.observe(active_users_value, instance: instance_url, version: instance_version)
-    domain_count_gauge.observe(domain_count_value, instance: instance_url, version: instance_version)
+    collect_metric(relay_gauge, relay_value)
+    collect_metric(users_gauge, users_value)
+    collect_metric(dbsize_gauge, dbsize_value)
+    collect_metric(logins_gauge, logins_value)
+    collect_metric(pending_gauge, pending_value)
+    collect_metric(enqueued_gauge, enqueued_value)
+    collect_metric(unresolved_gauge, unresolved_value)
+    collect_metric(interactions_gauge, interaction_value)
+    collect_metric(registration_gauge, registration_value)
+    collect_metric(pending_tags_gauge, pending_tags_value)
+    collect_metric(status_count_gauge, status_count_value)
+    collect_metric(active_users_gauge, active_users_value)
+    collect_metric(domain_count_gauge, domain_count_value)
+    collect_metric(registrations_gauge, registrations_value)
 
     # This should come last!
     fetch_duration_gauge.observe(DateTime.now.strftime("%Q").to_i - start_time)
