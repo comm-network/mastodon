@@ -19,7 +19,7 @@ Modifications include (incomplete list):
 - Markdown/HTML support in posts
 - Prometheus metrics
     - Reachable at `http://localhost:9394/metrics` (see [config options](https://github.com/discourse/prometheus_exporter#exporter-process-configuration))
-    - Runs as `mastodon-metrics` when following the systemd setup (see [service file](dist/mastodon-metrics.service))
+    - Running as `mastodon-metrics` and `mastodon-metrics-collector` when following the systemd setup (see [service file](dist/mastodon-metrics.service))
 - ... and more
 
 ## About
