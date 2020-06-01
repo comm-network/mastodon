@@ -7,7 +7,7 @@ Type=simple
 User=mastodon
 WorkingDirectory=/home/mastodon/live
 Environment="RAILS_ENV=production"
-ExecStart=/home/mastodon/live/bin/metrics-collector
+ExecStart=/home/mastodon/.rbenv/shims/bundle exec bin/metrics-collector
 TimeoutSec=15
 Restart=always
 
