@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby
+APP_PATH = File.expand_path('../config/application', __dir__)
+
+require_relative '../config/boot'
+require_relative '../config/environment'
+require 'sidekiq/api'
+require 'prometheus_exporter'
+require 'prometheus_exporter/client'
+
+def redis_info
+  @redis_info ||= begin
+                    if Redis.current.is_a?(Redis::Namespace)
+                      Redis.current.redis.info
+                    else
+                      Redis.current.info
+                    end
+                  end
+end
+
+scrape_interval = 2.seconds
+
+begin
+  client = PrometheusExporter::Client.default
+  PrometheusExporter::Instrumentation::Process.start(client: client, type: "metrics-collector")
+  logins_gauge = client.register(:gauge, "mastodon_logins_week", "Logins this week")
+  users_gauge = client.register(:gauge, "mastodon_users_total", "Total users")
+  pending_gauge = client.register(:gauge, "mastodon_users_pending", "Pending users")
+  unresolved_gauge = client.register(:gauge, "mastodon_reports_unresolved", "Unresolved reports")
+  dbsize_gauge = client.register(:gauge, "mastodon_database_size", "Database size")
+  redis_gauge = client.register(:gauge, "mastodon_redis_size", "Redis size")
+  enqueued_gauge = client.register(:gauge, "sidekiq_jobs_enqueud", "Enquequed Sidekiq Jobs")
+  interactions_gauge = client.register(:gauge, "mastodon_interactions_week", "Interactions this week")
+  relay_gauge = client.register(:gauge, "mastodon_relay_enabled", "Relay enabled")
+  registration_gauge = client.register(:gauge, "mastodon_registrations_enabled", "Registrations enabled")
+  fetch_duration_gauge = client.register(:gauge, "mastodon_metrics_collect_duration_millis", "Metric collection duration in milliseconds")
+
+  while true do
+    # This should come first
+    start_time = DateTime.now.strftime("%Q").to_i
+
+    logins_value = Redis.current.pfcount("activity:logins:#{Time.now.utc.to_date.cweek}")
+    users_value = User.count
+    pending_value = User.pending.count
+    unresolved_value = Report.unresolved.count
+    dbsize_value = ActiveRecord::Base.connection.execute('SELECT pg_database_size(current_database())').first['pg_database_size']
+    redis_value = redis_info['used_memory']
+    enqueued_value = Sidekiq::Stats.new.enqueued
+    interaction_value = Redis.current.get("activity:interactions:#{Time.now.utc.to_date.cweek}")
+    relay_value = Relay.enabled.exists? ? 1 : 0
+    registration_value = Setting.registrations_mode != 'none' ? 1 : 0
+
+    logins_gauge.observe(logins_value)
+    users_gauge.observe(users_value)
+    pending_gauge.observe(pending_value)
+    unresolved_gauge.observe(unresolved_value)
+    dbsize_gauge.observe(dbsize_value)
+    redis_gauge.observe(redis_value)
+    enqueued_gauge.observe(enqueued_value)
+    interactions_gauge.observe(interaction_value)
+    relay_gauge.observe(relay_value)
+    registration_gauge.observe(registration_value)
+
+    # This should come last!
+    fetch_duration_gauge.observe(DateTime.now.strftime("%Q").to_i - start_time)
+    sleep(scrape_interval)
+  end
+rescue Interrupt
+  exit(130)
+end
