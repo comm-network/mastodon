@@ -18,12 +18,13 @@ end
 begin
   client = PrometheusExporter::Client.default
   PrometheusExporter::Instrumentation::Process.start(client: client, type: "metrics-collector")
+  instance_presenter = InstancePresenter.new
 
   while true do
     # This should come first!
     start_time = DateTime.now.strftime("%Q").to_i
 
-    instance_presenter = InstancePresenter.new
+    client = PrometheusExporter::Client.default
 
     logins_gauge = client.register(:gauge, "mastodon_logins_week", "Logins this week")
     users_gauge = client.register(:gauge, "mastodon_users_total", "Total users")
