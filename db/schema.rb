@@ -184,7 +184,9 @@ ActiveRecord::Schema.define(version: 2020_06_28_133322) do
     t.string "devices_url"
     t.index "(((setweight(to_tsvector('simple'::regconfig, (display_name)::text), 'A'::\"char\") || setweight(to_tsvector('simple'::regconfig, (username)::text), 'B'::\"char\")) || setweight(to_tsvector('simple'::regconfig, (COALESCE(domain, ''::character varying))::text), 'C'::\"char\")))", name: "search_index", using: :gin
     t.index "lower((username)::text), COALESCE(lower((domain)::text), ''::text)", name: "index_accounts_on_username_and_domain_lower", unique: true
+    t.index ["domain"], name: "index_accounts_on_domain"
     t.index ["moved_to_account_id"], name: "index_accounts_on_moved_to_account_id"
+    t.index ["silenced_at"], name: "index_accounts_on_silenced_at"
     t.index ["uri"], name: "index_accounts_on_uri"
     t.index ["url"], name: "index_accounts_on_url"
   end
@@ -781,12 +783,15 @@ ActiveRecord::Schema.define(version: 2020_06_28_133322) do
     t.bigint "in_reply_to_account_id"
     t.bigint "poll_id"
     t.datetime "deleted_at"
+    t.string "content_type"
     t.index ["account_id", "id", "visibility", "updated_at"], name: "index_statuses_20190820", order: { id: :desc }, where: "(deleted_at IS NULL)"
+    t.index ["deleted_at"], name: "index_statuses_on_deleted_at"
     t.index ["id", "account_id"], name: "index_statuses_local_20190824", order: { id: :desc }, where: "((local OR (uri IS NULL)) AND (deleted_at IS NULL) AND (visibility = 0) AND (reblog_of_id IS NULL) AND ((NOT reply) OR (in_reply_to_account_id = account_id)))"
     t.index ["id", "account_id"], name: "index_statuses_public_20200119", order: { id: :desc }, where: "((deleted_at IS NULL) AND (visibility = 0) AND (reblog_of_id IS NULL) AND ((NOT reply) OR (in_reply_to_account_id = account_id)))"
     t.index ["in_reply_to_account_id"], name: "index_statuses_on_in_reply_to_account_id"
     t.index ["in_reply_to_id"], name: "index_statuses_on_in_reply_to_id"
     t.index ["reblog_of_id", "account_id"], name: "index_statuses_on_reblog_of_id_and_account_id"
+    t.index ["updated_at"], name: "index_statuses_on_updated_at"
     t.index ["uri"], name: "index_statuses_on_uri", unique: true
   end
 
@@ -795,6 +800,30 @@ ActiveRecord::Schema.define(version: 2020_06_28_133322) do
     t.bigint "tag_id", null: false
     t.index ["status_id"], name: "index_statuses_tags_on_status_id"
     t.index ["tag_id", "status_id"], name: "index_statuses_tags_on_tag_id_and_status_id", unique: true
+  end
+
+  create_table "stream_entries", force: :cascade do |t|
+    t.bigint "activity_id"
+    t.string "activity_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "hidden", default: false, null: false
+    t.bigint "account_id"
+    t.index ["account_id", "activity_type", "id"], name: "index_stream_entries_on_account_id_and_activity_type_and_id"
+    t.index ["activity_id", "activity_type"], name: "index_stream_entries_on_activity_id_and_activity_type"
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.string "callback_url", default: "", null: false
+    t.string "secret"
+    t.datetime "expires_at"
+    t.boolean "confirmed", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "last_successful_delivery_at"
+    t.string "domain"
+    t.bigint "account_id", null: false
+    t.index ["account_id", "callback_url"], name: "index_subscriptions_on_account_id_and_callback_url", unique: true
   end
 
   create_table "system_keys", force: :cascade do |t|
