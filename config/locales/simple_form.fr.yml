@@ -30,9 +30,8 @@ fr:
         current_username: Pour confirmer, veuillez saisir le nom d'utilisateur du compte courant
         digest: Uniquement envoyé après une longue période d’inactivité et uniquement si vous avez reçu des messages personnels pendant votre absence
         discoverable: L’annuaire des profils est une autre façon pour votre compte d’atteindre une plus grand audience
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Vous recevrez un courriel de confirmation
-        fields: Vous pouvez avoir jusqu’à 8 éléments affichés en tant que tableau sur votre profil
+        fields: Vous pouvez avoir jusqu’à 4 éléments affichés en tant que tableau sur votre profil
         header: Au format PNG, GIF ou JPG. %{size} maximum. Sera réduit à %{dimensions}px
         inbox_url: Copiez l’URL depuis la page d’accueil du relais que vous souhaitez utiliser
         irreversible: Les pouets filtrés disparaîtront irrémédiablement, même si le filtre est supprimé plus tard
@@ -42,18 +41,13 @@ fr:
         phrase: Sera filtré sans que la casse ou l’avertissement sur le contenu du pouet soit pris en compte
         scopes: À quelles APIs l’application sera autorisée à accéder. Si vous sélectionnez une permission générale, vous n’avez pas besoin de sélectionner les permissions plus précises.
         setting_aggregate_reblogs: Ne pas afficher de nouveaux partages pour les pouets qui ont été récemment partagés (n’affecte que les partages nouvellement reçus)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Les médias sensibles sont cachés par défaut et peuvent être révélés d’un simple clic
         setting_display_media_default: Masquer les médias marqués comme sensibles
-        setting_display_media_hide_all: Toujours cacher les médias
-        setting_display_media_show_all: Toujours afficher les médias marqués comme sensibles
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
+        setting_display_media_hide_all: Toujours masquer les médias
+        setting_display_media_show_all: Toujours montrer les médias
         setting_hide_network: Ceux que vous suivez et ceux qui vous suivent ne seront pas affichés sur votre profil
         setting_noindex: Affecte votre profil public ainsi que vos statuts
         setting_show_application: Le nom de l’application que vous utilisez afin d’envoyer des pouets sera affiché dans la vue détaillée de ceux-ci
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Les dégradés sont basés sur les couleurs des images cachées mais n’en montrent pas les détails
         setting_use_pending_items: Cacher les mises à jour des fils d’actualités derrière un clic, au lieu de les afficher automatiquement
         username: Votre nom d’utilisateur sera unique sur %{domain}
@@ -137,10 +131,6 @@ fr:
         setting_auto_play_gif: Lire automatiquement les GIFs animés
         setting_boost_modal: Afficher une fenêtre de confirmation avant de partager un pouet
         setting_crop_images: Recadrer les images des pouets non-dépliés en 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Langue de publication
         setting_default_privacy: Confidentialité des statuts
         setting_default_sensitive: Toujours marquer les médias comme sensibles
@@ -149,15 +139,11 @@ fr:
         setting_display_media_default: Défaut
         setting_display_media_hide_all: Masquer tout
         setting_display_media_show_all: Montrer tout
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Toujours déplier les pouets marqués d’un avertissement sur le contenu
         setting_hide_network: Cacher votre réseau
         setting_noindex: Demander aux moteurs de recherche de ne pas indexer vos informations personnelles
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Réduire la vitesse des animations
         setting_show_application: Dévoiler le nom de l’application utilisée pour envoyer des pouets
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Utiliser la police par défaut du système
         setting_theme: Thème du site
         setting_trends: Afficher les tendances du jour
@@ -165,6 +151,7 @@ fr:
         setting_use_blurhash: Afficher des dégradés colorés pour les médias cachés
         setting_use_pending_items: Mode lent
         severity: Sévérité
+        sign_in_token_attempt: Code de sécurité
         type: Type d’import
         username: Identifiant
         username_or_email: Nom d’utilisateur·rice ou courriel

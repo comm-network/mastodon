@@ -97,7 +97,7 @@ et:
       delete: Kustuta
       destroyed_msg: Moderatsiooniteade edukalt kustutatud!
     accounts:
-      add_email_domain_block: Blacklist e-mail domain
+      add_email_domain_block: Keela e-posti domeen
       approve: Kinnita
       approve_all: Kinnita kõik
       are_you_sure: Olete kindel?
@@ -178,7 +178,7 @@ et:
         staff: Personal
         user: Kasutaja
       search: Otsi
-      search_same_email_domain: Other users with the same e-mail domain
+      search_same_email_domain: Muud kasutajad sama e-posti domeeniga
       search_same_ip: Teised kasutajad, kellel on sama IP
       shared_inbox_url: Jagatud sisendkausta URL
       show:
@@ -201,41 +201,41 @@ et:
       whitelisted: Lubatud
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        assigned_to_self_report: Määras Teavituse
+        change_email_user: Kasutaja muutis e-postiaadressit
+        confirm_user: Kasutaja kinnitatud
+        create_account_warning: Lisas hoiatuse
+        create_announcement: Lisas teadaande
+        create_custom_emoji: Lisas kohandatud emotikoni
+        create_domain_allow: Lisas lubatud domeeni
+        create_domain_block: Lisas domeeniblokeeringu
+        create_email_domain_block: Lisas e-posti domeeni blokeeringu
+        demote_user: Alandas kasutaja
+        destroy_announcement: Eemaldas teadaande
+        destroy_custom_emoji: Eemaldas kohandatud emotikoni
+        destroy_domain_allow: Eemaldas lubatud domeeni
+        destroy_domain_block: Eemaldas domeeniblokeeringu
+        destroy_email_domain_block: Eemaldas e-posti domeeni blokeeringu
+        destroy_status: Eemaldas staatuse
+        disable_2fa_user: Keelas 2FA
+        disable_custom_emoji: Keelas kohandatud emotikoni
+        disable_user: Keelas kasutaja
+        enable_custom_emoji: Lubas kohandatud emotikoni
+        enable_user: Lubas kasutaja
+        memorialize_account: Tegi kontole memoriaali
+        promote_user: Edendas kasutaja
+        remove_avatar_user: Kustutas profiilipildi
+        reopen_report: Taasavas teavituse
+        reset_password_user: Lähtestas salasõna
+        resolve_report: Lahendas teadaande
+        silence_account: Vaigistas konto
+        suspend_account: Peatas konto
+        unassigned_report: Määras teavituse maha
+        unsilence_account: Konto vaigistus eemaldati
+        unsuspend_account: Konto peatamine lõpetati
+        update_announcement: Uuenda teadaannet
+        update_custom_emoji: Uuendas kohandatud emotikoni
+        update_status: Uuendas staatust
       actions:
         assigned_to_self_report: "%{name} määras teabe %{target} iseendale"
         change_email_user: "%{name} muutis kasutaja %{target} e-postiaadressit"
@@ -273,9 +273,9 @@ et:
         update_custom_emoji: "%{name} uuendas emotikooni %{target}"
         update_status: "%{name} uuendas kasutaja %{target} staatust"
       deleted_status: "(kustutatud staatus)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      empty: Logisi ei leitud.
+      filter_by_action: Filtreeri tegevuse järgi
+      filter_by_user: Filtreeri kasutaja järgi
       title: Auditilogi
     announcements:
       destroyed_msg: Teadaande kustutamine õnnestus!
@@ -316,6 +316,7 @@ et:
       listed: Nimekirjastatud
       new:
         title: Lisa uus emotikon
+      not_permitted: Teil puudub õigus selle tegevuse jaoks
       overwrite: Kirjuta üle
       shortcode: Lühikood
       shortcode_hint: Vähemalt 2 tähemärki, ainult tähted, numbrid ja alakriipsud
@@ -409,7 +410,7 @@ et:
       destroyed_msg: E-posti aadressi keelunimekirjast kustutamine õnnestus
       domain: Domeen
       empty: Ühtegi e-postidomeeni pole blokeeritud.
-      from_html: from %{domain}
+      from_html: "%{domain}-ist"
       new:
         create: Lisa domeen
         title: Uus e-posti keelunimekirja sisend
@@ -598,8 +599,8 @@ et:
         desc_html: Kuva avalikult eelnevalt üle vaadatud sildid, mis on praegu trendikad
         title: Populaarsed sildid praegu
     site_uploads:
-      delete: Delete uploaded file
-      destroyed_msg: Site upload successfully deleted!
+      delete: Kustuta üleslaetud fail
+      destroyed_msg: Üleslaetud fail edukalt kustutatud!
     statuses:
       back_to_account: Tagasi konto lehele
       batch:
@@ -666,7 +667,7 @@ et:
     add_new: Loo teine nimi
     created_msg: Teine nimi on edukalt loodud. Te saate nüüd alustada kolimist vanalt kontolt.
     deleted_msg: Edukalt kustutasime teise nime. Kolimine sellelt kontolt praegusele on nüüdsest võimatu.
-    empty: You have no aliases.
+    empty: Teil puuduvad teised nimed.
     hint_html: Kui Te soovite kolida teiselt kontolt praegusele kontole, saate Te siin luua teise nime, mis on kohustuslik, enne kui saate kolida jälgijaid vanalt kontolt praegusele. See tegevus on iseenesest <strong>kahjutu ja taastatav</strong>. <strong>Konto ületoomine alustatakse vanalt kontolt</strong>.
     remove: Eemalda teine nimi
   appearance:
@@ -738,7 +739,7 @@ et:
     trouble_logging_in: Probleeme sisselogimisega?
   authorize_follow:
     already_following: Te juba jälgite seda kontot
-    already_requested: You have already sent a follow request to that account
+    already_requested: Te juba saatsite jälgimistaotluse sellele kontole
     error: Kahjuks ilmus viga kasutaja kaugserverist otsimisel
     follow: Jälgi
     follow_request: 'Te olete saatnud jälgimistaotluse kasutajale:'
@@ -753,6 +754,10 @@ et:
     hint_html: "<strong>Nõuanne:</strong> Me ei küsi Teilt uuesti salasõna järgmise tunni jooksul."
     invalid_password: Vigane salasõna
     prompt: Jätkamiseks kinnitage salasõna
+  crypto:
+    errors:
+      invalid_key: ei ole õige Ed25519 ega Curve25519 võti
+      invalid_signature: ei ole õige Ed25519 allkiri
   date:
     formats:
       default: "%d. %b %Y"
@@ -893,6 +898,8 @@ et:
     inactive: Passiivne
     publicize_checkbox: 'Ja tuututa seda:'
     publicize_toot: 'See on tõestatud! Ma olen %{username} teenusel %{service}: %{url}'
+    remove: Eemalda isikutõend kontolt
+    removed: Isikutõendi eemaldamine oli edukas
     status: Kinnituse staatus
     view_proof: Vaata tõendit
   imports:
@@ -938,7 +945,7 @@ et:
   media_attachments:
     validations:
       images_and_video: Ei saa lisada video staatusele, millel on juba pildid
-      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
+      not_ready: Ei saa lisada faile, mida hetkel töödeldakse. Proovige uuesti mõne hetke pärast!
       too_many: Ei saa lisada rohkem, kui 4 faili
   migrations:
     acct: uue konto kasutajanimi@domeen
@@ -961,6 +968,7 @@ et:
     past_migrations: Eelmiseid kolimisi
     proceed: Save
     proceed_with_move: Koli üle jälgijad
+    redirected_msg: Teie kontot suunatakse nüüd ümber kontole %{acct}.
     redirecting_to: Teie konto suunatakse ümber kontole %{acct}.
     set_redirect: Määra ümbersuunamine
     updated_msg: Your account migration setting successfully updated!
@@ -1170,7 +1178,7 @@ et:
       one: 'sisaldab ebasobivat silti: %{tags}'
       other: 'sisaldab ebasobivaid silte: %{tags}'
     errors:
-      in_reply_not_found: The status you are trying to reply to does not appear to exist.
+      in_reply_not_found: Staatus, millele üritate vastata, ei näi enam eksisteerivat.
     language_detection: Automaatselt tuvasta keel
     open_in_web: Ava veebis
     over_character_limit: tähtmärkide limiit %{max} ületatud

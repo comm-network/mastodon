@@ -25,9 +25,7 @@ eu:
     generic_description: "%{domain} is one server in the network"
     get_apps: Probatu mugikorrerako aplikazio bat
     hosted_on: Mastodon %{domain} domeinuan ostatatua
-    instance_actor_flash: 'Kontu hau zerbitzaria bera adierazten duen aktore birtual bat da, ez norbanako bat. Federaziorako erabiltzen da eta ez zenuke blokeatu behar instantzia osoa blokeatu nahi ez baduzu, kasu horretan domeinua blokeatzea egokia litzateke.
-
-'
+    instance_actor_flash: Kontu hau zerbitzaria bera adierazten duen aktore birtual bat da, ez norbanako bat. Federaziorako erabiltzen da eta ez zenuke blokeatu behar instantzia osoa blokeatu nahi ez baduzu, kasu horretan domeinua blokeatzea egokia litzateke.
     learn_more: Ikasi gehiago
     powered_by_mastodon: Powered by Mastodon
     privacy_policy: Pribatutasun politika
@@ -201,41 +199,27 @@ eu:
       whitelisted: Zerrenda zurian
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        assigned_to_self_report: Esleitu salaketa
+        change_email_user: Aldatu erabiltzailearen e-maila
+        confirm_user: Berretsi erabiltzailea
+        create_account_warning: Sortu abisua
+        create_announcement: Sortu iragarpena
+        create_custom_emoji: Sortu emoji pertsonalizatua
+        create_domain_allow: Sortu domeinu baimena
+        create_domain_block: Sortu domeinu blokeoa
+        create_email_domain_block: Sortu e-mail domeinu blokeoa
+        destroy_announcement: Ezabatu iragarpena
+        destroy_custom_emoji: Ezabatu emoji pertsonalizatua
+        destroy_domain_allow: Ezabatu domeinu baimena
+        destroy_domain_block: Ezabatu domeinu blokeoa
+        destroy_email_domain_block: Ezabatu e-mail domeinu blokeoa
+        destroy_status: Ezabatu mezua
+        disable_2fa_user: Desgaitu 2FA
+        disable_custom_emoji: Desgaitu emoji pertsonalizatua
+        disable_user: Desgaitu erabiltzailea
+        enable_custom_emoji: Gaitu emoji pertsonalizatua
+        enable_user: Gaitu erabiltzailea
+        update_announcement: Eguneratu iragarpena
       actions:
         assigned_to_self_report: "%{name}(e)k %{target} salaketa bere buruari esleitu dio"
         change_email_user: "%{name}(e)k %{target}(r)en e-mail helbidea aldatu du"
@@ -273,9 +257,9 @@ eu:
         update_custom_emoji: "%{name}(e)k %{target} emoji-a eguneratu du"
         update_status: "%{name} (e)k %{target}(r)en mezua aldatu du"
       deleted_status: "(ezabatutako mezua)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      empty: Ez da egunkaririk aurkitu.
+      filter_by_action: Iragazi ekintzen arabera
+      filter_by_user: Iragazi erabiltzaileen arabera
       title: Auditoria-egunkaria
     announcements:
       destroyed_msg: Iragarpena ongi ezabatu da!
@@ -663,7 +647,7 @@ eu:
     add_new: Sortu ezizena
     created_msg: Ongi sortu da ezizena. Orain kontu zaharretik migratzen hasi zaitezke.
     deleted_msg: Ongi kendu da ezizena. Orain ezin izango da aurreko kontutik hona migratu.
-    empty: You have no aliases.
+    empty: Ez duzu ezizenik.
     hint_html: Beste kontu batetik hona migratu nahi baduzu, hemen ezizen bat sortu dezakezu, hau beharrezkoa da kontu zaharreko jarraitzaileak hona ekartzeko. Ekintza hau berez <strong>kaltegabea eta desegingarria</strong> da. <strong>Kontuaren migrazioa kontu zaharretik abiatzen da</strong>.
     remove: Deslotu ezizena
   appearance:
@@ -890,6 +874,8 @@ eu:
     inactive: Ez aktiboa
     publicize_checkbox: 'Eta bidali toot hau:'
     publicize_toot: 'Frogatua dago! %{username} erabiltzailea naiz %{service} zerbitzuan: %{url}'
+    remove: Kendu froga kontutik
+    removed: Ongi kendu da froga kontutik
     status: Egiaztatze egoera
     view_proof: Ikusi froga
   imports:
@@ -1165,7 +1151,7 @@ eu:
       one: 'debekatutako traola bat zuen: %{tags}'
       other: 'debekatutako traola hauek zituen: %{tags}'
     errors:
-      in_reply_not_found: The status you are trying to reply to does not appear to exist.
+      in_reply_not_found: Erantzuten saiatu zaren mezua antza ez da existitzen.
     language_detection: Antzeman hizkuntza automatikoki
     open_in_web: Ireki web-ean
     over_character_limit: "%{max}eko karaktere muga gaindituta"

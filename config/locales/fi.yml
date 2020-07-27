@@ -4,15 +4,12 @@ fi:
     about_hashtag_html: Nämä ovat hashtagilla <strong>#%{hashtag}</strong> merkittyjä julkisia tuuttauksia. Voit vastata niihin, jos sinulla on tili jossain päin fediversumia.
     about_mastodon_html: Mastodon on sosiaalinen verkosto. Se on toteutettu avoimilla verkkoprotokollilla ja vapailla, avoimen lähdekoodin ohjelmistoilla, ja se toimii hajautetusti samaan tapaan kuin sähköposti.
     about_this: Tietoja tästä palvelimesta
-    active_count_after: active
-    active_footnote: Monthly Active Users (MAU)
+    active_count_after: aktiivinen
     administered_by: 'Ylläpitäjä:'
     api: API
     apps: Mobiili sovellukset
     apps_platforms: Käytä Mastodonia iOS:llä, Androidilla tai muilla alustoilla
-    browse_directory: Browse a profile directory and filter by interests
-    browse_local_posts: Browse a live stream of public posts from this server
-    browse_public_posts: Browse a live stream of public posts on Mastodon
+    browse_directory: Selaa profiilihakemistoa ja suodata kiinnostuksen kohteiden mukaan
     contact: Ota yhteyttä
     contact_missing: Ei asetettu
     contact_unavailable: Ei saatavilla
@@ -31,7 +28,7 @@ fi:
     learn_more: Lisätietoja
     powered_by_mastodon: Powered by Mastodon
     privacy_policy: Tietosuojaseloste
-    see_whats_happening: See what's happening
+    see_whats_happening: Näe mitä tapahtuu
     server_stats: 'Palvelimen tilastot:'
     source_code: Lähdekoodi
     status_count_after:
@@ -44,10 +41,10 @@ fi:
     unavailable_content_description:
       domain: Palvelin
       reason: Syy
-      rejecting_media: 'Media files from these servers will not be processed or stored, and no thumbnails will be displayed, requiring manual click-through to the original file:'
-      silenced: 'Posts from these servers will be hidden in public timelines and conversations, and no notifications will be generated from their users'' interactions, unless you are following them:'
-      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
-    unavailable_content_html: Mastodon generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
+      rejecting_media_title: Media suodatettu
+      silenced: 'Julkaisut näiltä palvelimilta piilotetaan julkisilta aikajanoilta ja keskusteluista, ilmoituksia ei luoda näiden käyttäjien tekemistä toiminnoista, jos et seuraa heitä:'
+      silenced_title: Hiljennetyt palvelimet
+      suspended: 'Dataa näiltä palvelimilta ei tulla käsittelemään, tallentamaan tai jakamaan. Tämä tekee kommunikoinnin näiden käyttäjien kanssa mahdottomaksi:'
     user_count_after:
       one: käyttäjä
       other: käyttäjät
@@ -55,8 +52,7 @@ fi:
     what_is_mastodon: Mikä on Mastodon?
   accounts:
     choices_html: "%{name} valinnat:"
-    endorsements_hint: You can endorse people you follow from the web interface, and they will show up here.
-    featured_tags_hint: You can feature specific hashtags that will be displayed here.
+    endorsements_hint: Voit suositella seuraamiasi henkilöitä web käyttöliittymän kautta, ne tulevat näkymään tähän.
     follow: Seuraa
     followers:
       one: Seuraaja
@@ -89,10 +85,9 @@ fi:
     unfollow: Lopeta seuraaminen
   admin:
     account_actions:
-      action: Perform action
-      title: Perform moderation action on %{acct}
+      action: Suorita toimenpide
     account_moderation_notes:
-      create: Luo
+      create: Jätä muistiinpano
       created_msg: Moderointimerkinnän luonti onnistui!
       delete: Poista
       destroyed_msg: Moderointimerkinnän poisto onnistui!
@@ -127,9 +122,9 @@ fi:
       enabled: Käytössä
       followers: Seuraajat
       follows: Seuraa
-      header: Header
+      header: Otsakekuva
       inbox_url: Saapuvan postilaatikon osoite
-      invited_by: Invited by
+      invited_by: Kutsuja
       ip: IP
       joined: Liittynyt
       location:
@@ -150,10 +145,9 @@ fi:
       moderation_notes: Moderointimerkinnät
       most_recent_activity: Viimeisin toiminta
       most_recent_ip: Viimeisin IP
-      no_account_selected: No accounts were changed as none were selected
-      no_limits_imposed: No limits imposed
+      no_limits_imposed: Rajoituksia ei ole asetettu
       not_subscribed: Ei tilaaja
-      pending: Pending review
+      pending: Odottaa tarkistusta
       perform_full_suspension: Siirrä kokonaan jäähylle
       promote: Ylennä
       protocol: Protokolla
@@ -163,7 +157,7 @@ fi:
       reject: Hylkää
       reject_all: Hylkää kaikki
       remove_avatar: Poista profiilikuva
-      remove_header: Remove header
+      remove_header: Poista otsakekuva
       resend_confirmation:
         already_confirmed: Tämä käyttäjä on jo vahvistettu
         send: Lähetä varmistusviesti uudelleen
@@ -178,8 +172,7 @@ fi:
         staff: Henkilöstö
         user: Käyttäjä
       search: Hae
-      search_same_email_domain: Other users with the same e-mail domain
-      search_same_ip: Other users with the same IP
+      search_same_ip: Muut käyttäjät samalla IP-osoitteella
       shared_inbox_url: Jaetun saapuvan postilaatikon osoite
       show:
         created_reports: Tämän tilin luomat raportit
@@ -189,7 +182,7 @@ fi:
       statuses: Tilat
       subscribe: Tilaa
       suspended: Jäähyllä
-      time_in_queue: Waiting in queue %{time}
+      time_in_queue: Odottaa jonossa %{time}
       title: Tilit
       unconfirmed_email: Sähköpostia ei vahvistettu
       undo_silenced: Peru hiljennys
@@ -201,41 +194,21 @@ fi:
       whitelisted: Whitelisted
     action_logs:
       action_types:
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete e-mail domain block
-        destroy_status: Delete Status
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        silence_account: Silence Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_status: Update Status
+        confirm_user: Vahvista käyttäjä
+        create_account_warning: Luo varoitus
+        create_announcement: Luo ilmoitus
+        create_custom_emoji: Luo mukautettu emoji
+        demote_user: Alenna käyttäjä
+        destroy_announcement: Poista ilmoitus
+        destroy_custom_emoji: Poista mukautettu emoji
+        destroy_status: Poista tilapäivitys
+        disable_2fa_user: Poista kaksivaiheinen tunnistautuminen käytöstä
+        disable_user: Tili poistettu käytöstä
+        enable_custom_emoji: Käytä mukautettuja emojeita
+        enable_user: Tili otettu käyttöön
+        promote_user: Käyttäjä ylennetty
+        remove_avatar_user: Profiilikuvan poisto
+        silence_account: Hiljennä tili
       actions:
         assigned_to_self_report: "%{name} otti raportin %{target} tehtäväkseen"
         change_email_user: "%{name} vaihtoi käyttäjän %{target} sähköpostiosoitteen"
@@ -272,24 +245,20 @@ fi:
         update_announcement: "%{name} updated announcement %{target}"
         update_custom_emoji: "%{name} päivitti emojin %{target}"
         update_status: "%{name} päivitti käyttäjän %{target} tilan"
-      deleted_status: "(deleted status)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
+      deleted_status: "(poistettu tilapäivitys)"
+      empty: Lokeja ei löytynyt.
+      filter_by_action: Suodata tapahtuman mukaan
+      filter_by_user: Suodata käyttäjän mukaan
       title: Auditointiloki
     announcements:
-      destroyed_msg: Announcement successfully deleted!
+      destroyed_msg: Ilmoitus poistettu onnistuneesti!
       edit:
-        title: Edit announcement
-      empty: No announcements found.
-      live: Live
+        title: Muokkaa ilmoitusta
+      empty: Yhtään ilmoitusta ei löytynyt.
       new:
-        create: Create announcement
-        title: New announcement
-      publish: Publish
-      published_msg: Announcement successfully published!
-      scheduled_for: Scheduled for %{time}
-      scheduled_msg: Announcement scheduled for publication!
+        create: Luo ilmoitus
+        title: Uusi ilmoitus
+      published_msg: Ilmoitus julkaistu onnistuneesti!
       title: Ilmoitukset
       unpublish: Unpublish
       unpublished_msg: Announcement successfully unpublished!
@@ -316,6 +285,7 @@ fi:
       listed: Listassa
       new:
         title: Lisää uusi mukautettu emoji
+      not_permitted: Sinulla ei ole oikeutta suorittaa tätä toimintoa
       overwrite: Kirjoita yli
       shortcode: Lyhennekoodi
       shortcode_hint: Vähintään kaksi merkkiä, vain kirjaimia, numeroita ja alaviivoja
@@ -334,31 +304,18 @@ fi:
       feature_invites: Kutsulinkit
       feature_profile_directory: Profiilihakemisto
       feature_registrations: Rekisteröitymiset
-      feature_relay: Federation relay
-      feature_spam_check: Anti-spam
-      feature_timeline_preview: Timeline preview
-      features: Features
-      hidden_service: Federation with hidden services
-      open_reports: open reports
-      pending_tags: hashtags waiting for review
-      pending_users: users waiting for review
-      recent_users: Recent users
-      search: Full-text search
-      single_user_mode: Single user mode
-      software: Software
-      space: Space usage
+      feature_spam_check: Roskapostin esto
+      feature_timeline_preview: Aikajanan esikatselu
+      features: Ominaisuudet
+      recent_users: Viimeaikaiset käyttäjät
+      search: Haku koko tekstistä
+      software: Ohjelmisto
+      space: Tilankäyttö
       title: Hallintapaneeli
-      total_users: users in total
-      trends: Trends
-      week_interactions: interactions this week
-      week_users_active: active this week
-      week_users_new: users this week
-      whitelist_mode: Whitelist mode
-    domain_allows:
-      add_new: Whitelist domain
-      created_msg: Domain has been successfully whitelisted
-      destroyed_msg: Domain has been removed from the whitelist
-      undo: Remove from whitelist
+      total_users: käyttäjiä yhteensä
+      trends: Trendit
+      week_users_active: aktiivinen tällä viikolla
+      week_users_new: käyttäjiä tällä viikolla
     domain_blocks:
       add_new: Lisää uusi
       created_msg: Verkkotunnuksen estoa käsitellään
@@ -375,19 +332,13 @@ fi:
           silence: Hiljennys
           suspend: Jäähy
         title: Uusi verkkotunnuksen esto
-      private_comment: Private comment
-      private_comment_hint: Comment about this domain limitation for internal use by the moderators.
-      public_comment: Public comment
-      public_comment_hint: Comment about this domain limitation for the general public, if advertising the list of domain limitations is enabled.
+      private_comment: Yksityinen kommentti
+      public_comment: Julkinen kommentti
       reject_media: Hylkää mediatiedostot
       reject_media_hint: Poistaa paikallisesti tallennetut mediatiedostot eikä lataa niitä enää jatkossa. Ei merkitystä jäähyn kohdalla
-      reject_reports: Reject reports
-      reject_reports_hint: Ignore all reports coming from this domain. Irrelevant for suspensions
-      rejecting_media: rejecting media files
-      rejecting_reports: rejecting reports
       severity:
-        silence: silenced
-        suspend: suspended
+        silence: hiljennetty
+        suspend: jäähyllä
       show:
         affected_accounts:
           one: Vaikuttaa yhteen tiliin tietokannassa
@@ -415,51 +366,33 @@ fi:
       back_to_account: Back To Account
       title: "%{acct}'s Followers"
     instances:
-      by_domain: Domain
-      delivery_available: Delivery is available
-      known_accounts:
-        one: "%{count} known account"
-        other: "%{count} known accounts"
       moderation:
-        all: All
-        limited: Limited
-        title: Moderation
-      private_comment: Private comment
-      public_comment: Public comment
+        all: Kaikki
+        limited: Rajoitettu
+        title: Moderointi
+      private_comment: Yksityinen kommentti
+      public_comment: Julkinen kommentti
       title: Tiedossa olevat instanssit
-      total_blocked_by_us: Blocked by us
-      total_followed_by_them: Followed by them
-      total_followed_by_us: Followed by us
-      total_reported: Reports about them
-      total_storage: Media attachments
+      total_blocked_by_us: Estetty meidän toimesta
+      total_followed_by_them: Heidän seuraama
+      total_followed_by_us: Meidän seuraama
+      total_storage: Medialiitteet
     invites:
-      deactivate_all: Deactivate all
+      deactivate_all: Poista kaikki käytöstä
       filter:
         all: Kaikki
         available: Saatavilla
         expired: Vanhentunut
         title: Suodata
       title: Kutsut
-    pending_accounts:
-      title: Pending accounts (%{count})
-    relationships:
-      title: "%{acct}'s relationships"
     relays:
-      add_new: Add new relay
-      delete: Delete
-      description_html: A <strong>federation relay</strong> is an intermediary server that exchanges large volumes of public toots between servers that subscribe and publish to it. <strong>It can help small and medium servers discover content from the fediverse</strong>, which would otherwise require local users manually following other people on remote servers.
-      disable: Disable
-      disabled: Disabled
-      enable: Enable
-      enable_hint: Once enabled, your server will subscribe to all public toots from this relay, and will begin sending this server's public toots to it.
-      enabled: Enabled
-      inbox_url: Relay URL
-      pending: Waiting for relay's approval
-      save_and_enable: Save and enable
-      setup: Setup a relay connection
-      signatures_not_enabled: Relays will not work correctly while secure mode or whitelist mode is enabled
-      status: Status
-      title: Relays
+      delete: Poista
+      disable: Poista käytöstä
+      disabled: Poistettu käytöstä
+      enable: Ota käyttöön
+      enabled: Käytössä
+      save_and_enable: Tallenna ja ota käyttöön
+      status: Tila
     report_notes:
       created_msg: Muistiinpano onnistuneesti lisätty raporttiin!
       destroyed_msg: Muistiinpano onnistuneesti poistettu raportista!
@@ -511,26 +444,20 @@ fi:
         email: Työsähköposti
         username: Yhteyshenkilön käyttäjänimi
       custom_css:
-        desc_html: Modify the look with CSS loaded on every page
-        title: Custom CSS
-      default_noindex:
-        desc_html: Affects all users who have not changed this setting themselves
-        title: Opt users out of search engine indexing by default
+        title: Mukautettu CSS
       domain_blocks:
-        all: To everyone
-        disabled: To no one
-        title: Show domain blocks
-        users: To logged-in local users
+        all: Kaikille
+        disabled: Ei kenellekkään
+        title: Näytä domainestot
       domain_blocks_rationale:
-        title: Show rationale
+        title: Näytä syy
       enable_bootstrap_timeline_accounts:
         title: Uudet käyttäjät seuraavat oletuksena tilejä
       hero:
         desc_html: Näytetään etusivulla. Suosituskoko vähintään 600x100 pikseliä. Jos kuvaa ei aseteta, käytetään instanssin pikkukuvaa
         title: Sankarin kuva
       mascot:
-        desc_html: Displayed on multiple pages. At least 293×205px recommended. When not set, falls back to default mascot
-        title: Mascot image
+        title: Maskottikuva
       peers_api_enabled:
         desc_html: Verkkotunnukset, jotka tämä instanssi on kohdannut fediversumissa
         title: Julkaise löydettyjen instanssien luettelo
@@ -552,13 +479,9 @@ fi:
           title: Salli kutsut käyttäjältä
       registrations_mode:
         modes:
-          approved: Approval required for sign up
-          none: Nobody can sign up
-          open: Anyone can sign up
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
-        title: Registrations mode
+          approved: Rekisteröinti vaatii hyväksynnän
+          none: Kukaan ei voi rekisteröityä
+          open: Kaikki voivat rekisteröityä
       show_known_fediverse_at_about_page:
         desc_html: Kun tämä on valittu, esikatselussa näytetään tuuttaukset kaikkialta tunnetusta fediversumista. Muutoin näytetään vain paikalliset tuuttaukset.
         title: Näytä aikajanan esikatselussa koko tunnettu fediversumi
@@ -572,8 +495,7 @@ fi:
         desc_html: Hyvä paikka käytösohjeille, säännöille, ohjeistuksille ja muille instanssin muista erottaville asioille. HTML-tagit käytössä
         title: Omavalintaiset laajat tiedot
       site_short_description:
-        desc_html: Displayed in sidebar and meta tags. Describe what Mastodon is and what makes this server special in a single paragraph.
-        title: Short server description
+        title: Lyhyt instanssin kuvaus
       site_terms:
         desc_html: Tähän voi kirjoittaa instanssin tietosuojakäytännöstä, käyttöehdoista ja sen sellaisista asioista. HTML-tagit käytössä
         title: Omavalintaiset käyttöehdot
@@ -588,22 +510,17 @@ fi:
         desc_html: Näytä julkinen aikajana aloitussivulla
         title: Aikajanan esikatselu
       title: Sivuston asetukset
-      trendable_by_default:
-        desc_html: Affects hashtags that have not been previously disallowed
-        title: Allow hashtags to trend without prior review
       trends:
-        desc_html: Publicly display previously reviewed hashtags that are currently trending
-        title: Trending hashtags
+        title: Trendaavat aihetunnisteet
     site_uploads:
-      delete: Delete uploaded file
-      destroyed_msg: Site upload successfully deleted!
+      delete: Poista ladattu tiedosto
     statuses:
       back_to_account: Takaisin tilin sivulle
       batch:
         delete: Poista
         nsfw_off: NSFW POIS
         nsfw_on: NSFW PÄÄLLÄ
-      deleted: Deleted
+      deleted: Poistettu
       failed_to_execute: Suoritus epäonnistui
       media:
         title: Media
@@ -611,43 +528,19 @@ fi:
       no_status_selected: No statuses were changed as none were selected
       title: Tilin tilat
       with_media: Sisältää mediaa
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
-      accounts_today: Unique uses today
-      accounts_week: Unique uses this week
-      breakdown: Breakdown of today's usage by source
-      context: Context
-      directory: In directory
-      hidden: Hidden
-      hide: Hide from directory
-      in_directory: "%{count} in directory"
-      last_active: Last active
-      most_popular: Most popular
-      most_recent: Most recent
-      name: Hashtag
-      review: Review status
-      reviewed: Reviewed
-      title: Hashtags
-      trending_right_now: Trending right now
-      unhide: Show in directory
-      unique_uses_today: "%{count} posting today"
-      unreviewed: Not reviewed
-      updated_msg: Hashtag settings updated successfully
-      visible: Visible
+      context: Konteksti
+      last_active: Aktiivinen viimeksi
+      most_popular: Suosituimmat
+      most_recent: Viimeisimmät
+      name: Aihetunniste
+      reviewed: Tarkistetut
+      title: Aihetunnisteet
+      trending_right_now: Trendaa juuri nyt
     title: Ylläpito
     warning_presets:
-      add_new: Add new
-      delete: Delete
-      edit_preset: Edit warning preset
-      empty: Empty
-      title: Manage warning presets
+      add_new: Lisää uusi
+      delete: Poista
   admin_mailer:
     new_pending_account:
       body: The details of the new account are below. You can approve or reject this application.
@@ -656,30 +549,18 @@ fi:
       body: "%{reporter} on raportoinut kohteen %{target}"
       body_remote: Joku osoitteesta %{domain} on raportoinut kohteen %{target}
       subject: Uusi raportti instanssista %{instance} (nro %{id})
-    new_trending_tag:
-      body: 'The hashtag #%{name} is trending today, but has not been previously reviewed. It will not be displayed publicly unless you allow it to, or just save the form as it is to never hear about it again.'
-      subject: New hashtag up for review on %{instance} (#%{name})
   aliases:
-    add_new: Create alias
-    created_msg: Successfully created a new alias. You can now initiate the move from the old account.
-    deleted_msg: Successfully remove the alias. Moving from that account to this one will no longer be possible.
-    empty: You have no aliases.
-    hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
-    remove: Unlink alias
+    add_new: Luo alias
+    empty: Sinulla ei ole aliaksia.
+    remove: Poista aliaksen linkitys
   appearance:
-    advanced_web_interface: Advanced web interface
-    advanced_web_interface_hint: 'If you want to make use of your entire screen width, the advanced web interface allows you to configure many different columns to see as much information at the same time as you want: Home, notifications, federated timeline, any number of lists and hashtags.'
-    animations_and_accessibility: Animations and accessibility
-    confirmation_dialogs: Confirmation dialogs
-    discovery: Discovery
     localization:
-      body: Mastodon is translated by volunteers.
-      guide_link: https://crowdin.com/project/mastodon
-      guide_link_text: Everyone can contribute.
-    sensitive_content: Sensitive content
-    toot_layout: Toot layout
+      body: Mastodonin ovat kääntäneet vapaaehtoiset.
+      guide_link_text: Kaikki voivat osallistua.
+    sensitive_content: Arkaluontoista sisältöä
   application_mailer:
     notification_preferences: Muuta sähköpostiasetuksia
+    salutation: "%{name},"
     settings: 'Muuta sähköpostiasetuksia: %{link}'
     view: 'Näytä:'
     view_profile: Näytä profiili
@@ -693,7 +574,7 @@ fi:
     warning: Säilytä tietoa hyvin. Älä milloinkaan jaa sitä muille!
     your_token: Pääsytunnus
   auth:
-    apply_for_account: Request an invite
+    apply_for_account: Pyydä kutsu
     change_password: Salasana
     checkbox_agreement_html: I agree to the <a href="%{rules_path}" target="_blank">server rules</a> and <a href="%{terms_path}" target="_blank">terms of service</a>
     checkbox_agreement_without_rules_html: I agree to the <a href="%{terms_path}" target="_blank">terms of service</a>
@@ -701,9 +582,8 @@ fi:
     delete_account: Poista tili
     delete_account_html: Jos haluat poistaa tilisi, <a href="%{path}">paina tästä</a>. Poisto on vahvistettava.
     description:
-      prefix_invited_by_user: "@%{name} invites you to join this server of Mastodon!"
-      prefix_sign_up: Sign up on Mastodon today!
-      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any Mastodon server and more!
+      prefix_sign_up: Liity Mastodoniin tänään!
+      suffix: Tilillä voit seurata ihmisiä, julkaista päivityksiä ja lähetellä viestejä muille käyttäjille miltä palvelimelta tahansa ja paljon muuta!
     didnt_get_confirmation: Etkö saanut vahvistusohjeita?
     forgot_password: Unohditko salasanasi?
     invalid_reset_password_token: Salasananpalautustunnus on virheellinen tai vanhentunut. Pyydä uusi.
@@ -718,17 +598,10 @@ fi:
     reset_password: Palauta salasana
     security: Tunnukset
     set_new_password: Aseta uusi salasana
-    setup:
-      email_below_hint_html: If the below e-mail address is incorrect, you can change it here and receive a new confirmation e-mail.
-      email_settings_hint_html: The confirmation e-mail was sent to %{email}. If that e-mail address is not correct, you can change it in account settings.
-      title: Setup
     status:
-      account_status: Account status
-      confirming: Waiting for e-mail confirmation to be completed.
-      functional: Your account is fully operational.
-      pending: Your application is pending review by our staff. This may take some time. You will receive an e-mail if your application is approved.
-      redirecting_to: Your account is inactive because it is currently redirecting to %{acct}.
-    trouble_logging_in: Trouble logging in?
+      account_status: Tilin tila
+      functional: Tilisi on täysin toimiva.
+    trouble_logging_in: Ongelmia kirjautumisessa?
   authorize_follow:
     already_following: Sinä seuraat jo tätä tiliä
     already_requested: You have already sent a follow request to that account
@@ -742,10 +615,7 @@ fi:
       web: Siirry verkkosivulle
     title: Seuraa käyttäjää %{acct}
   challenge:
-    confirm: Continue
-    hint_html: "<strong>Tip:</strong> We won't ask you for your password again for the next hour."
-    invalid_password: Invalid password
-    prompt: Confirm password to continue
+    confirm: Jatka
   datetime:
     distance_in_words:
       about_x_hours: "%{count} h"
@@ -769,30 +639,15 @@ fi:
     proceed: Poista tili
     success_msg: Tilin poisto onnistui
     warning:
-      before: 'Before proceeding, please read these notes carefully:'
-      caches: Content that has been cached by other servers may persist
-      data_removal: Your posts and other data will be permanently removed
-      email_change_html: You can <a href="%{path}">change your e-mail address</a> without deleting your account
-      email_contact_html: If it still doesn't arrive, you can e-mail <a href="mailto:%{email}">%{email}</a> for help
-      email_reconfirmation_html: If you are not receiving the confirmation e-mail, you can <a href="%{path}">request it again</a>
-      irreversible: You will not be able to restore or reactivate your account
-      more_details_html: For more details, see the <a href="%{terms_path}">privacy policy</a>.
-      username_available: Your username will become available again
-      username_unavailable: Your username will remain unavailable
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
+      more_details_html: Lisätietoja saat <a href="%{terms_path}">tietosuojakäytännöstämme</a>.
+      username_available: Käyttäjänimesi tulee saataville uudestaan
+      username_unavailable: Käyttäjänimesi ei tule saataville enää uudestaan
   directories:
-    directory: Profile directory
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
-    explanation: Discover users based on their interests
-    explore_mastodon: Explore %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
+    directory: Profiilihakemisto
+    explanation: Löydä käyttäjiä hiedän kiinnostuksiensa kautta
+    explore_mastodon: Tutki %{title}
   domain_validator:
-    invalid_domain: is not a valid domain name
+    invalid_domain: ei ole kelvollinen toimialueen nimi
   errors:
     '400': The request you submitted was invalid or malformed.
     '403': Sinulla ei ole lupaa nähdä tätä sivua.
@@ -820,71 +675,44 @@ fi:
       request: Pyydä arkisto
       size: Koko
     blocks: Estot
-    csv: CSV
-    domain_blocks: Domain blocks
-    follows: You follow
-    lists: Lists
+    lists: Listat
     mutes: Mykistetyt
     storage: Media-arkisto
   featured_tags:
-    add_new: Add new
-    errors:
-      limit: You have already featured the maximum amount of hashtags
-    hint_html: "<strong>What are featured hashtags?</strong> They are displayed prominently on your public profile and allow people to browse your public posts specifically under those hashtags. They are a great tool for keeping track of creative works or long-term projects."
+    add_new: Lisää uusi
   filters:
     contexts:
-      account: Profiles
-      home: Home timeline
-      notifications: Notifications
-      public: Public timelines
-      thread: Conversations
+      account: Profiilit
+      home: Kotiaikajana
+      notifications: Ilmoitukset
+      public: Julkiset aikajanat
+      thread: Keskustelut
     edit:
-      title: Edit filter
-    errors:
-      invalid_context: None or invalid context supplied
-      invalid_irreversible: Irreversible filtering only works with home or notifications context
+      title: Muokkaa suodatinta
     index:
-      delete: Delete
-      empty: You have no filters.
-      title: Filters
+      delete: Poista
+      empty: Sinulla ei ole suodattimia.
+      title: Suodattimet
     new:
-      title: Add new filter
+      title: Lisää uusi suodatin
   footer:
-    developers: Developers
-    more: More…
-    resources: Resources
-    trending_now: Trending now
+    developers: Kehittäjille
+    more: Lisää…
+    resources: Resurssit
+    trending_now: Suosittua nyt
   generic:
-    all: All
+    all: Kaikki
     changes_saved_msg: Muutosten tallennus onnistui!
-    copy: Copy
-    delete: Delete
-    no_batch_actions_available: No batch actions available on this page
-    order_by: Order by
+    copy: Kopioi
+    delete: Poista
+    order_by: Järjestä
     save_changes: Tallenna muutokset
     validation_errors:
       one: Kaikki ei ole aivan oikein! Tarkasta alla oleva virhe
       other: Kaikki ei ole aivan oikein! Tarkasta alla olevat %{count} virhettä
-  html_validator:
-    invalid_markup: 'contains invalid HTML markup: %{error}'
   identity_proofs:
-    active: Active
-    authorize: Yes, authorize
-    authorize_connection_prompt: Authorize this cryptographic connection?
-    errors:
-      failed: The cryptographic connection failed. Please try again from %{provider}.
-      keybase:
-        invalid_token: Keybase tokens are hashes of signatures and must be 66 hex characters
-        verification_failed: Keybase does not recognize this token as a signature of Keybase user %{kb_username}. Please retry from Keybase.
-      wrong_user: Cannot create a proof for %{proving} while logged in as %{current}. Log in as %{proving} and try again.
-    explanation_html: Here you can cryptographically connect your other identities, such as a Keybase profile. This lets other people send you encrypted messages and trust content you send them.
-    i_am_html: I am %{username} on %{service}.
-    identity: Identity
-    inactive: Inactive
-    publicize_checkbox: 'And toot this:'
-    publicize_toot: 'It is proven! I am %{username} on %{service}: %{url}'
-    status: Verification status
-    view_proof: View proof
+    active: Aktiivinen
+    authorize: Kyllä, valtuuta
   imports:
     modes:
       merge: Merge
@@ -932,37 +760,16 @@ fi:
       too_many: Tiedostoja voi liittää enintään 4
   migrations:
     acct: uuden tilin käyttäjätunnus@verkkotunnus
-    cancel: Cancel redirect
-    cancel_explanation: Cancelling the redirect will re-activate your current account, but will not bring back followers that have been moved to that account.
-    cancelled_msg: Successfully cancelled the redirect.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
-      already_moved: is the same account you have already moved to
-      missing_also_known_as: is not back-referencing this account
-      move_to_self: cannot be current account
-      not_found: could not be found
-      on_cooldown: You are on cooldown
-    followers_count: Followers at time of move
-    incoming_migrations: Moving from a different account
-    incoming_migrations_html: To move from another account to this one, first you need to <a href="%{path}">create an account alias</a>.
-    moved_msg: Your account is now redirecting to %{acct} and your followers are being moved over.
-    not_redirecting: Your account is not redirecting to any other account currently.
-    on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
-    past_migrations: Past migrations
-    proceed: Save
-    proceed_with_move: Move followers
-    redirecting_to: Your account is redirecting to %{acct}.
-    set_redirect: Set redirect
-    updated_msg: Your account migration setting successfully updated!
+      move_to_self: ei voi olla nykyinen tili
+      not_found: ei voitu löytää
+      on_cooldown: Sinä olet jäähyllä
+    followers_count: Seuraajat muuton aikana
+    past_migrations: Edelliset migraatiot
+    proceed_with_move: Siirrä seuraajat
+    set_redirect: Aseta uudelleenohjaus
     warning:
-      backreference_required: The new account must first be configured to back-reference this one
-      before: 'Before proceeding, please read these notes carefully:'
-      cooldown: After moving there is a cooldown period during which you will not be able to move again
-      disabled_account: Your current account will not be fully usable afterwards. However, you will have access to data export as well as re-activation.
-      followers: This action will move all followers from the current account to the new account
-      only_redirect_html: Alternatively, you can <a href="%{path}">only put up a redirect on your profile</a>.
-      other_data: No other data will be moved automatically
-      redirect: Your current account's profile will be updated with a redirect notice and be excluded from searches
+      before: 'Ennen jatkamista, lue nämä huomautukset huolellisesti:'
   moderation:
     title: Moderointi
   notification_mailer:
@@ -1009,6 +816,7 @@ fi:
         format: "%n %u"
         units:
           billion: Mrd
+          million: M
           quadrillion: Brd
           thousand: k
           trillion: B
@@ -1019,39 +827,20 @@ fi:
     prev: Edellinen
   polls:
     errors:
-      already_voted: You have already voted on this poll
-      duplicate_options: contain duplicate items
-      duration_too_long: is too far into the future
-      duration_too_short: is too soon
-      expired: The poll has already ended
-      invalid_choice: The chosen vote option does not exist
-      over_character_limit: cannot be longer than %{max} characters each
-      too_few_options: must have more than one item
-      too_many_options: can't contain more than %{max} items
+      duration_too_long: on liian kaukana tulevaisuudessa
+      duration_too_short: on liian aikainen
+      expired: Äänestys on jo loppunut
   preferences:
     other: Muut
-    posting_defaults: Posting defaults
-    public_timelines: Public timelines
+    public_timelines: Julkiset aikajanat
   reactions:
     errors:
-      limit_reached: Limit of different reactions reached
-      unrecognized_emoji: is not a recognized emoji
+      unrecognized_emoji: ei ole tunnistettu emoji
   relationships:
-    activity: Account activity
-    dormant: Dormant
-    followers: Followers
-    following: Following
-    invited: Invited
-    last_active: Last active
-    most_recent: Most recent
-    moved: Moved
-    mutual: Mutual
-    primary: Primary
-    relationship: Relationship
-    remove_selected_domains: Remove all followers from the selected domains
-    remove_selected_followers: Remove selected followers
-    remove_selected_follows: Unfollow selected users
-    status: Account status
+    activity: Tilin tapahtumat
+    followers: Seuraajat
+    following: Seuratut
+    invited: Kutsuttu
   remote_follow:
     acct: Syötä se käyttäjätunnus@verkkotunnus, josta haluat seurata
     missing_resource: Vaadittavaa uudelleenohjaus-URL:ää tiliisi ei löytynyt
@@ -1081,37 +870,62 @@ fi:
     activity: Viimeisin toiminta
     browser: Selain
     browsers:
+      alipay: Alipay
+      blackberry: Blackberry
+      chrome: Chrome
+      edge: Microsoft Edge
+      electron: Electron
+      firefox: Firefox
       generic: Tuntematon selain
+      ie: Internet Explorer
+      micro_messenger: MicroMessenger
       nokia: Nokia S40 Ovi -selain
+      opera: Opera
+      otter: Otter
+      phantom_js: PhantomJS
+      qq: QQ Browser
+      safari: Safari
+      uc_browser: UCBrowser
+      weibo: Weibo
     current_session: Nykyinen istunto
     description: "%{browser}, %{platform}"
     explanation: Nämä verkkoselaimet ovat tällä hetkellä kirjautuneet Mastodon-tilillesi.
-    ip: IP
+    ip: IP-osoite
     platforms:
+      adobe_air: Adobe Air
+      android: Android
+      blackberry: Blackberry
+      chrome_os: ChromeOS
+      firefox_os: Firefox OS
+      ios: iOS
+      linux: Linux
+      mac: macOS
       other: tuntematon järjestelmä
+      windows: Windows
+      windows_mobile: Windows Mobile
+      windows_phone: Windows Phone
     revoke: Hylkää
     revoke_success: Istunnon hylkäys onnistui
     title: Istunnot
   settings:
-    account: Account
-    account_settings: Account settings
-    aliases: Account aliases
-    appearance: Appearance
+    account: Tili
+    account_settings: Tilin asetukset
+    aliases: Tilin aliakset
+    appearance: Ulkoasu
     authorized_apps: Valtuutetut sovellukset
     back: Takaisin Mastodoniin
     delete: Tilin poisto
     development: Kehittäminen
     edit_profile: Muokkaa profiilia
     export: Vie tietoja
-    featured_tags: Featured hashtags
-    identity_proofs: Identity proofs
+    featured_tags: Esitellyt aihetunnisteet
     import: Tuo
-    import_and_export: Import and export
+    import_and_export: Tuo / Vie
     migrate: Tilin muutto muualle
     notifications: Ilmoitukset
     preferences: Ominaisuudet
-    profile: Profile
-    relationships: Follows and followers
+    profile: Profiili
+    relationships: Seurattavat ja seuraajat
     two_factor_authentication: Kaksivaiheinen todentaminen
   spam_check:
     spam_detected: This is an automated report. Spam has been detected.
@@ -1129,9 +943,7 @@ fi:
     disallowed_hashtags:
       one: 'sisälsi aihetunnisteen jota ei sallita: %{tags}'
       other: 'sisälsi aihetunnisteet joita ei sallita: %{tags}'
-    errors:
-      in_reply_not_found: The status you are trying to reply to does not appear to exist.
-    language_detection: Automatically detect language
+    language_detection: Tunnista kieli automaattisesti
     open_in_web: Avaa selaimessa
     over_character_limit: merkkimäärän rajoitus %{max} ylitetty
     pin_errors:
@@ -1141,15 +953,15 @@ fi:
       reblog: Buustausta ei voi kiinnittää
     poll:
       total_people:
-        one: "%{count} person"
-        other: "%{count} people"
+        one: "%{count} henkilö"
+        other: "%{count} henkilöä"
       total_votes:
-        one: "%{count} vote"
-        other: "%{count} votes"
-      vote: Vote
+        one: "%{count} ääni"
+        other: "%{count} ääntä"
+      vote: Äänestä
     show_more: Näytä lisää
-    show_thread: Show thread
-    sign_in_to_participate: Sign in to participate in the conversation
+    show_thread: Näytä ketju
+    sign_in_to_participate: Kirjaudu sisään osallistuaksesi keskusteluun
     title: "%{name}: ”%{quote}”"
     visibilities:
       private: Vain seuraajille

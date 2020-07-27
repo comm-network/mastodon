@@ -8,7 +8,7 @@ et:
         acct: Sisesta selle konto kasutajanimi@domeen, millele soovite kolida
       account_warning_preset:
         text: Te saate kasutada tuututuse süntaksi, näiteks URLe, silte ja mainimisi
-        title: Optional. Not visible to the recipient
+        title: Valikuline. Ei ole nähtav saajale
       admin_account_action:
         include_statuses: Kasutaja näeb, millised tuututused on põhjustanud selle moderaatori tegevuse või hoiatuse
         send_email_notification: Konto omanik saab selgituse selle kohta, mis juhtus nende kontoga
@@ -30,9 +30,8 @@ et:
         current_username: Kinnitamiseks palun sisestage oma konto kasutajanimi
         digest: Saadetakse ainult pärast pikka perioodi tegevusetust ja ainult siis, kui Teile on saadetud privaatseid sõnumeid
         discoverable: Profiilikataloog on veel üks viis, kuidas Teie konto saab jõuda laiema publikuni
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: Teile saadetakse kinnituskiri e-posti teel
-        fields: Te saate oma profiilil tabelina kuvada kuni 8 asja
+        fields: Te saate oma profiilil tabelina kuvada kuni 4 asja
         header: PNG, GIF või JPG. Kõige rohkem %{size}. Vähendatakse %{dimensions} pikslini
         inbox_url: Kopeerige soovitud relee avalehe URL
         irreversible: Filtreeritud tuututused kaovad taastamatult, isegi kui filter on hiljem eemaldatud
@@ -42,18 +41,13 @@ et:
         phrase: Kattub olenemata tuututuse teksti suurtähtedest või sisuhoiatusest
         scopes: Milliseid API-sid see rakendus tohib kasutada. Kui Te valite kõrgeima taseme, ei pea Te valima individuaalseid.
         setting_aggregate_reblogs: Ära näita uusi upitusi tuututustele, mis on just hiljuti upitatud (ainult kehtib uutele upitusele)
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: Tundlik meedia on vaikimisi peidetud ning seda saab avada sellele klikkides
         setting_display_media_default: Peida tundlikuks märgitud meedia
         setting_display_media_hide_all: Alati peida kõik meedia
         setting_display_media_show_all: Alati näita tundlikuks märgistatud meedia
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: Keda Te jälgite ja kes jägib Teid ei kuvata Teie profiilil
         setting_noindex: Mõjutab Teie avalikku profiili ja staatuse lehekülgi
         setting_show_application: Rakendus, mida kasutate tuututamiseks, kuvatakse tuututuste üksikasjade vaates
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: Värvid põhinevad peidetud visuaalidel, kuid hägustavad igasuguseid detaile
         setting_use_pending_items: Peida ajajoone uuendused kliki taga selle asemel, et automaatselt kerida voogu
         username: Teie kasutajanimi on %{domain}-il unikaalne
@@ -61,8 +55,8 @@ et:
       domain_allow:
         domain: See domeen saab tõmmata andmeid sellelt serverilt ning sissetulevad andmed sellelt domeenilt töödeldakse ning salvestatakse
       email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
+        domain: See võib olla domeeninimi, mis esineb e-posti aadressil, MX kirjele vastav domeen või serveri IP. Neid kontrollitakse, kui kasutaja loob konto ning seejärel konto loomine keelatakse.
+        with_dns_records: Proovitakse ka üles vaadata selle domeeni DNS kirjed ning selle vastused samuti keelatakse
       featured_tag:
         name: 'Äkki soovite kasutada mõnda neist:'
       form_challenge:
@@ -88,7 +82,7 @@ et:
         acct: Uue konto täisnimi
       account_warning_preset:
         text: Eelseadistatud tekst
-        title: Title
+        title: Pealkiri
       admin_account_action:
         include_statuses: Kaasa teavitatud tuututused selles e-kirjas
         send_email_notification: Teavita kasutajat e-posti teel
@@ -137,10 +131,6 @@ et:
         setting_auto_play_gif: Mängi GIF-e automaatselt
         setting_boost_modal: Näita kinnitusdialoogi enne upitamist
         setting_crop_images: Kärbi suurendamata tuututuste pildid resolutsiooni 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: Postituse keel
         setting_default_privacy: Postituse privaatsus
         setting_default_sensitive: Alati märgista meedia tundlikuks
@@ -149,15 +139,11 @@ et:
         setting_display_media_default: Vaikimisi
         setting_display_media_hide_all: Peida kõik
         setting_display_media_show_all: Kuva kõik
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: Alati laienda sisuhoiatustega tuututused
         setting_hide_network: Peida oma võrk
         setting_noindex: Keeldu otsingumootorite indekseerimistest
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: Vähenda liikumist animatsioonides
         setting_show_application: Avalikusta tuututuste saatmisel kasutatud rakendused
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: Kasuta süsteemi vaikefonti
         setting_theme: Saidi teema
         setting_trends: Näita tänaseid trende
@@ -170,7 +156,7 @@ et:
         username_or_email: Kasutajanimi või e-post
         whole_word: Terve sõna
       email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
+        with_dns_records: Kaasa domeeni MX kirjed ning IP aadressid
       featured_tag:
         name: Silt
       interactions:

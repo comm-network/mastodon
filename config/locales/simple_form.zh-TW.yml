@@ -8,19 +8,14 @@ zh-TW:
         acct: 指定欲移動至之帳戶的 使用者名稱@站台
       account_warning_preset:
         text: 您可使用嘟文語法，例如網址、「#」標籤和提及功能
-        title: Optional. Not visible to the recipient
       admin_account_action:
-        include_statuses: The user will see which toots have caused the moderation action or warning
         send_email_notification: 使用者將收到帳戶發生之事情的解釋
         text_html: 選用。您能使用嘟文語法。您可 <a href="%{path}">新增警告預設</a> 來節省時間
         type_html: 設定要使用 <strong>%{acct}</strong> 做的事
         warning_preset_id: 選用。您仍可在預設的結尾新增自訂文字
       announcement:
         all_day: 核取後，只會顯示出時間範圍中的日期部分
-        ends_at: Optional. Announcement will be automatically unpublished at this time
         scheduled_at: 空白則立即發布公告
-        starts_at: Optional. In case your announcement is bound to a specific time range
-        text: You can use toot syntax. Please be mindful of the space the announcement will take up on the user's screen
       defaults:
         autofollow: 通過邀請網址註冊的使用者將自動關注你
         avatar: 支援 PNG, GIF 或 JPG 圖片，檔案最大為 %{size}，會等比例縮減成 %{dimensions} 像素
@@ -29,10 +24,8 @@ zh-TW:
         current_password: 因安全因素，請輸入目前帳戶的密碼
         current_username: 請輸入目前帳戶的使用者名稱以確認
         digest: 僅在你長時間未登入且在未登入期間收到私訊時傳送
-        discoverable: The profile directory is another way by which your account can reach a wider audience
-        discoverable_html: The <a href="%{path}" target="_blank">directory</a> lets people find accounts based on interests and activity. Requires at least %{min_followers} followers
         email: 您將收到一封確認電子郵件
-        fields: 您可在個人資料上有至多 8 個以表格形式顯示的項目
+        fields: 您可在個人資料上有至多 4 個以表格形式顯示的項目
         header: 支援 PNG, GIF 或 JPG 圖片，檔案最大為 %{size}，會按比例縮小成 %{dimensions} 像素
         inbox_url: 從您想要使用的中繼首頁複製網址
         irreversible: 已過濾的嘟文將會不可逆的消失，即便過濾器移除之後也一樣
@@ -42,27 +35,15 @@ zh-TW:
         phrase: 無論是嘟文的本文或是內容警告都會被過濾
         scopes: 允許讓應用程式存取的 API。 若您選擇最高階範圍，則無須選擇個別項目。
         setting_aggregate_reblogs: 請勿顯示最近已被轉嘟之嘟文的最新轉嘟（只影響最新收到的嘟文）
-        setting_default_content_type_html: When writing toots, assume they are written in raw HTML, unless specified otherwise
-        setting_default_content_type_markdown: When writing toots, assume they are using Markdown for rich text formatting, unless specified otherwise
-        setting_default_content_type_plain: When writing toots, assume they are plain text with no special formatting, unless specified otherwise (default Mastodon behavior)
         setting_default_sensitive: 敏感媒體預設隱藏，且按一下即可重新顯示
         setting_display_media_default: 隱藏標為敏感的媒體
         setting_display_media_hide_all: 總是隱藏所有媒體
         setting_display_media_show_all: 總是顯示標為敏感的媒體
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: 你關注的人與關注你的人將不會在你的個人資料頁上顯示
         setting_noindex: 會影響您的公開個人資料與嘟文頁面
         setting_show_application: 您用來發嘟文的應用程式將會在您嘟文的詳細檢視顯示
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
-        setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
-        setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: 您的使用者名稱將在 %{domain} 是獨一無二的
         whole_word: 如果關鍵字或詞組僅有字母與數字，則其將只在符合整個單字的時候才會套用
-      domain_allow:
-        domain: This domain will be able to fetch data from this server and incoming data from it will be processed and stored
-      email_domain_block:
-        domain: This can be the domain name that shows up in the e-mail address, the MX record that domain resolves to, or IP of the server that MX record resolves to. Those will be checked upon user sign-up and the sign-up will be rejected.
-        with_dns_records: An attempt to resolve the given domain's DNS records will be made and the results will also be blacklisted
       featured_tag:
         name: 您可能想使用其中一個：
       form_challenge:
@@ -82,13 +63,9 @@ zh-TW:
         fields:
           name: 標籤
           value: 內容
-      account_alias:
-        acct: Handle of the old account
-      account_migration:
-        acct: Handle of the new account
       account_warning_preset:
         text: 預設文字
-        title: Title
+        title: 標題
       admin_account_action:
         include_statuses: 在電子郵件中加入檢舉的嘟文
         send_email_notification: 透過電子信件通知使用者
@@ -136,11 +113,6 @@ zh-TW:
         setting_aggregate_reblogs: 時間軸中的群組轉嘟
         setting_auto_play_gif: 自動播放 GIF 動畫
         setting_boost_modal: 在轉嘟前先詢問我
-        setting_crop_images: Crop images in non-expanded toots to 16x9
-        setting_default_content_type: Default format for toots
-        setting_default_content_type_html: HTML
-        setting_default_content_type_markdown: Markdown
-        setting_default_content_type_plain: Plain text
         setting_default_language: 嘟文語言
         setting_default_privacy: 嘟文可見範圍
         setting_default_sensitive: 總是將媒體標記為敏感內容
@@ -149,28 +121,21 @@ zh-TW:
         setting_display_media_default: 預設
         setting_display_media_hide_all: 全部隱藏
         setting_display_media_show_all: 全部顯示
-        setting_enable_ui_tweaks: Enable experimental UI tweaks
         setting_expand_spoilers: 永遠展開標有內容警告的嘟文
         setting_hide_network: 隱藏您的社交網路
         setting_noindex: 阻止搜尋引擎建立索引
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: 減少過渡動畫效果
         setting_show_application: 顯示用來傳送嘟文的應用程式
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: 使用系統預設字型
         setting_theme: 站點主題
         setting_trends: 顯示本日趨勢
         setting_unfollow_modal: 取消關注某人前先詢問我
-        setting_use_blurhash: Show colorful gradients for hidden media
         setting_use_pending_items: 限速模式
         severity: 優先級
         type: 匯入類型
         username: 使用者名稱
         username_or_email: 使用者名稱或電子信箱位址
         whole_word: 整個詞彙
-      email_domain_block:
-        with_dns_records: Include MX records and IPs of the domain
       featured_tag:
         name: "「#」標籤"
       interactions:
@@ -190,7 +155,6 @@ zh-TW:
         pending_account: 需要審核的新帳戶
         reblog: 當有使用者轉嘟你的嘟文時，傳送電子信件通知
         report: 當提交新檢舉時傳送電子郵件
-        trending_tag: An unreviewed hashtag is trending
       tag:
         listable: 允許此主題標籤在搜尋及個人檔案目錄中顯示
         name: 主題標籤

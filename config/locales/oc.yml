@@ -18,18 +18,10 @@ oc:
     contact_unavailable: Pas disponible
     discover_users: Descobrissètz de nòvas personas
     documentation: Documentacion
-    extended_description_html: |
-      <h3>1A good place for rules</h3>2
-      <p>3The extended description has not been set up yet.</p>4
     federation_hint_html: Amb un compte sus %{instance} poiretz sègre de personas de qualque siasque servidor Mastodon e encara mai.
-    generic_description: "%{domain} is one server in the network"
     get_apps: Ensajatz una aplicacion mobil
     hosted_on: Mastodon albergat sus %{domain}
-    instance_actor_flash: |
-      This account is a virtual actor used to represent the server itself and not any individual user.
-      It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
     learn_more: Ne saber mai
-    powered_by_mastodon: Powered by Mastodon
     privacy_policy: Politica de confidencialitat
     see_whats_happening: Agachatz çò qu’arriba
     server_stats: 'Estatisticas del servidor :'
@@ -45,9 +37,9 @@ oc:
       domain: Servidor
       reason: 'Motiu :'
       rejecting_media: 'Los fichièrs mèdias d’aquestes servidors estant seràn pas tractats o gardats e pas cap de miniatura serà pas mostrada, demanda de clicar sul fichièr original :'
-      silenced: 'Posts from these servers will be hidden in public timelines and conversations, and no notifications will be generated from their users'' interactions, unless you are following them:'
-      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
-    unavailable_content_html: Mastodon generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
+      rejecting_media_title: Mèdias filtrats
+      silenced_title: Servidors muts
+      suspended_title: Servidors suspenduts
     user_count_after:
       one: utilizaire
       other: utilizaires
@@ -55,7 +47,6 @@ oc:
     what_is_mastodon: Qu’es Mastodon ?
   accounts:
     choices_html: 'Recomandacions de %{name} :'
-    endorsements_hint: You can endorse people you follow from the web interface, and they will show up here.
     featured_tags_hint: Podètz indicar d’etiquetas que mostrarem aquí.
     follow: Sègre
     followers:
@@ -97,7 +88,7 @@ oc:
       delete: Suprimir
       destroyed_msg: Nòta de moderacion ben suprimida !
     accounts:
-      add_email_domain_block: Blacklist e-mail domain
+      add_email_domain_block: Metre lo domeni del corrièl en lista negra
       approve: Aprovar
       approve_all: O validar tot
       are_you_sure: Sètz segur ?
@@ -178,7 +169,6 @@ oc:
         staff: Personnal
         user: Uitlizaire
       search: Cercar
-      search_same_email_domain: Other users with the same e-mail domain
       search_same_ip: Autres utilizaires amb la meteissa IP
       shared_inbox_url: URL de recepcion partejada
       show:
@@ -207,32 +197,25 @@ oc:
         create_account_warning: Crear un avertiment
         create_announcement: Crear una anóncia
         create_custom_emoji: Crear un emoji personalizat
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
         demote_user: Retrogradar l’utilizaire
         destroy_announcement: Suprimir l’anóncia
         destroy_custom_emoji: Suprimir l’emoji personalizat
-        destroy_domain_allow: Delete Domain Allow
         destroy_domain_block: Suprimir lo blocatge de domeni
-        destroy_email_domain_block: Delete e-mail domain block
         destroy_status: Suprimir l’estatut
         disable_2fa_user: Desactivar 2FA
         disable_custom_emoji: Desactivar l’emoji personalizat
         disable_user: Desactivar l’utilizaire
         enable_custom_emoji: Activar l’emoji personalizat
         enable_user: Activar l’utilizaire
-        memorialize_account: Memorialize Account
         promote_user: Promòure l’utilizaire
         remove_avatar_user: Suprimir l’avatar
         reopen_report: Tornar dobrir lo rapòrt
         reset_password_user: Reïnicializar lo senhal
         resolve_report: Resòlver lo rapòrt
-        silence_account: Silence Account
+        silence_account: " Metre en silenci lo compte"
         suspend_account: Suspendre lo compte
         unassigned_report: Desafectar lo rapòrt
-        unsilence_account: Unsilence Account
-        unsuspend_account: Unsuspend Account
+        unsilence_account: Levar lo silenci del compte
         update_announcement: Actualizar l’anóncia
         update_custom_emoji: Actualizar l’emoji personalizat
         update_status: Actualizar l’estatut
@@ -286,12 +269,10 @@ oc:
       new:
         create: Crear una anóncia
         title: Anóncia novèla
-      publish: Publish
       published_msg: Anóncia corrèctament publicada !
       scheduled_for: Programada per %{time}
       scheduled_msg: Anóncia programada per publicacion !
       title: Anóncias
-      unpublish: Unpublish
       unpublished_msg: Anóncia corrèctament tirada !
       updated_msg: Anóncia corrèctament actualizada !
     custom_emojis:
@@ -378,7 +359,6 @@ oc:
       private_comment: Comentari privat
       private_comment_hint: Comentari tocant la limitacion d’aqueste domeni per un usatge intèrn pels moderators.
       public_comment: Comentari public
-      public_comment_hint: Comment about this domain limitation for the general public, if advertising the list of domain limitations is enabled.
       reject_media: Regetar los fichièrs mèdias
       reject_media_hint: Lèva los fichièrs gardats localament e regèta las demandas de telecargament dins lo futur. Servís pas a res per las suspensions
       reject_reports: Regetar los senhalaments
@@ -406,14 +386,11 @@ oc:
       destroyed_msg: Blocatge del domeni de corrièl ben levat
       domain: Domeni
       empty: Cap de domeni de corrièl es pas en lista negra actualament.
-      from_html: from %{domain}
+      from_html: de %{domain}
       new:
         create: Crear un blocatge
         title: Nòu blocatge de domeni de corrièl
       title: Blocatge de domeni de corrièl
-    followers:
-      back_to_account: Back To Account
-      title: "%{acct}'s Followers"
     instances:
       by_domain: Domeni
       delivery_available: Liurason disponibla
@@ -465,11 +442,9 @@ oc:
       destroyed_msg: Nòta de moderacion corrèctament suprimida !
     reports:
       account:
-        note: note
         notes:
           one: "%{count} nòta"
           other: "%{count} nòtas"
-        report: report
         reports:
           one: "%{count} senhalament"
           other: "%{count} senhalaments"
@@ -515,7 +490,6 @@ oc:
         title: CSS personalizada
       default_noindex:
         desc_html: Tòca totes los utilizaires qu’an pas cambiat lo paramètre
-        title: Opt users out of search engine indexing by default
       domain_blocks:
         all: A tot lo monde
         disabled: A degun
@@ -555,9 +529,6 @@ oc:
           approved: Validacion necessària per s’inscriure
           none: Degun pòt pas se marcar
           open: Tot lo monde se pòt marcar
-        require:
-          hint: When enabled, the "Why do you want to join" field will be required
-          title: Require join reason on registration
         title: Mòdes d’inscripcion
       show_known_fediverse_at_about_page:
         desc_html: Un còp activat mostrarà los tuts de totes los fediverse dins l’apercebut. Autrament mostrarà pas que los tuts locals.
@@ -579,7 +550,6 @@ oc:
         title: Politica de confidencialitat del site
       site_title: Títol del servidor
       spam_check_enabled:
-        desc_html: Mastodon can auto-report accounts that send repeated unsolicited messages. There may be false positives.
         title: Anti-spam
       thumbnail:
         desc_html: Servís pels apercebuts via OpenGraph e las API. Talha de 1200x630px recomandada
@@ -588,15 +558,10 @@ oc:
         desc_html: Mostrar lo flux public sus la pagina d’acuèlh
         title: Apercebut flux public
       title: Paramètres del site
-      trendable_by_default:
-        desc_html: Affects hashtags that have not been previously disallowed
-        title: Allow hashtags to trend without prior review
       trends:
-        desc_html: Publicly display previously reviewed hashtags that are currently trending
         title: Etiquetas tendéncia
     site_uploads:
-      delete: Delete uploaded file
-      destroyed_msg: Site upload successfully deleted!
+      delete: Suprimir lo fichièr enviat
     statuses:
       back_to_account: Tornar a la pagina Compte
       batch:
@@ -611,22 +576,11 @@ oc:
       no_status_selected: Cap d’estatut pas cambiat estant que cap èra pas seleccionat
       title: Estatuts del compte
       with_media: Amb mèdia
-    subscriptions:
-      callback_url: Callback URL
-      confirmed: Confirmed
-      expires_in: Expires in
-      last_delivery: Last delivery
-      title: WebSub
-      topic: Topic
     tags:
-      accounts: Accounts
       accounts_today: Utilizacions unicas uèi
       accounts_week: Utilizacions unicas aquesta setmana
-      breakdown: Breakdown of today's usage by source
       context: Contèxt
       directory: A l’annuari
-      hidden: Hidden
-      hide: Hide from directory
       in_directory: "%{count} a l’annuari"
       last_active: Darrièra activitat
       most_popular: Mai popularas
@@ -636,17 +590,14 @@ oc:
       reviewed: Repassadas
       title: Etiquetas
       trending_right_now: Actualament en tendéncia
-      unhide: Show in directory
       unique_uses_today: "%{count} publicacions uèi"
       unreviewed: Pas repassadas
       updated_msg: Paramètres d’etiquetas corrèctament actualizats
-      visible: Visible
     title: Administracion
     warning_presets:
       add_new: N’ajustar un nòu
       delete: Escafar
       edit_preset: Modificar lo tèxt predefinit d’avertiment
-      empty: Empty
       title: Gerir los tèxtes predefinits
   admin_mailer:
     new_pending_account:
@@ -657,14 +608,9 @@ oc:
       body_remote: Qualqu’un de %{domain} senhalèt %{target}
       subject: Novèl senhalament per %{instance} (#%{id})
     new_trending_tag:
-      body: 'The hashtag #%{name} is trending today, but has not been previously reviewed. It will not be displayed publicly unless you allow it to, or just save the form as it is to never hear about it again.'
       subject: Nòva etiqueta per repassar sus %{instance} (#%{name})
   aliases:
     add_new: Crear un alias
-    created_msg: Successfully created a new alias. You can now initiate the move from the old account.
-    deleted_msg: Successfully remove the alias. Moving from that account to this one will no longer be possible.
-    empty: You have no aliases.
-    hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Desligar l’alias
   appearance:
     advanced_web_interface: Interfàcia web avançada
@@ -698,13 +644,11 @@ oc:
     change_password: Senhal
     checkbox_agreement_html: Accepti las <a href="%{rules_path}" target="_blank">règlas del servidor</a> e <a href="%{terms_path}" target="_blank">los tèrmes del servici</a>
     checkbox_agreement_without_rules_html: Soi d’acòrdi amb las <a href="%{terms_path}" target="_blank">condicions d’utilizacion</a>
-    confirm_email: Confirm email
     delete_account: Suprimir lo compte
     delete_account_html: Se volètz suprimir vòstre compte, podètz <a href="%{path}">o far aquí</a>. Vos demandarem que confirmetz.
     description:
       prefix_invited_by_user: "@%{name} vos convida a rejónher aqueste servidor Mastodon !"
       prefix_sign_up: Marcatz-vos a Mostodon uèi !
-      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any Mastodon server and more!
     didnt_get_confirmation: Avètz pas recebut las instruccions de confirmacion ?
     forgot_password: Senhal oblidat ?
     invalid_reset_password_token: Lo geton de reïnicializacion es invalid o acabat. Tornatz demandar un geton se vos plai.
@@ -723,19 +667,13 @@ oc:
     security: Seguretat
     set_new_password: Picar un nòu senhal
     setup:
-      email_below_hint_html: If the below e-mail address is incorrect, you can change it here and receive a new confirmation e-mail.
-      email_settings_hint_html: The confirmation e-mail was sent to %{email}. If that e-mail address is not correct, you can change it in account settings.
       title: Configuracion
     status:
       account_status: Estat del compte
-      confirming: Waiting for e-mail confirmation to be completed.
       functional: Vòstre compte es complètament foncional.
-      pending: Your application is pending review by our staff. This may take some time. You will receive an e-mail if your application is approved.
-      redirecting_to: Your account is inactive because it is currently redirecting to %{acct}.
     trouble_logging_in: Problèmas de connexion ?
   authorize_follow:
     already_following: Seguètz ja aqueste compte
-    already_requested: You have already sent a follow request to that account
     error: O planhèm, i a agut una error al moment de cercar lo compte
     follow: Sègre
     follow_request: 'Avètz demandat de sègre :'
@@ -768,11 +706,9 @@ oc:
       x_months: "%{count} meses"
       x_seconds: "%{count}s"
   deletes:
-    bad_password_msg: Nice try, hackers! Incorrect password
     challenge_not_passed: Las informacions qu’avètz fornidas son pas corrèctas
     confirm_password: Picatz vòstre senhal actual per verificar vòstra identitat
     confirm_username: Picatz vòstre nom d’utilizaire per confirmar la procedura
-    description_html: This will <strong>permanently, irreversibly</strong> remove content from your account and deactivate it. Your username will remain reserved to prevent future impersonations.
     proceed: Suprimir lo compte
     success_msg: Compte ben suprimit
     warning:
@@ -780,24 +716,14 @@ oc:
       caches: Lo contengut en cache suls autres servidors pòt demorar
       data_removal: Vòstras publicacions e las autras donadas seràn suprimidas per totjorn
       email_change_html: Podètz <a href="%{path}">cambiar vòstra adreça electronia</a>sens suprimir vòstre compte
-      email_contact_html: If it still doesn't arrive, you can e-mail <a href="mailto:%{email}">%{email}</a> for help
-      email_reconfirmation_html: If you are not receiving the confirmation e-mail, you can <a href="%{path}">request it again</a>
       irreversible: Poiretz pas restaurar o reactivar vòstre compte
       more_details_html: Per mai d’informacion, vejatz la <a href="%{terms_path}">politica de confidencialitat</a>.
       username_available: Vòstre nom d’utilizaire serà disponible de nòu
       username_unavailable: Vòstre nom d’utilizaire demorarà pas disponible
-    warning_html: Only deletion of content from this particular server is guaranteed. Content that has been widely shared is likely to leave traces. Offline servers and servers that have unsubscribed from your updates will not update their databases.
-    warning_title: Disseminated content availability
   directories:
     directory: Annuari de perfils
-    enabled: You are currently listed in the directory.
-    enabled_but_waiting: You have opted-in to be listed in the directory, but you do not have the minimum number of followers (%{min_followers}) to be listed yet.
     explanation: Trobar d’utilizaires segon lor interèsses
     explore_mastodon: Explorar %{title}
-    how_to_enable: You are not currently opted-in to the directory. You can opt-in below. Use hashtags in your bio text to be listed under specific hashtags!
-    people:
-      one: "%{count} person"
-      other: "%{count} people"
   domain_validator:
     invalid_domain: es pas un nom de domeni valid
   errors:
@@ -829,7 +755,6 @@ oc:
     blocks: Personas que blocatz
     csv: CSV
     domain_blocks: Blocatge de domenis
-    follows: You follow
     lists: Listas
     mutes: Personas rescondudas
     storage: Mèdias gardats
@@ -837,7 +762,6 @@ oc:
     add_new: Ajustar una etiqueta nòva
     errors:
       limit: Avètz ja utilizat lo maximum d’etiquetas
-    hint_html: "<strong>What are featured hashtags?</strong> They are displayed prominently on your public profile and allow people to browse your public posts specifically under those hashtags. They are a great tool for keeping track of creative works or long-term projects."
   filters:
     contexts:
       account: Perfils
@@ -890,6 +814,7 @@ oc:
     inactive: Inactiu
     publicize_checkbox: 'E enviatz lo tut seguent :'
     publicize_toot: 'Es provat ! Soi %{username} de %{service} : %{url}'
+    remove: Tirar la pròva del compte
     status: Estatut de verificacion
     view_proof: Veire la pròva
   imports:
@@ -935,41 +860,27 @@ oc:
   media_attachments:
     validations:
       images_and_video: Se pòt pas ajustar una vidèo a un estatut que ten ja d’imatges
-      not_ready: Cannot attach files that have not finished processing. Try again in a moment!
       too_many: Se pòt pas ajustar mai de 4 fichièrs
   migrations:
     acct: nomutilizaire@domeni del nòu compte
     cancel: Anullar la redireccion
-    cancel_explanation: Cancelling the redirect will re-activate your current account, but will not bring back followers that have been moved to that account.
     cancelled_msg: Redireccion corrèctament anullada.
-    currently_redirecting: 'Your profile is set to redirect to:'
     errors:
-      already_moved: is the same account you have already moved to
-      missing_also_known_as: is not back-referencing this account
       move_to_self: pòt pas èsser lo compte actual
       not_found: impossible de trobar
       on_cooldown: Sètz en temps de recargament
     followers_count: Seguidors al moment de mudar
     incoming_migrations: Mudar d’un compte diferent
-    incoming_migrations_html: To move from another account to this one, first you need to <a href="%{path}">create an account alias</a>.
     moved_msg: Vòstre compte manda ara a %{acct} e vòstres seguidors son desplaçats.
     not_redirecting: Vòstre compte manda pas enlòc pel moment.
-    on_cooldown: You have recently migrated your account. This function will become available again in %{count} days.
     past_migrations: Migracions passadas
-    proceed: Save
     proceed_with_move: Desplaçar los seguidors
     redirecting_to: Vòstre compte manda a %{acct}.
     set_redirect: Definir redireccion
-    updated_msg: Your account migration setting successfully updated!
     warning:
-      backreference_required: The new account must first be configured to back-reference this one
       before: 'Abans de contunhar, volgatz legir aquestas nòtas amb atencion :'
-      cooldown: After moving there is a cooldown period during which you will not be able to move again
-      disabled_account: Your current account will not be fully usable afterwards. However, you will have access to data export as well as re-activation.
-      followers: This action will move all followers from the current account to the new account
       only_redirect_html: Autrament, podètz <a href="%{path}">solament definir una redireccion sus vòstre perfil</a>.
       other_data: Cap d’autra donada serà desplaçada automaticament
-      redirect: Your current account's profile will be updated with a redirect notice and be excluded from searches
   moderation:
     title: Moderacion
   notification_mailer:
@@ -1078,10 +989,6 @@ oc:
     reply:
       proceed: Contunhar per respondre
       prompt: 'Volètz respondre a aqueste tut :'
-  remote_unfollow:
-    error: Error
-    title: Title
-    unfollowed: Unfollowed
   scheduled_statuses:
     over_daily_limit: Avètz passat la limita de %{limit}  tuts programats per aquel jorn
     over_total_limit: Avètz passat la limita de %{limit}  tuts programats
@@ -1164,8 +1071,6 @@ oc:
     disallowed_hashtags:
       one: 'conten una etiqueta desactivada : %{tags}'
       other: 'conten las etiquetas desactivadas : %{tags}'
-    errors:
-      in_reply_not_found: The status you are trying to reply to does not appear to exist.
     language_detection: Detectar automaticament la lenga
     open_in_web: Dobrir sul web
     over_character_limit: limit de %{max} caractèrs passat
@@ -1286,15 +1191,8 @@ oc:
     title: Condicions d’utilizacion e politica de confidencialitat de %{instance}
   themes:
     contrast: Mastodon (Fòrt contrast)
-    default: Night
-    fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Escur)
+    default: Mastodon (Escur)
     mastodon-light: Mastodon (Clar)
-    night: Night
-    ocean: Ocean
-    ocean-blur: Ocean (Blurred)
-    vapor: Vapor
-    win95: Windows 95 (Buggy)
   time:
     formats:
       default: Lo %d %b de %Y a %Ho%M
@@ -1359,6 +1257,7 @@ oc:
     follow_limit_reached: Podètz pas sègre mai de %{limit} personas
     invalid_email: L’adreça de corrièl es invalida
     invalid_otp_token: Còdi d’autentificacion en dos temps invalid
+    invalid_sign_in_token: Còdi de seguretat invalid
     otp_lost_help_html: Se perdatz l’accès al dos, podètz benlèu contactar %{email}
     seamless_external_login: Sètz connectat via un servici extèrn, los paramètres de senhal e de corrièl son doncas pas disponibles.
     signed_in_as: 'Session a :'
