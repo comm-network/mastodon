@@ -23,13 +23,13 @@ $ui-highlight-color: $win95-window-header;
   border-top: 2px solid #efefef;
   border-right: 2px solid #404040;
   border-bottom: 2px solid #404040;
-  border-radius:0px;
+  border-radius:0;
 }
 
 @mixin win95-border-outset-sides-only() {
   border-left: 2px solid #efefef;
   border-right: 2px solid #404040;
-  border-radius:0px;
+  border-radius:0;
 }
 
 @mixin win95-outset() {
@@ -37,13 +37,13 @@ $ui-highlight-color: $win95-window-header;
   inset 1px 1px 0px #ffffff,
   inset -2px -2px 0px #808080,
   inset 2px 2px 0px #dfdfdf;
-  border-radius:0px;
+  border-radius:0;
 }
 
 @mixin win95-outset-no-highlight() {
   box-shadow: inset -1px -1px 0px #000000,
   inset -2px -2px 0px #808080;
-  border-radius:0px;
+  border-radius:0;
 }
 
 @mixin win95-border-inset() {
@@ -51,7 +51,7 @@ $ui-highlight-color: $win95-window-header;
   border-top: 2px solid #404040;
   border-right: 2px solid #efefef;
   border-bottom: 2px solid #efefef;
-  border-radius:0px;
+  border-radius:0;
 }
 
 @mixin win95-border-slight-inset() {
@@ -59,16 +59,16 @@ $ui-highlight-color: $win95-window-header;
   border-top: 1px solid #404040;
   border-right: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
-  border-radius:0px;
+  border-radius:0;
 }
 
 @mixin win95-inset() {
-  box-shadow: inset 1px 1px 0px #000000,
+  box-shadow: inset 1px 1px 0 #000000,
   inset -1px -1px 0px #ffffff,
   inset 2px 2px 0px #808080,
   inset -2px -2px 0px #dfdfdf;
-  border-width:0px;
-  border-radius:0px;
+  border-width:0;
+  border-radius:0;
 }
 
 
@@ -79,19 +79,19 @@ $ui-highlight-color: $win95-window-header;
   inset 0px 2px 0px #dfdfdf,
   inset -2px 0px 0px #808080,
   inset 2px 0px 0px #dfdfdf;
-  border-radius:0px;
+  border-radius:0;
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
 }
 
 @mixin win95-border-groove() {
-  border-radius: 0px;
+  border-radius: 0;
   border: 2px groove #bfbfbf;
 }
 
 @mixin win95-reset() {
   box-shadow: unset;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
 }
 
 @font-face {
@@ -154,13 +154,13 @@ body.admin {
   width:80%;
   display:block;
   position:absolute;
-  right:0px;
+  right:0;
 }
 
 .tabs-bar__link:last-child {
   position:relative;
   flex-basis:60px !important;
-  font-size:0px;
+  font-size:0;
   color:$win95-bg;
 
   background-image: url("../images/start.png");
@@ -187,7 +187,7 @@ body.admin {
   height:117px;
   background-image:url("../images/clippy_wave.gif"), url("../images/clippy_frame.png");
   background-repeat:no-repeat;
-  background-position: 4px 20px, 0px 0px;
+  background-position: 4px 20px, 0 0;
   z-index:0;
 }
 
@@ -207,7 +207,7 @@ body.admin {
 .column > .scrollable {
   background: $win95-bg;
   @include win95-border-outset();
-  border-top-width:0px;
+  border-top-width:0;
 }
 
 .column-header__wrapper {
@@ -217,11 +217,11 @@ body.admin {
 }
 
 .column-header {
-  padding:0px;
+  padding:0;
   font-size:13px;
   background:#7f7f7f;
   @include win95-border-outset();
-  border-bottom-width:0px;
+  border-bottom-width:0;
   color:white;
   font-weight:bold;
   align-items:baseline;
@@ -229,7 +229,7 @@ body.admin {
 }
 
 .column-header > button {
-  padding: 0px;
+  padding: 0;
   min-height: 22px;
 }
 
@@ -264,9 +264,9 @@ body.admin {
   color: black;
   @include win95-outset();
 
-  line-height:0px;
+  line-height:0;
   font-size:14px;
-  padding:0px 4px;
+  padding:0 4px;
 
   &:hover {
     color: black;
@@ -345,8 +345,8 @@ body.admin {
 .column-inline-form {
   background-color: $win95-bg;
   @include win95-border-outset();
-  border-bottom-width:0px;
-  border-top-width:0px;
+  border-bottom-width:0;
+  border-top-width:0;
 
   align-items: baseline;
 }
@@ -376,8 +376,8 @@ body.admin {
   top: calc(-1em - 0.5ex);
   left: 4px;
 
-  padding: 0px 4px;
-  margin-bottom: 0px;
+  padding: 0 4px;
+  margin-bottom: 0;
 }
 
 .setting-meta__label, .setting-toggle__label {
@@ -397,7 +397,7 @@ body.admin {
 }
 
 .react-toggle .react-toggle-track {
-  border-radius:0px;
+  border-radius:0;
   background-color:white;
   @include win95-border-inset();
 
@@ -423,7 +423,7 @@ body.admin {
 }
 
 .react-toggle .react-toggle-thumb {
-  border-radius:0px;
+  border-radius:0;
   display:none;
 }
 
@@ -578,7 +578,7 @@ body.admin {
 }
 
 .status__wrapper .status__action-bar {
-  border-bottom-width:0px;
+  border-bottom-width:0;
 }
 
 .status__action-bar-button {
@@ -644,7 +644,7 @@ body.admin {
 
 .detailed-status__action-bar {
   background-color:$win95-bg;
-  border:0px;
+  border:0;
   border-bottom:2px groove $win95-bg;
   margin-bottom:8px;
   justify-items:left;
@@ -654,7 +654,7 @@ body.admin {
 .icon-button {
   background:$win95-bg;
   @include win95-border-outset();
-  padding:0px 0px 0px 0px;
+  padding:0 0 0 0;
   margin-right:4px;
 
   color:#3f3f3f;
@@ -668,7 +668,7 @@ body.admin {
 }
 
 .status__action-bar > .icon-button {
-  padding:0px 15px 0px 0px;
+  padding:0 15px 0 0;
   min-width:25px;
 }
 
@@ -715,7 +715,7 @@ body.admin {
 }
 
 .status-card, .status-card.compact, a.status-card, a.status-card.compact {
-  border-radius:0px;
+  border-radius:0;
   background:white;
   border: 1px solid black;
   color:black;
@@ -798,7 +798,7 @@ body.admin {
   background: $win95-bg;
   @include win95-border-outset();
   justify-content:left;
-  margin-bottom:0px;
+  margin-bottom:0;
   padding-bottom:2px;
   border-bottom:2px groove $win95-bg;
 }
@@ -819,7 +819,7 @@ body.admin {
   width:80%;
   display:block;
   position:absolute;
-  right:0px;
+  right:0;
 
 }
 
@@ -827,7 +827,7 @@ body.admin {
   position:relative;
   padding:5px 15px;
   width:40px;
-  font-size:0px;
+  font-size:0;
   color:$win95-bg;
 
   background-image: url("../images/start.png");
@@ -859,9 +859,9 @@ body.admin {
   padding-top:2px;
   padding:2px;
   border:2px outset $win95-bg;
-  border-top-width:0px;
+  border-top-width:0;
   border-bottom: 2px groove $win95-bg;
-  margin-bottom:0px;
+  margin-bottom:0;
 }
 
 .search input {
@@ -877,7 +877,7 @@ body.admin {
 .search-popout {
   box-shadow: unset;
   color:black;
-  border-radius:0px;
+  border-radius:0;
   background-color:$win95-tooltip-yellow;
   border:1px solid black;
 
@@ -906,7 +906,7 @@ body.admin {
   background: #bfbfbf;
   span {
     color: black;
-    padding: 0px 2px;
+    padding: 0 2px;
   }
 }
 
@@ -944,7 +944,7 @@ body.admin {
 .drawer__inner.darker {
   background-color:$win95-bg;
   border: 2px outset $win95-bg;
-  border-top-width:0px;
+  border-top-width:0;
 }
 
 .navigation-bar {
@@ -958,18 +958,18 @@ body.admin {
 
 .compose-form .autosuggest-textarea__textarea,
 .compose-form .spoiler-input__input {
-  border-radius:0px;
+  border-radius:0;
   @include win95-border-slight-inset();
 }
 
 .compose-form .autosuggest-textarea__textarea {
-  border-bottom:0px;
+  border-bottom:0;
 }
 
 .compose-form__uploads-wrapper {
-  border-radius:0px;
+  border-radius:0;
   border-bottom:1px inset $win95-bg;
-  border-top-width:0px;
+  border-top-width:0;
 }
 
 .compose-form__upload-wrapper {
@@ -986,7 +986,7 @@ body.admin {
 
 .compose-form__buttons {
   background-color:$win95-bg;
-  border-radius:0px;
+  border-radius:0;
   box-shadow:unset;
 }
 
@@ -1069,7 +1069,7 @@ body.admin {
     top:-10px;
     background-color:$win95-bg;
     font-size:11px;
-    padding: 0px 5px;
+    padding: 0 5px;
   }
 
   .compose-form__warning {
@@ -1097,7 +1097,7 @@ body.admin {
 }
 
 .compose-form__upload-thumbnail {
-  border-radius:0px;
+  border-radius:0;
   border:2px groove $win95-bg;
   background-color:$win95-bg;
   padding:2px;
@@ -1127,7 +1127,7 @@ body.admin {
 
 .emoji-dialog.with-search {
   box-shadow:unset;
-  border-radius:0px;
+  border-radius:0;
   background-color:$win95-bg;
   border:1px solid black;
   box-sizing:content-box;
@@ -1137,7 +1137,7 @@ body.admin {
 .emoji-dialog .emoji-search {
   color:black;
   background-color:white;
-  border-radius:0px;
+  border-radius:0;
   @include win95-inset();
 }
 
@@ -1159,7 +1159,7 @@ body.admin {
 .button {
   background-color:$win95-bg;
   @include win95-outset();
-  border-radius:0px;
+  border-radius:0;
   color:black;
   font-weight:bold;
 
@@ -1173,7 +1173,7 @@ body.admin {
 
   &:disabled {
     color: #808080;
-    text-shadow: 1px 1px 0px #efefef;
+    text-shadow: 1px 1px 0 #efefef;
 
     &:active {
       @include win95-outset();
@@ -1205,7 +1205,7 @@ body.admin {
   width: 24px;
   height:24px;
   padding-top:4px;
-  padding-left:0px;
+  padding-left:0;
   padding-right:1px;
   text-align:center;
   position:relative;
@@ -1237,13 +1237,13 @@ body.admin {
 }
 
 .getting-started__wrapper {
-  padding-top:0px;
+  padding-top:0;
 
   box-shadow: inset -1px 0px 0px #000000,
   inset 1px 1px 0px #ffffff,
   inset -2px 0px 0px #808080,
   inset 2px 2px 0px #dfdfdf;
-  border-radius:0px;
+  border-radius:0;
 
   background-color:$win95-bg;
   border-bottom: 2px groove $win95-bg;
@@ -1255,9 +1255,9 @@ body.admin {
   }
 
   .column-subheading {
-    font-size:0px;
-    margin:0px;
-    padding:0px;
+    font-size:0;
+    margin:0;
+    padding:0;
     background-color: transparent;
     color:black;
     border-bottom: 2px groove $win95-bg;
@@ -1279,7 +1279,7 @@ body.admin {
   }
 
   i {
-    font-size: 0px;
+    font-size: 0;
     width:32px;
   }
 }
@@ -1291,8 +1291,8 @@ body.admin {
   font-weight:bold;
   font-size:15px;
   position:absolute;
-  top:0px;
-  left:0px;
+  top:0;
+  left:0;
   padding:5px 15px;
   width:50px;
   font-size:16px;
@@ -1312,14 +1312,14 @@ body.admin {
 
 @media screen and (min-width: 360px) {
   .getting-started__wrapper{
-    margin-bottom:0px;
+    margin-bottom:0;
   }
 }
 
 @media screen and (max-width: 360px) {
   .getting-started {
-    top:0px;
-    padding-top:0px;
+    top:0;
+    padding-top:0;
   }
 
   .getting-started__wrapper::before {
@@ -1329,10 +1329,10 @@ body.admin {
 
 .getting-started__footer {
   background-color: $win95-bg;
-  padding:0px;
+  padding:0;
   padding-bottom:10px;
   position:relative;
-  top:0px;
+  top:0;
 
   @include win95-outset-no-highlight();
 
@@ -1345,8 +1345,8 @@ body.admin {
     li {
       cursor:pointer;
       display:block;
-      font-size:0px;
-      padding:0px;
+      font-size:0;
+      padding:0;
       line-height:0;
       a {
         padding:15px;
@@ -1382,7 +1382,7 @@ body.admin {
   padding-left:20px;
   padding-right:40px;
 
-  left:0px;
+  left:0;
   box-sizing:border-box;
   bottom:-32px;
   display:block;
@@ -1396,7 +1396,7 @@ body.admin {
   border-left: 2px solid #404040;
   border-top: 2px solid #efefef;
   border-right: 2px solid #efefef;
-  border-radius:0px;
+  border-radius:0;
 
   -ms-transform: rotate(-90deg);
 
@@ -1540,7 +1540,7 @@ body.admin {
 
 .account--panel {
   background-color: $win95-bg;
-  border:0px;
+  border:0;
   border-top: 2px groove $win95-bg;
 }
 
@@ -1594,7 +1594,7 @@ body.admin {
 .dropdown--active .dropdown__content > ul,
 .dropdown-menu {
   background:$win95-tooltip-yellow;
-  border-radius:0px;
+  border-radius:0;
   border:1px solid black;
   box-shadow:unset;
   margin-top: 6px;
@@ -1688,7 +1688,7 @@ body.admin {
 }
 
 .fa-user-plus, .fa-user-times {
-  padding: 2px 0px 2px 1px;
+  padding: 2px 0 2px 1px;
 }
 
 .fa-ellipsis-h {
@@ -1798,7 +1798,7 @@ body.admin {
 
 .report-modal__target .media-modal__close {
   top: 3px;
-  right: 0px;
+  right: 0;
   font-size: 12px!important;
   line-height: 13px!important;
 }
@@ -1834,7 +1834,7 @@ body.admin {
 
 .admin-wrapper::before {
   position:absolute;
-  top:0px;
+  top:0;
   content:"Control Panel";
   color:white;
   background-color:$win95-window-header;
@@ -1875,7 +1875,7 @@ body.admin {
     width:100vw;
     height:95vh;
     height:calc(100vh - 24px);
-    margin:0px 0px 0px 0px;
+    margin:0 0 0 0;
   }
 }
 
@@ -1928,12 +1928,12 @@ body.admin {
   left:4px;
   width:18px;
   height:18px;
-  margin:0px;
+  margin:0;
 }
 
 .admin-wrapper .sidebar > ul {
   background: $win95-bg;
-  margin:0px;
+  margin:0;
   margin-left:8px;
   color:black;
 
@@ -1943,7 +1943,7 @@ body.admin {
     &#settings,
     &#admin {
       padding:2px;
-      border: 0px solid transparent;
+      border: 0 solid transparent;
     }
 
     &#logout {
@@ -1965,7 +1965,7 @@ body.admin {
       display:inline-block;
       @include win95-tab();
       padding:2px 5px;
-      margin:0px;
+      margin:0;
       color:black;
       vertical-align:baseline;
 
@@ -2015,7 +2015,7 @@ body.admin {
             z-index:4;
 
             &:first-child {
-              margin-left:0px;
+              margin-left:0;
             }
 
             &:hover {
@@ -2055,7 +2055,7 @@ body.admin {
 
   .admin-wrapper {
     .sidebar {
-      padding:0px;
+      padding:0;
       padding-bottom: 70px;
       width: 100%;
       height: auto;
@@ -2072,10 +2072,10 @@ body.admin {
   background-color:$win95-tooltip-yellow;
   color:black;
   border:1px solid black;
-  border-radius:0px;
+  border-radius:0;
   position:absolute;
-  top:0px;
-  left:0px;
+  top:0;
+  left:0;
   width:100%;
 }
 
@@ -2121,7 +2121,7 @@ a.table-action-link:hover,
 .report-card {
   background: white;
   border: 1px solid black;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .report-card__summary__item:hover {
@@ -2136,7 +2136,7 @@ a.table-action-link:hover,
 .directory__tag > a:hover, .directory__tag > a:active, .directory__tag > a:focus {
   background: white;
   border: 1px solid black;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .admin-wrapper .content .directory__tag h4 {
@@ -2145,12 +2145,12 @@ a.table-action-link:hover,
 
 .simple_form .hint code {
   background: $win95-bg;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .input-copy {
   background: transparent;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
 }
 
 .table > tbody > tr:nth-child(2n+1) > td,
@@ -2209,7 +2209,7 @@ a.table-action-link:hover,
 
 .simple_form select {
   background: white;
-  border-radius: 0px;
+  border-radius: 0;
   color: black;
 }
 
@@ -2243,7 +2243,7 @@ a.table-action-link:hover,
 .filters .filter-subset a:hover,
 .filters .filter-subset a.selected {
   color:black;
-  border-bottom: 0px solid transparent;
+  border-bottom: 0 solid transparent;
 }
 
 .drawer__inner__mastodon {
@@ -2270,7 +2270,7 @@ a.table-action-link:hover,
 }
 
 .batch-table__toolbar {
-  border-radius: 0px;
+  border-radius: 0;
   background-color:white;
   border: 1px solid black;
 }
@@ -2311,7 +2311,7 @@ a.table-action-link:hover,
     box-shadow: none;
 
     .card__img {
-      border-radius: 0px;
+      border-radius: 0;
       border: 1px solid black;
     }
 
@@ -2337,16 +2337,16 @@ body {
   max-width: 960px;
   margin:10px auto;
   background: $win95-bg;
-  padding:0px;
+  padding:0;
   @include win95-outset();
 
   .header {
     background: $win95-window-header;
     @include win95-border-outset();
     height: 22px;
-    margin: 0px;
-    padding:0px;
-    border-radius: 0px;
+    margin: 0;
+    padding:0;
+    border-radius: 0;
 
     .brand {
       padding: 2px;
@@ -2357,7 +2357,7 @@ body {
       background: $win95-bg;
       color:black;
       margin: 2px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       &:hover {
         background: $win95-bg;
         color:black;
@@ -2396,7 +2396,7 @@ body {
     padding: 4px;
     .public-account-header__image {
       @include win95-border-slight-inset();
-      border-radius: 0px;
+      border-radius: 0;
     }
   }
 
@@ -2407,12 +2407,12 @@ body {
     .avatar img {
       @include win95-border-slight-inset();
       filter: saturate(1.8) brightness(1.1);
-      border-radius: 0px;
+      border-radius: 0;
       background: darken($win95-bg, 9.09%);
     }
   }
   .public-account-header__extra__links {
-    margin-top: 0px;
+    margin-top: 0;
     a, a strong {
       color: black;
     }
@@ -2441,10 +2441,10 @@ body {
       content: "";
       display:block;
       position:absolute;
-      left: 0px;
+      left: 0;
       bottom: -20px;
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       border-left: 20px solid $win95-tooltip-yellow;
       border-bottom: 20px solid transparent;
     }
@@ -2454,8 +2454,8 @@ body {
       position:absolute;
       left: -1px;
       bottom: -22px;
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       border-left: 22px solid black;
       border-bottom: 22px solid transparent;
     }
@@ -2469,7 +2469,7 @@ body {
           color: black;
         }
         &:after {
-          border-bottom-width: 0px;
+          border-bottom-width: 0;
         }
         &.active {
           @include win95-border-slight-inset();
@@ -2511,7 +2511,7 @@ body {
 @media screen and (max-width: 1255px) {
   .container {
     width: 100%;
-    padding: 0px;
+    padding: 0;
   }
 }
 
@@ -2529,10 +2529,10 @@ body {
 }
 .hero-widget__img {
   background: none;
-  border-radius: 0px;
+  border-radius: 0;
   border: 1px solid black;
   img {
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
 
@@ -2547,7 +2547,7 @@ body {
     background: none;
     &:first-child:last-child, &:first-child {
       .detailed-status, .status, .load-more {
-        border-radius: 0px;
+        border-radius: 0;
       }
     }
   }
