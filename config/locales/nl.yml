@@ -1253,7 +1253,7 @@ nl:
     title: Gebruiksvoorwaarden en privacybeleid van %{instance}
   themes:
     contrast: Mastodon (hoog contrast)
-    default: Mastodon (donker)
+    mastodon-dark: Mastodon (donker)
     mastodon-light: Mastodon (licht)
   time:
     formats:

@@ -1257,7 +1257,7 @@ fa:
     title: شرایط استفاده و سیاست رازداری %{instance}
   themes:
     contrast: ماستودون (سایه‌روشن بالا)
-    default: ماستودون (تیره)
+    mastodon-dark: ماستودون (تیره)
     mastodon-light: ماستودون (روشن)
   time:
     formats:

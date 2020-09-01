@@ -1205,7 +1205,7 @@ tr:
     title: "%{instance} Hizmet Şartları ve Gizlilik Politikası"
   themes:
     contrast: Mastodon (Yüksek karşıtlık)
-    default: Mastodon (Karanlık)
+    mastodon-dark: Mastodon (Karanlık)
     mastodon-light: Mastodon (Açık)
   time:
     formats:

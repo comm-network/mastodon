@@ -1260,7 +1260,7 @@ it:
     title: "%{instance} Termini di servizio e politica della privacy"
   themes:
     contrast: Mastodon (contrasto elevato)
-    default: Mastodon (scuro)
+    mastodon-dark: Mastodon (scuro)
     mastodon-light: Mastodon (chiaro)
   time:
     formats:

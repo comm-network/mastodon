@@ -1255,7 +1255,7 @@ pt-BR:
     title: Termos de Serviço e Política de Privacidade de %{instance}
   themes:
     contrast: Mastodon  (Alto contraste)
-    default: Mastodon (Noturno)
+    mastodon-dark: Mastodon (Noturno)
     mastodon-light: Mastodon (Diurno)
   time:
     formats:

@@ -673,7 +673,7 @@ kab:
     title: Tiwtilin n useqdec akked tsertit tabaḍnit n %{instance}
   themes:
     contrast: Maṣṭudun (agnil awriran)
-    default: Maṣṭudun (Aberkan)
+    mastodon-dark: Maṣṭudun (Aberkan)
     mastodon-light: Maṣṭudun (Aceɛlal)
   time:
     formats:

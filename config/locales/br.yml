@@ -1176,9 +1176,8 @@ br:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: Mastodon (High contrast)
-    default: Mastodoñ (Teñval)
     fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Dark)
+    mastodon-dark: Mastodoñ (Teñval)
     mastodon-light: Mastodoñ (Sklaer)
     night: Night
     ocean: Ocean

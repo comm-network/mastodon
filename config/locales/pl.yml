@@ -1282,7 +1282,7 @@ pl:
     title: Zasady korzystania i polityka prywatności %{instance}
   themes:
     contrast: Mastodon (Wysoki kontrast)
-    default: Mastodon (Ciemny)
+    mastodon-dark: Mastodon (Ciemny)
     mastodon-light: Mastodon (Jasny)
   time:
     formats:

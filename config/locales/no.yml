@@ -1176,7 +1176,7 @@
     title: "%{instance} Personvern og villkår for bruk av nettstedet"
   themes:
     contrast: Mastodon (Høykontrast)
-    default: Mastodon
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (Lyst)
   time:
     formats:

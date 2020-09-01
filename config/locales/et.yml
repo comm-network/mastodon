@@ -1216,9 +1216,8 @@ et:
     title: "%{instance} Kasutustingimused ja Privaatsuspoliitika"
   themes:
     contrast: Mastodon (Kõrge kontrast)
-    default: Mastodon (Tume)
     fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Dark)
+    mastodon-dark: Mastodon (Tume)
     mastodon-light: Mastodon (Hele)
     night: Night
     ocean: Ocean

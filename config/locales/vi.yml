@@ -1155,7 +1155,7 @@ vi:
     title: "%{instance} Điều khoản dịch vụ và chính sách bảo mật"
   themes:
     contrast: Mastodon (Độ tương phản cao)
-    default: Mastodon (Tối)
+    mastodon-dark: Mastodon (Tối)
     mastodon-light: Mastodon (Sáng)
   time:
     formats:

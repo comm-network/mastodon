@@ -1004,7 +1004,7 @@ th:
     title: เงื่อนไขการให้บริการและนโยบายความเป็นส่วนตัวของ %{instance}
   themes:
     contrast: Mastodon (ความคมชัดสูง)
-    default: Mastodon (มืด)
+    mastodon-dark: Mastodon (มืด)
     mastodon-light: Mastodon (สว่าง)
   time:
     formats:

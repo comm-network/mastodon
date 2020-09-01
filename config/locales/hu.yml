@@ -1253,7 +1253,7 @@ hu:
     title: "%{instance} Felhasználási feltételek és Adatkezelési nyilatkozat"
   themes:
     contrast: Mastodon (Nagy kontrasztú)
-    default: Mastodon (Sötét)
+    mastodon-dark: Mastodon (Sötét)
     mastodon-light: Mastodon (Világos)
   time:
     formats:

@@ -1132,7 +1132,7 @@ id:
     title: "%{instance} Ketentuan Layanan dan Kebijakan Privasi"
   themes:
     contrast: Mastodon (Kontras tinggi)
-    default: Mastodon (Gelap)
+    mastodon-dark: Mastodon (Gelap)
     mastodon-light: Mastodon (Terang)
   time:
     formats:

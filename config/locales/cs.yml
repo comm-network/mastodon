@@ -1278,7 +1278,7 @@ cs:
     title: Podmínky používání a zásady ochrany osobních údajů na serveru %{instance}
   themes:
     contrast: Mastodon (vysoký kontrast)
-    default: Mastodon (tmavý)
+    mastodon-dark: Mastodon (tmavý)
     mastodon-light: Mastodon (světlý)
   time:
     formats:

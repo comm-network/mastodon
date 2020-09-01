@@ -879,7 +879,7 @@ da:
     title: Vilkår og privatlivpolitik for %{instance}
   themes:
     contrast: Mastodon (Høj kontrast)
-    default: Mastodont (Mørk)
+    mastodon-dark: Mastodont (Mørk)
     mastodon-light: Mastodon (Lys)
   two_factor_authentication:
     code_hint: Indtast koden der er genereret af din app for at bekræfte

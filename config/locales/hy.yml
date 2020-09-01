@@ -277,7 +277,7 @@ hy:
   stream_entries:
     sensitive_content: Կասկածելի բովանդակութիւն
   themes:
-    default: Mastodon (Մուգ)
+    mastodon-dark: Mastodon (Մուգ)
     mastodon-light: Mastodon (Լուսավոր)
   time:
     formats:

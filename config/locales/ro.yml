@@ -673,7 +673,7 @@ ro:
     title: "%{instance} Termeni de utilizare și Politica de confidențialitate"
   themes:
     contrast: Mastodon (contrast mare)
-    default: Mastodon (Întunecat)
+    mastodon-dark: Mastodon (Întunecat)
     mastodon-light: Mastodon (Luminat)
   time:
     formats:

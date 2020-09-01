@@ -1205,7 +1205,7 @@ ar:
     title: شروط الخدمة وسياسة الخصوصية على %{instance}
   themes:
     contrast: ماستدون (تباين عالٍ)
-    default: ماستدون (داكن)
+    mastodon-dark: ماستدون (داكن)
     mastodon-light: ماستدون (فاتح)
   time:
     formats:

@@ -1239,7 +1239,7 @@ ko:
     title: "%{instance} 이용약관과 개인정보 취급 방침"
   themes:
     contrast: 마스토돈 (고대비)
-    default: 마스토돈 (어두움)
+    mastodon-dark: 마스토돈 (어두움)
     mastodon-light: 마스토돈 (밝음)
   time:
     formats:

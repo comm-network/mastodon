@@ -480,7 +480,7 @@ ast:
     does_not_match_previous_name: nun concasa col nome anterior
   themes:
     contrast: Contraste altu
-    default: Mastodon
+    mastodon-dark: Mastodon
     mastodon-light: Claridá
   two_factor_authentication:
     code_hint: Introduz el códigu xeneráu pola aplicación autenticadora pa confirmar

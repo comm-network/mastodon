@@ -1017,7 +1017,7 @@ sl:
     title: "%{instance} Pogoji storitve in pravilnik o zasebnosti"
   themes:
     contrast: Mastodon (Visok kontrast)
-    default: Mastodon (Temna)
+    mastodon-dark: Mastodon (Temna)
     mastodon-light: Mastodon (Svetla)
   time:
     formats:

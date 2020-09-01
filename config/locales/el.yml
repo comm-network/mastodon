@@ -1255,7 +1255,7 @@ el:
     title: Όροι Χρήσης και Πολιτική Απορρήτου του κόμβου %{instance}
   themes:
     contrast: Mastodon (Υψηλή αντίθεση)
-    default: Mastodon (Σκοτεινό)
+    mastodon-dark: Mastodon (Σκοτεινό)
     mastodon-light: Mastodon (Ανοιχτόχρωμο)
   time:
     formats:

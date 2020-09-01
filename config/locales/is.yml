@@ -1255,7 +1255,7 @@ is:
     title: "%{instance} - Þjónustuskilmálar og persónuverndarstefna"
   themes:
     contrast: Mastodon (mikil birtuskil)
-    default: Mastodon (dökkt)
+    mastodon-dark: Mastodon (dökkt)
     mastodon-light: Mastodon (ljóst)
   time:
     formats:

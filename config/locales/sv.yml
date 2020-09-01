@@ -870,7 +870,7 @@ sv:
     title: "%{instance} Användarvillkor och Sekretesspolicy"
   themes:
     contrast: Hög kontrast
-    default: Mastodon
+    mastodon-dark: Mastodon
     mastodon-light: Mastodon (ljust)
   two_factor_authentication:
     code_hint: Ange koden som genererats av din autentiseringsapp för att bekräfta

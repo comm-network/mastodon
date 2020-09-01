@@ -1278,9 +1278,8 @@ ka:
     title: "%{instance} მომსახურების პირობები და კონფიდენციალურობის პოლიტიკა"
   themes:
     contrast: მაღალი კონტრასტი
-    default: მასტოდონი
     fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Dark)
+    mastodon-dark: მასტოდონი
     mastodon-light: მასტოდონი (ღია)
     night: Night
     ocean: Ocean

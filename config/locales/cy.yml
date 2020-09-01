@@ -1313,7 +1313,7 @@ cy:
     title: "%{instance} Termau Gwasanaeth a Polisi Preifatrwydd"
   themes:
     contrast: Mastodon (Cyferbyniad uchel)
-    default: Mastodon (Tywyll)
+    mastodon-dark: Mastodon (Tywyll)
     mastodon-light: Mastodon (golau)
   time:
     formats:

@@ -1197,9 +1197,8 @@ sr:
     title: Услови коришћења и политика приватности инстанце %{instance}
   themes:
     contrast: Велики контраст
-    default: Мастодон
     fairy-floss: Fairy Floss (Pastel dark)
-    mastodon-dark: Mastodon (Dark)
+    mastodon-dark: Мастодон
     mastodon-light: Мастодон (светло)
     night: Night
     ocean: Ocean

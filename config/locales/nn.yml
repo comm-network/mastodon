@@ -1192,7 +1192,7 @@ nn:
     title: Tenestevilkår og personvernsvilkår for %{instance}
   themes:
     contrast: Mastodon (Høg kontrast)
-    default: Mastodon (Mørkt)
+    mastodon-dark: Mastodon (Mørkt)
     mastodon-light: Mastodon (Lyst)
   time:
     formats:

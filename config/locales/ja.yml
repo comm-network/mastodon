@@ -1235,7 +1235,7 @@ ja:
     title: "%{instance} 利用規約・プライバシーポリシー"
   themes:
     contrast: Mastodon (ハイコントラスト)
-    default: Mastodon (ダーク)
+    mastodon-dark: Mastodon (ダーク)
     mastodon-light: Mastodon (ライト)
   time:
     formats:

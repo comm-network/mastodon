@@ -1253,7 +1253,7 @@ gl:
     title: "%{instance} Termos do Servizo e Política de Intimidade"
   themes:
     contrast: Mastodon (Alto contraste)
-    default: Mastodon (Escuro)
+    mastodon-dark: Mastodon (Escuro)
     mastodon-light: Mastodon (Claro)
   time:
     formats:
