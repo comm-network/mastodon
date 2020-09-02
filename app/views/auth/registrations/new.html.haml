@@ -5,6 +5,8 @@
   = render partial: 'shared/og', locals: { description: description_for_sign_up }
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { novalidate: false }) do |f|
   = render 'shared/error_messages', object: resource

@@ -2,6 +2,8 @@
   = javascript_pack_tag 'public', integrity: true, crossorigin: 'anonymous'
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
 - content_for :content do
   - if user_signed_in? && !@hide_header

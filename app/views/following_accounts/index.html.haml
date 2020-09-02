@@ -6,6 +6,8 @@
   = render 'accounts/og', account: @account, url: account_followers_url(@account, only_path: false)
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
 = render 'accounts/header', account: @account
 

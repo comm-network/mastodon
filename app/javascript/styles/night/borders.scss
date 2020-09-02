@@ -1,6 +1,6 @@
 @import 'variables';
 
-body.theme-default * {
+body * {
   border-radius: 0 !important;
 }
 
@@ -127,38 +127,38 @@ div.modal-root__modal.report-modal,
 div.modal-root__modal.list-adder,
 body.app-body.no-reduce-motion > div.dropdown-menu,
 .list-adder form.column-inline-form input.setting-text,
-body.theme-default button.button,
-body.theme-default button.btn,
-body.theme-default button,
-body.theme-default .block-button,
-body.theme-default .logo-button,
+body button.button,
+body button.btn,
+body button,
+body .block-button,
+body .logo-button,
 div.entry > div.detailed-status > a.button.logo-button,
 button.status__content__spoiler-link.status__content__spoiler-link--show-more,
 button.status__content__spoiler-link.status__content__spoiler-link--show-less {
-  border-color: rgba(255,255,255,0.3) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-body.theme-default .button.button--block,
-body.theme-default .button,
-body.theme-default .btn,
-body.theme-default button,
-body.theme-default .block-button,
-body.theme-default .logo-button,
+body .button.button--block,
+body .button,
+body .btn,
+body button,
+body .block-button,
+body .logo-button,
 div.entry > div.detailed-status > a.button.logo-button,
 button.status__content__spoiler-link.status__content__spoiler-link--show-more,
 button.status__content__spoiler-link.status__content__spoiler-link--show-less {
   border: 1px solid;
 }
 
-body.theme-default button.load-more,
-body.theme-default button.load-gap,
-body.theme-default button.icon-button,
-body.theme-default button.table-action-link,
-body.theme-default button.poll__link,
-body.theme-default button.status__content__read-more-button,
-body.theme-default button.column-back-button,
-body.theme-default button.text-icon-button,
-body.theme-default button.link-button,
+body button.load-more,
+body button.load-gap,
+body button.icon-button,
+body button.table-action-link,
+body button.poll__link,
+body button.status__content__read-more-button,
+body button.column-back-button,
+body button.text-icon-button,
+body button.link-button,
 div.columns-area div.notification__filter-bar button,
 h1.column-header button,
 div.video-player__buttons-bar button {

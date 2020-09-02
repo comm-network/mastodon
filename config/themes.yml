@@ -1,4 +1,5 @@
 default: styles/night.scss
+more-stars-night: styles/night-stars.scss
 ocean: styles/ocean.scss
 ocean-blur: styles/ocean-blur.scss
 vapor: styles/vapor.scss

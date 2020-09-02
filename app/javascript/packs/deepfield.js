@@ -117,6 +117,6 @@ import { COORDINATE_LENGTH, StarFactory } from '../mastodon/starfield';
   };
 
   document.addEventListener('DOMContentLoaded', function() {
-    Window.starfield({ starDensity: 1.0 }, document.querySelector('body'));
+    Window.starfield({ starDensity: 2.8 }, document.querySelector('body'));
   });
 })();

@@ -3,5 +3,7 @@
   = javascript_pack_tag 'share', integrity: true, crossorigin: 'anonymous'
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
 #mastodon-compose{ data: { props: Oj.dump(default_props) } }

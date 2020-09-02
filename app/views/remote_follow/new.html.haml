@@ -2,6 +2,8 @@
   %meta{ name: 'robots', content: 'noindex' }/
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
 .form-container
   .follow-prompt

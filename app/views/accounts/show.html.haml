@@ -6,6 +6,8 @@
     %meta{ name: 'robots', content: 'noindex, noarchive' }/
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
   %link{ rel: 'alternate', type: 'application/rss+xml', href: @rss_url }/
   %link{ rel: 'alternate', type: 'application/activity+json', href: ActivityPub::TagManager.instance.uri_for(@account) }/

@@ -4,6 +4,8 @@
 - content_for :header_tags do
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
   = render partial: 'shared/og'
 
 = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|

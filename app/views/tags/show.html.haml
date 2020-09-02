@@ -6,6 +6,8 @@
   %link{ rel: 'alternate', type: 'application/rss+xml', href: tag_url(@tag, format: 'rss') }/
   - if current_theme == 'default'
     = javascript_pack_tag 'starfield', integrity: true, crossorigin: 'anonymous'
+  - if current_theme == 'more-stars-night'
+    = javascript_pack_tag 'deepfield', integrity: true, crossorigin: 'anonymous'
 
   = javascript_pack_tag 'about', integrity: true, crossorigin: 'anonymous'
   = render 'og'

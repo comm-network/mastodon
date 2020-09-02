@@ -37,6 +37,8 @@ body.app-body > div.privacy-dropdown__dropdown,
 body.app-body > div.content-type-dropdown__dropdown,
 body.theme-default .compose-form .active .content-type-dropdown__value,
 body.theme-default .compose-form .active .privacy-dropdown__value,
+body.theme-more-stars-night .compose-form .active .content-type-dropdown__value,
+body.theme-more-stars-night .compose-form .active .privacy-dropdown__value,
 .compose-form .compose-form__warning,
 div.keyboard-shortcuts > table > tbody > tr:nth-child(odd),
 div.keyboard-shortcuts > table > tbody > tr > td > kbd,
@@ -56,6 +58,8 @@ table.table td,
 table.table th,
 body.theme-default .dashboard__counters > div > div,
 body.theme-default .dashboard__counters > div > a,
+body.theme-more-stars-night .dashboard__counters > div > div,
+body.theme-more-stars-night .dashboard__counters > div > a,
 button.column-header__button.active:hover,
 a.column-link:hover,
 div.column-player > button.column-player__toggle:hover,
@@ -100,7 +104,8 @@ div.admin-wrapper div.sidebar ul a:hover,
 body.app-body > div.privacy-dropdown__dropdown > div.privacy-dropdown__option:not(.active):hover,
 body.app-body > div.content-type-dropdown__dropdown > div.content-type-dropdown__option:not(.active):hover,
 ul > li.dropdown-menu__item:hover > a,
-body.theme-default .dropdown-menu ul {
+body.theme-default .dropdown-menu ul,
+body.theme-more-stars-night .dropdown-menu ul {
   background-color: rgba(0, 0, 0, 0.99) !important;
 }
 
@@ -190,7 +195,8 @@ div.navigation-panel a.column-link.active {
   color: $white;
 }
 
-body.theme-default div.status__content {
+body.theme-default div.status__content,
+body.theme-more-stars-night div.status__content {
   color: $inverted-text-color;
 }
 

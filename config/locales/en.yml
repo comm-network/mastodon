@@ -1315,6 +1315,7 @@ en:
   themes:
     contrast: Mastodon (High contrast)
     default: Night
+    more-stars-night: Night (More stars)
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
