@@ -53,7 +53,7 @@ en:
         setting_hide_network: Who you follow and who follows you will not be shown on your profile
         setting_noindex: Affects your public profile and status pages
         setting_show_application: The application you use to toot will be displayed in the detailed view of your toots
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
+        setting_show_preferred_theme: When activated the theme you set for the web ui will be used for your public profile and status pages as well.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: Your username will be unique on %{domain}

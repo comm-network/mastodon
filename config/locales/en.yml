@@ -672,6 +672,8 @@ en:
     advanced_web_interface_hint: 'If you want to make use of your entire screen width, the advanced web interface allows you to configure many different columns to see as much information at the same time as you want: Home, notifications, federated timeline, any number of lists and hashtags.'
     animations_and_accessibility: Animations and accessibility
     confirmation_dialogs: Confirmation dialogs
+    custom_tweaks: Custom Tweaks
+    custom_tweaks_hint: This fork of Mastodon actually has some additional features. You can configure some of them below.
     discovery: Discovery
     localization:
       body: Mastodon is translated by volunteers.
@@ -1315,10 +1317,10 @@ en:
   themes:
     contrast: Mastodon (High contrast)
     default: Night
-    more-stars-night: Night (More stars)
     fairy-floss: Fairy Floss (Pastel dark)
     mastodon-dark: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
+    more-stars-night: Night (More stars)
     night: Night
     ocean: Ocean
     ocean-blur: Ocean (Blurred)

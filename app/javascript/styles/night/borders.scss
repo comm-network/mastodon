@@ -134,7 +134,8 @@ body .block-button,
 body .logo-button,
 div.entry > div.detailed-status > a.button.logo-button,
 button.status__content__spoiler-link.status__content__spoiler-link--show-more,
-button.status__content__spoiler-link.status__content__spoiler-link--show-less {
+button.status__content__spoiler-link.status__content__spoiler-link--show-less,
+.account-role, .simple_form .recommended {
   border-color: rgba(255, 255, 255, 0.3) !important;
 }
 

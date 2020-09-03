@@ -49,11 +49,9 @@ fa:
         setting_display_media_default: تصویرهایی را که به عنوان حساس علامت زده شده‌اند پنهان کن
         setting_display_media_hide_all: همیشه همهٔ عکس‌ها و ویدیوها را پنهان کن
         setting_display_media_show_all: همیشه تصویرهایی را که به عنوان حساس علامت زده شده‌اند را نشان بده
-        setting_enable_ui_tweaks: Enables round avatars, action button retention and other experimental UI features.
         setting_hide_network: فهرست پیگیران شما و فهرست کسانی که شما پی می‌گیرید روی نمایهٔ شما دیده نخواهد شد
         setting_noindex: روی نمایهٔ عمومی و صفحهٔ نوشته‌های شما تأثیر می‌گذارد
         setting_show_application: برنامه‌ای که به کمک آن بوق می‌زنید، در جزئیات بوق شما نمایش خواهد یافت
-        setting_show_preferred_theme: Uses the theme you use on your public profile and status pages.
         setting_use_blurhash: سایه‌ها بر اساس رنگ‌های به‌کاررفته در تصویر پنهان‌شده ساخته می‌شوند ولی جزئیات تصویر در آن‌ها آشکار نیست
         setting_use_pending_items: به جای پیش‌رفتن خودکار در فهرست، به‌روزرسانی فهرست نوشته‌ها را پشت یک کلیک پنهان کن
         username: نام کاربری شما روی %{domain} یکتا خواهد بود
@@ -153,11 +151,8 @@ fa:
         setting_expand_spoilers: همیشه بوق‌هایی را که هشدار محتوا دارند کامل نشان بده
         setting_hide_network: نهفتن شبکهٔ ارتباطی
         setting_noindex: درخواست از موتورهای جستجوگر برای ظاهر نشدن در نتایج جستجو
-        setting_notif_sound: Enable notification sound
-        setting_notif_volume: Lower notification sound volume
         setting_reduce_motion: کاستن از حرکت در پویانمایی‌ها
         setting_show_application: برنامه‌ای که به کار می‌برید آشکار شود
-        setting_show_preferred_theme: Show preferred theme on public pages
         setting_system_font_ui: به‌کاربردن قلم پیش‌فرض سیستم
         setting_theme: تم سایت
         setting_trends: نشان‌دادن موضوعات پرطرفدار روز
