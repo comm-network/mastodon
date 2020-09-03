@@ -28,8 +28,8 @@ if (process.env.S3_ENABLED === 'true') {
 module.exports = merge(sharedConfig, {
   mode: 'production',
   devtool: 'source-map',
-  stats: 'verbose',
-  bail: false,
+  stats: 'normal',
+  bail: true,
   optimization: {
     minimize: true,
     minimizer: [
