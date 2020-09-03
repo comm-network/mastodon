@@ -90,3 +90,6 @@ production:
 
   # Cache manifest.json for performance
   cache_manifest: true
+
+  # Get output of errors
+  webpack_compile_output: true
