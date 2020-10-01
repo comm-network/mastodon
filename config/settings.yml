@@ -28,6 +28,7 @@ defaults: &defaults
   preview_sensitive_media: false
   reduce_motion: false
   enable_ui_tweaks: false
+  disable_swiping: false
   show_application: true
   system_font_ui: false
   noindex: false

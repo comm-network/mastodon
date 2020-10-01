@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Icon from 'mastodon/components/icon';
 import Octicon from '@primer/octicons-react';
+import AnimatedNumber from 'mastodon/components/animated_number';
 
 export default class IconButton extends React.PureComponent {
 
@@ -27,6 +28,8 @@ export default class IconButton extends React.PureComponent {
     overlay: PropTypes.bool,
     tabIndex: PropTypes.string,
     octicon: PropTypes.object,
+    counter: PropTypes.number,
+    obfuscateCount: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -102,6 +105,8 @@ export default class IconButton extends React.PureComponent {
       title,
       brandsIcon,
       octicon,
+      counter,
+      obfuscateCount,
     } = this.props;
 
     const {
@@ -123,7 +128,11 @@ export default class IconButton extends React.PureComponent {
     if (octicon) {
       resIcon = <Octicon icon={octicon} aria-hidden='true' />;
     } else {
-      resIcon = <Icon brandsIcon={brandsIcon} id={icon} fixedWidth aria-hidden='true' />;
+      resIcon = <Icon id={icon} fixedWidth aria-hidden='true' />
+    }
+
+    if (typeof counter !== 'undefined') {
+      style.width = 'auto';
     }
 
     return (
@@ -141,7 +150,7 @@ export default class IconButton extends React.PureComponent {
         tabIndex={tabIndex}
         disabled={disabled}
       >
-        {resIcon}
+        {resIcon} {typeof counter !== 'undefined' && <span className='icon-button__counter'><AnimatedNumber value={counter} obfuscate={obfuscateCount} /></span>}
       </button>
     );
   }
