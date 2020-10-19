@@ -122,6 +122,7 @@ export default class IconButton extends React.PureComponent {
       deactivate,
       overlayed: overlay,
       octicon,
+      'icon-button--with-counter': typeof counter !== 'undefined',
     });
 
     let resIcon;

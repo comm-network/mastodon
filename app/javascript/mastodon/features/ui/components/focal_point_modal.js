@@ -21,6 +21,7 @@ import { X } from '@primer/octicons-react';
 import { me } from 'mastodon/initial_state';
 import tesseractCorePath from 'tesseract.js-core/tesseract-core.wasm.js';
 import tesseractWorkerPath from 'tesseract.js/dist/worker.min.js';
+import { assetHost } from 'mastodon/utils/config';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -50,8 +51,6 @@ const mapDispatchToProps = (dispatch, { id }) => ({
 const removeExtraLineBreaks = str => str.replace(/\n\n/g, '******')
   .replace(/\n/g, ' ')
   .replace(/\*\*\*\*\*\*/g, '\n\n');
-
-const assetHost = process.env.CDN_HOST || '';
 
 class ImageLoader extends React.PureComponent {
 
