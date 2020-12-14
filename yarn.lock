@@ -1309,12 +1309,10 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@primer/octicons-react@^9.3.1":
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-9.6.0.tgz#996f621cb063757a4985cd6b45e59ed00e3444bf"
-  integrity sha512-FR0fiU1UY1ds5ZMCUY+iVkkm1Eh4yDHf2ui+cxB3VvYX23DAdUAohPGit+qaMFy2caDd7uWYGRZduKS7dW1FZQ==
-  dependencies:
-    prop-types "^15.6.1"
+"@primer/octicons-react@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-11.2.0.tgz#af60301257cdbc1561c2647678282d3bce5a6c54"
+  integrity sha512-pi3DT5fUtATw2atMRQ7xCUUbdauA/hYTKfM2ijf3rtipeyQ7Ou3ij/JLhnc9Ke110ljHJh69j/PiINbbKAYegQ==
 
 "@rails/ujs@^6.0.3":
   version "6.0.3"
